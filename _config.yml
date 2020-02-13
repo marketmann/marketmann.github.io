@@ -1,4 +1,9 @@
 name: Robert Smith - Aka "thedayismine"
 markdown: kramdown
 permalink: /blog/:title
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
 
