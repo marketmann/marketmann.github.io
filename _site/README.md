@@ -1,1 +1,0 @@
-# thedayismine.github.io
