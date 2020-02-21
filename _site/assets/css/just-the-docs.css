@@ -541,30 +541,6 @@ hr {
       .page-header.nav-open {
         display: flex; } }
 
-.navigation,
-.site-header,
-.site-footer {
-  width: 100%; }
-  @media (min-width: 66.5rem) {
-    .navigation,
-    .site-header,
-    .site-footer {
-      width: 264px; } }
-
-.navigation {
-  padding-right: 1rem;
-  padding-left: 1rem; }
-  @media (min-width: 50rem) {
-    .navigation {
-      padding-right: 2rem;
-      padding-left: 2rem; } }
-  @media (min-width: 50rem) {
-    .navigation {
-      padding-top: 3rem;
-      padding-bottom: 1rem;
-      overflow-y: auto;
-      flex: 1 1 auto; } }
-
 .site-header {
   display: flex;
   min-height: 60px;
@@ -737,63 +713,6 @@ body {
   .page-content h5,
   .page-content h6 {
     position: relative; }
-
-.navigation-list {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none; }
-
-.navigation-list-child-list {
-  padding-left: 0.75rem;
-  list-style: none; }
-  .navigation-list-child-list .navigation-list-link {
-    color: #5c5962; }
-  .navigation-list-child-list .navigation-list-item {
-    position: relative; }
-    .navigation-list-child-list .navigation-list-item::before {
-      position: absolute;
-      margin-top: 0.3em;
-      margin-left: -0.8em;
-      color: rgba(92, 89, 98, 0.3);
-      content: "- "; }
-    .navigation-list-child-list .navigation-list-item.active::before {
-      color: #5c5962; }
-
-.navigation-list-item {
-  font-size: 14px !important;
-  margin: 0; }
-  @media (min-width: 31.25rem) {
-    .navigation-list-item {
-      font-size: 16px !important; } }
-  @media (min-width: 50rem) {
-    .navigation-list-item {
-      font-size: 12px !important; } }
-  @media (min-width: 50rem) and (min-width: 31.25rem) {
-    .navigation-list-item {
-      font-size: 14px !important; } }
-
-  .navigation-list-item .navigation-list-child-list {
-    display: none; }
-  .navigation-list-item.active .navigation-list-child-list {
-    display: block; }
-
-.navigation-list-link {
-  display: block;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem; }
-  .navigation-list-link.active {
-    font-weight: 600;
-    color: #27262b;
-    text-decoration: none; }
-
-.main-nav {
-  display: none; }
-  .main-nav.nav-open {
-    display: block; }
-  @media (min-width: 50rem) {
-    .main-nav {
-      display: block; } }
 
 .aux-nav {
   align-self: center; }
