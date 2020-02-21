@@ -1,40 +1,61 @@
-<nav role="navigation" id="navgoco" aria-label="Main navigation">
-  <ul class="navigation-list">
-    {%- assign pages_list = site.html_pages | sort:"nav_order" -%}
-    {%- for node in pages_list -%}
+  <ul id="navsmigoco" class="navigation-list nav">
+      {%- assign pages_list = site.html_pages | sort:"nav_order" -%}
+      {%- for node in pages_list -%}
       {%- unless node.nav_exclude -%}
-        {%- if node.parent == nil -%}
-          <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
-            {%- if page.parent == node.title or page.grand_parent == node.title -%}
-              {%- assign first_level_url = node.url | absolute_url -%}
-            {%- endif -%}
-            <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
-            {%- if node.has_children -%}
-              {%- assign children_list = site.html_pages | where: "parent", node.title | sort:"nav_order" -%}
-              <ul class="navigation-list-child-list ">
-                {%- for child in children_list -%}
-                  <li class="navigation-list-item {% if page.url == child.url or page.parent == child.title %} active{% endif %}">
-                    {%- if page.url == child.url or page.parent == child.title -%}
-                      {%- assign second_level_url = child.url | absolute_url -%}
-                    {%- endif -%}
-                    <a href="{{ child.url | absolute_url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
-                    {%- if child.has_children -%}
-                        {%- assign grand_children_list = site.html_pages | where: "parent", child.title | sort:"nav_order" -%}
-                        <ul class="navigation-list-child-list">
-                        {%- for grand_child in grand_children_list -%}
-                          <li class="navigation-list-item {% if page.url == grand_child.url %} active{% endif %}">
-                            <a href="{{ grand_child.url | absolute_url }}" class="navigation-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                    {%- endif -%}
-                  </li>
-                {%- endfor -%}
-              </ul>
-            {%- endif -%}
-          </li>
-        {%- endif -%}
+      {%- if node.parent == nil -%}
+      <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
+          {%- if page.parent == node.title or page.grand_parent == node.title -%}
+          {%- assign first_level_url = node.url | absolute_url -%}
+          {%- endif -%}
+          <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+          {%- if node.has_children -%}
+          {%- assign children_list = site.html_pages | where: "parent", node.title | sort:"nav_order" -%}
+          <ul class="navigation-list-child-list ">
+              {%- for child in children_list -%}
+              <li class="navigation-list-item {% if page.url == child.url or page.parent == child.title %} active{% endif %}">
+                  {%- if page.url == child.url or page.parent == child.title -%}
+                  {%- assign second_level_url = child.url | absolute_url -%}
+                  {%- endif -%}
+                  <a href="{{ child.url | absolute_url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
+                  {%- if child.has_children -%}
+                  {%- assign grand_children_list = site.html_pages | where: "parent", child.title | sort:"nav_order" -%}
+                  <ul class="navigation-list-child-list">
+                      {%- for grand_child in grand_children_list -%}
+                      <li class="navigation-list-item {% if page.url == grand_child.url %} active{% endif %}">
+                          <a href="{{ grand_child.url | absolute_url }}" class="navigation-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
+                      </li>
+                      {%- endfor -%}
+                  </ul>
+                  {%- endif -%}
+              </li>
+              {%- endfor -%}
+          </ul>
+          {%- endif -%}
+      </li>
+      {%- endif -%}
       {%- endunless -%}
-    {%- endfor -%}
+      {%- endfor -%}
   </ul>
-</nav>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('#navsmigoco').navgoco({
+              caretHtml: '<i class="some-random-icon-class"></i>',
+              accordion: true,
+              openClass: 'open',
+              save: true,
+              cookie: {
+                  name: 'navgoco',
+                  expires: false,
+                  path: '/'
+              },
+              slide: {
+                  duration: 200,
+                  easing: 'swing'
+              }
+          });
+      });
+
+  </script>
+
+  <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.
+<script>$("li.nav-active").parents('li').toggleClass("nav-active");</script>-->

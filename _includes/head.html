@@ -1,29 +1,32 @@
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="googlebot" content="noindex">
-<meta name="robots" content="noindex">
-
-  {% if site.plugins.jekyll-seo == nil %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="googlebot" content="noindex">
+    <meta name="robots" content="noindex">
     <title>{{ page.title }} - {{ site.title }}</title>
 
-    {% if page.description %}
-      <meta name="Description" content="{{ page.description }}">
-    {% endif %}
-  {% endif %}
+    <meta name="Description" content="{{ page.description }}">
 
-  <link rel="shortcut icon" href="{{ 'favicon.ico' | absolute_url }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ 'favicon.ico' | absolute_url }}" type="image/x-icon">
 
-  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs.css' | absolute_url }}">
-
-  {% if site.search_enabled != false %}
+    <link rel="stylesheet" href="{{ '/assets/css/just-the-docs.css' | absolute_url }}">
     <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | absolute_url }}"></script>
-  {% endif %}
-  <script type="text/javascript" src="{{ '/assets/js/just-the-docs.js' | absolute_url }}"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {% include head_custom.html %}
-
+    <script type="text/javascript" src="{{ '/assets/js/just-the-docs.js' | absolute_url }}"></script>
+   <!---------
+        NAVGOCO 
+        NAVGOCO -->
+    <!-- Load JQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Load jquery - COOKIE plugin -->
+    <script type="text/javascript" src="{{ '/assets/navgoco/jquery.cookie.js' | absolute_url }}"></script>
+    <!-- Load jquery - NAVGOCO plugin - JAVASCRIPT -->
+    <script type="text/javascript" src="{{ '/assets/navgoco/jquery.navgoco.js' | absolute_url }}"></script>
+    <!-- Load jquery - NAVGOCO plugin -  CSS - I'VE PUT THIS CSS in /assets/nav.css
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/navgoco/jquery.navgoco.css' | absolute_url }}" /> 
+    <!--END-->
+    
+    <!--NAV - CSS - FOR JUST-THE-DOCS AND NAVGOCO -->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/nav.css' | absolute_url }}">
+    <!--END-->
 </head>
