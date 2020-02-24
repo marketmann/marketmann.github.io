@@ -1,144 +1,157 @@
-
 /**
  BUTTON CONTAINER - UNIVERSAL CSS */
 .right-sidebar-button-container {
-  display:flex;
-  flex-direction:row;
-  position:fixed;
-  right:0;
-  top:0;
-  padding:5px;
-  z-index:10000;
+   display: flex;
+   flex-direction: row;
+   position: fixed;
+   right: 0;
+   top: 0;
+   padding: 5px;
+   z-index: 10000;
 }
+
 .right-sidebar-button-container button {
-  display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 40px;
-	height: 34px;
-	z-index: 100;
-	border-radius: 6px;
-  border:none;
-	background: hsl(180, 0.5%, 39.02%);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	transition:.2s;
-  overflow:hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 34px;
+   z-index: 100;
+   border-radius: 6px;
+   border: none;
+   background: hsl(180, 0.5%, 39.02%);
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);
+   transition: .2s;
+   overflow: hidden;
 }
+
 .right-sidebar-button-container button:hover {
-	cursor: pointer;
-	background: hsl(180, 0.5%, 49.02%);
-	transition:.13s;
+   cursor: pointer;
+   background: hsl(180, 0.5%, 49.02%);
+   transition: .13s;
 }
-.right-sidebar-button-container svg{
-  width:17px;
-  height:17px;
+
+.right-sidebar-button-container svg {
+   width: 17px;
+   height: 17px;
 }
+
 /**
  BUTTON - SIDEBAR TOGGLE */
 button.right-sidebar-toggle {
-  margin-right:3px;
+   margin-right: 3px;
 }
 
 /**
  BUTTON - SIDEBAR TOGGLE - ANIMATED DIV */
-.right-sidebar-button-container .sidebar-in, .right-sidebar-button-container .sidebar-out{
-  display:flex;
-  position:absolute;
-  align-items:center;
-  justify-content:center;
-  transition:.25s;
-  transition-delay:.35s;
+.right-sidebar-button-container .sidebar-in,
+.right-sidebar-button-container .sidebar-out {
+   display: flex;
+   position: absolute;
+   align-items: center;
+   justify-content: center;
+   transition: .25s;
+   transition-delay: .35s;
 }
 
 /**
  BUTTON - SIDEBAR TOGGLE - ANIMATED ANIMATIONS */
 .sidebar-in {
-  margin-left:40px;
-}
-.right-sidebar.oooopen + .right-sidebar-button-container button .sidebar-in, .right-sidebar.oooopen-on-load + .right-sidebar-button-container button .sidebar-in {
-    margin-left:0px;
+   margin-left: 40px;
 }
 
-.right-sidebar.oooopen + .right-sidebar-button-container button .sidebar-out, .right-sidebar.oooopen-on-load + .right-sidebar-button-container button .sidebar-out {
-    margin-left:-40px;
+.right-sidebar.oooopen + .right-sidebar-button-container button .sidebar-in,
+.right-sidebar.oooopen-on-load + .right-sidebar-button-container button .sidebar-in {
+   margin-left: 0px;
+}
+
+.right-sidebar.oooopen + .right-sidebar-button-container button .sidebar-out,
+.right-sidebar.oooopen-on-load + .right-sidebar-button-container button .sidebar-out {
+   margin-left: -40px;
 }
 
 /**
  BUTTON - CLEAR LOCAL STORAGE */
 button.local-storage-button {
-  position:absolute;
-  z-index:1;
-  transition:.2s;
-  right:8px;
-  transition-delay:.75s;
+   position: absolute;
+   z-index: 1;
+   transition: .2s;
+   right: 8px;
+   transition-delay: .75s;
 }
-button.local-storage-button svg{
-  width:15px;
-  height:15px;
+
+button.local-storage-button svg {
+   width: 15px;
+   height: 15px;
 }
+
 button.right-sidebar-toggle:hover + button.local-storage-button {
-  right:50px;
-  transition-delay:1s;
+   right: 50px;
+   transition-delay: 1s;
 }
+
 button.local-storage-button:hover {
-   right:50px;
+   right: 50px;
 }
 
 /**
  RIGHT SIDEBAR */
 .right-sidebar {
-	height: 100%;
-	width:300px;
-	position: fixed;
-	z-index: 1;
-	top: 0px;
-	right: -300px;
-	background-color: #111;
-	overflow-x: hidden;
-	transition: 0.35s;
-	padding-top: 60px;
-  padding-left:10px;
+   height: 100%;
+   width: 300px;
+   position: fixed;
+   z-index: 1;
+   top: 0px;
+   right: -300px;
+   background-color: #111;
+   overflow-x: hidden;
+   transition: 0.35s;
+   padding-top: 60px;
+   padding-left: 10px;
+   z-index: 999;
 }
+
 .right-sidebar.oooopen,
-.right-sidebar.oooopen-on-load{
-  	right: 0px;
+.right-sidebar.oooopen-on-load {
+   right: 0px;
 }
+
 .hypothesis-container {
-    width: 100%;
+   width: 100%;
 }
 
 .h-sidebar-iframe {
-    /* Stuff found in default stylesheet */
-    margin: 0;
-    margin-left: 0px;
-    padding: 0;
-    background: none !important;
-    font-size: 14px !important;
-    line-height: 20px;
-    z-index: 2147483647;
-    border: 0;
-    height: 93.7vh;
-    width: 100%;
+   /* Stuff found in default stylesheet */
+   margin: 0;
+   margin-left: 0px;
+   padding: 0;
+   background: none !important;
+   font-size: 14px !important;
+   line-height: 20px;
+   z-index: 2147483647;
+   border: 0;
+   height: 93.7vh;
+   width: 100%;
 }
 
 /** MIDDLE SECTION */
 .page {
-  -webkit-transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
-  padding-right:10px;
-  	transition: 0.3s;
+   -webkit-transition: width 0.3s ease-in-out;
+   transition: width 0.3s ease-in-out;
+   padding-right: 10px;
+   transition: 0.3s;
 }
+
 /** MIDDLE SECTION - RIGHT SIDEBAR OPEN**/
 .page.oooopen {
-  padding-right:310px;
+   padding-right: 310px;
 }
 
 /** MIDDLE SECTION - RIGHT SIDEBAR OPEN - LOCAL STORAGE**/
 .page.oooopen-on-load {
-  -webkit-transition: none;
-  transition: none;
-  padding-right:310px;
+   -webkit-transition: none;
+   transition: none;
+   padding-right: 310px;
 
 }
-

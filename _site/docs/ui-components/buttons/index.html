@@ -1,21 +1,566 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="googlebot" content="noindex"><meta name="robots" content="noindex"><title>Buttons - Marketman</title><meta name="Description" content=""><link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css"> <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script> <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script><link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/right-sidebar/right-sidebar.css"> <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <script type="text/javascript" src="http://localhost:4000/assets/navgoco/jquery.cookie.js"></script> <script type="text/javascript" src="http://localhost:4000/assets/navgoco/jquery.navgoco.js"></script><link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/nav.css"><body> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"> <symbol id="link" viewBox="0 0 16 16"><title>Link</title><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path> </symbol> </svg><div class="page-wrap"><div class="side-bar"><div class="site-header"> <a href="http://localhost:4000" class="site-title lh-tight"> Marketman </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button></div><div class="navigation main-nav js-main-nav"><ul id="navsmigoco" class="navigation-list nav"><li class="navigation-list-item"><a href="http://localhost:4000/" class="navigation-list-link">Home</a><li class="navigation-list-item"><a href="http://localhost:4000/docs/configuration/" class="navigation-list-link">Configuration</a><li class="navigation-list-item active"><a href="http://localhost:4000/docs/ui-components" class="navigation-list-link">UI Components</a><ul class="navigation-list-child-list "><li class="navigation-list-item active"><a href="http://localhost:4000/docs/ui-components/buttons/" class="navigation-list-link active">Buttons</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/typography/" class="navigation-list-link">Typography</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/labels/" class="navigation-list-link">Labels</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/tables/" class="navigation-list-link">Tables</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/lists/" class="navigation-list-link">Lists</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/code/" class="navigation-list-link">Code</a></ul><li class="navigation-list-item"><a href="http://localhost:4000/docs/utilities" class="navigation-list-link">Utilities</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/responsive-modifiers/" class="navigation-list-link">Responsive Modifiers</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/layout/" class="navigation-list-link">Layout</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/color/" class="navigation-list-link">Color</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/typography/" class="navigation-list-link">Typography</a></ul><li class="navigation-list-item"><a href="http://localhost:4000/docs/navigation-structure/" class="navigation-list-link">Navigation Structure</a><li class="navigation-list-item"><a href="http://localhost:4000/docs/customization/" class="navigation-list-link">Customization</a><li class="navigation-list-item"><a href="http://localhost:4000/docs/search/" class="navigation-list-link">Search</a><li class="navigation-list-item"><a href="http://localhost:4000/docs/reference" class="navigation-list-link">Reference</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/take-their-money/" class="navigation-list-link">Take Their Money</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/16-word-sl/" class="navigation-list-link">16 Word Sales Letter</a><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/number-3/" class="navigation-list-link">Test-html</a></ul><li class="navigation-list-item"><a href="http://localhost:4000/docs/index-test/" class="navigation-list-link">Markdown kitchen sink</a></ul><script type="text/javascript"> $(document).ready(function() { $('#navsmigoco').navgoco({ caretHtml: '<i class="some-random-icon-class"></i>', accordion: true, openClass: 'open', save: true, cookie: { name: 'navgoco', expires: false, path: '/' }, slide: { duration: 200, easing: 'swing' } }); }); </script></div><footer class="site-footer"><p class="text-small text-grey-dk-000 mb-4">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p></footer></div><div class="main-content-wrap js-main-content" tabindex="0"><div class="main-content"><div class="page-header js-page-header"><div class="search"><div class="search-input-wrap"> <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Marketman" aria-label="Search Marketman" autocomplete="off"> <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" /><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" /> </g> </svg></div><div class="js-search-results search-results-wrap"></div></div></div><div class="page" id="js-push-content"><nav class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/docs/ui-components">UI Components</a><li class="breadcrumb-nav-list-item"><span>Buttons</span></ol></nav><div id="main-content" class="page-content" role="main"><h1 class="no\_toc" id="buttons"> <a href="#buttons" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Buttons</h1><h2 class="no\_toc text-delta" id="table-of-contents"> <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Table of contents</h2><ol id="markdown-toc"><li><a href="#buttons" id="markdown-toc-buttons">Buttons</a><ol><li><a href="#table-of-contents" id="markdown-toc-table-of-contents">Table of contents</a><li><a href="#basic-button-styles" id="markdown-toc-basic-button-styles">Basic button styles</a><ol><li><a href="#links-that-look-like-buttons" id="markdown-toc-links-that-look-like-buttons">Links that look like buttons</a><li><a href="#button-element" id="markdown-toc-button-element">Button element</a></ol><li><a href="#using-utilities-with-buttons" id="markdown-toc-using-utilities-with-buttons">Using utilities with buttons</a><ol><li><a href="#button-size" id="markdown-toc-button-size">Button size</a><li><a href="#spacing-between-buttons" id="markdown-toc-spacing-between-buttons">Spacing between buttons</a></ol></ol></ol><hr /><h2 id="basic-button-styles"> <a href="#basic-button-styles" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Basic button styles</h2><h3 id="links-that-look-like-buttons"> <a href="#links-that-look-like-buttons" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Links that look like buttons</h3><div class="code-example"><p><a href="http://example.com/" class="btn">Link button</a></p><p><a href="http://example.com/" class="btn btn-purple">Link button</a> <a href="http://example.com/" class="btn btn-blue">Link button</a> <a href="http://example.com/" class="btn btn-green">Link button</a></p><p><a href="http://example.com/" class="btn btn-outline">Link button</a></p></div><div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn }
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en/us">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="googlebot" content="noindex">
+   <meta name="robots" content="noindex">
+   <title>Buttons - Marketman</title>
+
+   <meta name="Description" content="">
+
+   <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+   <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+   <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+   <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+   <!-- RIGHT SIDEBAR -->
+   <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/right-sidebar/right-sidebar.css">
+   <!-- END RIGHT SIDEBAR -->
+
+   <!-- NAVGOCO -->
+   <!-- Load JQuery -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <!-- Load jquery - COOKIE plugin -->
+   <script type="text/javascript" src="http://localhost:4000/assets/navgoco/jquery.cookie.js"></script>
+   <!-- Load jquery - NAVGOCO plugin - JAVASCRIPT -->
+   <script type="text/javascript" src="http://localhost:4000/assets/navgoco/jquery.navgoco.js"></script>
+   <!-- Load jquery - NAVGOCO plugin -  CSS - I'VE PUT THIS CSS in /assets/nav.css
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:4000/assets/navgoco/jquery.navgoco.css" /> 
+    <!-- END NAVGOCO -->
+
+   <!--NAV - CSS - FOR JUST-THE-DOCS AND NAVGOCO -->
+   <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/nav.css">
+   <!--END-->
+</head>
+
+<body>
+   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="link" viewBox="0 0 16 16">
+         <title>Link</title>
+         <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+      </symbol>
+   </svg>
+
+   <div class="page-wrap">
+
+      <!-- LEFT SIDEBAR -->
+      <div class="side-bar">
+         <div class="site-header">
+            <a href="http://localhost:4000" class="site-title lh-tight">
+  Marketman
+
+</a>
+            <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
+         </div>
+
+         <div class="navigation main-nav js-main-nav">
+              <ul id="navsmigoco" class="navigation-list nav"><li class="navigation-list-item"><a href="http://localhost:4000/" class="navigation-list-link">Home</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/configuration/" class="navigation-list-link">Configuration</a></li><li class="navigation-list-item active"><a href="http://localhost:4000/docs/ui-components" class="navigation-list-link">UI Components</a><ul class="navigation-list-child-list "><li class="navigation-list-item  active"><a href="http://localhost:4000/docs/ui-components/buttons/" class="navigation-list-link active">Buttons</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/typography/" class="navigation-list-link">Typography</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/labels/" class="navigation-list-link">Labels</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/tables/" class="navigation-list-link">Tables</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/lists/" class="navigation-list-link">Lists</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/code/" class="navigation-list-link">Code</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/utilities" class="navigation-list-link">Utilities</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/responsive-modifiers/" class="navigation-list-link">Responsive Modifiers</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/layout/" class="navigation-list-link">Layout</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/color/" class="navigation-list-link">Color</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/typography/" class="navigation-list-link">Typography</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/navigation-structure/" class="navigation-list-link">Navigation Structure</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/customization/" class="navigation-list-link">Customization</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/search/" class="navigation-list-link">Search</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/reference" class="navigation-list-link">Reference</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/take-their-money/" class="navigation-list-link">Take Their Money</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/16-word-sl/" class="navigation-list-link">16 Word Sales Letter</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/number-3/" class="navigation-list-link">Test-html</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/index-test/" class="navigation-list-link">Markdown kitchen sink</a></li></ul>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('#navsmigoco').navgoco({
+              caretHtml: '<i class="some-random-icon-class"></i>',
+              accordion: true,
+              openClass: 'open',
+              save: true,
+              cookie: {
+                  name: 'navgoco',
+                  expires: false,
+                  path: '/'
+              },
+              slide: {
+                  duration: 200,
+                  easing: 'swing'
+              }
+          });
+      });
+
+  </script>
+
+  <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.
+<script>$("li.nav-active").parents('li').toggleClass("nav-active");</script>-->
+
+         </div>
+         <footer class="site-footer">
+            <p class="text-small text-grey-dk-000 mb-4">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+         </footer>
+      </div>
+      <!-- END LEFT SIDEBAR -->
+
+      <div class="main-content-wrap js-main-content" tabindex="0">
+         <div class="main-content">
+            <div class="page-header js-page-header">
+               
+               <div class="search">
+                  <div class="search-input-wrap">
+                     <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Marketman" aria-label="Search Marketman" autocomplete="off">
+                     <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon">
+                        <title>Search</title>
+                        <g fill-rule="nonzero">
+                           <path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" />
+                           <path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" />
+                        </g>
+                     </svg>
+                  </div>
+                  <div class="js-search-results search-results-wrap"></div>
+               </div>
+               
+               
+            </div>
+
+            <!-- MIDDLE SECTION -->
+            <div class="page" id="js-push-content">
+               
+               
+               <nav class="breadcrumb-nav">
+                  <ol class="breadcrumb-nav-list">
+                     
+                     <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/docs/ui-components">UI Components</a></li>
+                     
+                     <li class="breadcrumb-nav-list-item"><span>Buttons</span></li>
+                  </ol>
+               </nav>
+               
+               
+               <div id="main-content" class="page-content" role="main">
+                  
+                  <h1 class="no\_toc" id="buttons">
+        
+        
+          <a href="#buttons" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Buttons
+        
+        
+      </h1>
+    
+      <h2 class="no\_toc text-delta" id="table-of-contents">
+        
+        
+          <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Table of contents
+        
+        
+      </h2>
+
+<ol id="markdown-toc">
+  <li><a href="#buttons" id="markdown-toc-buttons">Buttons</a>    <ol>
+      <li><a href="#table-of-contents" id="markdown-toc-table-of-contents">Table of contents</a></li>
+      <li><a href="#basic-button-styles" id="markdown-toc-basic-button-styles">Basic button styles</a>        <ol>
+          <li><a href="#links-that-look-like-buttons" id="markdown-toc-links-that-look-like-buttons">Links that look like buttons</a></li>
+          <li><a href="#button-element" id="markdown-toc-button-element">Button element</a></li>
+        </ol>
+      </li>
+      <li><a href="#using-utilities-with-buttons" id="markdown-toc-using-utilities-with-buttons">Using utilities with buttons</a>        <ol>
+          <li><a href="#button-size" id="markdown-toc-button-size">Button size</a></li>
+          <li><a href="#spacing-between-buttons" id="markdown-toc-spacing-between-buttons">Spacing between buttons</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+    <hr />
+      <h2 id="basic-button-styles">
+        
+        
+          <a href="#basic-button-styles" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Basic button styles
+        
+        
+      </h2>
+    
+      <h3 id="links-that-look-like-buttons">
+        
+        
+          <a href="#links-that-look-like-buttons" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Links that look like buttons
+        
+        
+      </h3>
+
+<div class="code-example">
+  <p><a href="http://example.com/" class="btn">Link button</a></p>
+
+  <p><a href="http://example.com/" class="btn btn-purple">Link button</a>
+<a href="http://example.com/" class="btn btn-blue">Link button</a>
+<a href="http://example.com/" class="btn btn-green">Link button</a></p>
+
+  <p><a href="http://example.com/" class="btn btn-outline">Link button</a></p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn }
 
 <span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-purple }
 <span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-blue }
 <span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-green }
 
 <span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-outline }
-</code></pre></div></div><h3 id="button-element"> <a href="#button-element" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Button element</h3><p>GitHub Flavored Markdown does not support the <code class="highlighter-rouge">button</code> element, so you’ll have to use inline HTML for this:</p><div class="code-example"> <button type="button" name="button" class="btn">Button element</button></div><div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">name=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Button element<span class="nt">&lt;/button&gt;</span>
-</code></pre></div></div><hr /><h2 id="using-utilities-with-buttons"> <a href="#using-utilities-with-buttons" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Using utilities with buttons</h2><h3 id="button-size"> <a href="#button-size" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Button size</h3><p>Wrap the button in a container that uses the <a href="/docs/utilities/typography/">font-size utility classes</a> to scale buttons:</p><div class="code-example"><p><span class="fs-6"> <a href="http://example.com/" class="btn">Big ass button</a> </span></p><p><span class="fs-3"> <a href="http://example.com/" class="btn">Tiny ass button</a> </span></p></div><div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fs-8"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+    
+      <h3 id="button-element">
+        
+        
+          <a href="#button-element" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Button element
+        
+        
+      </h3>
+
+<p>GitHub Flavored Markdown does not support the <code class="highlighter-rouge">button</code> element, so you’ll have to use inline HTML for this:</p>
+
+<div class="code-example">
+<button type="button" name="button" class="btn">Button element</button>
+</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">name=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Button element<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+    <hr />
+      <h2 id="using-utilities-with-buttons">
+        
+        
+          <a href="#using-utilities-with-buttons" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Using utilities with buttons
+        
+        
+      </h2>
+    
+      <h3 id="button-size">
+        
+        
+          <a href="#button-size" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Button size
+        
+        
+      </h3>
+
+<p>Wrap the button in a container that uses the <a href="/docs/utilities/typography/">font-size utility classes</a> to scale buttons:</p>
+
+<div class="code-example">
+  <p><span class="fs-6">
+<a href="http://example.com/" class="btn">Big ass button</a>
+</span></p>
+
+  <p><span class="fs-3">
+<a href="http://example.com/" class="btn">Tiny ass button</a>
+</span></p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fs-8"</span><span class="nt">&gt;</span>
 <span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn }
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fs-3"</span><span class="nt">&gt;</span>
 <span class="p">[</span><span class="nv">Tiny ass button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn }
 <span class="nt">&lt;/span&gt;</span>
-</code></pre></div></div><h3 id="spacing-between-buttons"> <a href="#spacing-between-buttons" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Spacing between buttons</h3><p>Use the <a href="/docs/utilities/layout/#spacing">margin utility classes</a> to add spacing between two buttons in the same block.</p><div class="code-example"><p><a href="http://example.com/" class="btn btn-purple mr-2">Button with space</a> <a href="http://example.com/" class="btn btn-blue mr-2">Button </a></p><p><a href="http://example.com/" class="btn btn-green mr-4">Button with more space</a> <a href="http://example.com/" class="btn btn-blue">Button </a></p></div><div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Button with space</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-purple .mr-2 }
+</code></pre></div></div>
+    
+      <h3 id="spacing-between-buttons">
+        
+        
+          <a href="#spacing-between-buttons" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> Spacing between buttons
+        
+        
+      </h3>
+
+<p>Use the <a href="/docs/utilities/layout/#spacing">margin utility classes</a> to add spacing between two buttons in the same block.</p>
+
+<div class="code-example">
+  <p><a href="http://example.com/" class="btn btn-purple mr-2">Button with space</a>
+<a href="http://example.com/" class="btn btn-blue mr-2">Button </a></p>
+
+  <p><a href="http://example.com/" class="btn btn-green mr-4">Button with more space</a>
+<a href="http://example.com/" class="btn btn-blue">Button </a></p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Button with space</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-purple .mr-2 }
 <span class="p">[</span><span class="nv">Button </span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-blue }
 
 <span class="p">[</span><span class="nv">Button with more space</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-green .mr-4 }
 <span class="p">[</span><span class="nv">Button </span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn .btn-blue }
-</code></pre></div></div></div></div><div class="right-sidebar" id="js-pushed-sidebar"><div class="hypothesis-container"></div></div><div class="right-sidebar-button-container"> <button class="right-sidebar-toggle" id="js-toggle-button"><div class="sidebar-out"> <svg width="100%" height="100%" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.80705 9.40539L1.09995 8.69829L1.09995 8.69829L1.80705 9.40539ZM10.486 2.1407C10.8765 1.75018 10.8765 1.11701 10.486 0.726487C10.0954 0.335963 9.46227 0.335963 9.07175 0.726487L10.486 2.1407ZM9.07175 19.4985C9.46227 19.889 10.0954 19.889 10.486 19.4985C10.8765 19.108 10.8765 18.4748 10.486 18.0843L9.07175 19.4985ZM1.80705 10.8196L2.51416 10.1125L2.51416 10.1125L1.80705 10.8196ZM2.51416 10.1125L10.486 2.1407L9.07175 0.726487L1.09995 8.69829L2.51416 10.1125ZM10.486 18.0843L2.51416 10.1125L1.09995 11.5267L9.07175 19.4985L10.486 18.0843ZM1.09995 8.69829C0.318899 9.47933 0.318897 10.7457 1.09995 11.5267L2.51416 10.1125L2.51416 10.1125L1.09995 8.69829Z" fill="white" /> </svg></div><div class="sidebar-in"> <svg width="100%" height="100%" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.48592 8.9718L10.193 8.26469L10.193 8.26469L9.48592 8.9718ZM0.80701 1.70711C0.416485 1.31658 0.416485 0.683418 0.807009 0.292893C1.19753 -0.0976311 1.8307 -0.0976311 2.22122 0.292893L0.80701 1.70711ZM2.22122 19.0649C1.8307 19.4554 1.19753 19.4554 0.80701 19.0649C0.416485 18.6744 0.416485 18.0412 0.807009 17.6507L2.22122 19.0649ZM9.48592 10.386L8.77881 9.6789L8.77881 9.6789L9.48592 10.386ZM8.77881 9.67891L0.80701 1.70711L2.22122 0.292893L10.193 8.26469L8.77881 9.67891ZM0.807009 17.6507L8.77881 9.6789L10.193 11.0931L2.22122 19.0649L0.807009 17.6507ZM10.193 8.26469C10.9741 9.04574 10.9741 10.3121 10.193 11.0931L8.77881 9.6789L8.77881 9.67891L10.193 8.26469Z" fill="white" /> </svg></div></button> <button class="local-storage-button" onclick="localStorage.clear(); alert('localStorage has been cleared');"> <svg width="90%" height="90%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 17L1 1M17 1L1 17" stroke="white" stroke-width="2" stroke-linecap="round" /> </svg> </button></div><script> const bodyElem = document.querySelector('body'); window.hypothesisConfig = function() { return { onLayoutChange: function(info) { if (info.expanded) { bodyElem.classList.add('is-open'); } else { bodyElem.classList.remove('is-open'); } }, externalContainerSelector: '.hypothesis-container', branding: { accentColor: 'red', appBackgroundColor: '#0000', ctaBackgroundColor: '', ctaTextColor: '', selectionFontFamily: 'Garamond, serif', annotationFontFamily: '' } } } </script> <script src="https://hypothes.is/embed.js" async></script> <script> // we're looking for an element `.annotator-frame` var hypothesisElemSelector = '.annotator-frame'; document.addEventListener('DOMContentLoaded', function() {}); function listenForHypothesis() { // Select the node that will be observed for mutations const targetNode = document.querySelector(hypothesisElemSelector); // Options for the observer (which mutations to observe) const config = { attributes: true, childList: false, subtree: false }; // Callback function to execute when mutations are observed const callback = function(mutationsList, observer) { for (let mutation of mutationsList) { if (mutation.type === 'attributes' && mutation.attributeName === 'class') { console.log('The ' + mutation.attributeName + ' attribute was modified.'); if (targetNode.classList.contains('annotator-collapsed')) { bodyElem.classList.remove('is-open'); console.log('Collapsed!') } else { console.log('Open!'); // check if we should open bodyElem.classList.add('is-open'); } } } }; // Create an observer instance linked to the callback function const observer = new MutationObserver(callback); // Start observing the target node for configured mutations observer.observe(targetNode, config); } function initHypothesisWatcher() { var timer; if (!document.querySelector(hypothesisElemSelector)) { console.log('Did not find hypothesis; retrying in 1 second.'); // cancel timer and retry if (timer) { window.clearTimeout(timer); } timer = window.setTimeout(function() { initHypothesisWatcher(); }, 1000); } else { console.log('Found hypothesis! :D') // kill timers if (timer) { window.clearTimeout(timer); } // ready, lanch the listner listenForHypothesis(); } } </script> <script> // Clear the console so that we can clearly see what's being logged console.clear(); /** * Define the elements we will be working with. * --- * NOTE: #id selectors are used over .classes because jQuery will use the * .getElementByID() method to traverse the DOM, which is much faster. */ var $toggleButton = $('#js-toggle-button'); var $pushSelectors = $('#js-push-content, #js-pushed-sidebar'); // Set up an empty global variable to store the state later var sidebarIsOpen; // ----------------------------------------------------------------------------- /** * Default state for the sidebar. * --- * NOTE: Use "true" to set the sidebar to be open by default, and "false" to set * it to be closed by default. */ var openSidebarOnLoad = true; // ----------------------------------------------------------------------------- // Set up a function to be used by the click event on $toggleButton function toggleSidebar() { /** * Alternate sidebarIsOpen between true/false on each click. * --- * NOTE: This needs to happen before checking if the sidebar is open so that * the localStorage items will be added in the right sequence. */ sidebarIsOpen = !sidebarIsOpen; // Check if the content has the "open-on-load" class if ($pushSelectors.hasClass('oooopen-on-load')) { // If it does, remove the class so that we can add the "open" class later $pushSelectors.removeClass('oooopen-on-load'); // Let's send a message to the console to let us know what happened console.log('The \'oooopen-on-load\' class has been removed.'); } // Check if the sidebar should be open if (sidebarIsOpen) { /** * If the sidebar should be open, we'll add a class to the content to * animate the sidebar into the "open" position. */ $pushSelectors.addClass('oooopen'); /** * We will also add the "opened" state to a localStorage item. This is the * property that tells the browser that the menu should be open. * --- * NOTE: localStorage will only store strings, we can use "opened" and * "closed" as values to determine which state should be set. */ localStorage.setItem('sidebar', 'opened'); // ^ ^ // key value // And send a message to the console to let us know... console.log('The \'opened\' storage item has been set.'); } else { /** * If the sidebar should not be open, we'll remove the "open" class from * the content which will animate the sidebar back into the * "closed" position. */ $pushSelectors.removeClass('oooopen'); // Now set the storage item to "closed"... localStorage.setItem('sidebar', 'closed'); // And send a message to the console to let us know... console.log('The \'closed\' storage item has been set.'); } } // Next we'll need to check if the storage item exists at all if (localStorage.getItem('sidebar') === null) { /** * If it doesn't, this means that our dear user has not yet visited the page, * so we should set the state to what ever the default state is. * --- * NOTE: This will also be the case if the user's browser is set to reject * cookies, which includes localStorage. */ sidebarIsOpen = openSidebarOnLoad; // And send a message to the console to let us know... console.log('The default state is ' + openSidebarOnLoad); } else { // If the storage item does exist, and the value is set to "opened"... if (localStorage.getItem('sidebar') === 'opened') { // Set the state to open sidebarIsOpen = true; // And send a message to the console to let us know... console.log('The \'opened\' storage item is set; the sidebar should be open.'); } else { // Otherwise, the value should be "closed"; set the state accordingly sidebarIsOpen = false; // And send a message to the console to let us know... console.log('The \'closed\' storage item is set; the sidebar should be closed.'); } } // Does the "opened" storage item exist, or is the default state true? if (sidebarIsOpen) { /** * If so, the sidebar should be open when the page loads, so add the * "open-on-load" class to content to animate the sidebar into position. */ $pushSelectors.addClass('oooopen-on-load'); // Let's have the console tell us what's happening... console.log('The \'oooopen-on-load\' class has been added.'); } /** * Finally, fire the toggleSidebar function on each click. * --- * NOTE: This is called last so that the script will first check against all * other conditions, before doing any actual toggling. */ $toggleButton.on('click', toggleSidebar); </script></div></div></div>
+</code></pre></div></div>
+                  
+
+                  
+
+                  
+
+               </div>
+            </div>
+            <!-- END MIDDLE SECTION -->
+
+            <!-- RIGHT SIDEBAR (INCLUDING JAVASCRIPT) -->
+                <!--RIGHT SIDEBAR-->
+    <div class="right-sidebar" id="js-pushed-sidebar">
+      <div class="hypothesis-container">
+        <!-- hypothesis will be placed here -->
+      </div>
+    </div>
+
+    <!--BUTTON CONTAINER-->
+    <div class="right-sidebar-button-container">
+      <button class="right-sidebar-toggle" id="js-toggle-button">
+        <div class="sidebar-out">
+          <svg width="100%" height="100%" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.80705 9.40539L1.09995 8.69829L1.09995 8.69829L1.80705 9.40539ZM10.486 2.1407C10.8765 1.75018 10.8765 1.11701 10.486 0.726487C10.0954 0.335963 9.46227 0.335963 9.07175 0.726487L10.486 2.1407ZM9.07175 19.4985C9.46227 19.889 10.0954 19.889 10.486 19.4985C10.8765 19.108 10.8765 18.4748 10.486 18.0843L9.07175 19.4985ZM1.80705 10.8196L2.51416 10.1125L2.51416 10.1125L1.80705 10.8196ZM2.51416 10.1125L10.486 2.1407L9.07175 0.726487L1.09995 8.69829L2.51416 10.1125ZM10.486 18.0843L2.51416 10.1125L1.09995 11.5267L9.07175 19.4985L10.486 18.0843ZM1.09995 8.69829C0.318899 9.47933 0.318897 10.7457 1.09995 11.5267L2.51416 10.1125L2.51416 10.1125L1.09995 8.69829Z" fill="white" />
+          </svg>
+        </div>
+        <div class="sidebar-in">
+          <svg width="100%" height="100%" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.48592 8.9718L10.193 8.26469L10.193 8.26469L9.48592 8.9718ZM0.80701 1.70711C0.416485 1.31658 0.416485 0.683418 0.807009 0.292893C1.19753 -0.0976311 1.8307 -0.0976311 2.22122 0.292893L0.80701 1.70711ZM2.22122 19.0649C1.8307 19.4554 1.19753 19.4554 0.80701 19.0649C0.416485 18.6744 0.416485 18.0412 0.807009 17.6507L2.22122 19.0649ZM9.48592 10.386L8.77881 9.6789L8.77881 9.6789L9.48592 10.386ZM8.77881 9.67891L0.80701 1.70711L2.22122 0.292893L10.193 8.26469L8.77881 9.67891ZM0.807009 17.6507L8.77881 9.6789L10.193 11.0931L2.22122 19.0649L0.807009 17.6507ZM10.193 8.26469C10.9741 9.04574 10.9741 10.3121 10.193 11.0931L8.77881 9.6789L8.77881 9.67891L10.193 8.26469Z" fill="white" />
+          </svg>
+        </div>
+      </button>
+      <button class="local-storage-button" onclick="localStorage.clear(); alert('localStorage has been cleared');">
+        <svg width="90%" height="90%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 17L1 1M17 1L1 17" stroke="white" stroke-width="2" stroke-linecap="round" />
+        </svg>
+
+      </button>
+    </div>
+
+    <!--HYPOTHESIS SCRIPTS -->
+    <script>
+      const bodyElem = document.querySelector('body');
+      window.hypothesisConfig = function() {
+        return {
+          onLayoutChange: function(info) {
+            if (info.expanded) {
+              bodyElem.classList.add('is-open');
+            } else {
+              bodyElem.classList.remove('is-open');
+            }
+          },
+          externalContainerSelector: '.hypothesis-container',
+          branding: {
+            accentColor: 'red',
+            appBackgroundColor: '#0000',
+            ctaBackgroundColor: '',
+            ctaTextColor: '',
+            selectionFontFamily: 'Garamond, serif',
+            annotationFontFamily: ''
+          }
+        }
+      }
+
+    </script>
+    <script src="https://hypothes.is/embed.js" async></script>
+    <script>
+      // we're looking for an element `.annotator-frame`
+      var hypothesisElemSelector = '.annotator-frame';
+      document.addEventListener('DOMContentLoaded', function() {});
+
+      function listenForHypothesis() {
+        // Select the node that will be observed for mutations
+        const targetNode = document.querySelector(hypothesisElemSelector);
+        // Options for the observer (which mutations to observe)
+        const config = {
+          attributes: true,
+          childList: false,
+          subtree: false
+        };
+        // Callback function to execute when mutations are observed
+        const callback = function(mutationsList, observer) {
+          for (let mutation of mutationsList) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+              console.log('The ' + mutation.attributeName + ' attribute was modified.');
+              if (targetNode.classList.contains('annotator-collapsed')) {
+                bodyElem.classList.remove('is-open');
+                console.log('Collapsed!')
+              } else {
+                console.log('Open!');
+                // check if we should open
+                bodyElem.classList.add('is-open');
+              }
+            }
+          }
+        };
+        // Create an observer instance linked to the callback function
+        const observer = new MutationObserver(callback);
+        // Start observing the target node for configured mutations
+        observer.observe(targetNode, config);
+      }
+
+      function initHypothesisWatcher() {
+        var timer;
+        if (!document.querySelector(hypothesisElemSelector)) {
+          console.log('Did not find hypothesis; retrying in 1 second.');
+          // cancel timer and retry
+          if (timer) {
+            window.clearTimeout(timer);
+          }
+          timer = window.setTimeout(function() {
+            initHypothesisWatcher();
+          }, 1000);
+        } else {
+          console.log('Found hypothesis! :D')
+          // kill timers
+          if (timer) {
+            window.clearTimeout(timer);
+          }
+          // ready, lanch the listner
+          listenForHypothesis();
+        }
+      }
+
+    </script>
+    <!--END HYPOTHESIS SCRIPTS -->
+
+
+    <!--RIGHT SIDEBAR --FUNCTION & LOCAL STORAGE - JAVASCRIPT -->
+    <script>
+      // Clear the console so that we can clearly see what's being logged
+      console.clear();
+
+      /**
+       * Define the elements we will be working with.
+       * ---
+       * NOTE: #id selectors are used over .classes because jQuery will use the
+       *       .getElementByID() method to traverse the DOM, which is much faster.
+       */
+      var $toggleButton = $('#js-toggle-button');
+      var $pushSelectors = $('#js-push-content, #js-pushed-sidebar');
+
+      // Set up an empty global variable to store the state later
+      var sidebarIsOpen;
+
+      // -----------------------------------------------------------------------------
+
+      /**
+       * Default state for the sidebar.
+       * ---
+       * NOTE: Use "true" to set the sidebar to be open by default, and "false" to set
+       *       it to be closed by default.
+       */
+      var openSidebarOnLoad = false;
+
+      // -----------------------------------------------------------------------------
+
+      // Set up a function to be used by the click event on $toggleButton
+      function toggleSidebar() {
+
+        /**
+         * Alternate sidebarIsOpen between true/false on each click.
+         * ---
+         * NOTE: This needs to happen before checking if the sidebar is open so that
+         *       the localStorage items will be added in the right sequence.
+         */
+        sidebarIsOpen = !sidebarIsOpen;
+
+        // Check if the content has the "open-on-load" class
+        if ($pushSelectors.hasClass('oooopen-on-load')) {
+
+          // If it does, remove the class so that we can add the "open" class later
+          $pushSelectors.removeClass('oooopen-on-load');
+
+          // Let's send a message to the console to let us know what happened
+          console.log('The \'oooopen-on-load\' class has been removed.');
+
+        }
+
+        // Check if the sidebar should be open
+        if (sidebarIsOpen) {
+
+          /**
+           * If the sidebar should be open, we'll add a class to the content to
+           * animate the sidebar into the "open" position.
+           */
+          $pushSelectors.addClass('oooopen');
+
+          /**
+           * We will also add the "opened" state to a localStorage item. This is the
+           * property that tells the browser that the menu should be open.
+           * ---
+           * NOTE: localStorage will only store strings, we can use "opened" and
+           *       "closed" as values to determine which state should be set.
+           */
+          localStorage.setItem('sidebar', 'opened');
+          //                          ^             ^
+          //                         key          value
+
+          // And send a message to the console to let us know...
+          console.log('The \'opened\' storage item has been set.');
+
+        } else {
+
+          /**
+           * If the sidebar should not be open, we'll remove the "open" class from
+           * the content which will animate the sidebar back into the
+           * "closed" position.
+           */
+          $pushSelectors.removeClass('oooopen');
+
+          // Now set the storage item to "closed"...
+          localStorage.setItem('sidebar', 'closed');
+
+          // And send a message to the console to let us know...
+          console.log('The \'closed\' storage item has been set.');
+
+        }
+      }
+
+      // Next we'll need to check if the storage item exists at all
+      if (localStorage.getItem('sidebar') === null) {
+
+        /**
+         * If it doesn't, this means that our dear user has not yet visited the page,
+         * so we should set the state to what ever the default state is.
+         * ---
+         * NOTE: This will also be the case if the user's browser is set to reject
+         *       cookies, which includes localStorage.
+         */
+        sidebarIsOpen = openSidebarOnLoad;
+
+        // And send a message to the console to let us know...
+        console.log('The default state is ' + openSidebarOnLoad);
+
+      } else {
+
+        // If the storage item does exist, and the value is set to "opened"...
+        if (localStorage.getItem('sidebar') === 'opened') {
+
+          // Set the state to open
+          sidebarIsOpen = true;
+
+          // And send a message to the console to let us know...
+          console.log('The \'opened\' storage item is set; the sidebar should be open.');
+
+        } else {
+
+          // Otherwise, the value should be "closed"; set the state accordingly
+          sidebarIsOpen = false;
+
+          // And send a message to the console to let us know...
+          console.log('The \'closed\' storage item is set; the sidebar should be closed.');
+
+        }
+      }
+
+      // Does the "opened" storage item exist, or is the default state true?
+      if (sidebarIsOpen) {
+
+        /**
+         * If so, the sidebar should be open when the page loads, so add the
+         * "open-on-load" class to content to animate the sidebar into position.
+         */
+        $pushSelectors.addClass('oooopen-on-load');
+
+        // Let's have the console tell us what's happening...
+        console.log('The \'oooopen-on-load\' class has been added.');
+
+      }
+
+      /**
+       * Finally, fire the toggleSidebar function on each click.
+       * ---
+       * NOTE: This is called last so that the script will first check against all
+       *       other conditions, before doing any actual toggling.
+       */
+      $toggleButton.on('click', toggleSidebar);
+
+    </script>
+
+            <!-- END RIGHT SIDEBAR -->
+
+         </div>
+      </div>
+   </div>
+
+</body>
+
+</html>
