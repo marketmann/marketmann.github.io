@@ -9,13 +9,16 @@
     <meta name="Description" content="{{ page.description }}">
 
     <link rel="shortcut icon" href="{{ 'favicon.ico' | absolute_url }}" type="image/x-icon">
-
-    <link rel="stylesheet" href="{{ '/assets/css/just-the-docs.css' | absolute_url }}">
+    
+    <!--MAIN CSS STYLE SHEETS -->
+    <link id="style-light" rel="stylesheet" href="{{ '/assets/css/just-the-docs.css' | absolute_url }}">
+    <link id="style-dark" rel="stylesheet" href="{{ '/assets/css/dark-mode-preview.css' | absolute_url }}">
+    
     <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | absolute_url }}"></script>
     <script type="text/javascript" src="{{ '/assets/js/just-the-docs.js' | absolute_url }}"></script>
     
     <!-- RIGHT SIDEBAR -->
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/right-sidebar/right-sidebar.css' | absolute_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/right-sidebar/right-sidebar-&-layout.css' | absolute_url }}">
     <!-- END RIGHT SIDEBAR -->
 
    <!-- NAVGOCO -->
@@ -27,9 +30,9 @@
     <script type="text/javascript" src="{{ '/assets/navgoco/jquery.navgoco.js' | absolute_url }}"></script>
     <!-- Load jquery - NAVGOCO plugin -  CSS - I'VE PUT THIS CSS in /assets/nav.css
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/navgoco/jquery.navgoco.css' | absolute_url }}" /> 
-    <!-- END NAVGOCO -->
+    <!-- END NAVGOCO ------>
     
     <!--NAV - CSS - FOR JUST-THE-DOCS AND NAVGOCO -->
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/nav.css' | absolute_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/navgoco.css' | absolute_url }}">
     <!--END-->
 </head>

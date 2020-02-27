@@ -32,9 +32,6 @@ search_tokenizer_separator: /[\s/]+/
 # Enable or disable heading anchors
 heading_anchors: true
 
-# Color scheme currently only supports "dark" or nil (default)
-color_scheme: dark
-
 
 compress_html:
   clippings: all
