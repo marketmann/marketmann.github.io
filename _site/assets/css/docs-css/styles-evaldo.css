@@ -2,14 +2,11 @@ link#style-dark ~ .page-wrap .pagecontent {
    font-family: "Warnok Pro";
    font-weight: 400;
    font-size: 1.4rem;
-   color: hsl(220, 0%, 75%);
+   color: hsl(220, 0%, 73%);
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
 
-link#style-light[href*="just-the-docs"] ~ .page-wrap .pagecontent {
-   color: red;
-}
 
 /*
 body.text-indentation p, body.text-indentation h4, body.text-indentation h5, body.text-indentation h6 {
