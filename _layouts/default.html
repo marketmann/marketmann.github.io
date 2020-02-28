@@ -11,6 +11,10 @@ layout: table_wrappers
 <!-- END RIGHT SIDEBAR -->
 
 <body>
+      <!--MAIN CSS STYLE SHEETS -->
+    <link id="style-light" rel="stylesheet" href="{{ '/assets/css/just-the-docs.css' | absolute_url }}">
+    <link id="style-dark" rel="stylesheet" href="{{ '/assets/css/dark-mode-preview.css' | absolute_url }}">
+    <!--MAIN CSS STYLE SHEETS -->
    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="link" viewBox="0 0 16 16">
          <title>Link</title>
@@ -80,7 +84,7 @@ layout: table_wrappers
                </nav>
                {% endif %}
                {% endunless %}
-               <div id="main-content" class="page-content" role="main">
+               <div id="main-content" class="pagecontent" role="main">
                   {% if site.heading_anchors != false %}
                   {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#link\"></use></svg>" anchorClass="anchor-heading" %}
                   {% else %}

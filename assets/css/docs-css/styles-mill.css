@@ -1,0 +1,434 @@
+html {
+    margin: 0 auto;
+    width: 100%;
+}
+
+link#style-dark ~ .page-wrap .pagecontent {
+    font-family: "SF UI DISPLAY";
+    font-weight:400;
+    font-size: 16.5px;
+    line-height: 22.5px;
+    background-color: hsl(220,8%,10.6%);
+    color: hsl(220, 7.04%, 76.04%);
+    margin: 0 auto;
+    padding: 10px;
+    letter-spacing: .1px;
+    -webkit-font-smoothing:antialiased;
+}
+
+link#style-dark ~ .page-wrap .pagecontent h1.title {
+    padding-top: 54px;
+    padding-bottom: 6px;
+    margin-top: 130px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 148px;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    line-height: 0.9;
+    text-align: center;
+    font-family: "Warsaw Gothic";
+    -webkit-font-smoothing: antialiased;
+    color: white;
+}
+
+link#style-dark ~ .page-wrap .pagecontent .t-l {
+    margin-left: -11px !important;
+}
+
+link#style-dark ~ .page-wrap .pagecontent p {
+margin-top:17px;
+    margin-bottom:16px;
+}
+
+link#style-dark ~ .page-wrap .pagecontent strong {
+    color: hsl(210, 7%, 90%);
+}
+
+link#style-dark ~ .page-wrap .pagecontent h1 {
+    padding-top: 80px;
+    font-weight: 900;
+    padding-bottom: 30px;
+    font-size: 54px;
+    line-height: 1.1;
+    text-align: left;
+    color: white;
+    letter-spacing: -1.3px;
+}
+
+link#style-dark ~ .page-wrap .pagecontent h2 {
+    padding-top: 40px;
+    font-weight:800;
+    font-size: 30px;
+    padding-bottom: 2px;
+    line-height: 1.3;
+    text-align: left;
+    color: hsl(215, 4.04%, 85.04%);
+    letter-spacing: -0.6px;
+    margin-bottom:0px;
+}
+
+link#style-dark ~ .page-wrap .pagecontent h3 {
+    padding-top: 40px;
+    font-size: 21px;
+    padding-bottom: 0px;
+    line-height: 1.0;
+    text-align: left;
+    font-weight: 700;
+    color: hsl(215, 4.04%, 85.04%);
+}
+
+link#style-dark ~ .page-wrap .pagecontent h4 {
+    padding-top: 12pt;
+    font-weight: 700;
+    font-size: 12pt;
+    padding-bottom: 2pt;
+    line-height: 1.0;
+    page-break-after: avoid;
+    text-align: left
+}
+
+link#style-dark ~ .page-wrap .pagecontent h5 {
+    padding-top: 11pt;
+    font-weight: 700;
+    font-size: 11pt;
+    padding-bottom: 2pt;
+    line-height: 1.0;
+    page-break-after: avoid;
+    text-align: left
+}
+
+link#style-dark ~ .page-wrap .pagecontent h6 {
+    padding-top: 10pt;
+    font-weight: 700;
+    font-size: 10pt;
+    padding-bottom: 2pt;
+    line-height: 1.0;
+    page-break-after: avoid;
+    text-align: left
+}
+
+link#style-dark ~ .page-wrap .pagecontent img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 3px;
+    border: 1px solid hsla(216, 9%, 40%, 1.00);
+    max-width:90%;
+    margin:0 auto;
+    display: block;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+
+link#style-dark ~ .page-wrap .pagecontent table {
+    background-color: hsla(215, 10%, 15%, 1);
+    color: hsl(215, 4.04%, 79.04%);
+    border-radius: 5px;
+    padding: 14px 24px;
+    margin: 0 auto;
+    max-width: 85%;
+    font-family: "SegoeUI";
+    margin-top:40px;
+    margin-bottom:40px;
+    display: block;
+    position: relative;
+    border: 1px solid hsla(220, 10%, 27%, 1);
+    letter-spacing: 0px;
+}
+link#style-dark ~ .page-wrap .pagecontent table:before {
+    content:"example";
+    color: hsla(215, 4.04%, 79.04%,0.3);
+    -webkit-font-smoothing:subpixel-antialiased;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    font-family: Prima Sans Mono;
+    font-size: 0.7em;
+}
+link#style-dark ~ .page-wrap .pagecontent table p {
+    margin-top:12px;
+    margin-bottom:12px;
+    line-height: 1.3;
+    font-size:0.94em;
+}
+link#style-dark ~ .page-wrap .pagecontent a {
+    text-decoration: none;
+    color:#18A0FB;
+}
+link#style-dark ~ .page-wrap .pagecontent ul li, ol li {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+link#style-dark ~ .page-wrap .pagecontent mark {
+    background: hsla(60, 110%,39%,0.4);
+}
+link#style-dark ~ .page-wrap .pagecontent .author-container {
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    max-width: 379px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+link#style-dark ~ .page-wrap .pagecontent .author-name {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width: 33%;
+
+}
+
+link#style-dark ~ .page-wrap .pagecontent .author-pin-left-container {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+}
+
+link#style-dark ~ .page-wrap .pagecontent .author-pin-right-container {
+    display: flex;
+    width: 30%;
+    justify-content: flex-start
+}
+
+link#style-dark ~ .page-wrap .pagecontent .author-pin {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: white;
+    border-radius: 4px;
+}
+
+/*BOLD - Converted*/
+link#style-dark ~ .page-wrap .pagecontent .c13, strong {
+    font-weight: 800;
+}
+
+/* ITALIC - Converted*/
+link#style-dark ~ .page-wrap .pagecontent .c18 {
+    font-style: italic
+}
+
+/*BOLD & ITALIC - COnverted*/
+link#style-dark ~ .page-wrap .pagecontent .c67 {
+    font-weight: 700;
+    font-style: italic
+}
+
+/**
+ UNDERLINE -Converted*/
+link#style-dark ~ .page-wrap .pagecontent .c24 {
+    -webkit-text-decoration-skip: none;
+    text-decoration: underline;
+}
+
+/** 
+ BOLD & UNDERLINE*/
+link#style-dark ~ .page-wrap .pagecontent .c19 {
+    -webkit-text-decoration-skip: none;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/** CENTERED TEXT -Converted */
+link#style-dark ~ .page-wrap .pagecontent .c33 {
+    text-align: center;
+}
+
+link#style-dark ~ .page-wrap .pagecontent .text-centered {
+    text-align: center;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+
+/** 
+ INDENTED - Converted*/
+link#style-dark ~ .page-wrap .pagecontent .c59,
+link#style-dark ~ .page-wrap .pagecontent .c-indented {
+    padding-left: 27pt;
+    text-indent: 0px;
+}
+/*FINAL LIST BOTTOM MARGIN */
+link#style-dark ~ .page-wrap .pagecontent .f-marg {
+    padding-bottom:10px;
+}
+
+
+/********
+ ********
+ ********
+ ********
+ FONTS 
+ ********/
+/* SF UI DISPLAY - 200 - Thin*/
+@font-face {
+    font-family: "SF UI DISPLAY";
+    src: url('https://dl.dropboxusercontent.com/s/9rq3s86l7kbmygi/SF%20UI%20Display%20Thin.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/9vcito020465x3c/SF%20UI%20Display%20Thin.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/q7sgwrd3nmh6xby/SF%20UI%20Display%20Thin.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/akucr572zf96c5j/SF%20UI%20Display%20Thin.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/b610tpzq0iinmhl/SF%20UI%20Display%20Thin.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/r1ne1xlc8vhhykn/SF%20UI%20Display%20Thin.eot?raw=1') format('embedded-opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* SF UI DISPLAY - 300 - Light*/
+@font-face {
+    font-family: "SF UI DISPLAY";
+    src: url('https://dl.dropboxusercontent.com/s/8o6gajubp4nt91n/SF%20UI%20Display%20Light.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/ah23o4rurxhsh3i/SF%20UI%20Display%20Light.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/7poaypphib3pg6j/SF%20UI%20Display%20Light.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/2m835o0knezmo73/SF%20UI%20Display%20Light.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/patuumryt0ufjuj/SF%20UI%20Display%20Light.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/udq2f4rk0n1vct6/SF%20UI%20Display%20Light.eot?raw=1') format('embedded-opentype');
+    font-weight: 300;
+}
+
+/* SF UI DISPLAY - 400 - Regular*/
+@font-face {
+    font-family: "SF UI DISPLAY";
+    src: url('https://dl.dropboxusercontent.com/s/ygpt73l672k4rrl/SF%20UI%20Display%20Regular.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/9vkqb2q2ek14z06/SF%20UI%20Display%20Regular.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/2zysbdf7vrb51gk/SF%20UI%20Display%20Regular.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/zwu4jmsnpow13o5/SF%20UI%20Display%20Regular.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/5ao8gaa82kx4tfk/SF%20UI%20Display%20Regular.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/xvbawpg7lb1xohi/SF%20UI%20Display%20Regular.eot?raw=1') format('embedded-opentype');
+    font-weight: 400;
+}
+
+/* SF UI DISPLAY - 500 - Medium*/
+@font-face {
+    font-family: "SF UI DISPLAY";
+    src: url('https://dl.dropboxusercontent.com/s/wzq1q6ije6gk3tn/SF%20UI%20Display%20Medium.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/6kmv6ubypqrg2ed/SF%20UI%20Display%20Medium.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/0z9yxrqe4x9juzd/SF%20UI%20Display%20Medium.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/0g1zfbomb4hzglb/SF%20UI%20Display%20Medium.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/caboylkbu15hms2/SF%20UI%20Display%20Medium.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/xa5xl8v6fmzsz4s/SF%20UI%20Display%20Medium.eot?raw=1') format('embedded-opentype');
+    font-weight: 500;
+}
+
+/* SF UI DISPLAY - 600 - Semi Bold*/
+@font-face {
+    font-family: "SF UI DISPLAY";
+    src: url('https://dl.dropboxusercontent.com/s/grvitxvsi92w1w4/SF%20UI%20Display%20Semibold.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/0brwprsq2sg203z/SF%20UI%20Display%20Semibold.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/g50xslbcibyo2o1/SF%20UI%20Display%20Semibold.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/w870tfbnhzvkp93/SF%20UI%20Display%20Semibold.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/y7z9ljezma21rqs/SF%20UI%20Display%20Semibold.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/dcjp5q5stab6dsg/SF%20UI%20Display%20Semibold.eot?raw=1') format('embedded-opentype');
+    font-weight: 600;
+}
+
+/* SF UI DISPLAY - 700 - BOLD*/
+@font-face {
+    font-family: "SF UI DISPLAY";
+    src: url('https://dl.dropboxusercontent.com/s/jt0bhzf42ijjzmv/SF%20UI%20Display%20Bold.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/btmoc5mizfm98x6/SF%20UI%20Display%20Bold.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/vho1k2e0kkbn4co/SF%20UI%20Display%20Bold.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/f7qubha2d5rzdc9/SF%20UI%20Display%20Bold.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/8q4v376xgl7vu2h/SF%20UI%20Display%20Bold.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/jv030yqnbqnrm15/SF%20UI%20Display%20Bold.eot?raw=1') format('embedded-opentype');
+    font-weight: 700;
+}
+
+/* SF UI DISPLAY - 800 - Heavy*/
+@font-face {
+    font-family: "SF UI DISPLAY";
+    src: url('https://dl.dropboxusercontent.com/s/zov07h85b2q948j/SF%20UI%20Display%20Heavy.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/9p75fo66t8f0ddw/SF%20UI%20Display%20Heavy.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/9rw4ycgrfsu9hso/SF%20UI%20Display%20Heavy.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/dbx492f1ur3h7mw/SF%20UI%20Display%20Heavy.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/k5g4fbo4qvyoric/SF%20UI%20Display%20Heavy.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/ctsne5mzh8crv84/SF%20UI%20Display%20Heavy.eot?raw=1') format('embedded-opentype');
+    font-weight: 800;
+}
+
+/* SF UI DISPLAY - 900 - Black*/
+@font-face {
+    font-family: "SF UI DISPLAY";
+    src: url('https://dl.dropboxusercontent.com/s/3sd9n6hslyq8veg/SF%20UI%20Display%20Black.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/zew2k7zkm6cwwcj/SF%20UI%20Display%20Black.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/hx41ve587ffpt7n/SF%20UI%20Display%20Black.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/yo081fgy6sdqwww/SF%20UI%20Display%20Black.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/y0gnuxt0jfeenuf/SF%20UI%20Display%20Black.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/7n8smns2bs523hh/SF%20UI%20Display%20Black.eot?raw=1') format('embedded-opentype');
+    font-weight: 900;
+}
+
+
+/* WARSAW GOTHIC WOOD */
+@font-face {
+    font-family: 'Warsaw Gothic';
+    src: url('https://dl.dropboxusercontent.com/s/rxkep5o0ct2mkif/warsawgothicwoodtype.woff2?raw=1') format('woff2'),
+        url('https://dl.dropboxusercontent.com/s/n7ihu9bz7in15qz/warsawgothicwoodtype.woff?raw=1') format('woff'),
+        url('https://dl.dropboxusercontent.com/s/jc4q2r7e58bq02u/WarsawGothicWoodtype.otf?raw=1') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*IOWAN REGULAR*/
+@font-face {
+    font-family: "Iowan Old Style W01 Roman";
+    src: url('https://dl.dropboxusercontent.com/s/8e732eoue2y29rn/Iowan%20Old%20Style%20W01%20Roman.ttf?raw=1') format('truetype'),
+        url('https://dl.dropboxusercontent.com/s/qidrfvzki29bttv/Iowan%20Old%20Style%20W01%20Roman.woff2?raw=1') format('woff2'),
+        url('https://dl.dropboxusercontent.com/s/539swlaas0l35o2/Iowan%20Old%20Style%20W01%20Roman.woff?raw=1') format('woff'),
+        url('https://dl.dropboxusercontent.com/s/wiv7spkypzrvoe6/Iowan%20Old%20Style%20W01%20Roman.eot?raw=1') format('embedded-opentype'),
+        url('https://dl.dropboxusercontent.com/s/y2wgd6yn3du3ri8/Iowan%20Old%20Style%20W01%20Roman.svg?raw=1') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+/*IOWAN REGULAR - ITALIC*/
+@font-face {
+    font-family: "Iowan Old Style W01 Roman";
+    src: url('https://dl.dropboxusercontent.com/s/fa9i7iv5czrfcnd/Iowan%20Old%20Style%20W01%20Italic.ttf?raw=1') format('truetype'),
+        url('https://dl.dropboxusercontent.com/s/g5ess0bkbkiesjv/Iowan%20Old%20Style%20W01%20Italic.woff2?raw=1') format('woff2'),
+        url('https://dl.dropboxusercontent.com/s/0w8icfdyf6s5lak/Iowan%20Old%20Style%20W01%20Italic.woff?raw=1') format('woff'),
+        url('https://dl.dropboxusercontent.com/s/wuqdkssbw1eo7fw/Iowan%20Old%20Style%20W01%20Italic.eot?raw=1') format('embedded-opentype'),
+        url('https://dl.dropboxusercontent.com/s/n4f9k21vwg08rtw/Iowan%20Old%20Style%20W01%20Italic.svg?raw=1') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+/*IOWAN BOLD*/
+@font-face {
+    font-family: "Iowan Old Style W01 Roman";
+    src: url('https://dl.dropboxusercontent.com/s/ujpen1r9q1n5ge6/Iowan%20Old%20Style%20W01%20Bold.ttf?raw=1') format('truetype'),
+        url('https://dl.dropboxusercontent.com/s/as7fyanh2cjg0xi/Iowan%20Old%20Style%20W01%20Bold.woff2?raw=1') format('woff2'),
+        url('https://dl.dropboxusercontent.com/s/ppvk6z9grb0alrr/Iowan%20Old%20Style%20W01%20Bold.woff?raw=1') format('woff'),
+        url('https://dl.dropboxusercontent.com/s/auwlqp64ep7buy0/Iowan%20Old%20Style%20W01%20Bold.eot?raw=1') format('embedded-opentype'),
+        url('https://dl.dropboxusercontent.com/s/infhvvt67i1zixu/Iowan%20Old%20Style%20W01%20Bold.svg?raw=1') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+/* IOWAN BOLD ITALIC*/
+@font-face {
+    font-family: "Iowan Old Style W01 Roman";
+    src: url('https://dl.dropboxusercontent.com/s/wmmx5h09fenklvr/Iowan%20Old%20Style%20W01%20Bold%20Italic.ttf?raw=1') format('truetype'),
+        url('https://dl.dropboxusercontent.com/s/oatgvb7chznrvlo/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff2?raw=1') format('woff2'),
+        url('https://dl.dropboxusercontent.com/s/gy410d7evlcv9l3/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff?raw=1') format('woff'),
+        url('https://dl.dropboxusercontent.com/s/wqrk467lki7gx6o/Iowan%20Old%20Style%20W01%20Bold%20Italic.eot?raw=1') format('embedded-opentype'),
+        url('https://dl.dropboxusercontent.com/s/qke40q4ng4xhmva/Iowan%20Old%20Style%20W01%20Bold%20Italic.svg?raw=1') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+/***IOWAN BLACK*/
+@font-face {
+    font-family: "Iowan Old Style W01 Roman";
+    src: url('https://dl.dropboxusercontent.com/s/pbv9y0h1cmr8ij0/Iowan%20Old%20Style%20W01%20Black.ttf?raw=1') format('truetype'),
+        url('https://dl.dropboxusercontent.com/s/t39mo5pnl8tdtoo/Iowan%20Old%20Style%20W01%20Black.woff2?raw=1') format('woff2'),
+        url('https://dl.dropboxusercontent.com/s/10t92wy2ra6rs8f/Iowan%20Old%20Style%20W01%20Black.woff?raw=1') format('woff'),
+        url('https://dl.dropboxusercontent.com/s/f02lrh3luq88epg/Iowan%20Old%20Style%20W01%20Black.eot?raw=1') format('embedded-opentype'),
+        url('https://dl.dropboxusercontent.com/s/5rtpuv9f61zymca/Iowan%20Old%20Style%20W01%20Black.svg?raw=1') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+/*IOWAN BLACK ITALIC */
+@font-face {
+    font-family: "Iowan Old Style W01 Roman";
+    src: url('https://dl.dropboxusercontent.com/s/oz0ej02ql8kbnkg/Iowan%20Old%20Style%20W01%20Black%20It.ttf?raw=1') format('truetype'),
+        url('https://dl.dropboxusercontent.com/s/2fe34wstfaetqhj/Iowan%20Old%20Style%20W01%20Black%20It.woff2?raw=1') format('woff2'),
+        url('https://dl.dropboxusercontent.com/s/v64mnc89k71hkfo/Iowan%20Old%20Style%20W01%20Black%20It.woff?raw=1') format('woff'),
+        url('https://dl.dropboxusercontent.com/s/wxusznu0kggr4ln/Iowan%20Old%20Style%20W01%20Black%20It.eot?raw=1') format('embedded-opentype'),
+        url('https://dl.dropboxusercontent.com/s/38tjwo6avuhhfnm/Iowan%20Old%20Style%20W01%20Black%20It.otf?raw=1') format('opentype'),
+        url('https://dl.dropboxusercontent.com/s/zac82pd803qu1bk/Iowan%20Old%20Style%20W01%20Black%20It.svg?raw=1') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/**
+ PRIMA */
+@font-face {
+ font-family: "Prima Sans Mono";
+ src: url('https://dl.dropboxusercontent.com/s/367pa7lpo9pz4ps/Prima%20Sans%20Mono%20W01%20Roman.ttf?raw=1') format('truetype'),
+   url('https://dl.dropboxusercontent.com/s/6csdyekl65tvn2k/Prima%20Sans%20Mono%20W01%20Roman.woff2?raw=1') format('woff2'),
+   url('https://dl.dropboxusercontent.com/s/k12fe8zs9r5zh4t/Prima%20Sans%20Mono%20W01%20Roman.woff?raw=1') format('woff');
+ font-weight: 900;
+ font-style: normal;
+}
+/**
+ SEGUO */
+@font-face {
+    font-family: SegoeUI;
+    src: url('https://dl.dropboxusercontent.com/s/2vyyiwpnucijpad/SegoeUI%20-%20400.eot?raw=1');
+    src: local("Segoe UI"), url('https://dl.dropboxusercontent.com/s/h8r4y0b6ei4mu9s/SegoeUI%20-%20400.woff2?raw=1') format("woff2"), 
+    url('https://dl.dropboxusercontent.com/s/da412oqo8viylyq/SegoeUI%20-%20400.woff?raw=1') format("woff"), 
+    url('https://dl.dropboxusercontent.com/s/925twuzytb60o93/SegoeUI%20-%20400.ttf?raw=1') format("ttf");
+    font-style: normal;
+    font-weight:400
+}
+@font-face {
+    font-family: SegoeUI;
+    src: url('https://dl.dropboxusercontent.com/s/4sjs5y1rkc7wy8c/SegoeUI%20-%20700.eot?raw=1');
+    src: local("Segoe UI"), url('https://dl.dropboxusercontent.com/s/s3zshdka61qo8st/SegoeUI%20-%20700.woff2?raw=1') format("woff2"), 
+    url('https://dl.dropboxusercontent.com/s/1oizh5c7g3u6j0s/SegoeUI%20-%20700.woff?raw=1') format("woff"), 
+    url('https://dl.dropboxusercontent.com/s/3r0zic77lxmfzq9/SegoeUI%20-%20700.ttf?raw=1') format("ttf");
+    font-style: normal;
+    font-weight:700
+}
+
