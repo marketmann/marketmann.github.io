@@ -1,0 +1,15 @@
+/* WARNOCK PRO - SEMI BOLD*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/plngw2apesf9uue/Warnock%20Pro%20Semibold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/jf8gkom0mkq5bf7/Warnock%20Pro%20Semibold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/phw13kjptqvww5k/Warnock%20Pro%20Semibold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/fbwi843yurju36f/Warnock%20Pro%20Semibold.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/x0u87b2m8pxzdqb/Warnock%20Pro%20Semibold.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/txchyy7ricn9z4c/Warnock%20Pro%20Semibold.eot?raw=1') format('embedded-opentype');
+ font-weight: 500;
+}
+
+
+

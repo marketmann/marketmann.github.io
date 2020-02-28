@@ -1,0 +1,16 @@
+/* WARNOCK PRO - LITE ITALIC*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/o95i90z1wc9atoj/Warnock%20Pro%20Light%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/1qfr9i090cj0eqn/Warnock%20Pro%20Light%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/errfj18b6kt3frz/Warnock%20Pro%20Light%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/fzlms9si1bk8ft1/Warnock%20Pro%20Light%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/cxestw3pwxp4rtf/Warnock%20Pro%20Light%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/5xbwhjc7folgl1b/Warnock%20Pro%20Light%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 300;
+ font-style: italic;
+}
+
+
+

@@ -1,0 +1,16 @@
+/* WARNOCK PRO - LITE*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/ow3fr1ujk0ki53j/Warnock%20Pro%20Light.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/n3y95xinrgkqnf3/Warnock%20Pro%20Light.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/9oqgyetkfapy6xj/Warnock%20Pro%20Light.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/1s8x8ou3cn1a3n0/Warnock%20Pro%20Light.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/5ptg2mzr565ohxz/Warnock%20Pro%20Light.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/vn1hiolycx5d6a5/Warnock%20Pro%20Light.eot?raw=1') format('embedded-opentype');
+ font-weight: 300;
+ font-style: normal;
+}
+
+
+

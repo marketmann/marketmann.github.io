@@ -1,0 +1,148 @@
+/* WARNOCK PRO - LITE*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/ow3fr1ujk0ki53j/Warnock%20Pro%20Light.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/n3y95xinrgkqnf3/Warnock%20Pro%20Light.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/9oqgyetkfapy6xj/Warnock%20Pro%20Light.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/1s8x8ou3cn1a3n0/Warnock%20Pro%20Light.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/5ptg2mzr565ohxz/Warnock%20Pro%20Light.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/vn1hiolycx5d6a5/Warnock%20Pro%20Light.eot?raw=1') format('embedded-opentype');
+ font-weight: 300;
+ font-style: normal;
+}
+/* WARNOCK PRO - LITE ITALIC*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/o95i90z1wc9atoj/Warnock%20Pro%20Light%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/1qfr9i090cj0eqn/Warnock%20Pro%20Light%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/errfj18b6kt3frz/Warnock%20Pro%20Light%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/fzlms9si1bk8ft1/Warnock%20Pro%20Light%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/cxestw3pwxp4rtf/Warnock%20Pro%20Light%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/5xbwhjc7folgl1b/Warnock%20Pro%20Light%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 300;
+ font-style: italic;
+}
+
+
+/* WARNOCK PRO - REGULAR*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/kndmwymoslio7a5/Warnock%20Pro.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com:/s/mgfhr6y0h9gxg7l/Warnock%20Pro.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/lbxl8kdecl4eujt/Warnock%20Pro.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/2iahfn9ipgzw09b/Warnock%20Pro.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/x8pq8g782t514zg/Warnock%20Pro.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/1hc8un6h810hf1y/Warnock%20Pro.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+}
+/* WARNOCK PRO - REGULAR Italic*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/24hptll4lvj8poc/Warnock%20Pro%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/n47bttkifv49aau/Warnock%20Pro%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/gs3d7eypge0nxja/Warnock%20Pro%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/nhibein0jl5178s/Warnock%20Pro%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/xz0d1ujgrzbxpdq/Warnock%20Pro%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/fuz4q7lamfqsz3o/Warnock%20Pro%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+/* WARNOCK PRO - SEMI BOLD*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/plngw2apesf9uue/Warnock%20Pro%20Semibold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/jf8gkom0mkq5bf7/Warnock%20Pro%20Semibold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/phw13kjptqvww5k/Warnock%20Pro%20Semibold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/fbwi843yurju36f/Warnock%20Pro%20Semibold.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/x0u87b2m8pxzdqb/Warnock%20Pro%20Semibold.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/txchyy7ricn9z4c/Warnock%20Pro%20Semibold.eot?raw=1') format('embedded-opentype');
+ font-weight: 500;
+}
+/* WARNOCK PRO - SEMI BOLD ITALIC*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/44u6id26u73xd6k/Warnock%20Pro%20Semibold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/5y939ubsrsureih/Warnock%20Pro%20Semibold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/n51pa0i5jxtd7ae/Warnock%20Pro%20Semibold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/ikg1g4xdghuq546/Warnock%20Pro%20Semibold%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/pt03dygh0hqp0b2/Warnock%20Pro%20Semibold%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/s5pav7czmh00bjx/Warnock%20Pro%20Semibold%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 500;
+ font-style: italic;
+
+}
+
+
+/* WARNOCK PRO - BOLD*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/ic5g3vzd86lyu9v/Warnock%20Pro%20Bold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/7g5ohiinlw0zp3h/Warnock%20Pro%20Bold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/1nait6u2nv87o57/Warnock%20Pro%20Bold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/wgbdgkplq8eu1o6/Warnock%20Pro%20Bold.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/0atxp82hq4lfvd5/Warnock%20Pro%20Bold.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/1fz5xicnngobg80/Warnock%20Pro%20Bold.eot?raw=1') format('embedded-opentype');
+ font-weight: 600;
+}
+/* WARNOCK PRO - BOLD ITalic*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/wcitn4g4vr8ftak/Warnock%20Pro%20Bold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/t59aezv2slszzy3/Warnock%20Pro%20Bold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/7mi9vzyvawb43gq/Warnock%20Pro%20Bold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/9h348l68bgrdv2l/Warnock%20Pro%20Bold%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/2euxku52aug04oe/Warnock%20Pro%20Bold%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/jniv6vyphtzti7c/Warnock%20Pro%20Bold%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+
+
+
+/* WARNOCK PRO - SUBHEAD - REGULAR*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/iure3bo61suvbrn/Warnock%20Pro%20Subhead.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/7zyvanq0at868uh/Warnock%20Pro%20Subhead.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/1xtutzf60olws0l/Warnock%20Pro%20Subhead.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/pappdwwfqxcdo3q/Warnock%20Pro%20Subhead.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/x9riy4g0iadb7a4/Warnock%20Pro%20Subhead.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/y6lsu7d69wob1yp/Warnock%20Pro%20Subhead.eot?raw=1') format('embedded-opentype');
+ font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

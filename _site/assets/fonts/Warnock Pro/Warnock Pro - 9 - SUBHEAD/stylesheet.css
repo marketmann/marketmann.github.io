@@ -1,0 +1,16 @@
+/* WARNOCK PRO - SUBHEAD - REGULAR*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/iure3bo61suvbrn/Warnock%20Pro%20Subhead.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/7zyvanq0at868uh/Warnock%20Pro%20Subhead.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/1xtutzf60olws0l/Warnock%20Pro%20Subhead.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/pappdwwfqxcdo3q/Warnock%20Pro%20Subhead.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/x9riy4g0iadb7a4/Warnock%20Pro%20Subhead.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/y6lsu7d69wob1yp/Warnock%20Pro%20Subhead.eot?raw=1') format('embedded-opentype');
+ font-weight: 800;
+}
+
+
+
+

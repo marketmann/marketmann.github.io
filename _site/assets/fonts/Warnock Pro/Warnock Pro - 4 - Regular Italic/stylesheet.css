@@ -1,0 +1,16 @@
+/* WARNOCK PRO - REGULAR Italic*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/24hptll4lvj8poc/Warnock%20Pro%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/n47bttkifv49aau/Warnock%20Pro%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/gs3d7eypge0nxja/Warnock%20Pro%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/nhibein0jl5178s/Warnock%20Pro%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/xz0d1ujgrzbxpdq/Warnock%20Pro%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/fuz4q7lamfqsz3o/Warnock%20Pro%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+

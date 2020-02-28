@@ -1,0 +1,15 @@
+/* WARNOCK PRO - BOLD*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/ic5g3vzd86lyu9v/Warnock%20Pro%20Bold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/7g5ohiinlw0zp3h/Warnock%20Pro%20Bold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/1nait6u2nv87o57/Warnock%20Pro%20Bold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/wgbdgkplq8eu1o6/Warnock%20Pro%20Bold.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/0atxp82hq4lfvd5/Warnock%20Pro%20Bold.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/1fz5xicnngobg80/Warnock%20Pro%20Bold.eot?raw=1') format('embedded-opentype');
+ font-weight: 600;
+}
+
+
+

@@ -1,0 +1,83 @@
+
+/*IOWAN REGULAR*/
+@font-face {
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/8e732eoue2y29rn/Iowan%20Old%20Style%20W01%20Roman.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/qidrfvzki29bttv/Iowan%20Old%20Style%20W01%20Roman.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/539swlaas0l35o2/Iowan%20Old%20Style%20W01%20Roman.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/wiv7spkypzrvoe6/Iowan%20Old%20Style%20W01%20Roman.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/y2wgd6yn3du3ri8/Iowan%20Old%20Style%20W01%20Roman.svg?raw=1') format('svg');
+ font-weight: 400;
+ font-style: normal;
+}
+
+/*IOWAN REGULAR - ITALIC*/
+@font-face {
+    font-family:"Iowan Old Style W01 Roman"; 
+    src: url('https://dl.dropboxusercontent.com/s/fa9i7iv5czrfcnd/Iowan%20Old%20Style%20W01%20Italic.ttf?raw=1') format('truetype'), 
+    url('https://dl.dropboxusercontent.com/s/g5ess0bkbkiesjv/Iowan%20Old%20Style%20W01%20Italic.woff2?raw=1') format('woff2'), 
+    url('https://dl.dropboxusercontent.com/s/0w8icfdyf6s5lak/Iowan%20Old%20Style%20W01%20Italic.woff?raw=1') format('woff'), 
+    url('https://dl.dropboxusercontent.com/s/wuqdkssbw1eo7fw/Iowan%20Old%20Style%20W01%20Italic.eot?raw=1') format('embedded-opentype'), 
+    url('https://dl.dropboxusercontent.com/s/n4f9k21vwg08rtw/Iowan%20Old%20Style%20W01%20Italic.svg?raw=1') format('svg');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+
+
+
+/*IOWAN BOLD*/
+@font-face {
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/ujpen1r9q1n5ge6/Iowan%20Old%20Style%20W01%20Bold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/as7fyanh2cjg0xi/Iowan%20Old%20Style%20W01%20Bold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/ppvk6z9grb0alrr/Iowan%20Old%20Style%20W01%20Bold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/auwlqp64ep7buy0/Iowan%20Old%20Style%20W01%20Bold.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/infhvvt67i1zixu/Iowan%20Old%20Style%20W01%20Bold.svg?raw=1') format('svg');
+ font-weight: 600;
+ font-style: normal;
+}
+
+
+/* IOWAN BOLD ITALIC*/
+@font-face {
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/wmmx5h09fenklvr/Iowan%20Old%20Style%20W01%20Bold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/oatgvb7chznrvlo/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/gy410d7evlcv9l3/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/wqrk467lki7gx6o/Iowan%20Old%20Style%20W01%20Bold%20Italic.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/qke40q4ng4xhmva/Iowan%20Old%20Style%20W01%20Bold%20Italic.svg?raw=1') format('svg');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+
+
+
+/***IOWAN BLACK*/
+@font-face {
+ font-family: "Iowan Old Style W01 Roman";
+ src: url('https://dl.dropboxusercontent.com/s/pbv9y0h1cmr8ij0/Iowan%20Old%20Style%20W01%20Black.ttf?raw=1') format('truetype'),
+   url('https://dl.dropboxusercontent.com/s/t39mo5pnl8tdtoo/Iowan%20Old%20Style%20W01%20Black.woff2?raw=1') format('woff2'),
+   url('https://dl.dropboxusercontent.com/s/10t92wy2ra6rs8f/Iowan%20Old%20Style%20W01%20Black.woff?raw=1') format('woff'),
+   url('https://dl.dropboxusercontent.com/s/f02lrh3luq88epg/Iowan%20Old%20Style%20W01%20Black.eot?raw=1') format('embedded-opentype'),
+   url('https://dl.dropboxusercontent.com/s/5rtpuv9f61zymca/Iowan%20Old%20Style%20W01%20Black.svg?raw=1') format('svg');
+ font-weight: 900;
+ font-style: normal;
+}
+
+
+/*IOWAN BLACK ITALIC */
+@font-face {
+ font-family: "Iowan Old Style W01 Roman";
+ src: url('https://dl.dropboxusercontent.com/s/oz0ej02ql8kbnkg/Iowan%20Old%20Style%20W01%20Black%20It.ttf?raw=1') format('truetype'),
+   url('https://dl.dropboxusercontent.com/s/2fe34wstfaetqhj/Iowan%20Old%20Style%20W01%20Black%20It.woff2?raw=1') format('woff2'),
+   url('https://dl.dropboxusercontent.com/s/v64mnc89k71hkfo/Iowan%20Old%20Style%20W01%20Black%20It.woff?raw=1') format('woff'),
+   url('https://dl.dropboxusercontent.com/s/wxusznu0kggr4ln/Iowan%20Old%20Style%20W01%20Black%20It.eot?raw=1') format('embedded-opentype'),
+   url('https://dl.dropboxusercontent.com/s/38tjwo6avuhhfnm/Iowan%20Old%20Style%20W01%20Black%20It.otf?raw=1') format('opentype'),
+   url('https://dl.dropboxusercontent.com/s/zac82pd803qu1bk/Iowan%20Old%20Style%20W01%20Black%20It.svg?raw=1') format('svg');
+ font-weight: 900;
+ font-style: italic;
+}

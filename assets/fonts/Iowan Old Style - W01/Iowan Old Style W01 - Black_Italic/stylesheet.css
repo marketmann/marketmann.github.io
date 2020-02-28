@@ -1,0 +1,14 @@
+
+/*IOWAN BLACK ITALIC */
+@font-face {
+ font-family: "Iowan Old Style W01 Roman";
+ src: url('https://dl.dropboxusercontent.com/s/oz0ej02ql8kbnkg/Iowan%20Old%20Style%20W01%20Black%20It.ttf?raw=1') format('truetype'),
+   url('https://dl.dropboxusercontent.com/s/2fe34wstfaetqhj/Iowan%20Old%20Style%20W01%20Black%20It.woff2?raw=1') format('woff2'),
+   url('https://dl.dropboxusercontent.com/s/v64mnc89k71hkfo/Iowan%20Old%20Style%20W01%20Black%20It.woff?raw=1') format('woff'),
+   url('https://dl.dropboxusercontent.com/s/wxusznu0kggr4ln/Iowan%20Old%20Style%20W01%20Black%20It.eot?raw=1') format('embedded-opentype'),
+   url('https://dl.dropboxusercontent.com/s/38tjwo6avuhhfnm/Iowan%20Old%20Style%20W01%20Black%20It.otf?raw=1') format('opentype'),
+   url('https://dl.dropboxusercontent.com/s/zac82pd803qu1bk/Iowan%20Old%20Style%20W01%20Black%20It.svg?raw=1') format('svg');
+ font-weight: 900;
+ font-style: italic;
+}
+
