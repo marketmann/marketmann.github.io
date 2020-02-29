@@ -197,11 +197,29 @@ Deprecated
           <!-- hypothesis will be placed here -->
        </div>
     </div>
-    
+
     <!--BUTTON CONTAINER-->
-    <div class="right-sidebar-button-container">
+    <div class="right-sidebar-button-container" id="js-menu">
+       <button class="menu-toggle" id="js-menu-toggle">
+          <div class="line1 men-ico"></div>
+          <div class="line2 men-ico"></div>
+          <div class="line2 men-ico"></div>
+       </button>
 
        <div class="right-sidebar-expander-container">
+          <button class="right-sidebar-toggle" id="js-toggle-button">
+             <div class="sidebar-out">
+                <svg width="100%" height="100%" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M1.80705 9.40539L1.09995 8.69829L1.09995 8.69829L1.80705 9.40539ZM10.486 2.1407C10.8765 1.75018 10.8765 1.11701 10.486 0.726487C10.0954 0.335963 9.46227 0.335963 9.07175 0.726487L10.486 2.1407ZM9.07175 19.4985C9.46227 19.889 10.0954 19.889 10.486 19.4985C10.8765 19.108 10.8765 18.4748 10.486 18.0843L9.07175 19.4985ZM1.80705 10.8196L2.51416 10.1125L2.51416 10.1125L1.80705 10.8196ZM2.51416 10.1125L10.486 2.1407L9.07175 0.726487L1.09995 8.69829L2.51416 10.1125ZM10.486 18.0843L2.51416 10.1125L1.09995 11.5267L9.07175 19.4985L10.486 18.0843ZM1.09995 8.69829C0.318899 9.47933 0.318897 10.7457 1.09995 11.5267L2.51416 10.1125L2.51416 10.1125L1.09995 8.69829Z" fill="white" />
+                </svg>
+             </div>
+             <div class="sidebar-in">
+                <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M9.19295 9.40539L9.90005 8.69829H9.90005L9.19295 9.40539ZM0.514041 2.1407C0.123516 1.75018 0.123516 1.11701 0.514041 0.726487C0.904565 0.335963 1.53773 0.335963 1.92825 0.726487L0.514041 2.1407ZM1.92825 19.4985C1.53773 19.889 0.904565 19.889 0.514041 19.4985C0.123516 19.108 0.123516 18.4748 0.514041 18.0843L1.92825 19.4985ZM9.19295 10.8196L8.48584 10.1125L8.48584 10.1125L9.19295 10.8196ZM8.48584 10.1125L0.514041 2.1407L1.92825 0.726487L9.90005 8.69829L8.48584 10.1125ZM0.514041 18.0843L8.48584 10.1125L9.90005 11.5267L1.92825 19.4985L0.514041 18.0843ZM9.90005 8.69829C10.6811 9.47933 10.6811 10.7457 9.90005 11.5267L8.48584 10.1125L8.48584 10.1125L9.90005 8.69829Z" fill="white" />
+                </svg>
+
+             </div>
+          </button>
           <button class="local-storage-button" onclick="localStorage.clear(); alert('localStorage has been cleared');">
              <svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 17L1 1M17 1L1 17" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -215,20 +233,6 @@ Deprecated
 
           </button>
        </div>
-       <button class="right-sidebar-toggle" id="js-toggle-button">
-          <div class="sidebar-out">
-             <svg width="100%" height="100%" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.80705 9.40539L1.09995 8.69829L1.09995 8.69829L1.80705 9.40539ZM10.486 2.1407C10.8765 1.75018 10.8765 1.11701 10.486 0.726487C10.0954 0.335963 9.46227 0.335963 9.07175 0.726487L10.486 2.1407ZM9.07175 19.4985C9.46227 19.889 10.0954 19.889 10.486 19.4985C10.8765 19.108 10.8765 18.4748 10.486 18.0843L9.07175 19.4985ZM1.80705 10.8196L2.51416 10.1125L2.51416 10.1125L1.80705 10.8196ZM2.51416 10.1125L10.486 2.1407L9.07175 0.726487L1.09995 8.69829L2.51416 10.1125ZM10.486 18.0843L2.51416 10.1125L1.09995 11.5267L9.07175 19.4985L10.486 18.0843ZM1.09995 8.69829C0.318899 9.47933 0.318897 10.7457 1.09995 11.5267L2.51416 10.1125L2.51416 10.1125L1.09995 8.69829Z" fill="white" />
-             </svg>
-          </div>
-          <div class="sidebar-in">
-             <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.19295 9.40539L9.90005 8.69829H9.90005L9.19295 9.40539ZM0.514041 2.1407C0.123516 1.75018 0.123516 1.11701 0.514041 0.726487C0.904565 0.335963 1.53773 0.335963 1.92825 0.726487L0.514041 2.1407ZM1.92825 19.4985C1.53773 19.889 0.904565 19.889 0.514041 19.4985C0.123516 19.108 0.123516 18.4748 0.514041 18.0843L1.92825 19.4985ZM9.19295 10.8196L8.48584 10.1125L8.48584 10.1125L9.19295 10.8196ZM8.48584 10.1125L0.514041 2.1407L1.92825 0.726487L9.90005 8.69829L8.48584 10.1125ZM0.514041 18.0843L8.48584 10.1125L9.90005 11.5267L1.92825 19.4985L0.514041 18.0843ZM9.90005 8.69829C10.6811 9.47933 10.6811 10.7457 9.90005 11.5267L8.48584 10.1125L8.48584 10.1125L9.90005 8.69829Z" fill="white" />
-             </svg>
-
-
-          </div>
-       </button>
     </div>
 
     <!--HYPOTHESIS SCRIPTS -->
@@ -496,6 +500,23 @@ Deprecated
 
        // Apply selected theme, stored in localStorage item
        theme_set(localStorage.getItem('theme-toggled'));
+
+    </script>
+
+    <!-- MENU TOGGLE - JAVASCRIPT -->
+    <script>
+       (function() {
+
+          document.getElementById('js-menu-toggle').addEventListener('click', () => {
+
+             let n = document.getElementById('js-menu');
+
+             n.classList.toggle('menu-open');
+
+
+          });
+
+       })();
 
     </script>
 

@@ -283,7 +283,7 @@
    display: none;
    padding-top: 1rem;
    padding-bottom: 1rem;
-   background-color: #27262b;
+   background-color: hsl(252, 6.17%, 15.88%);
 }
 @media (min-width: 50rem) {
    .page-header {
@@ -296,7 +296,7 @@
       display: flex;
       justify-content: flex-end;
       height: 60px;
-      background-color: #27262b;
+      background-color: hsl(252, 6.17%, 15.88%);
       border-bottom: 1px solid #44434d;
    }
 }
@@ -814,7 +814,7 @@ body {
    font-size: inherit;
    line-height: 1.4;
    color: #e6e1e8;
-   background-color: #27262b;
+   background-color: hsl(252, 6.17%, 15.88%);
 }
 
 p,
@@ -1502,7 +1502,7 @@ li .highlight {
       padding-right: 0;
       padding-bottom: 0;
       padding-left: 0;
-      background-color: #27262b;
+      background-color: hsl(252, 6.17%, 15.88%);
       border-radius: 0;
       box-shadow: none;
    }
@@ -1539,7 +1539,7 @@ li .highlight {
 
 @media (min-width: 50rem) {
    .search-input {
-      background-color: #27262b;
+      background-color: hsl(252, 6.17%, 15.88%);
       font-size: 12px !important;
    }
 }
@@ -1618,7 +1618,7 @@ li .highlight {
 
 .search-result:hover,
 .search-result.active {
-   background-color: #27262b;
+   background-color: hsl(252, 6.17%, 15.88%);
 }
 
 @media (min-width: 50rem) {
@@ -2084,7 +2084,7 @@ figure.highlight code {
 }
 
 .text-grey-dk-300 {
-   color: #27262b !important;
+   color: hsl(252, 6.17%, 15.88%) !important;
 }
 
 .text-grey-lt-000 {
@@ -2200,7 +2200,7 @@ figure.highlight code {
 }
 
 .bg-grey-dk-300 {
-   background-color: #27262b !important;
+   background-color: hsl(252, 6.17%, 15.88%) !important;
 }
 
 .bg-grey-lt-000 {

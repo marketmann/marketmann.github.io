@@ -7,46 +7,52 @@
 
 
 
-/************** 
- ************** 
- ************** 
- ************** 
- ************** 
+body {
+	background: black;
+}
+
+/**
+ **
+ **
+ **
+ **
  BUTTON CONTAINER*/
 .right-sidebar-button-container {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: flex-start;
-   position: fixed;
-   right: 8px;
-   top: 8px;
-   padding: 0px;
-   z-index: 1000;
-   width: 40px;
-   height: 40px;
-   border-radius: 6px;
-   background: hsla(225, 5%, 19.02%, .0);
-   box-shadow: 0 0 0 0px hsla(225, 5%, 19.02%, 0);
-   overflow: hidden;
-   transition:
-      width 1s .4s,
-      box-shadow 1.5s 1s,
-      background 1.5s 1s;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	position: fixed;
+	right: 8px;
+	top: 8px;
+	padding: 0px;
+	z-index: 1000;
+	width: 40px;
+	height: 40px;
+	border-radius: 6px;
+	background: hsla(225, 5%, 19.02%,.0);
+	box-shadow: 0 0 0 0px hsla(225, 5%, 19.02%, 0);
+	overflow: hidden;
+	transition:.5s !important;
 }
 
 .right-sidebar-button-container:hover {
-   width: 130px;
-   background: hsla(225, 5%, 19.02%, 1);
-   box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
-   cursor: pointer;
-   transition:
-      box-shadow .6s,
-      background .6s,
-      width .4s .6s;
+	background: hsla(225, 5%, 19.02%,1);
+	box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
+	cursor: pointer;
+	transition:.3s !important;
+}
+.right-sidebar-button-container.menu-open {
+	width: 175px;
+	background: hsla(225, 5%, 19.02%,1);
+	box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
+	cursor: pointer;
+	transition:.3s !important;
 }
 
 
+
+	
 
 
 /**
@@ -55,68 +61,102 @@
  **
  UNIVERSAL STYLES */
 .right-sidebar-button-container button {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 40px;
-   height: 40px;
-   z-index: 100;
-   border-radius: 6px;
-   border: none;
-   background: hsl(225, 5%, 39.02%);
-   transition: 0.2s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	z-index: 100;
+	border-radius: 6px;
+	border: none;
+	background: hsl(225, 5%, 39.02%);
+	transition: 0.2s;
    flex-shrink: 0;
 }
 
 .right-sidebar-button-container button:hover {
-   cursor: pointer;
-   background: hsl(210, 5%, 55.02%);
-   transition: 0.33s;
-   box-shadow: 0px .4px 1px 0px hsl(225, 5%, 8.02%, .9);
+	cursor: pointer;
+	background: hsl(210, 5%, 55.02%);
+	transition: 0.33s;
+	box-shadow: 0px .4px 1px 0px hsl(225, 5%, 8.02%,.9);
 }
 
 .right-sidebar-button-container svg {
-   width: 14px;
-   height: 14px;
+	width: 14px;
+	height: 14px;
 }
 
 /**
  **
  **
  **
+ BUTTON - MENU TOGGLE*/
+button.menu-toggle {
+	position:absolute;
+	z-index:10000000000;
+	right:0;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+
+}
+
+.men-ico {
+	width:14px;
+	height:2px;
+	margin-top:1.5px;
+	margin-bottom:1.5px;
+	background:white;
+	display:block;
+	border-radius:100px;
+	transition:.1s;
+}
+.menu-open .men-ico{
+	margin-top:-1px;
+	margin-bottom:-1px;
+}
+/**
+ **
+ **
+ **
  BUTTON - RIGHT SIDEBAR TOGGLE*/
 button.right-sidebar-toggle {
-   position: absolute;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   right: 0;
-   z-index: 1001;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1001;
 }
 
 .right-sidebar-button-container .sidebar-in,
 .right-sidebar-button-container .sidebar-out {
-   display: flex;
-   position: absolute;
-   align-items: center;
-   justify-content: center;
-   transition: 0.25s;
-   transition-delay: 0.35s;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	transition: 0.25s;
+	transition-delay: 0.35s;
 }
-
 .sidebar-in {
-   margin-left: 40px;
+	margin-left: 40px;
 }
 
 .right-sidebar.oooopen + .right-sidebar-button-container button .sidebar-in,
-.right-sidebar.oooopen-on-load + .right-sidebar-button-container button .sidebar-in {
-   margin-left: 0px;
+.right-sidebar.oooopen-on-load
+	+ .right-sidebar-button-container
+	button
+	.sidebar-in {
+	margin-left: 0px;
 }
 
 .right-sidebar.oooopen + .right-sidebar-button-container button .sidebar-out,
-.right-sidebar.oooopen-on-load + .right-sidebar-button-container button .sidebar-out {
-   margin-left: -40px;
-   opacity: 0;
+.right-sidebar.oooopen-on-load
+	+ .right-sidebar-button-container
+	button
+	.sidebar-out {
+	margin-left: -40px;
+		opacity:0;
 }
 
 /**
@@ -124,17 +164,17 @@ button.right-sidebar-toggle {
  **
  ON HOVER MENU - EXPANDED BUTTON CONTAINER */
 .right-sidebar-expander-container {
-   display: -ms-flexbox;
-   display: flex;
-   justify-content: flex-end;
-   flex-direction: row;
-   flex-flow: row-reverse;
-   width: 100%;
-   height: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	flex-flow: row-reverse;
+	width: 100%;
+	height: 100%;
 }
 
 .right-sidebar-expander-container button {
-   margin-right: 5px;
+	margin-right: 5px;
 }
 
 
