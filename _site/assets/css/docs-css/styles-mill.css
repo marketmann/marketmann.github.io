@@ -6,8 +6,8 @@ html {
 link#style-dark ~ .page-wrap .pagecontent {
     font-family: "SF UI DISPLAY";
     font-weight:400;
-    font-size: 17px;
-    line-height: 22.5px;
+    font-size: 18px;
+    line-height: 23.5px;
     /*background-color: hsl(220,8%,10.6%);*/
     color: hsl(220, 7.04%, 76.04%);
     margin: 0 auto;

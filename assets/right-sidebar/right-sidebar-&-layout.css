@@ -189,11 +189,11 @@ button.right-sidebar-toggle {
  RIGHT SIDEBAR */
 .right-sidebar {
    height: 100%;
-   width: 300px;
+   width: 400px;
    position: fixed;
    z-index: 1;
    top: 0px;
-   right: -300px;
+   right: -400px;
    background-color: hsl(252, 6.17%, 17.1%);
    border-left:1px solid hsl(252, 6.17%, 22.1%);
    overflow-x: hidden;
