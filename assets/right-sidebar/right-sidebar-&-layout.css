@@ -198,7 +198,7 @@ button.right-sidebar-toggle {
    border-left:1px solid hsl(252, 6.17%, 22.1%);
    overflow-x: hidden;
    transition: 0.35s;
-   padding-top: 60px;
+   padding-top: 0px;
    padding-left: 0px;
    z-index: 999;
 }
@@ -223,7 +223,6 @@ button.right-sidebar-toggle {
    z-index: 2147483647;
    border: 0;
    height: 99.9vh;
-   position:fixed;
    top:0;
    width: 100%;
 }
