@@ -43,7 +43,7 @@ body {
 	transition:.3s !important;
 }
 .right-sidebar-button-container.menu-open {
-	width: 175px;
+	width: 220px;
 	background: hsla(225, 5%, 19.02%,1);
 	box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
 	cursor: pointer;

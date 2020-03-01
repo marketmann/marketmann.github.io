@@ -48,7 +48,7 @@
 
 @media (min-width: 66.5rem) {
    .side-bar {
-      width: calc((100% - 1250px) / 2 + 264px);
+      width: calc((100% - 1350px) / 2 + 264px);
       min-width: 264px;
    }
 }
@@ -266,7 +266,7 @@
 }
 @media (min-width: 66.5rem) {
    .main-content {
-      margin-left: calc((100% - 1250px) / 2 + 264px);
+      margin-left: calc((100% - 1350px) / 2 + 264px);
    }
 }
 .js-main-content:focus {
@@ -350,7 +350,7 @@
 @media (min-width: 50rem) {
    .page {
       padding-right: 2rem;
-      padding-left: calc(2rem + 29px);
+      padding-left: calc(2rem + 39px);
       padding-top: 2rem;
       padding-bottom: 2rem;
       -webkit-transition: width 0.3s ease-in-out;
@@ -362,14 +362,14 @@
 
 /** MIDDLE SECTION - RIGHT SIDEBAR OPEN**/
 .page.oooopen {
-   padding-right: 150px;
+   padding-right: 110px;
 }
 
 /** MIDDLE SECTION - RIGHT SIDEBAR OPEN - LOCAL STORAGE**/
 .page.oooopen-on-load {
    -webkit-transition: none;
    transition: none;
-   padding-right: 150px;
+   padding-right: 110px;
 }
 
 
