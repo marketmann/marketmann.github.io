@@ -63,43 +63,43 @@ link#style-dark ~ .page-wrap .pagecontent h6 {
 }
 
 link#style-dark ~ .page-wrap .pagecontent h1 {
-   font-size: 50px;
+   font-size: 50px !important;
    text-align: center;
    color: hsl(0, 0%, 46%);
    line-height: 4rem;
 }
 
 link#style-dark ~ .page-wrap .pagecontent h2 {
-   font-weight: 600;
-   font-size: 50px;
+   font-weight: 600 !important;
+   font-size: 50px!important;
    text-align: center;
    color: white;
 
 }
 
 link#style-dark ~ .page-wrap .pagecontent h3 {
-   font-weight: 600;
-   font-size: 37px;
+   font-weight: 600 !important;
+   font-size: 37px !important;
    text-align: center;
    color: #d6d6d6;
 }
 
 link#style-dark ~ .page-wrap .pagecontent h4 {
-   font-weight: 600;
-   font-size: 28px;
+   font-weight: 600 !important;
+   font-size: 28px !important;
    text-align: left;
    color: #d6d6d6;
 }
 
 link#style-dark ~ .page-wrap .pagecontent h5 {
-   font-weight: 600;
+   font-weight: 600 !important;
    font-size: 23px !important;
    color: #d6d6d6;
 }
 
 link#style-dark ~ .page-wrap .pagecontent h6 {
-   font-weight: 600;
-   font-size: 20px;
+   font-weight: 600 !important;
+   font-size: 20px !important;
    color: #d6d6d6;
 }
 

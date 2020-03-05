@@ -43,7 +43,7 @@ body {
 	transition:.3s !important;
 }
 .right-sidebar-button-container.menu-open {
-	width: 175px;
+	width: 220px;
 	background: hsla(225, 5%, 19.02%,1);
 	box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
 	cursor: pointer;
@@ -198,7 +198,7 @@ button.right-sidebar-toggle {
    border-left:1px solid hsl(252, 6.17%, 22.1%);
    overflow-x: hidden;
    transition: 0.35s;
-   padding-top: 60px;
+   padding-top: 0px;
    padding-left: 0px;
    z-index: 999;
 }
@@ -222,7 +222,8 @@ button.right-sidebar-toggle {
    line-height: 20px;
    z-index: 2147483647;
    border: 0;
-   height: 93.7vh;
+   height: 99.9vh;
+   top:0;
    width: 100%;
 }
 
