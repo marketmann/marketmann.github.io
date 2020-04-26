@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 
 <html lang="en/us">
@@ -46,6 +44,18 @@
 <!-- END RIGHT SIDEBAR -->
 
 <body>
+     
+     <!--- SCROLL POSITION -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
       <!--MAIN CSS STYLE SHEETS -->
     <link id="style-light" rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
     <link id="style-dark" rel="stylesheet" href="http://localhost:4000/assets/css/dark-mode-preview.css">
@@ -70,7 +80,7 @@
          </div>
 
          <div class="navigation main-nav js-main-nav">
-              <ul id="navsmigoco" class="navigation-list nav"><li class="navigation-list-item"><a href="http://localhost:4000/" class="navigation-list-link">Home</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/configuration/" class="navigation-list-link">Configuration</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/ui-components" class="navigation-list-link">UI Components</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/buttons/" class="navigation-list-link">Buttons</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/typography/" class="navigation-list-link">Typography</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/labels/" class="navigation-list-link">Labels</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/tables/" class="navigation-list-link">Tables</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/lists/" class="navigation-list-link">Lists</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/code/" class="navigation-list-link">Code</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/utilities" class="navigation-list-link">Utilities</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/responsive-modifiers/" class="navigation-list-link">Responsive Modifiers</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/layout/" class="navigation-list-link">Layout</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/color/" class="navigation-list-link">Color</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/typography/" class="navigation-list-link">Typography</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/navigation-structure/" class="navigation-list-link">Navigation Structure</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/customization/" class="navigation-list-link">Customization</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/search/" class="navigation-list-link">Search</a></li><li class="navigation-list-item active"><a href="http://localhost:4000/docs/reference" class="navigation-list-link">Reference</a><ul class="navigation-list-child-list "><li class="navigation-list-item  active"><a href="http://localhost:4000/docs/reference/take-their-money/" class="navigation-list-link active">Take Their Money</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/16-word-sl/" class="navigation-list-link">16 Word Sales Letter</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/number-3/" class="navigation-list-link">Test-html</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/make-sites-win-2/" class="navigation-list-link">Make Sites Win</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/swipe" class="navigation-list-link">Swipe File</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/swipe/Schwartz-Learning-Machine/" class="navigation-list-link">Learning Machine</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/swipe/Bencivenga-Ad-Agency/" class="navigation-list-link">Agency Ad</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/index-test/" class="navigation-list-link">Markdown kitchen sink</a></li></ul>
+              <ul id="navsmigoco" class="navigation-list nav"><li class="navigation-list-item"><a href="http://localhost:4000/" class="navigation-list-link">Home</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/configuration/" class="navigation-list-link">Configuration</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/ui-components" class="navigation-list-link">UI Components</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/buttons/" class="navigation-list-link">Buttons</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/typography/" class="navigation-list-link">Typography</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/labels/" class="navigation-list-link">Labels</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/tables/" class="navigation-list-link">Tables</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/lists/" class="navigation-list-link">Lists</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/code/" class="navigation-list-link">Code</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/utilities" class="navigation-list-link">Utilities</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/responsive-modifiers/" class="navigation-list-link">Responsive Modifiers</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/layout/" class="navigation-list-link">Layout</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/color/" class="navigation-list-link">Color</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/typography/" class="navigation-list-link">Typography</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/navigation-structure/" class="navigation-list-link">Navigation Structure</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/customization/" class="navigation-list-link">Customization</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/search/" class="navigation-list-link">Search</a></li><li class="navigation-list-item active"><a href="http://localhost:4000/docs/reference" class="navigation-list-link">Reference</a><ul class="navigation-list-child-list "><li class="navigation-list-item  active"><a href="http://localhost:4000/docs/reference/take-their-money/" class="navigation-list-link active">Take Their Money</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/16-word-sl/" class="navigation-list-link">16 Word Sales Letter</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/number-3/" class="navigation-list-link">Test-html</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/make-site-win/" class="navigation-list-link">Make Sites Win</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/KICKASS%20COPY%20SECRETS/" class="navigation-list-link">Kickass Copy Secrets</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/swipe" class="navigation-list-link">Swipe File</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/swipe/Schwartz-Learning-Machine/" class="navigation-list-link">Learning Machine</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/swipe/Bencivenga-Ad-Agency/" class="navigation-list-link">Agency Ad</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/index-test/" class="navigation-list-link">Markdown kitchen sink</a></li></ul>
   <script type="text/javascript">
       $(document).ready(function() {
           $('#navsmigoco').navgoco({
@@ -505,7 +515,7 @@
     <p class="c0">Even if you binge read all the Spanish novels in the world, you wouldn&rsquo;t understand anything more about the language without a way to translate it.</p>
     <p class="c0">And you would be no closer to your goal of speaking Spanish fluently.</p>
     <a id="t.1f40bea78be570a3a996452205be385f4363c2a0"></a><a id="t.0"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -516,7 +526,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
       <h2 class="c6">
         
@@ -708,7 +718,7 @@
     <p class="c0">As the famous copywriter, Ryan McGrath, taught me at Agora Financial: New and different is better than &ldquo;better.&rdquo;</p>
     <p class="c0">Here&rsquo;s a couple lines of real life copywriting that demonstrate New&hellip;</p>
     <a id="t.34e7be5920099c7443800e721061abbf37621603"></a><a id="t.1"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c69" colspan="1" rowspan="1">
@@ -730,7 +740,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     
     
@@ -771,7 +781,7 @@
     <p class="c0">Here&rsquo;s an example of Only taken from my first front-end promo I wrote for James Altucher and his service, The Altucher Report, at Agora Financial.</p>
     <p class="c0">The promo was called, The Hottest IPO.</p>
     <a id="t.ff11b44fb65508ac9dec9d00b4e13ec16c061cff"></a><a id="t.2"></a>
-    <div class="table-wrapper"><table class="c63">
+    <table class="c63">
         <tbody>
             <tr class="c34">
                 <td class="c37" colspan="1" rowspan="1">
@@ -782,7 +792,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0">Right away we establish that this is a brand New opportunity that is Only available through us!</p>
     
@@ -905,7 +915,7 @@
     <p class="c0">Easy.</p>
     <p class="c0">Here&rsquo;s an example of Easy at play in Money Map&rsquo;s promo for &ldquo;The Money Zone.&rdquo;</p>
     <a id="t.41affd088aa9fa96bbedb435e3ddfc71237345b0"></a><a id="t.3"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -917,12 +927,12 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0">The copywriter directly states that THIS IS EASY.</p>
     <p class="c0">Below is an example of &ldquo;Not Statements&rdquo; from The Hottest IPO&hellip;</p>
     <a id="t.959e0ab4ffafd10fa8a760362ac6ef23850663c2"></a><a id="t.4"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -938,7 +948,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     
     <p class="c0">In this copy, I&rsquo;m taking the most common hurdles a reader might bring up immediately and knocking them out line by line.</p>
@@ -1041,7 +1051,7 @@
     <p class="c0">Showing patterns inside credibility, track record, testimonials, case studies, success stories, etc., demonstrates that &ldquo;xyz result&rdquo; is more &ldquo;Predictable.&rdquo;</p>
     <p class="c0">The subtext conveyed is that the last time something like &ldquo;A&rdquo; happened in history, &ldquo;B&rdquo; was the result.</p>
     <a id="t.8d7af6ee89c7991725b65fd787e0ca891a88607f"></a><a id="t.5"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -1053,7 +1063,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     
     <p class="c0">If you can set up the pattern to be obvious&hellip;</p>
@@ -1078,7 +1088,7 @@
     <p class="c0">We can see an example of Safe using the SAME copywriting example we used for Easy.</p>
     <p class="c0">Here&rsquo;s that clip again from The Money Zone&hellip;</p>
     <a id="t.b5253f487cebcccb0caa549704733959ac34f14e"></a><a id="t.6"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -1095,7 +1105,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0">Notice the copywriter actually gave the level of Safe a numerical value&hellip; 93% certainty.</p>
     
@@ -1189,7 +1199,7 @@
     <p class="c0">Big AND Fast.</p>
     <p class="c0">Here&rsquo;s an example of some real copywriting that demonstrates Big and Fast from The Hottest IPO promo&hellip;</p>
     <a id="t.820e66312502158f073de22120dbfe6ae3a31df0"></a><a id="t.7"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -1225,7 +1235,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     
     
@@ -1237,7 +1247,7 @@
     <p class="c0">This one from that same Money Map promo I used earlier about the new liquid.</p>
     <p class="c0">Except this time, specifically pay attention to the &ldquo;Bigness.&rdquo;</p>
     <a id="t.b165c635dc5ced2fcad18a06e16d2153bcbb6d91"></a><a id="t.8"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -1255,7 +1265,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0">This excerpt is dripping with Big&hellip; </p>
     <p class="c0 c-indented">&ldquo;HUGE profit opportunity.&rdquo;</p>
@@ -1880,7 +1890,7 @@
     <p class="c0">Some folks refer to this as a &ldquo;payoff.&rdquo;</p>
     <p class="c0">I can demonstrate the payoff concept in the first couple lines of a successful marketing email I wrote for The $15 Trillion Gadget.</p>
     <a id="t.8900967c7baadabe3d6f94df2d11a88f58f69119"></a><a id="t.9"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -1899,7 +1909,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0">The sales letter I wrote this email for has nothing to do with airport security&hellip;</p>
     
@@ -1928,7 +1938,7 @@
     <p class="c0">Throughout this entire excerpt of copy, I&rsquo;m simply expanding upon the &ldquo;49 Retirement Income Tricks&rdquo; I mentioned in the headline.</p>
     <p class="c0">Okay let&rsquo;s recap what we have so far&hellip;</p>
     <a id="t.436d507fc4da995b3ec815189d530b105b079df5"></a><a id="t.10"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -1944,7 +1954,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
       <h2 class="c6">
         
@@ -2178,7 +2188,7 @@
     <p class="c0">I don&rsquo;t want to make sales pitches inside a book you paid money for, but I thought you might be interested in these free resources.</p>
     <p class="c0">Here&rsquo;s some of the copywriting that surrounds that single line we just translated:</p>
     <a id="t.350ab05dd5dab9715848242d5a67c90a33d590b3"></a><a id="t.11"></a>
-    <div class="table-wrapper"><table class="c25">
+    <table class="c25">
         <tbody>
             <tr class="c34">
                 <td class="c42" colspan="1" rowspan="1">
@@ -2194,7 +2204,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     <p class="c0">This is the end of the lead for that promo.</p>
     <p class="c0">The lead is 382 words long.</p>
     <p class="c0">Then the writer transitions into the body copy next by introducing the &ldquo;guru&rdquo; in what I call &ldquo;the credibility section.&rdquo;</p>
@@ -2216,7 +2226,7 @@
     <p class="c0">If you refer back to the Rich Dad Retirement Masterclass lead&hellip; </p>
     <p class="c0">The second line is an open loop&hellip;</p>
     <a id="t.cac7da876a4d4a8117137d376d690836b5c60bec"></a><a id="t.12"></a>
-    <div class="table-wrapper"><table class="c31">
+    <table class="c31">
         <tbody>
             <tr class="c34">
                 <td class="c12" colspan="1" rowspan="1">
@@ -2230,7 +2240,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0"><strong class="c13">Oh, one last (secret) open loop example:</strong></p>
     <p class="c0">Maybe you caught it, but I just opened another loop above:</p>
@@ -2589,7 +2599,7 @@
     <p class="c0">As of today, this letter has been making me money every single day for about a year.</p>
     <p class="c0">Here&rsquo;s the example, from The Hottest IPO&hellip;</p>
     <a id="t.2726f2c4c18134d6fbf62cc7cef5c5dc980573be"></a><a id="t.13"></a>
-    <div class="table-wrapper"><table class="c31">
+    <table class="c31">
         <tbody>
             <tr class="c34">
                 <td class="c12" colspan="1" rowspan="1">
@@ -2606,7 +2616,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0"><u class="c24">The Objection is:</u>&nbsp;<strong class="c13">why should I act fast?</strong></p>
     <p class="c0"><u class="c24">The claim is</u>:<strong class="c13">&nbsp;Silicon Valley insiders are already getting rich. You&rsquo;re missing out.</strong></p>
@@ -2624,7 +2634,7 @@
     <p class="c0">This example will be much more sophisticated because of my experience after a year of writing at Agora Financial.</p>
     <p class="c0">This is proof presented in the form of a case study for Rich Dad&rsquo;s Retirement Masterclass.</p>
     <a id="t.ec8e4686e1edff5a7bedc1747caac83f6dad5fc9"></a><a id="t.14"></a>
-    <div class="table-wrapper"><table class="c31">
+    <table class="c31">
         <tbody>
             <tr class="c34">
                 <td class="c12" colspan="1" rowspan="1">
@@ -2647,7 +2657,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0"><u class="c24">The objection is</u>: <strong class="c13">Will this be hard?</strong></p>
     <p class="c0"><u class="c24">My claim is:</u>&nbsp;<strong class="c13">&ldquo;A Single One-Time Move That Can Produce the Equivalent of $1,846 Every Week.&rdquo;</strong></p>
@@ -2785,7 +2795,7 @@
     <p class="c0">But no matter what: I MUST communicate one of The Big 4 or the section is worthless.</p>
     <p class="c0">Here&rsquo;s an example of the Better Than section from The Hottest IPO and it will pick up where my last example left off&hellip;</p>
     <a id="t.6794a452887430f72dd3fbc7dbaa19b63de47f9e"></a><a id="t.15"></a>
-    <div class="table-wrapper"><table class="c31">
+    <table class="c31">
         <tbody>
             <tr class="c34">
                 <td class="c12" colspan="1" rowspan="1">
@@ -2803,7 +2813,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     
     <p class="c0">When The Hottest IPO was written, Bitcoin was all the hype.</p>
@@ -2843,7 +2853,7 @@
     <p class="c0">And therefore, Predictability.</p>
     <p class="c0">The legendary Gary Halbert did this in his famous &ldquo;Water Ad.&rdquo;</p>
     <a id="t.b78616ee42783dcfc53d73012601d460db7d0eb0"></a><a id="t.16"></a>
-    <div class="table-wrapper"><table class="c31">
+    <table class="c31">
         <tbody>
             <tr class="c34">
                 <td class="c12" colspan="1" rowspan="1">
@@ -2854,7 +2864,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     <p class="c0">Pay attention to how Halbert explains the pattern between &ldquo;You get the idea&rdquo; and &ldquo;But now, he has outdone himself.&rdquo;</p>
     
@@ -3652,7 +3662,7 @@
     <p class="c0">Think of it like comparing a McDonalds cheeseburger to a T-bone steak.</p>
     <p class="c0">Here&rsquo;s a Real Example from The Buyout Millionaires Club promo at Agora Financial:</p>
     <a id="t.0240e26a333cb166fc275eb450c402837417d390"></a><a id="t.17"></a>
-    <div class="table-wrapper"><table class="c31">
+    <table class="c31">
         <tbody>
             <tr class="c34">
                 <td class="c12" colspan="1" rowspan="1">
@@ -3671,7 +3681,7 @@
                 </td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
     
     
     <p class="c0">Before talking about how much a subscription to the newsletter will cost ($2,000)&hellip; </p>

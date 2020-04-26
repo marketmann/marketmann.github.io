@@ -1,6 +1,4 @@
----
-layout: table_wrappers
----
+
 
 <!DOCTYPE html>
 
@@ -11,6 +9,18 @@ layout: table_wrappers
 <!-- END RIGHT SIDEBAR -->
 
 <body>
+     
+     <!--- SCROLL POSITION -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
       <!--MAIN CSS STYLE SHEETS -->
     <link id="style-light" rel="stylesheet" href="{{ '/assets/css/just-the-docs.css' | absolute_url }}">
     <link id="style-dark" rel="stylesheet" href="{{ '/assets/css/dark-mode-preview.css' | absolute_url }}">

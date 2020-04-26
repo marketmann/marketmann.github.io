@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 
 <html lang="en/us">
@@ -46,6 +44,18 @@
 <!-- END RIGHT SIDEBAR -->
 
 <body>
+     
+     <!--- SCROLL POSITION -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
       <!--MAIN CSS STYLE SHEETS -->
     <link id="style-light" rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
     <link id="style-dark" rel="stylesheet" href="http://localhost:4000/assets/css/dark-mode-preview.css">
@@ -70,7 +80,7 @@
          </div>
 
          <div class="navigation main-nav js-main-nav">
-              <ul id="navsmigoco" class="navigation-list nav"><li class="navigation-list-item"><a href="http://localhost:4000/" class="navigation-list-link">Home</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/configuration/" class="navigation-list-link">Configuration</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/ui-components" class="navigation-list-link">UI Components</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/buttons/" class="navigation-list-link">Buttons</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/typography/" class="navigation-list-link">Typography</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/labels/" class="navigation-list-link">Labels</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/tables/" class="navigation-list-link">Tables</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/lists/" class="navigation-list-link">Lists</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/code/" class="navigation-list-link">Code</a></li></ul></li><li class="navigation-list-item active"><a href="http://localhost:4000/docs/utilities" class="navigation-list-link">Utilities</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/responsive-modifiers/" class="navigation-list-link">Responsive Modifiers</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/layout/" class="navigation-list-link">Layout</a></li><li class="navigation-list-item  active"><a href="http://localhost:4000/docs/utilities/color/" class="navigation-list-link active">Color</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/typography/" class="navigation-list-link">Typography</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/navigation-structure/" class="navigation-list-link">Navigation Structure</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/customization/" class="navigation-list-link">Customization</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/search/" class="navigation-list-link">Search</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/reference" class="navigation-list-link">Reference</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/take-their-money/" class="navigation-list-link">Take Their Money</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/16-word-sl/" class="navigation-list-link">16 Word Sales Letter</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/number-3/" class="navigation-list-link">Test-html</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/make-sites-win-2/" class="navigation-list-link">Make Sites Win</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/swipe" class="navigation-list-link">Swipe File</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/swipe/Schwartz-Learning-Machine/" class="navigation-list-link">Learning Machine</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/swipe/Bencivenga-Ad-Agency/" class="navigation-list-link">Agency Ad</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/index-test/" class="navigation-list-link">Markdown kitchen sink</a></li></ul>
+              <ul id="navsmigoco" class="navigation-list nav"><li class="navigation-list-item"><a href="http://localhost:4000/" class="navigation-list-link">Home</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/configuration/" class="navigation-list-link">Configuration</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/ui-components" class="navigation-list-link">UI Components</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/buttons/" class="navigation-list-link">Buttons</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/typography/" class="navigation-list-link">Typography</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/labels/" class="navigation-list-link">Labels</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/tables/" class="navigation-list-link">Tables</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/lists/" class="navigation-list-link">Lists</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/ui-components/code/" class="navigation-list-link">Code</a></li></ul></li><li class="navigation-list-item active"><a href="http://localhost:4000/docs/utilities" class="navigation-list-link">Utilities</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/responsive-modifiers/" class="navigation-list-link">Responsive Modifiers</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/layout/" class="navigation-list-link">Layout</a></li><li class="navigation-list-item  active"><a href="http://localhost:4000/docs/utilities/color/" class="navigation-list-link active">Color</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/utilities/typography/" class="navigation-list-link">Typography</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/navigation-structure/" class="navigation-list-link">Navigation Structure</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/customization/" class="navigation-list-link">Customization</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/search/" class="navigation-list-link">Search</a></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/reference" class="navigation-list-link">Reference</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/take-their-money/" class="navigation-list-link">Take Their Money</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/16-word-sl/" class="navigation-list-link">16 Word Sales Letter</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/number-3/" class="navigation-list-link">Test-html</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/make-site-win/" class="navigation-list-link">Make Sites Win</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/reference/KICKASS%20COPY%20SECRETS/" class="navigation-list-link">Kickass Copy Secrets</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/swipe" class="navigation-list-link">Swipe File</a><ul class="navigation-list-child-list "><li class="navigation-list-item "><a href="http://localhost:4000/docs/swipe/Schwartz-Learning-Machine/" class="navigation-list-link">Learning Machine</a></li><li class="navigation-list-item "><a href="http://localhost:4000/docs/swipe/Bencivenga-Ad-Agency/" class="navigation-list-link">Agency Ad</a></li></ul></li><li class="navigation-list-item"><a href="http://localhost:4000/docs/index-test/" class="navigation-list-link">Markdown kitchen sink</a></li></ul>
   <script type="text/javascript">
       $(document).ready(function() {
           $('#navsmigoco').navgoco({
@@ -175,7 +185,7 @@
         
       </h2>
 
-<div class="table-wrapper"><table>
+<table>
   <thead>
     <tr>
       <th style="text-align: left">Color value</th>
@@ -205,7 +215,7 @@
       <td style="text-align: left"><code class="highlighter-rouge">.bg-grey-lt-300</code></td>
     </tr>
   </tbody>
-</table></div>
+</table>
     
       <h2 id="dark-greys">
         
@@ -215,7 +225,7 @@
         
       </h2>
 
-<div class="table-wrapper"><table>
+<table>
   <thead>
     <tr>
       <th style="text-align: left">Color value</th>
@@ -250,7 +260,7 @@
       <td style="text-align: left"><code class="highlighter-rouge">.bg-grey-dk-300</code></td>
     </tr>
   </tbody>
-</table></div>
+</table>
     
       <h2 id="purples">
         
@@ -260,7 +270,7 @@
         
       </h2>
 
-<div class="table-wrapper"><table>
+<table>
   <thead>
     <tr>
       <th style="text-align: left">Color value</th>
@@ -290,7 +300,7 @@
       <td style="text-align: left"><code class="highlighter-rouge">.bg-purple-300</code></td>
     </tr>
   </tbody>
-</table></div>
+</table>
     
       <h2 id="blues">
         
@@ -300,7 +310,7 @@
         
       </h2>
 
-<div class="table-wrapper"><table>
+<table>
   <thead>
     <tr>
       <th style="text-align: left">Color value</th>
@@ -330,7 +340,7 @@
       <td style="text-align: left"><code class="highlighter-rouge">.bg-blue-300</code></td>
     </tr>
   </tbody>
-</table></div>
+</table>
     
       <h2 id="greens">
         
@@ -340,7 +350,7 @@
         
       </h2>
 
-<div class="table-wrapper"><table>
+<table>
   <thead>
     <tr>
       <th style="text-align: left">Color value</th>
@@ -370,7 +380,7 @@
       <td style="text-align: left"><code class="highlighter-rouge">.bg-green-300</code></td>
     </tr>
   </tbody>
-</table></div>
+</table>
     
       <h2 id="yellows">
         
@@ -380,7 +390,7 @@
         
       </h2>
 
-<div class="table-wrapper"><table>
+<table>
   <thead>
     <tr>
       <th style="text-align: left">Color value</th>
@@ -410,7 +420,7 @@
       <td style="text-align: left"><code class="highlighter-rouge">.bg-yellow-300</code></td>
     </tr>
   </tbody>
-</table></div>
+</table>
     
       <h2 id="reds">
         
@@ -420,7 +430,7 @@
         
       </h2>
 
-<div class="table-wrapper"><table>
+<table>
   <thead>
     <tr>
       <th style="text-align: left">Color value</th>
@@ -450,7 +460,7 @@
       <td style="text-align: left"><code class="highlighter-rouge">.bg-red-300</code></td>
     </tr>
   </tbody>
-</table></div>
+</table>
                   
 
                   
