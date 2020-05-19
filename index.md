@@ -6,10 +6,10 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Focus on writing good documentation
+# I Am Marketmann
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+Marketmann.github.io is my personal, online, copywriting repo.  On this site contains reference material, sales pages, and old ads that I like.  Yes, some of the content on this site is currently being sold by parties that are not myself. For this reason, I've inserted the proper "no-index" meta tags to prevent search engine crawlers from indexing this page. In short, no page, or any part of any page is indexed by google, bing, or any other search engine, and, as such, does not appear in any search engine.  This page, and this site are built using Jekyll and, the Jekyll theme "Just the Docs."  There are some residual pages left over from that theme that I haven't yet removed, or edited. What's below this line of text is an example of that.  :-)
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
