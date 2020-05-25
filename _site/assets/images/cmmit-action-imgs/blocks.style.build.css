@@ -1,0 +1,257 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-ca-blocks-img-grid-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: normal;
+      justify-content: normal; }
+  .wp-block-ca-blocks-img-grid-link a:after {
+    display: none !important; }
+  .wp-block-ca-blocks-img-grid-link span {
+    padding: 0 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    margin: 0; }
+    @media screen and (min-width: 48.0625em) {
+      .wp-block-ca-blocks-img-grid-link span {
+        -ms-flex-positive: initial;
+            flex-grow: initial;
+        -ms-flex-preferred-size: initial;
+            flex-basis: initial;
+        margin: 20px 0; } }
+  .wp-block-ca-blocks-img-grid-link .img {
+    display: inline-block;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    .wp-block-ca-blocks-img-grid-link .img--placeholder {
+      min-height: unset;
+      width: 100px; }
+
+.flex-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.wp-block-ca-blocks-testimonial {
+  background: #f8f8f8;
+  border-radius: 4px;
+  padding: 20px 40px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 0 0 #f2f2f2;
+          box-shadow: 0 4px 0 0 #f2f2f2; }
+  @media screen and (min-width: 48.0625em) {
+    .wp-block-ca-blocks-testimonial {
+      padding: 30px 50px; } }
+
+.wp-block-ca-blocks-testimonial__author {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.wp-block-ca-blocks-testimonial__author-image {
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid white; }
+  .wp-block-ca-blocks-testimonial__author-image img {
+    width: 100%; }
+
+.wp-block-ca-blocks-testimonial__author-image-media-trigger {
+  width: 50px;
+  height: 50px;
+  background-color: #eee; }
+
+.wp-block-ca-blocks-testimonial__author-name {
+  margin: 0;
+  margin-left: 10px;
+  color: #c9c6d9;
+  font-weight: 400; }
+  .wp-block-ca-blocks-testimonial__author-name {
+    font-size: 13px !important; }
+    @media screen and (min-width: 375px) {
+      .wp-block-ca-blocks-testimonial__author-name {
+        font-size: calc( 13px + 3 * ((100vw - 375px) / 1065)) !important; } }
+    @media screen and (min-width: 1440px) {
+      .wp-block-ca-blocks-testimonial__author-name {
+        font-size: 16px !important; } }
+
+.wp-block-ca-blocks-testimonial__text {
+  line-height: 1.2;
+  margin-bottom: 10px;
+  position: relative; }
+  @media screen and (min-width: 48.0625em) {
+    .wp-block-ca-blocks-testimonial__text {
+      margin-bottom: 20px; } }
+  .wp-block-ca-blocks-testimonial__text p {
+    font-weight: 400 !important; }
+    .wp-block-ca-blocks-testimonial__text p {
+      font-size: 13px !important; }
+      @media screen and (min-width: 375px) {
+        .wp-block-ca-blocks-testimonial__text p {
+          font-size: calc( 13px + 3 * ((100vw - 375px) / 1065)) !important; } }
+      @media screen and (min-width: 1440px) {
+        .wp-block-ca-blocks-testimonial__text p {
+          font-size: 16px !important; } }
+  .wp-block-ca-blocks-testimonial__text svg {
+    position: absolute;
+    top: 0;
+    left: -20px; }
+    @media screen and (min-width: 48.0625em) {
+      .wp-block-ca-blocks-testimonial__text svg {
+        -webkit-transform: scale(2);
+            -ms-transform: scale(2);
+                transform: scale(2); } }
+
+.wp-block-ca-blocks-testimonial.testimonial--sec {
+  background: rgba(248, 248, 248, 0.1);
+  border-radius: 5px;
+  margin-bottom: 32px;
+  color: #cac6d9 !important;
+  padding: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  @media screen and (min-width: 48.0625em) {
+    .wp-block-ca-blocks-testimonial.testimonial--sec {
+      padding: 50px; } }
+  .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__text p {
+    text-align: left;
+    color: #cac6d9 !important;
+    font-weight: 200 !important; }
+    .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__text p {
+      font-size: 15px !important; }
+      @media screen and (min-width: 375px) {
+        .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__text p {
+          font-size: calc( 15px + 5 * ((100vw - 375px) / 1065)) !important; } }
+      @media screen and (min-width: 1440px) {
+        .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__text p {
+          font-size: 20px !important; } }
+  .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__author {
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__author-name {
+    font-weight: 600;
+    text-align: left; }
+    .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__author-name {
+      font-size: 15px !important; }
+      @media screen and (min-width: 375px) {
+        .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__author-name {
+          font-size: calc( 15px + 5 * ((100vw - 375px) / 1065)) !important; } }
+      @media screen and (min-width: 1440px) {
+        .wp-block-ca-blocks-testimonial.testimonial--sec .wp-block-ca-blocks-testimonial__author-name {
+          font-size: 20px !important; } }
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.wp-block-ca-blocks-testimonial-2 {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto; }
+
+.wp-block-ca-blocks-testimonial-2__author {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.wp-block-ca-blocks-testimonial-2__author-image {
+  width: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid white; }
+  .wp-block-ca-blocks-testimonial-2__author-image img {
+    width: 100%; }
+
+.wp-block-ca-blocks-testimonial-2__author-image-media-trigger {
+  width: 75px;
+  height: 75px;
+  background-color: #eee; }
+
+.wp-block-ca-blocks-testimonial-2__author-name {
+  margin-bottom: 20px;
+  color: #c9c6d9;
+  font-weight: 700; }
+  .wp-block-ca-blocks-testimonial-2__author-name {
+    font-size: 15px !important; }
+    @media screen and (min-width: 375px) {
+      .wp-block-ca-blocks-testimonial-2__author-name {
+        font-size: calc( 15px + 9 * ((100vw - 375px) / 1065)) !important; } }
+    @media screen and (min-width: 1440px) {
+      .wp-block-ca-blocks-testimonial-2__author-name {
+        font-size: 24px !important; } }
+
+.wp-block-ca-blocks-testimonial-2__text {
+  line-height: 1.2;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #e5e5e5;
+  padding: 25px 25px;
+  border-radius: 5px; }
+  @media screen and (min-width: 48.0625em) {
+    .wp-block-ca-blocks-testimonial-2__text {
+      padding: 45px 75px; } }
+  .wp-block-ca-blocks-testimonial-2__text p {
+    margin: 0 auto;
+    color: #000000 !important; }
+    .wp-block-ca-blocks-testimonial-2__text p {
+      font-size: 15px !important; }
+      @media screen and (min-width: 375px) {
+        .wp-block-ca-blocks-testimonial-2__text p {
+          font-size: calc( 15px + 9 * ((100vw - 375px) / 1065)) !important; } }
+      @media screen and (min-width: 1440px) {
+        .wp-block-ca-blocks-testimonial-2__text p {
+          font-size: 24px !important; } }
+
+.testimonial-2-dark-mode .wp-block-ca-blocks-testimonial-2__text {
+  background-color: rgba(229, 229, 229, 0.15); }
+
+.testimonial-2-dark-mode p {
+  color: #c9c6d9 !important; }
