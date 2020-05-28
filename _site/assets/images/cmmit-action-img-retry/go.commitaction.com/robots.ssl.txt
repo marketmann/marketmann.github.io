@@ -1,0 +1,14 @@
+Sitemap: https://go.commitaction.com/sitemap.xml
+User-agent: *
+Disallow: /Login
+Disallow: /*/tag/*
+Disallow: /*/category/*
+Disallow: /*/author/*
+Disallow: /*/sort/*
+Disallow: /*/range/*
+Disallow: /*/sub/*
+Disallow: /*/var/*
+Disallow: /*/search/*
+Disallow: /search
+Disallow: /checkout
+Disallow: /cart
