@@ -266,7 +266,7 @@
 }
 @media (min-width: 66.5rem) {
    .main-content {
-      margin-left: calc((100% - 1350px) / 2 + 264px);
+      margin-left: calc((100% - 1370px) / 5 + 294px)
    }
 }
 .js-main-content:focus {

@@ -7317,7 +7317,9 @@
                 <!-- END MIDDLE SECTION -->
 
                 <!-- RIGHT SIDEBAR (INCLUDING JAVASCRIPT) -->
-                    <!--RIGHT SIDEBAR-->
+                    <!-----RIGHT SIDEBAR----->
+    <!-----RIGHT SIDEBAR----->
+    <!-----RIGHT SIDEBAR----->
     <div class="right-sidebar" id="js-pushed-sidebar">
         <div class="hypothesis-container">
             <!-- hypothesis will be placed here -->
@@ -7361,92 +7363,7 @@
         </div>
     </div>
 
-    <!--HYPOTHESIS SCRIPTS -->
-    <script>
-        const bodyElem = document.querySelector('body');
-        window.hypothesisConfig = function() {
-            return {
-                onLayoutChange: function(info) {
-                    if (info.expanded) {
-                        bodyElem.classList.add('is-open');
-                    } else {
-                        bodyElem.classList.remove('is-open');
-                    }
-                },
-                externalContainerSelector: '.hypothesis-container',
-                branding: {
-                    accentColor: 'red',
-                    appBackgroundColor: '#0000',
-                    ctaBackgroundColor: '',
-                    ctaTextColor: '',
-                    selectionFontFamily: 'Garamond, serif',
-                    annotationFontFamily: ''
-                }
-            }
-        }
 
-    </script>
-    <script src="https://hypothes.is/embed.js" async></script>
-    <script>
-        // we're looking for an element `.annotator-frame`
-        var hypothesisElemSelector = '.annotator-frame';
-        document.addEventListener('DOMContentLoaded', function() {});
-
-        function listenForHypothesis() {
-            // Select the node that will be observed for mutations
-            const targetNode = document.querySelector(hypothesisElemSelector);
-            // Options for the observer (which mutations to observe)
-            const config = {
-                attributes: true,
-                childList: false,
-                subtree: false
-            };
-            // Callback function to execute when mutations are observed
-            const callback = function(mutationsList, observer) {
-                for (let mutation of mutationsList) {
-                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                        console.log('The ' + mutation.attributeName + ' attribute was modified.');
-                        if (targetNode.classList.contains('annotator-collapsed')) {
-                            bodyElem.classList.remove('is-open');
-                            console.log('Collapsed!')
-                        } else {
-                            console.log('Open!');
-                            // check if we should open
-                            bodyElem.classList.add('is-open');
-                        }
-                    }
-                }
-            };
-            // Create an observer instance linked to the callback function
-            const observer = new MutationObserver(callback);
-            // Start observing the target node for configured mutations
-            observer.observe(targetNode, config);
-        }
-
-        function initHypothesisWatcher() {
-            var timer;
-            if (!document.querySelector(hypothesisElemSelector)) {
-                console.log('Did not find hypothesis; retrying in 1 second.');
-                // cancel timer and retry
-                if (timer) {
-                    window.clearTimeout(timer);
-                }
-                timer = window.setTimeout(function() {
-                    initHypothesisWatcher();
-                }, 1000);
-            } else {
-                console.log('Found hypothesis! :D')
-                // kill timers
-                if (timer) {
-                    window.clearTimeout(timer);
-                }
-                // ready, lanch the listner
-                listenForHypothesis();
-            }
-        }
-
-    </script>
-    <!--END HYPOTHESIS SCRIPTS -->
 
 
     <!--RIGHT SIDEBAR -- BUTTON TOGGLE & SIDEBAR EXPAND/COLLAPSE FUNCTION & LOCAL STORAGE - JAVASCRIPT -->
@@ -7645,7 +7562,92 @@
         })();
 
     </script>
+    <!--HYPOTHESIS SCRIPTS -->
+    <script>
+        const bodyElem = document.querySelector('body');
+        window.hypothesisConfig = function() {
+            return {
+                onLayoutChange: function(info) {
+                    if (info.expanded) {
+                        bodyElem.classList.add('is-open');
+                    } else {
+                        bodyElem.classList.remove('is-open');
+                    }
+                },
+                externalContainerSelector: '.hypothesis-container',
+                branding: {
+                    accentColor: 'red',
+                    appBackgroundColor: '#0000',
+                    ctaBackgroundColor: '',
+                    ctaTextColor: '',
+                    selectionFontFamily: 'Garamond, serif',
+                    annotationFontFamily: ''
+                }
+            }
+        }
 
+    </script>
+    <script src="https://hypothes.is/embed.js" async></script>
+    <script>
+        // we're looking for an element `.annotator-frame`
+        var hypothesisElemSelector = '.annotator-frame';
+        document.addEventListener('DOMContentLoaded', function() {});
+
+        function listenForHypothesis() {
+            // Select the node that will be observed for mutations
+            const targetNode = document.querySelector(hypothesisElemSelector);
+            // Options for the observer (which mutations to observe)
+            const config = {
+                attributes: true,
+                childList: false,
+                subtree: false
+            };
+            // Callback function to execute when mutations are observed
+            const callback = function(mutationsList, observer) {
+                for (let mutation of mutationsList) {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                        console.log('The ' + mutation.attributeName + ' attribute was modified.');
+                        if (targetNode.classList.contains('annotator-collapsed')) {
+                            bodyElem.classList.remove('is-open');
+                            console.log('Collapsed!')
+                        } else {
+                            console.log('Open!');
+                            // check if we should open
+                            bodyElem.classList.add('is-open');
+                        }
+                    }
+                }
+            };
+            // Create an observer instance linked to the callback function
+            const observer = new MutationObserver(callback);
+            // Start observing the target node for configured mutations
+            observer.observe(targetNode, config);
+        }
+
+        function initHypothesisWatcher() {
+            var timer;
+            if (!document.querySelector(hypothesisElemSelector)) {
+                console.log('Did not find hypothesis; retrying in 1 second.');
+                // cancel timer and retry
+                if (timer) {
+                    window.clearTimeout(timer);
+                }
+                timer = window.setTimeout(function() {
+                    initHypothesisWatcher();
+                }, 1000);
+            } else {
+                console.log('Found hypothesis! :D')
+                // kill timers
+                if (timer) {
+                    window.clearTimeout(timer);
+                }
+                // ready, lanch the listner
+                listenForHypothesis();
+            }
+        }
+
+    </script>
+    <!--END HYPOTHESIS SCRIPTS -->
 
 
     <!-- MAKE HYPOTHESIS SIDEBAR DARK -->
@@ -8314,7 +8316,9 @@ font-weight: 300;
         })();
 
     </script>
-
+    <!-----END RIGHT SIDEBAR----->
+    <!-----END RIGHT SIDEBAR----->
+    <!-----END RIGHT SIDEBAR----->
                 <!-- END RIGHT SIDEBAR -->
 
             </div>

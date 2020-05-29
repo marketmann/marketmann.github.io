@@ -156,5 +156,16 @@ a:not([class]):hover {
     }
 }
 
+/** MIDDLE SECTION - RIGHT SIDEBAR OPEN**/
+.page.oooopen {
+    padding-right: 400px;
+}
+
+/** MIDDLE SECTION - RIGHT SIDEBAR OPEN - LOCAL STORAGE**/
+.page.oooopen-on-load {
+    -webkit-transition: none;
+    transition: none;
+    padding-right: 400px;
+}
 
 

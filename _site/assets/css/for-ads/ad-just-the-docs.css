@@ -153,3 +153,15 @@ a:not([class]):hover {
         transition: 0.3s;
     }
 }
+
+/** MIDDLE SECTION - RIGHT SIDEBAR OPEN**/
+.page.oooopen {
+    padding-right: 400px;
+}
+
+/** MIDDLE SECTION - RIGHT SIDEBAR OPEN - LOCAL STORAGE**/
+.page.oooopen-on-load {
+    -webkit-transition: none;
+    transition: none;
+    padding-right: 400px;
+}
