@@ -1,22 +1,53 @@
 
 
-/**
- **************************** 
- RIGHT SIDEBAR & BUTTONS
- */
-
-
-
-body {
-	background: black;
+/******************************
+ ******************************
+ ******************************
+ RIGHT SIDEBAR JAVASCRIPT STYLES
+ ******************************
+ ******************************
+ ******************************/
+/** 
+ MIDDLE SECTION WHEN - 
+ RIGHT SIDEBAR - 
+ OPENED **/
+.page.oooopen {
+    padding-right: 400px;
 }
 
-/**
- **
- **
- **
- **
- BUTTON CONTAINER*/
+/** 
+ MIDDLE SECTION WHEN- 
+ RIGHT SIDEBAR - 
+ OPENED ON LOAD **/
+.page.oooopen-on-load {
+    -webkit-transition: none;
+    transition: none;
+    padding-right: 400px;
+}
+/** 
+ RIGHT SIDEBAR - 
+ OPENED ON LOAD **/
+.right-sidebar.oooopen,
+.right-sidebar.oooopen-on-load {
+   right: 0px;
+}
+
+
+/******************************
+ ******************************
+ ******************************
+ ******************************
+ ******************************
+ RIGHT SIDEBAR & BUTTON MENU
+ ******************************
+ ******************************
+ ******************************
+ ******************************
+ ******************************/
+
+/******************************
+ BUTTON GROUP CONTAINER
+******************************/
 .right-sidebar-button-container {
 	display: flex;
 	flex-direction: row;
@@ -51,15 +82,24 @@ body {
 }
 
 
+/**ON HOVER MENU - EXPANDED BUTTON CONTAINER */
+.right-sidebar-expander-container {
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	flex-flow: row-reverse;
+	width: 100%;
+	height: 100%;
+}
 
-	
+.right-sidebar-expander-container button {
+	margin-right: 5px;
+}
 
-
-/**
- **
- **
- **
- UNIVERSAL STYLES */
+/******************************
+ BUTTONS - ALL BUTTONS
+******************************/
 .right-sidebar-button-container button {
 	display: flex;
 	justify-content: center;
@@ -86,11 +126,9 @@ body {
 	height: 14px;
 }
 
-/**
- **
- **
- **
- BUTTON - MENU TOGGLE*/
+/******************************
+ BUTTON - TOGGLE - BUTTON GROUP
+******************************/
 button.menu-toggle {
 	position:absolute;
 	z-index:10000000000;
@@ -116,11 +154,10 @@ button.menu-toggle {
 	margin-top:-1px;
 	margin-bottom:-1px;
 }
-/**
- **
- **
- **
- BUTTON - RIGHT SIDEBAR TOGGLE*/
+
+/******************************
+ BUTTON - TOGGLE - RIGHT SIDEBAR
+******************************/
 button.right-sidebar-toggle {
 	position: relative;
 	display: flex;
@@ -159,34 +196,15 @@ button.right-sidebar-toggle {
 		opacity:0;
 }
 
-/**
- **
- **
- ON HOVER MENU - EXPANDED BUTTON CONTAINER */
-.right-sidebar-expander-container {
-	display: -ms-flexbox;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: row;
-	flex-flow: row-reverse;
-	width: 100%;
-	height: 100%;
-}
-
-.right-sidebar-expander-container button {
-	margin-right: 5px;
-}
 
 
-
-/************** 
- ************** 
- ************** 
- ************** 
- ************** 
- ************** 
- ************** 
- RIGHT SIDEBAR */
+/******************************
+ ******************************
+ ******************************
+ RIGHT SIDEBAR
+ ******************************
+******************************
+ ******************************/
 .right-sidebar {
    height: 100%;
    width: 400px;
@@ -203,10 +221,6 @@ button.right-sidebar-toggle {
    z-index: 999;
 }
 
-.right-sidebar.oooopen,
-.right-sidebar.oooopen-on-load {
-   right: 0px;
-}
 
 .hypothesis-container {
    width: 100%;
@@ -226,5 +240,6 @@ button.right-sidebar-toggle {
    top:0;
    width: 100%;
 }
+
 
 
