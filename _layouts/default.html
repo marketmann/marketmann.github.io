@@ -2,37 +2,35 @@
 
 <html lang="en/us">
 
-<!-- RIGHT SIDEBAR (INCLUDING JAVASCRIPT) -->
 {% include head.html %}
 
-    <!--- MAINTAIN SCROLL -->
-    <script>
-        /*
-         * Maintain & keep scroll position after post-back & postback & refresh.
-         * Just include this js file (no need for cookies).
-         *
-         * Author: Evalds Urtans
-         * Website: http://www.evalds.lv
-         */
+<!--- MAINTAIN SCROLL -->
+<script>
+    /*
+     * Maintain & keep scroll position after post-back & postback & refresh.
+     * Just include this js file (no need for cookies).
+     *
+     * Author: Evalds Urtans
+     * Website: http://www.evalds.lv
+     */
 
-        document.addEventListener('DOMContentLoaded', function() {
-            var sep = '\uE000'; // an unusual char: unicode 'Private Use, First'
+    document.addEventListener('DOMContentLoaded', function() {
+        var sep = '\uE000'; // an unusual char: unicode 'Private Use, First'
 
-            window.addEventListener('pagehide', function(e) {
-                window.name += sep + window.pageXOffset + sep + window.pageYOffset;
-            });
-
-            if (window.name && window.name.indexOf(sep) > -1) {
-                var parts = window.name.split(sep);
-                if (parts.length >= 3) {
-                    window.name = parts[0];
-                    window.scrollTo(parseFloat(parts[parts.length - 2]), parseFloat(parts[parts.length - 1]));
-                }
-            }
+        window.addEventListener('pagehide', function(e) {
+            window.name += sep + window.pageXOffset + sep + window.pageYOffset;
         });
 
-    </script>
-<!-- END RIGHT SIDEBAR -->
+        if (window.name && window.name.indexOf(sep) > -1) {
+            var parts = window.name.split(sep);
+            if (parts.length >= 3) {
+                window.name = parts[0];
+                window.scrollTo(parseFloat(parts[parts.length - 2]), parseFloat(parts[parts.length - 1]));
+            }
+        }
+    });
+
+</script>
 
 <body>
 
@@ -49,8 +47,9 @@
 
     <div class="page-wrap">
 
-        <!-- LEFT SIDEBAR -->
-        <div class="side-bar">
+        <!-----LEFT SIDEBAR----->
+        <!-----LEFT SIDEBAR----->
+        <div class="side-bar" id="js-left-pushed-sidebar">
             <div class="site-header">
                 <a href="{{ site.url }}{{ site.baseurl }}" class="site-title lh-tight">{% include title.html %}</a>
                 <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
@@ -63,10 +62,11 @@
                 <p class="text-small text-grey-dk-000 mb-4">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
             </footer>
         </div>
-        <!-- END LEFT SIDEBAR -->
+        <!-----END LEFT SIDEBAR----->
+        <!-----END LEFT SIDEBAR----->
 
         <div class="main-content-wrap js-main-content" tabindex="0">
-            <div class="main-content">
+            <div class="main-content" id="js-left-pushed-content">
                 <div class="page-header js-page-header">
                     {% if site.search_enabled != false %}
                     <div class="search">
@@ -92,7 +92,8 @@
                     {% endif %}
                 </div>
 
-                <!-- MIDDLE SECTION -->
+                <!-----MIDDLE SECTION----->
+                <!-----MIDDLE SECTION----->
                 <div class="page" id="js-push-content">
                     {% unless page.url == "/" %}
                     {% if page.parent %}
@@ -140,11 +141,13 @@
 
                     </div>
                 </div>
-                <!-- END MIDDLE SECTION -->
+                <!-----END MIDDLE SECTION----->
+                <!-----END MIDDLE SECTION----->
 
-                <!-- RIGHT SIDEBAR (INCLUDING JAVASCRIPT) -->
+                <!-----RIGHT SIDEBAR----->
+                <!-----RIGHT SIDEBAR----->
                 {% include rightsidebar.html %}
-                <!-- END RIGHT SIDEBAR -->
+
 
             </div>
         </div>

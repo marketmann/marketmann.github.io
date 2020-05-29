@@ -1,4 +1,59 @@
 
+/******************************
+ ******************************
+ ******************************
+ LEFT SIDEBAR JAVASCRIPT STYLES
+ ******************************
+ ******************************
+ ******************************/
+/** 
+ MIDDLE SECTION WHEN - 
+ RIGHT SIDEBAR - 
+ OPENED **/
+@media (min-width: 50rem) {
+.main-content.left-open {
+    margin-left: 	190px;
+}
+}
+
+@media (min-width: 66.5rem){
+.main-content.left-open {
+    margin-left: 190px;
+}
+}
+
+/** 
+ MIDDLE SECTION WHEN- 
+ RIGHT SIDEBAR - 
+ OPENED ON LOAD **/
+.main-content.left-open-on-load {
+    transition: 0s !important;
+    margin-left: 190px;
+}
+.main-content {
+	transition:.4s ease-in-out;
+    transition-delay:.1s;
+}
+/** 
+ RIGHT SIDEBAR - 
+ OPENED ON LOAD **/
+.side-bar.left-open,
+.side-bar.left-open-on-load{
+   left: -500px;
+}
+.side-bar.left-open-on-load {
+	transition:0s !important;
+}
+.side-bar.left-open {
+    transition:.5s ease-in-out;
+    transition-delay: .1s;
+}
+
+
+.side-bar {
+	left:0;
+    transition:.5s ease-in-out;
+}
 
 /******************************
  ******************************
@@ -12,7 +67,6 @@
  RIGHT SIDEBAR - 
  OPENED **/
 .page.oooopen {
-    padding-right: 400px;
 }
 
 /** 
@@ -22,7 +76,6 @@
 .page.oooopen-on-load {
     -webkit-transition: none;
     transition: none;
-    padding-right: 400px;
 }
 /** 
  RIGHT SIDEBAR - 
@@ -163,7 +216,7 @@ button.right-sidebar-toggle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 1001;
+	z-index: 10000;
 }
 
 .right-sidebar-button-container .sidebar-in,
@@ -196,7 +249,9 @@ button.right-sidebar-toggle {
 		opacity:0;
 }
 
-
+button.left-sidebar-toggle {
+	z-index:1000000;
+}
 
 /******************************
  ******************************
