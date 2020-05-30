@@ -6,10 +6,10 @@ html {
 link#style-dark ~ .page-wrap .pagecontent {
     font-family: "SF UI DISPLAY";
     font-weight:400;
-    font-size: 18px;
-    line-height: 23.5px;
+    font-size: 18.5px;
+    line-height: 25.5px;
     /*background-color: hsl(220,8%,10.6%);*/
-    color: hsl(220, 7.04%, 76.04%);
+    color: hsl(220, 7.04%, 79.14%);
     margin: 0 auto;
     padding: 10px;
     letter-spacing: .1px;
@@ -42,14 +42,14 @@ margin-top:17px;
 }
 
 link#style-dark ~ .page-wrap .pagecontent strong {
-    color: hsl(210, 7%, 90%);
+    color: hsl(210, 7%, 99%);
 }
 
 link#style-dark ~ .page-wrap .pagecontent h1 {
     padding-top: 80px;
     font-weight: 900;
     padding-bottom: 30px;
-    font-size: 54px;
+    font-size: 54px !important;
     line-height: 1.1;
     text-align: left;
     color: white;
@@ -59,29 +59,29 @@ link#style-dark ~ .page-wrap .pagecontent h1 {
 link#style-dark ~ .page-wrap .pagecontent h2 {
     padding-top: 40px;
     font-weight:800;
-    font-size: 30px;
+    font-size: 35px !important;
     padding-bottom: 2px;
     line-height: 1.3;
     text-align: left;
-    color: hsl(215, 4.04%, 85.04%);
+   color: hsl(245.1, 4.04%, 99.04%);
     letter-spacing: -0.6px;
     margin-bottom:0px;
 }
 
 link#style-dark ~ .page-wrap .pagecontent h3 {
     padding-top: 40px;
-    font-size: 21px;
+    font-size: 27px !important; 
     padding-bottom: 0px;
     line-height: 1.0;
     text-align: left;
     font-weight: 700;
-    color: hsl(215, 4.04%, 85.04%);
+    color: hsl(245.1, 4.04%, 99.04%);
 }
 
 link#style-dark ~ .page-wrap .pagecontent h4 {
     padding-top: 12pt;
     font-weight: 700;
-    font-size: 12pt;
+    font-size: 12pt !Important;
     padding-bottom: 2pt;
     line-height: 1.0;
     page-break-after: avoid;
@@ -91,7 +91,7 @@ link#style-dark ~ .page-wrap .pagecontent h4 {
 link#style-dark ~ .page-wrap .pagecontent h5 {
     padding-top: 11pt;
     font-weight: 700;
-    font-size: 11pt;
+    font-size: 11pt !important;
     padding-bottom: 2pt;
     line-height: 1.0;
     page-break-after: avoid;
@@ -120,14 +120,27 @@ link#style-dark ~ .page-wrap .pagecontent img {
     margin-bottom:30px;
 
 }
+@media (min-width: 31.25rem) {
+.pagecontent ol > li::before {
+font-size: 17px !important;
+    padding-left:2px;
+    }
+}
+@media (min-width: 31.25rem) {
+.pagecontent ol > li::before {
+top: 0.041em !important;
+}
+}
+
 .table-wrapper {
    overflow: visible !important;
 }
 
-link#style-dark ~ .page-wrap .pagecontent table {
-    background-color: hsl(260, 9.09%, 19.41%);
-   padding:10px 14px;
-    color: hsl(215, 4.04%, 79.04%);
+ table {
+    background-color: hsl(240, 5.09%, 19.41%,.5);
+   padding:13px 20px;
+     padding-top:25px !important;
+    color: hsl(215, 4.04%, 90.14%);
     border-radius: 5px;
     margin: 0 auto;
     max-width: 85%;
@@ -137,19 +150,23 @@ link#style-dark ~ .page-wrap .pagecontent table {
     display: block;
     position: relative;
     letter-spacing: 0px;
+     min-width: unset;
       border: 1px solid hsla(220, 10%, 27%, .3) !important;
 
 }
 link#style-dark ~ .page-wrap .pagecontent table:before {
-    content:"example";
-    color: hsla(215, 4.04%, 79.04%,0.3);
-    -webkit-font-smoothing:subpixel-antialiased;
-    position: absolute;
-    top: 5px;
-    right: 7px;
-    font-family: Prima Sans Mono;
-    font-size: 0.7em;
+content: "EXAMPLE";
+font-weight: 300;
+letter-spacing: 2.2px;
+font-family: system-ui, sans-serif !Important;
+color: hsla(215, 0.04%, 79.04%,0.3);
+-webkit-font-smoothing: subpixel-antialiased;
+position: absolute;
+top: 9px;
+left: 33px;
+font-size: 0.65em;
 }
+
 link#style-dark ~ .page-wrap .pagecontent table p {
     margin-top:12px;
     margin-bottom:12px;
@@ -343,70 +360,85 @@ link#style-dark ~ .page-wrap .pagecontent .f-marg {
 
 /*IOWAN REGULAR*/
 @font-face {
-    font-family: "Iowan Old Style W01 Roman";
-    src: url('https://dl.dropboxusercontent.com/s/8e732eoue2y29rn/Iowan%20Old%20Style%20W01%20Roman.ttf?raw=1') format('truetype'),
-        url('https://dl.dropboxusercontent.com/s/qidrfvzki29bttv/Iowan%20Old%20Style%20W01%20Roman.woff2?raw=1') format('woff2'),
-        url('https://dl.dropboxusercontent.com/s/539swlaas0l35o2/Iowan%20Old%20Style%20W01%20Roman.woff?raw=1') format('woff'),
-        url('https://dl.dropboxusercontent.com/s/wiv7spkypzrvoe6/Iowan%20Old%20Style%20W01%20Roman.eot?raw=1') format('embedded-opentype'),
-        url('https://dl.dropboxusercontent.com/s/y2wgd6yn3du3ri8/Iowan%20Old%20Style%20W01%20Roman.svg?raw=1') format('svg');
-    font-weight: 400;
-    font-style: normal;
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/8e732eoue2y29rn/Iowan%20Old%20Style%20W01%20Roman.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/qidrfvzki29bttv/Iowan%20Old%20Style%20W01%20Roman.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/539swlaas0l35o2/Iowan%20Old%20Style%20W01%20Roman.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/wiv7spkypzrvoe6/Iowan%20Old%20Style%20W01%20Roman.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/y2wgd6yn3du3ri8/Iowan%20Old%20Style%20W01%20Roman.svg?raw=1') format('svg');
+ font-weight: 400;
+ font-style: normal;
 }
+
 /*IOWAN REGULAR - ITALIC*/
 @font-face {
-    font-family: "Iowan Old Style W01 Roman";
-    src: url('https://dl.dropboxusercontent.com/s/fa9i7iv5czrfcnd/Iowan%20Old%20Style%20W01%20Italic.ttf?raw=1') format('truetype'),
-        url('https://dl.dropboxusercontent.com/s/g5ess0bkbkiesjv/Iowan%20Old%20Style%20W01%20Italic.woff2?raw=1') format('woff2'),
-        url('https://dl.dropboxusercontent.com/s/0w8icfdyf6s5lak/Iowan%20Old%20Style%20W01%20Italic.woff?raw=1') format('woff'),
-        url('https://dl.dropboxusercontent.com/s/wuqdkssbw1eo7fw/Iowan%20Old%20Style%20W01%20Italic.eot?raw=1') format('embedded-opentype'),
-        url('https://dl.dropboxusercontent.com/s/n4f9k21vwg08rtw/Iowan%20Old%20Style%20W01%20Italic.svg?raw=1') format('svg');
-    font-weight: 400;
-    font-style: italic;
+    font-family:"Iowan Old Style W01 Roman"; 
+    src: url('https://dl.dropboxusercontent.com/s/fa9i7iv5czrfcnd/Iowan%20Old%20Style%20W01%20Italic.ttf?raw=1') format('truetype'), 
+    url('https://dl.dropboxusercontent.com/s/g5ess0bkbkiesjv/Iowan%20Old%20Style%20W01%20Italic.woff2?raw=1') format('woff2'), 
+    url('https://dl.dropboxusercontent.com/s/0w8icfdyf6s5lak/Iowan%20Old%20Style%20W01%20Italic.woff?raw=1') format('woff'), 
+    url('https://dl.dropboxusercontent.com/s/wuqdkssbw1eo7fw/Iowan%20Old%20Style%20W01%20Italic.eot?raw=1') format('embedded-opentype'), 
+    url('https://dl.dropboxusercontent.com/s/n4f9k21vwg08rtw/Iowan%20Old%20Style%20W01%20Italic.svg?raw=1') format('svg');
+ font-weight: 400;
+ font-style: italic;
 }
+
+
+
+
+
 /*IOWAN BOLD*/
 @font-face {
-    font-family: "Iowan Old Style W01 Roman";
-    src: url('https://dl.dropboxusercontent.com/s/ujpen1r9q1n5ge6/Iowan%20Old%20Style%20W01%20Bold.ttf?raw=1') format('truetype'),
-        url('https://dl.dropboxusercontent.com/s/as7fyanh2cjg0xi/Iowan%20Old%20Style%20W01%20Bold.woff2?raw=1') format('woff2'),
-        url('https://dl.dropboxusercontent.com/s/ppvk6z9grb0alrr/Iowan%20Old%20Style%20W01%20Bold.woff?raw=1') format('woff'),
-        url('https://dl.dropboxusercontent.com/s/auwlqp64ep7buy0/Iowan%20Old%20Style%20W01%20Bold.eot?raw=1') format('embedded-opentype'),
-        url('https://dl.dropboxusercontent.com/s/infhvvt67i1zixu/Iowan%20Old%20Style%20W01%20Bold.svg?raw=1') format('svg');
-    font-weight: 600;
-    font-style: normal;
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/ujpen1r9q1n5ge6/Iowan%20Old%20Style%20W01%20Bold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/as7fyanh2cjg0xi/Iowan%20Old%20Style%20W01%20Bold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/ppvk6z9grb0alrr/Iowan%20Old%20Style%20W01%20Bold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/auwlqp64ep7buy0/Iowan%20Old%20Style%20W01%20Bold.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/infhvvt67i1zixu/Iowan%20Old%20Style%20W01%20Bold.svg?raw=1') format('svg');
+ font-weight: 600;
+ font-style: normal;
 }
+
+
 /* IOWAN BOLD ITALIC*/
 @font-face {
-    font-family: "Iowan Old Style W01 Roman";
-    src: url('https://dl.dropboxusercontent.com/s/wmmx5h09fenklvr/Iowan%20Old%20Style%20W01%20Bold%20Italic.ttf?raw=1') format('truetype'),
-        url('https://dl.dropboxusercontent.com/s/oatgvb7chznrvlo/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff2?raw=1') format('woff2'),
-        url('https://dl.dropboxusercontent.com/s/gy410d7evlcv9l3/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff?raw=1') format('woff'),
-        url('https://dl.dropboxusercontent.com/s/wqrk467lki7gx6o/Iowan%20Old%20Style%20W01%20Bold%20Italic.eot?raw=1') format('embedded-opentype'),
-        url('https://dl.dropboxusercontent.com/s/qke40q4ng4xhmva/Iowan%20Old%20Style%20W01%20Bold%20Italic.svg?raw=1') format('svg');
-    font-weight: 600;
-    font-style: italic;
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/wmmx5h09fenklvr/Iowan%20Old%20Style%20W01%20Bold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/oatgvb7chznrvlo/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/gy410d7evlcv9l3/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/wqrk467lki7gx6o/Iowan%20Old%20Style%20W01%20Bold%20Italic.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/qke40q4ng4xhmva/Iowan%20Old%20Style%20W01%20Bold%20Italic.svg?raw=1') format('svg');
+ font-weight: 600;
+ font-style: italic;
 }
+
+
+
+
+
 /***IOWAN BLACK*/
 @font-face {
-    font-family: "Iowan Old Style W01 Roman";
-    src: url('https://dl.dropboxusercontent.com/s/pbv9y0h1cmr8ij0/Iowan%20Old%20Style%20W01%20Black.ttf?raw=1') format('truetype'),
-        url('https://dl.dropboxusercontent.com/s/t39mo5pnl8tdtoo/Iowan%20Old%20Style%20W01%20Black.woff2?raw=1') format('woff2'),
-        url('https://dl.dropboxusercontent.com/s/10t92wy2ra6rs8f/Iowan%20Old%20Style%20W01%20Black.woff?raw=1') format('woff'),
-        url('https://dl.dropboxusercontent.com/s/f02lrh3luq88epg/Iowan%20Old%20Style%20W01%20Black.eot?raw=1') format('embedded-opentype'),
-        url('https://dl.dropboxusercontent.com/s/5rtpuv9f61zymca/Iowan%20Old%20Style%20W01%20Black.svg?raw=1') format('svg');
-    font-weight: 900;
-    font-style: normal;
+ font-family: "Iowan Old Style W01 Roman";
+ src: url('https://dl.dropboxusercontent.com/s/pbv9y0h1cmr8ij0/Iowan%20Old%20Style%20W01%20Black.ttf?raw=1') format('truetype'),
+   url('https://dl.dropboxusercontent.com/s/t39mo5pnl8tdtoo/Iowan%20Old%20Style%20W01%20Black.woff2?raw=1') format('woff2'),
+   url('https://dl.dropboxusercontent.com/s/10t92wy2ra6rs8f/Iowan%20Old%20Style%20W01%20Black.woff?raw=1') format('woff'),
+   url('https://dl.dropboxusercontent.com/s/f02lrh3luq88epg/Iowan%20Old%20Style%20W01%20Black.eot?raw=1') format('embedded-opentype'),
+   url('https://dl.dropboxusercontent.com/s/5rtpuv9f61zymca/Iowan%20Old%20Style%20W01%20Black.svg?raw=1') format('svg');
+ font-weight: 900;
+ font-style: normal;
 }
+
+
 /*IOWAN BLACK ITALIC */
 @font-face {
-    font-family: "Iowan Old Style W01 Roman";
-    src: url('https://dl.dropboxusercontent.com/s/oz0ej02ql8kbnkg/Iowan%20Old%20Style%20W01%20Black%20It.ttf?raw=1') format('truetype'),
-        url('https://dl.dropboxusercontent.com/s/2fe34wstfaetqhj/Iowan%20Old%20Style%20W01%20Black%20It.woff2?raw=1') format('woff2'),
-        url('https://dl.dropboxusercontent.com/s/v64mnc89k71hkfo/Iowan%20Old%20Style%20W01%20Black%20It.woff?raw=1') format('woff'),
-        url('https://dl.dropboxusercontent.com/s/wxusznu0kggr4ln/Iowan%20Old%20Style%20W01%20Black%20It.eot?raw=1') format('embedded-opentype'),
-        url('https://dl.dropboxusercontent.com/s/38tjwo6avuhhfnm/Iowan%20Old%20Style%20W01%20Black%20It.otf?raw=1') format('opentype'),
-        url('https://dl.dropboxusercontent.com/s/zac82pd803qu1bk/Iowan%20Old%20Style%20W01%20Black%20It.svg?raw=1') format('svg');
-    font-weight: 900;
-    font-style: italic;
+ font-family: "Iowan Old Style W01 Roman";
+ src: url('https://dl.dropboxusercontent.com/s/oz0ej02ql8kbnkg/Iowan%20Old%20Style%20W01%20Black%20It.ttf?raw=1') format('truetype'),
+   url('https://dl.dropboxusercontent.com/s/2fe34wstfaetqhj/Iowan%20Old%20Style%20W01%20Black%20It.woff2?raw=1') format('woff2'),
+   url('https://dl.dropboxusercontent.com/s/v64mnc89k71hkfo/Iowan%20Old%20Style%20W01%20Black%20It.woff?raw=1') format('woff'),
+   url('https://dl.dropboxusercontent.com/s/wxusznu0kggr4ln/Iowan%20Old%20Style%20W01%20Black%20It.eot?raw=1') format('embedded-opentype'),
+   url('https://dl.dropboxusercontent.com/s/38tjwo6avuhhfnm/Iowan%20Old%20Style%20W01%20Black%20It.otf?raw=1') format('opentype'),
+   url('https://dl.dropboxusercontent.com/s/zac82pd803qu1bk/Iowan%20Old%20Style%20W01%20Black%20It.svg?raw=1') format('svg');
+ font-weight: 900;
+ font-style: italic;
 }
 
 /**
@@ -439,4 +471,90 @@ link#style-dark ~ .page-wrap .pagecontent .f-marg {
     font-style: normal;
     font-weight:700
 }
+
+/* NEW CALEDONIA - REGULAR*/
+@font-face {
+	font-family: "New Caledonia";
+	src: url('https://dl.dropboxusercontent.com/s/n5aww2a6pu0mck4/New%20Caledonia%20LT%20Std.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/gmxha2dm6fm8vyw/New%20Caledonia%20LT%20Std.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/b8zj58pte1xxn56/New%20Caledonia%20LT%20Std.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/juksrc137toqrgc/New%20Caledonia%20LT%20Std.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/6ugeb4px88h3dt9/New%20Caledonia%20LT%20Std.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/3szvkmzoaa7g520/New%20Caledonia%20LT%20Std.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+ font-style: normal;
+}
+
+/* NEW CALEDONIA - REGULAR ITALIC*/
+@font-face {
+	font-family: "New Caledonia";
+	src: url('https://dl.dropboxusercontent.com/s/6gx94xqpa8a6wbn/New%20Caledonia%20LT%20Std%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/2b54iba2pqhfl16/New%20Caledonia%20LT%20Std%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/8ojnrryvnfr2f8w/New%20Caledonia%20LT%20Std%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/8pxs6zdkfureuet/New%20Caledonia%20LT%20Std%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/i3gfmg1tm5qfpj3/New%20Caledonia%20LT%20Std%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/n0wo0t54mmuxsk2/New%20Caledonia%20LT%20Std%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+/* NEW CALEDONIA - SEMI BOLD */
+@font-face {
+	font-family: "New Caledonia";
+	src: url('https://dl.dropboxusercontent.com/s/azcxfbhoas0h1ka/New%20Caledonia%20LT%20Std%20Semibold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/rs2cfiayzvcfsi5/New%20Caledonia%20LT%20Std%20Semibold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/hjiuq5kul11u6c4/New%20Caledonia%20LT%20Std%20Semibold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/p8ni7kk1ya8usdz/New%20Caledonia%20LT%20Std%20Semibold.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/8pmlrrvlhylo9g5/New%20Caledonia%20LT%20Std%20Semibold.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/fkbmmk8xkl1rgfn/New%20Caledonia%20LT%20Std%20Semibold.eot?raw=1') format('embedded-opentype');
+ font-weight: 600;
+ font-style: normal;
+}
+
+/* NEW CALEDONIA - SEMI BOLD ITALIC */
+@font-face {
+	font-family: "New Caledonia";
+	src: url('https://dl.dropboxusercontent.com/s/u8p2cpek677rbo4/New%20Caledonia%20LT%20Std%20Semibold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/fdi4sd7s5c9k8g6/New%20Caledonia%20LT%20Std%20Semibold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/z7pcoxr3ery6p6v/New%20Caledonia%20LT%20Std%20Semibold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/57hm27qe0f4ccs1/New%20Caledonia%20LT%20Std%20Semibold%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/qfzis590sq114ab/New%20Caledonia%20LT%20Std%20Semibold%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/4wi9ybvt026gctw/New%20Caledonia%20LT%20Std%20Semibold%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+/* NEW CALEDONIA - BOLD */
+
+@font-face {
+	font-family: "New Caledonia";
+	src: url('https://dl.dropboxusercontent.com/s/labkszdhqup7do5/New%20Caledonia%20LT%20Std%20Bold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/mvg88ds3vhrst2w/New%20Caledonia%20LT%20Std%20Bold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/jj4fhfhh18apb6c/New%20Caledonia%20LT%20Std%20Bold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/fjjfps1mo2edadc/New%20Caledonia%20LT%20Std%20Bold.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/19i26gt15ev857z/New%20Caledonia%20LT%20Std%20Bold.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/zwhdbyyt5uq1pq5/New%20Caledonia%20LT%20Std%20Bold.eot?raw=1') format('embedded-opentype');
+ font-weight: 800;
+ font-style: normal;
+}
+
+/* NEW CALEDONIA - BOLD ITALIC */
+
+@font-face {
+	font-family: "New Caledonia";
+	src: url('https://dl.dropboxusercontent.com/s/83fefmm038hz9im/New%20Caledonia%20LT%20Std%20Bold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/xkifgcgukvxda5s/New%20Caledonia%20LT%20Std%20Bold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/go6jc22in16ixjm/New%20Caledonia%20LT%20Std%20Bold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/9jz1ne24x46h2la/New%20Caledonia%20LT%20Std%20Bold%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/6xagdwfsyxazc48/New%20Caledonia%20LT%20Std%20Bold%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/ey4k5hvgs8jzg66/New%20Caledonia%20LT%20Std%20Bold%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 800;
+ font-style: italic;
+}
+
+
+
+
 

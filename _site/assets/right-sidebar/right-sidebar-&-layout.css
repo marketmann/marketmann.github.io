@@ -1,6 +1,26 @@
 /******************************
  ******************************
  ******************************
+ MIDDLE SECTION JAVASCRIPT STYLES
+ ******************************
+ ******************************
+ ******************************/
+@media (min-width: 50rem) {
+    .main-content {
+        position: relative;
+        margin-left: 248px;
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 66.5rem) {
+    .main-content {
+        margin-left: calc((100% - 1370px) / 5 + 294px)
+    }
+}
+/******************************
+ ******************************
+ ******************************
  LEFT SIDEBAR JAVASCRIPT STYLES
  ******************************
  ******************************
@@ -11,7 +31,6 @@
  OPENED **/
 @media (min-width: 50rem) {
     .main-content.left-open {
-
     }
 }
 
@@ -233,7 +252,7 @@ button.right-sidebar-toggle {
 }
 
 .right-sidebar-button-container .sidebar-in,
-.right-sidebar-button-container .sidebar-out {
+.right-sidebar-button-container .sidebar-out, .left-sidebar-out {
     display: flex;
     position: absolute;
     align-items: center;
@@ -241,6 +260,7 @@ button.right-sidebar-toggle {
     transition: 0.25s;
     transition-delay: 0.35s;
 }
+
 
 .sidebar-in {
     margin-left: 40px;

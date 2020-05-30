@@ -2,7 +2,7 @@ link#style-dark ~ .page-wrap .pagecontent {
    font-family: "Warnok Pro";
    font-weight: 400;
    font-size: 1.4rem;
-   color: hsl(220, 0%, 73%);
+   color: hsl(240, 4%, 88%);
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
@@ -32,13 +32,13 @@ link#style-dark ~ .page-wrap .pagecontent p {
 
 link#style-dark ~ .page-wrap .pagecontent strong {
    font-weight: 600;
-   color: #d6d6d6
+   color: hsl(0, 0%, 100.92%)
 }
 
 /* BOLD WHITE */
 link#style-dark ~ .page-wrap .pagecontent .c20 {
    font-weight: 600;
-   color: hsla(0, 0%, 88%, 1.00) !important;
+   color: hsla(0, 0%, 100%, 1.00) !important;
 }
 
 link#style-dark ~ .page-wrap .pagecontent a {
@@ -81,26 +81,35 @@ link#style-dark ~ .page-wrap .pagecontent h3 {
    font-weight: 600 !important;
    font-size: 37px !important;
    text-align: center;
-   color: #d6d6d6;
+   color: hsl(0, 0%, 100%);
+    letter-spacing: 0px !important;
+margin-top: 53px !;
+margin-bottom: 30px;
+}
+h4 {
+        letter-spacing: 0px !important;
+
 }
 
 link#style-dark ~ .page-wrap .pagecontent h4 {
    font-weight: 600 !important;
    font-size: 28px !important;
    text-align: left;
-   color: #d6d6d6;
+   color: hsl(0, 0%, 95.92%);
+    margin-top:45px;
+    margin-bottom:25px;
 }
 
 link#style-dark ~ .page-wrap .pagecontent h5 {
    font-weight: 600 !important;
-   font-size: 23px !important;
-   color: #d6d6d6;
+   font-size: 25px !important;
+   color: hsl(0, 0%, 95.92%);
 }
 
 link#style-dark ~ .page-wrap .pagecontent h6 {
    font-weight: 600 !important;
    font-size: 20px !important;
-   color: #d6d6d6;
+   color: hsl(0, 0%, 95.92%);
 }
 
 /*****************
@@ -113,7 +122,7 @@ link#style-dark ~ .page-wrap .pagecontent img {
    max-width: 100%;
    display: block;
    margin: 0 auto;
-   border: 1px solid #d6d6d6;
+   border: 1px solid hsl(0, 0%, 95.92%);
    border-radius: 5px;
 }
 
@@ -130,13 +139,43 @@ link#style-dark ~ .page-wrap .pagecontent img.cover {
  EXCERPT INDENT 1 - classes: c10 */
 
 link#style-dark ~ .page-wrap .pagecontent .excerpt-container {
-   background-color: hsla(210, 6%, 13%, 1);
+   background-color: none;
+    padding-top:20px;
+    font-family: "IBM Plex Serif";
+    padding-bottom:20px;
+    color:hsl(200, 20%, 95%);
+        position:relative;
+    display: block;
+    
+}
+link#style-dark ~ .page-wrap .pagecontent .excerpt-container:before {
+    content: "EXCERPT";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    font-size: 14px;
+    font-family: system-ui,sans-serif;
+    color: #777777;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
+.page-wrap .pagecontent .excerpt-container .excerpt-1, .page-wrap .pagecontent .excerpt-container .excerpt-2{
+    padding-bottom:0px !important;
+    padding-top:5px !important;
+}
 link#style-dark ~ .page-wrap .pagecontent .excerpt-1 {
-   margin-left: 60px;
-   padding-right: 40px;
-   text-align: left;
+margin-right: 40px;
+    margin-left:60px;
+    padding:10px 20px;
+text-align: left;
+    font-family: "IBM Plex Serif";
+    font-size:calc(1em - 2px);
+    color:white !important;
+
+
+
 }
 
 link#style-dark ~ .page-wrap .pagecontent ul li.excerpt-1 {
@@ -144,9 +183,14 @@ link#style-dark ~ .page-wrap .pagecontent ul li.excerpt-1 {
 }
 
 link#style-dark ~ .page-wrap .pagecontent .excerpt-2 {
-   padding-left: 60px;
-   padding-right: 40px;
+margin-right: 40px;
+    margin-left:60px;
+    padding:10px 20px;
    text-align: left;
+    font-family: "IBM Plex Serif";
+    font-size:calc(1em - 2px);
+color:white !important;
+    
 }
 
 /**
@@ -256,7 +300,8 @@ link#style-dark ~ .page-wrap .pagecontent .inline-toc-line {
 
 link#style-dark ~ .page-wrap .pagecontent .inline-toc-page-number-container {
    margin-left: 15px;
-   color: hsl(210, 4%, 40%);
+   color: hsl(240, 4%, 50%);
+    font-weight: 600;
    display: flex;
    justify-content: flex-start;
    align-items: flex-start;
@@ -396,3 +441,110 @@ link#style-dark ~ .page-wrap .pagecontent .isbn * {
       url('https://dl.dropboxusercontent.com/s/y6lsu7d69wob1yp/Warnock%20Pro%20Subhead.eot?raw=1') format('embedded-opentype');
    font-weight: 800;
 }
+
+/*IBM PLEX 400*/
+@font-face {
+	font-family: "IBM Plex Serif";
+	src: url('https://dl.dropboxusercontent.com/s/4j7l46ih5wt9dej/ibm-plex-serif-v8-latin-regular.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/ga03if73g3pqj48/ibm-plex-serif-v8-latin-regular.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/4956csr58c25o56/ibm-plex-serif-v8-latin-regular.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/ghy65tl756qj31p/ibm-plex-serif-v8-latin-regular.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/8uhnsu6pjlpitky/ibm-plex-serif-v8-latin-regular.svg?raw=1') format('svg');
+ font-weight: 400;
+}
+
+
+/*IBM PLEX 400 - ITALIC*/
+@font-face {
+	font-family: "IBM Plex Serif";
+	src: url('https://dl.dropboxusercontent.com/s/6rylwfues1ntnuu/ibm-plex-serif-v8-latin-italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/kdtt0q7zyc0nrin/ibm-plex-serif-v8-latin-italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/czeadsjqp3581u0/ibm-plex-serif-v8-latin-italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/y8ln8yqh5778t0f/ibm-plex-serif-v8-latin-italic.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/kfbdpjhoai5srij/ibm-plex-serif-v8-latin-italic.svg?raw=1') format('svg');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+/*IBM PLEX 500*/
+@font-face {
+	font-family: "IBM Plex Serif";
+	src: url('https://dl.dropboxusercontent.com/s/ruk7h4evklpi823/ibm-plex-serif-v8-latin-500.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/boba1cu4ez14t9j/ibm-plex-serif-v8-latin-500.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/fx9zt545luutqg0/ibm-plex-serif-v8-latin-500.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/edlcpxb82dajfg6/ibm-plex-serif-v8-latin-500.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/pnxas6xyssz99kr/ibm-plex-serif-v8-latin-500.svg?raw=1') format('svg');
+ font-weight: 500;
+}
+
+
+/*IBM PLEX 500 - ITALIC*/
+@font-face {
+	font-family: "IBM Plex Serif";
+	src: url('https://dl.dropboxusercontent.com/s/siy8bxarxxe8wdr/ibm-plex-serif-v8-latin-500italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/y8nw4zbvw01s6u5/ibm-plex-serif-v8-latin-500italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/9fjwy8qcx0dx9rb/ibm-plex-serif-v8-latin-500italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/qph8ai11r2i7g9d/ibm-plex-serif-v8-latin-500italic.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/4dsbtnxpfwdljws/ibm-plex-serif-v8-latin-500italic.svg?raw=1') format('svg');
+ font-weight: 500;
+font-style:italic;
+}
+
+
+/*IBM PLEX 600*/
+@font-face {
+	font-family: "IBM Plex Serif";
+	src: url('https://dl.dropboxusercontent.com/s/mrmynsd3uyu9et9/ibm-plex-serif-v8-latin-600.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/yfc01yrfd1ujmsd/ibm-plex-serif-v8-latin-600.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/xzswxdc7m6whkyh/ibm-plex-serif-v8-latin-600.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/avjxc8h54cpnniq/ibm-plex-serif-v8-latin-600.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/f85uyh7lsrw1cwn/ibm-plex-serif-v8-latin-600.svg?raw=1') format('svg');
+ font-weight: 600;
+}
+
+
+/*IBM PLEX 600 - ITALIC*/
+@font-face {
+	font-family: "IBM Plex Serif";
+	src: url('https://dl.dropboxusercontent.com/s/xztl458rkxfphhq/ibm-plex-serif-v8-latin-600italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/r36edvjbwqvm7e1/ibm-plex-serif-v8-latin-600italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/hadu7mlb2hrtegb/ibm-plex-serif-v8-latin-600italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/5gs82bqy8486tpr/ibm-plex-serif-v8-latin-600italic.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/3rn8n13qa0zy6om/ibm-plex-serif-v8-latin-600italic.svg?raw=1') format('svg');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+/*IBM PLEX 700*/
+@font-face {
+	font-family: "IBM Plex Serif";
+	src: url('https://dl.dropboxusercontent.com/s/h87v8oa2e2pabtt/ibm-plex-serif-v8-latin-700.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/evl30d423ct35j6/ibm-plex-serif-v8-latin-700.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/7qkbwf4jj53ikg6/ibm-plex-serif-v8-latin-700.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/aixc6pkvffp4e6r/ibm-plex-serif-v8-latin-700.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/svkppzkiut7oomb/ibm-plex-serif-v8-latin-700.svg?raw=1') format('svg');
+ font-weight: 700;
+}
+
+
+
+
+/*IBM PLEX 700 - ITALIC*/
+@font-face {
+	font-family: "IBM Plex Serif";
+	src: url('https://dl.dropboxusercontent.com/s/hq9cmpt7p5iniy1/ibm-plex-serif-v8-latin-700italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/wk2lqq8jssqvxdx/ibm-plex-serif-v8-latin-700italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/khe2v426ex1nhux/ibm-plex-serif-v8-latin-700italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/whbsesggtj1svko/ibm-plex-serif-v8-latin-700italic.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/tmtz6io93pasu5z/ibm-plex-serif-v8-latin-700italic.svg?raw=1') format('svg');
+ font-weight: 700;
+ font-style: italic;
+}
+
+
+
+
+
+
