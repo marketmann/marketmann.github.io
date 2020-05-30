@@ -277,6 +277,7 @@
                 </svg>
             </div>
         </button>
+        
         <!-----LOCAL STORAGE TOGGLE----->
         <button class="local-storage-button" onclick="localStorage.clear(); alert('localStorage has been cleared');">
             <svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -284,13 +285,52 @@
             </svg>
 
         </button>
+        
         <!-----THEME TOGGLE----->
         <button class="theme-toggle" href="#" onclick="theme_toggle(); return false;">
-            <svg width="45" height="50" viewBox="0 0 45 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25 50C32.7111 50 39.7538 46.4917 44.4196 40.743C45.1099 39.8926 44.3572 38.6502 43.2905 38.8533C31.1613 41.1633 20.0228 31.8635 20.0228 19.6195C20.0228 12.5666 23.7983 6.08096 29.9347 2.58887C30.8806 2.05059 30.6427 0.616504 29.5679 0.417969C28.0611 0.14013 26.5322 0.000228158 25 0C11.2003 0 0 11.1827 0 25C0 38.7997 11.1827 50 25 50Z" fill="white" />
-            </svg>
-
+            <div class="toggle_darkMode">
+                <div class="darkModeContainer">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m48.762 4.1836c-11.941 0.32422-23.285 5.3008-31.605 13.867-8.3242 8.5703-12.969 20.051-12.941 31.996 0 12.145 4.8242 23.789 13.41 32.379 8.5859 8.5859 20.23 13.41 32.375 13.41s23.789-4.8242 32.375-13.41c8.5898-8.5898 13.41-20.234 13.41-32.379 0.027344-12.375-4.957-24.23-13.816-32.871s-20.84-13.328-33.207-12.992zm1.2383 4.2422v83.246-0.003906c-14.781-0.12891-28.387-8.0898-35.738-20.914-7.3555-12.824-7.3555-28.586 0-41.41 7.3516-12.824 20.957-20.785 35.738-20.918z" />
+                    </svg>
+                </div>
+            </div>
         </button>
+        <script>
+            // DarkMode -> https://bre.is/WNjnEf8H
+            let darkMode = localStorage.getItem('darkMode')
+            const toggle_darkMode = document.querySelector('.toggle_darkMode')
+            const darkModeToggle = document.querySelector('.toggle_darkMode')
+
+            const enableDarkMode = () => {
+                console.log("Add")
+                document.body.classList.add('darkMode')
+                toggle_darkMode.classList.add('darkMode')
+                localStorage.setItem('darkMode', 'enable')
+            }
+
+            const disableDarkMode = () => {
+                console.log("Rm")
+                document.body.classList.remove('darkMode')
+                toggle_darkMode.classList.remove('darkMode')
+                localStorage.setItem('darkMode', null)
+            }
+
+            if (darkMode === "enable") {
+                enableDarkMode()
+            }
+
+            darkModeToggle.addEventListener("click", () => {
+                darkMode = localStorage.getItem('darkMode')
+                if (darkMode !== 'enable') {
+                    enableDarkMode()
+                } else {
+                    disableDarkMode()
+                }
+            })
+
+        </script>
     </div>
 </div>
 <!----END BUTTON CONTAINER---->

@@ -1,4 +1,3 @@
-
 /******************************
  ******************************
  ******************************
@@ -11,15 +10,15 @@
  RIGHT SIDEBAR - 
  OPENED **/
 @media (min-width: 50rem) {
-.main-content.left-open {
-    margin-left: 	190px;
-}
+    .main-content.left-open {
+
+    }
 }
 
-@media (min-width: 66.5rem){
-.main-content.left-open {
-    margin-left: 190px;
-}
+@media (min-width: 66.5rem) {
+    .main-content.left-open {
+
+    }
 }
 
 /** 
@@ -28,31 +27,35 @@
  OPENED ON LOAD **/
 .main-content.left-open-on-load {
     transition: 0s !important;
-    margin-left: 190px;
+
 }
+
 .main-content {
-	transition:.4s ease-in-out;
-    transition-delay:.1s;
+    transition: .4s ease-in-out;
+    transition-delay: .1s;
 }
+
 /** 
  RIGHT SIDEBAR - 
  OPENED ON LOAD **/
 .side-bar.left-open,
-.side-bar.left-open-on-load{
-   left: -500px;
-}
 .side-bar.left-open-on-load {
-	transition:0s !important;
+    left: -500px;
 }
+
+.side-bar.left-open-on-load {
+    transition: 0s !important;
+}
+
 .side-bar.left-open {
-    transition:.5s ease-in-out;
+    transition: .5s ease-in-out;
     transition-delay: .1s;
 }
 
 
 .side-bar {
-	left:0;
-    transition:.5s ease-in-out;
+    left: 0;
+    transition: .5s ease-in-out;
 }
 
 /******************************
@@ -67,6 +70,7 @@
  RIGHT SIDEBAR - 
  OPENED **/
 .page.oooopen {
+    padding-right:100px;
 }
 
 /** 
@@ -76,16 +80,23 @@
 .page.oooopen-on-load {
     -webkit-transition: none;
     transition: none;
+padding-right:100px;
 }
+
 /** 
  RIGHT SIDEBAR - 
  OPENED ON LOAD **/
 .right-sidebar.oooopen,
 .right-sidebar.oooopen-on-load {
-   right: 0px;
+    right: 0px;
 }
 
-
+.main-content.left-open .page.oooopen, .main-content.left-open .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen {
+    margin-left: -120px ;
+    padding-right:150px;
+    
+    transition:.5s
+}
 /******************************
  ******************************
  ******************************
@@ -102,156 +113,216 @@
  BUTTON GROUP CONTAINER
 ******************************/
 .right-sidebar-button-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-end;
-	position: fixed;
-	right: 8px;
-	top: 8px;
-	padding: 0px;
-	z-index: 1000;
-	width: 40px;
-	height: 40px;
-	border-radius: 6px;
-	background: hsla(225, 5%, 19.02%,.0);
-	box-shadow: 0 0 0 0px hsla(225, 5%, 19.02%, 0);
-	overflow: hidden;
-	transition:.5s !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    right: 8px;
+    top: 8px;
+    padding: 0px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: hsla(225, 5%, 19.02%, .0);
+    box-shadow: 0 0 0 0px hsla(225, 5%, 19.02%, 0);
+    overflow: hidden;
+    transition: .5s !important;
 }
 
 .right-sidebar-button-container:hover {
-	background: hsla(225, 5%, 19.02%,1);
-	box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
-	cursor: pointer;
-	transition:.3s !important;
+    background: hsla(225, 5%, 19.02%, 1);
+    box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
+    cursor: pointer;
+    transition: .3s !important;
 }
+
 .right-sidebar-button-container.menu-open {
-	width: 220px;
-	background: hsla(225, 5%, 19.02%,1);
-	box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
-	cursor: pointer;
-	transition:.3s !important;
+    width: 220px;
+    background: hsla(225, 5%, 19.02%, 1);
+    box-shadow: 0 0 0 5px hsl(225, 5%, 19.02%);
+    cursor: pointer;
+    transition: .3s !important;
 }
 
 
 /**ON HOVER MENU - EXPANDED BUTTON CONTAINER */
 .right-sidebar-expander-container {
-	display: -ms-flexbox;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: row;
-	flex-flow: row-reverse;
-	width: 100%;
-	height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    width: 100%;
+    height: 100%;
 }
 
 .right-sidebar-expander-container button {
-	margin-right: 5px;
+    margin-right: 5px;
 }
 
 /******************************
  BUTTONS - ALL BUTTONS
 ******************************/
 .right-sidebar-button-container button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 40px;
-	height: 40px;
-	z-index: 100;
-	border-radius: 6px;
-	border: none;
-	background: hsl(225, 5%, 39.02%);
-	transition: 0.2s;
-   flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    border-radius: 6px;
+    border: none;
+    background: hsl(225, 5%, 39.02%);
+    transition: 0.2s;
+    flex-shrink: 0;
 }
 
 .right-sidebar-button-container button:hover {
-	cursor: pointer;
-	background: hsl(210, 5%, 55.02%);
-	transition: 0.33s;
-	box-shadow: 0px .4px 1px 0px hsl(225, 5%, 8.02%,.9);
+    cursor: pointer;
+    background: hsl(210, 5%, 55.02%);
+    transition: 0.33s;
+    box-shadow: 0px .4px 1px 0px hsl(225, 5%, 8.02%, .9);
 }
 
 .right-sidebar-button-container svg {
-	width: 14px;
-	height: 14px;
+    width: 14px;
+    height: 14px;
 }
 
 /******************************
  BUTTON - TOGGLE - BUTTON GROUP
 ******************************/
 button.menu-toggle {
-	position:absolute;
-	z-index:10000000000;
-	right:0;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
+    position: absolute;
+    z-index: 10000000000;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .men-ico {
-	width:14px;
-	height:2px;
-	margin-top:1.5px;
-	margin-bottom:1.5px;
-	background:white;
-	display:block;
-	border-radius:100px;
-	transition:.1s;
+    width: 14px;
+    height: 2px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    background: white;
+    display: block;
+    border-radius: 100px;
+    transition: .1s;
 }
-.menu-open .men-ico{
-	margin-top:-1px;
-	margin-bottom:-1px;
+
+.menu-open .men-ico {
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 /******************************
  BUTTON - TOGGLE - RIGHT SIDEBAR
 ******************************/
 button.right-sidebar-toggle {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 10000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
 }
 
 .right-sidebar-button-container .sidebar-in,
 .right-sidebar-button-container .sidebar-out {
-	display: flex;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	transition: 0.25s;
-	transition-delay: 0.35s;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+    transition-delay: 0.35s;
 }
+
 .sidebar-in {
-	margin-left: 40px;
+    margin-left: 40px;
 }
 
 .right-sidebar.oooopen + .right-sidebar-button-container button .sidebar-in,
-.right-sidebar.oooopen-on-load
-	+ .right-sidebar-button-container
-	button
-	.sidebar-in {
-	margin-left: 0px;
+.right-sidebar.oooopen-on-load + .right-sidebar-button-container button .sidebar-in {
+    margin-left: 0px;
 }
 
 .right-sidebar.oooopen + .right-sidebar-button-container button .sidebar-out,
-.right-sidebar.oooopen-on-load
-	+ .right-sidebar-button-container
-	button
-	.sidebar-out {
-	margin-left: -40px;
-		opacity:0;
+.right-sidebar.oooopen-on-load + .right-sidebar-button-container button .sidebar-out {
+    margin-left: -40px;
+    opacity: 0;
 }
 
+/******************************
+ BUTTON - TOGGLE - LEFT SIDEBAR
+******************************/
 button.left-sidebar-toggle {
-	z-index:1000000;
+    z-index: 1000000;
 }
+
+/******************************
+ BUTTON - TOGGLE - DARK MODE
+******************************/
+
+.toggle_darkMode {
+    background: transparent;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkModeContainer {
+    background: #fff;
+    border-radius: 32px;
+    width: 22px;
+    height: 22px;
+    transition: 0.4s;
+}
+
+.toggle_darkMode:hover {
+    cursor: pointer;
+}
+
+.toggle_darkMode.darkMode .darkModeContainer {
+    transform: rotate(180deg);
+    transition: 0.4s;
+    background: hsl(252, 6.17%, 15.88%, .0);
+    box-shadow: 0 0 0 1px hsl(252, 6.17%, 19.88%), inset 0 0 0 1px hsl(252, 6.17%, 19.88%, .5);
+}
+
+.toggle_darkMode.darkMode svg path {
+    fill: hsl(252, 6.17%, 5.88%);
+}
+
+.toggle_darkMode.darkMode:hover .darkModeContainer {
+    box-shadow: 0 0 0 1px hsl(252, 6.17%, 5.88%, .69), inset 0 0 0 1px hsl(252, 6.17%, 5.88%, .72);
+}
+
+
+.toggle_darkMode .darkModeContainer {
+    box-shadow: 0 0 0 1px hsl(252, 6.17%, 12.88%, .3), inset 0 0 0 1px hsl(252, 6.17%, 19.88%, .5);
+}
+
+.toggle_darkMode:hover .darkModeContainer {
+    box-shadow: 0 0 0 1px hsl(252, 6.17%, 12.88%, .6), inset 0 0 0 1px hsl(252, 6.17%, 19.88%, .5);
+}
+
+.toggle_darkMode svg path {
+    fill: hsl(252, 6.17%, 19.88%);
+}
+
+.toggle_darkMode svg {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
 
 /******************************
  ******************************
@@ -261,40 +332,37 @@ button.left-sidebar-toggle {
 ******************************
  ******************************/
 .right-sidebar {
-   height: 100%;
-   width: 400px;
-   position: fixed;
-   z-index: 1;
-   top: 0px;
-   right: -400px;
-   background-color: hsl(252, 6.17%, 17.1%);
-   border-left:1px solid hsl(252, 6.17%, 22.1%);
-   overflow-x: hidden;
-   transition: 0.35s;
-   padding-top: 0px;
-   padding-left: 0px;
-   z-index: 999;
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: -400px;
+    background-color: hsl(252, 6.17%, 17.1%);
+    border-left: 1px solid hsl(252, 6.17%, 22.1%);
+    overflow-x: hidden;
+    transition: 0.35s;
+    padding-top: 0px;
+    padding-left: 0px;
+    z-index: 999;
 }
 
 
 .hypothesis-container {
-   width: 100%;
+    width: 100%;
 }
 
 .h-sidebar-iframe {
-   /* Stuff found in default stylesheet */
-   margin: 0;
-   margin-left: 0px;
-   padding: 0;
-   background: none !important;
-   font-size: 14px !important;
-   line-height: 20px;
-   z-index: 2147483647;
-   border: 0;
-   height: 99.9vh;
-   top:0;
-   width: 100%;
+    /* Stuff found in default stylesheet */
+    margin: 0;
+    margin-left: 0px;
+    padding: 0;
+    background: none !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    z-index: 2147483647;
+    border: 0;
+    height: 99.9vh;
+    top: 0;
+    width: 100%;
 }
-
-
-
