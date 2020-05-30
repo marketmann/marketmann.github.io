@@ -1,3 +1,65 @@
+/******************************
+ ******************************
+ ******************************
+ MIDDLE SECTION JAVASCRIPT STYLES
+ ******************************
+ ******************************/
+@media (min-width: 50rem) {
+    .main-content {
+        position: relative;
+        margin-left: unset;
+        max-width: unset;
+    }
+}
+
+@media (min-width: 66.5rem) {
+    .main-content {
+        margin-left: unset
+    }
+}
+/******************************
+ ******************************
+ ******************************
+ LEFT SIDEBAR JAVASCRIPT STYLES
+ ******************************
+ ******************************
+ ******************************/
+/** 
+ MIDDLE SECTION WHEN - 
+ RIGHT SIDEBAR - 
+ OPENED **/
+@media (min-width: 50rem) {
+    .main-content.left-open {
+    }
+}
+
+@media (min-width: 66.5rem) {
+    .main-content.left-open {
+
+    }
+}
+
+/** 
+ MIDDLE SECTION WHEN- 
+ RIGHT SIDEBAR - 
+ OPENED ON LOAD **/
+.main-content.left-open-on-load {
+    transition: 0s !important;
+
+}
+
+.main-content {
+    transition: .4s ease-in-out;
+    transition-delay: .1s;
+}
+.main-content.left-open .page.oooopen, .main-content.left-open .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen {
+    margin-left: unset ;
+    padding-right:unset;
+    
+    transition:.5s
+}
+
+
 /**
  **************************** 
  **************************** 

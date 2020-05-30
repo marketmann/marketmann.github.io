@@ -53,6 +53,12 @@
     transition: .4s ease-in-out;
     transition-delay: .1s;
 }
+.main-content.left-open .page.oooopen, .main-content.left-open .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen {
+    margin-left: -120px ;
+    padding-right:150px;
+    
+    transition:.5s
+}
 
 /** 
  RIGHT SIDEBAR - 
@@ -110,12 +116,7 @@ padding-right:100px;
     right: 0px;
 }
 
-.main-content.left-open .page.oooopen, .main-content.left-open .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen {
-    margin-left: -120px ;
-    padding-right:150px;
-    
-    transition:.5s
-}
+
 /******************************
  ******************************
  ******************************
