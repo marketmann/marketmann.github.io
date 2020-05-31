@@ -911,10 +911,11 @@ nav_order: 1
             border-radius: 10px;
             overflow: hidden !important;
         }
+
         .header-sec-location.pinned {
-            background:transparent !important;
-            backdrop-filter:blur(20px);
-            -webkit-backdrop-filter:blur(20px);
+            background: transparent !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
 
     </style>
@@ -2664,11 +2665,16 @@ nav_order: 1
             .right-sidebar-button-container {
                 top: 4px !important;
             }
-            .breadcrumb-nav a:not([class]), .breadcrumb-nav a  {
+
+            .breadcrumb-nav .breadcrumb-nav-list-item a:not([class]),
+            .breadcrumb-nav .breadcrumb-nav-list-item a {
                 background-image: none;
-                color:#2c84fa !important;
+                color: #2c84fa !important;
             }
 
+            .breadcrumb-nav-list-item span {
+                color: hsl(0, 0%, 80%);
+            }
 
         </style>
         <!--END CAROSELL MAX-HEIGHT CSS OVERIDE -->
