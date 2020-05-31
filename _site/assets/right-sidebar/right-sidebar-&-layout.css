@@ -1,23 +1,4 @@
-/******************************
- ******************************
- ******************************
- MIDDLE SECTION JAVASCRIPT STYLES
- ******************************
- ******************************
- ******************************/
-@media (min-width: 50rem) {
-    .main-content {
-        position: relative;
-        margin-left: 248px;
-        max-width: 800px;
-    }
-}
 
-@media (min-width: 66.5rem) {
-    .main-content {
-        margin-left: calc((100% - 1370px) / 5 + 294px)
-    }
-}
 /******************************
  ******************************
  ******************************
@@ -25,44 +6,7 @@
  ******************************
  ******************************
  ******************************/
-/** 
- MIDDLE SECTION WHEN - 
- RIGHT SIDEBAR - 
- OPENED **/
-@media (min-width: 50rem) {
-    .main-content.left-open {
-    }
-}
 
-@media (min-width: 66.5rem) {
-    .main-content.left-open {
-
-    }
-}
-
-/** 
- MIDDLE SECTION WHEN- 
- RIGHT SIDEBAR - 
- OPENED ON LOAD **/
-.main-content.left-open-on-load {
-    transition: 0s !important;
-
-}
-
-.main-content {
-    transition: .4s ease-in-out;
-    transition-delay: .1s;
-}
-.main-content.left-open .page.oooopen, .main-content.left-open .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen-on-load, .main-content.left-open-on-load .page.oooopen {
-    margin-left: -120px ;
-    padding-right:150px;
-    
-    transition:.5s
-}
-
-/** 
- RIGHT SIDEBAR - 
- OPENED ON LOAD **/
 .side-bar.left-open,
 .side-bar.left-open-on-load {
     left: -500px;
@@ -76,11 +20,74 @@
     transition: .5s ease-in-out;
     transition-delay: .1s;
 }
-
-
 .side-bar {
     left: 0;
     transition: .5s ease-in-out;
+}
+/******************************
+ ******************************
+ ******************************
+ MIDDLE SECTION JAVASCRIPT STYLES
+ ******************************
+ ******************************
+ ******************************/
+
+.main-content.left-open .page.oooopen,
+.main-content.left-open .page.oooopen-on-load,
+.main-content.left-open-on-load .page.oooopen-on-load,
+.main-content.left-open-on-load .page.oooopen, 
+.main-content.left-open .page-header.oooopen,
+.main-content.left-open .page-header.oooopen-on-load,
+.main-content.left-open-on-load .page-header.oooopen-on-load,
+.main-content.left-open-on-load .page-header.oooopen {
+    padding-left: 0px;
+    transition: .5s
+}
+.side-bar.left-open + .main-content-wrap .main-content.left-open,  .side-bar.left-open-on-load + .main-content-wrap .main-content.left-open,  .side-bar.left-open + .main-content-wrap .main-content.left-open-on-load,  .side-bar.left-open-on-load + .main-content-wrap .main-content.left-open-on-load{
+    margin: 0 auto;
+    transition: 1s;
+}
+
+
+/*MIDDLE FOR DEFAULT LAYOUT */
+
+.page.oooopen, .page.oooopen-on-load {
+    width: 100%;
+}
+.page.oooopen-on-load {
+    -webkit-transition: none;
+    transition: none;
+}
+@media (min-width: 50rem) {
+    .page.oooopen, .page.oooopen-on-load {
+    width: 44.5vw;
+    }
+}
+
+@media (min-width: 88rem) {
+    .page.oooopen, .page.oooopen-on-load{
+    width: 45.1vw;
+    }
+}
+
+/*MIDDLE SECTION FOR AD LAYOUT*/
+.page.oooopen, .page.oooopen-on-load {
+    width: 100%;
+}
+.page.oooopen-on-load {
+    -webkit-transition: none;
+    transition: none;
+}
+@media (min-width: 50rem) {
+    .page.ad-layout.oooopen, .page.ad-layout.oooopen-on-load {
+    width: 100%;
+    }
+}
+
+@media (min-width: 88rem) {
+    .page.ad-layout.oooopen, .page.ad-layout.oooopen-on-load{
+    width: 100%;
+    }
 }
 
 /******************************
@@ -90,30 +97,25 @@
  ******************************
  ******************************
  ******************************/
-/** 
- MIDDLE SECTION WHEN - 
- RIGHT SIDEBAR - 
- OPENED **/
-.page.oooopen {
-    padding-right:100px;
-}
 
-/** 
- MIDDLE SECTION WHEN- 
- RIGHT SIDEBAR - 
- OPENED ON LOAD **/
-.page.oooopen-on-load {
-    -webkit-transition: none;
-    transition: none;
-padding-right:100px;
-}
 
-/** 
- RIGHT SIDEBAR - 
- OPENED ON LOAD **/
 .right-sidebar.oooopen,
 .right-sidebar.oooopen-on-load {
+    width: 100%;
     right: 0px;
+}
+@media (min-width: 50rem) {
+    .right-sidebar.oooopen,
+    .right-sidebar.oooopen-on-load {
+        width: 30vw;
+    }
+}
+
+@media (min-width: 90rem) {
+    .right-sidebar.oooopen,
+    .right-sidebar.oooopen-on-load {
+        width: 400px;
+    }
 }
 
 
@@ -253,7 +255,8 @@ button.right-sidebar-toggle {
 }
 
 .right-sidebar-button-container .sidebar-in,
-.right-sidebar-button-container .sidebar-out, .left-sidebar-out {
+.right-sidebar-button-container .sidebar-out,
+.left-sidebar-out {
     display: flex;
     position: absolute;
     align-items: center;
@@ -261,7 +264,6 @@ button.right-sidebar-toggle {
     transition: 0.25s;
     transition-delay: 0.35s;
 }
-
 
 .sidebar-in {
     margin-left: 40px;
@@ -367,6 +369,8 @@ button.left-sidebar-toggle {
     padding-left: 0px;
     z-index: 999;
 }
+
+
 
 
 .hypothesis-container {

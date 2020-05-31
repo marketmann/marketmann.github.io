@@ -25,32 +25,33 @@
  **/
 
 .side-bar a {
-    color: #777;
+    color: hsl(240, 3%, 63.67%);
 }
 
 .side-bar {
     z-index: 100;
     display: flex;
     flex-wrap: wrap;
-    background-color: hsl(240, 4.03%, 15.5%);;
+    background-color: hsl(240, 4.03%, 15.5%, 0);
 }
 
 @media (min-width: 50rem) {
     .side-bar {
+        background-color: hsl(240, 6.03%, 15%);
         flex-wrap: nowrap;
         position: absolute;
-        width: 248px;
+        width: 228px;
         height: 100%;
         flex-direction: column;
-        border-right: 1px solid hsl(252, 6.17%, 25%);
+        border-right: 1px solid hsl(240, 6.17%, 20%);
         align-items: flex-end;
     }
 }
 
 @media (min-width: 66.5rem) {
     .side-bar {
-        width: calc((100% - 1350px) / 2 + 264px);
-        min-width: 264px;
+        width: calc((100% - 1064px) / 2 + 228px);
+        min-width: 228px;
     }
 }
 
@@ -65,7 +66,7 @@
         z-index: 101;
         height: 60px;
         max-height: 60px;
-        border-bottom: 1px solid hsl(252, 6.17%, 25%);
+        border-bottom: 1px solid hsl(240, 6.17%, 20%);
     }
 }
 
@@ -123,7 +124,7 @@
 }
 
 .navigation-list-child-list .navigation-list-link {
-    color: #959396;
+    color: hsl(280, 1.41%, 58.24%);
 }
 
 .navigation-list-child-list .navigation-list-item {
@@ -132,12 +133,14 @@
 
 .navigation-list-child-list .navigation-list-item::before {
     position: absolute;
-    margin-top: 0em;
-    margin-left: -0.2em;
-    color: rgba(230, 225, 232, 0.3);
-    font-weight: 600;
-    content: "-";
-    display: none !important;
+    margin-top: 10px;
+    margin-left: -0.3em;
+    background-color: hsla(240, 4.81%, 56.67%, 0.39);
+    content: "";
+    width: 6px;
+    display: block;
+    height: 2px;
+    border-radius: 1px;
 }
 
 .navigation-list-child-list .navigation-list-item.active::before {
@@ -198,6 +201,7 @@
     text-transform: uppercase;
     background: transparent;
     border: 0;
+    margin-right: 50px;
 }
 
 @media (min-width: 50rem) {
@@ -265,6 +269,20 @@
     }
 }
 
+@media (min-width: 50rem) {
+    .main-content {
+        position: relative;
+        margin-left: 228px;
+        max-width: 700px;
+
+    }
+}
+
+@media (min-width: 66.5rem) {
+    .main-content {
+        margin-left: calc((100% - 1064px) / 2 + 228px);
+    }
+}
 
 
 .js-main-content:focus {
@@ -281,28 +299,26 @@
     display: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: hsl(240, 4.03%, 14%);
+    background-color: hsl(240, 4.53%, 14%);
+    transition: 0.3s !important;
 }
 
-@media (min-width: 50rem) {
-    .page-header {
-        padding-right: 2rem;
-        padding-left: calc(2rem + 29px);
-    }
-}
 
 @media (min-width: 50rem) {
     .page-header {
         display: flex;
         justify-content: flex-end;
         height: 60px;
-        background-color: hsl(240, 4.03%, 14%);
-        border-bottom: 1px solid hsl(252, 6.17%, 25%);
+        background-color: hsl(240, 4.53%, 14%);
+        border-bottom: 1px solid hsl(240, 6.17%, 20%);
+        padding-right: 3rem;
+        padding-left: 3rem;
     }
 }
 
 .page-header.nav-open {
     display: block;
+    border-bottom: 1px solid hsl(242, 6.17%, 22%);
 }
 
 @media (min-width: 50rem) {
@@ -318,10 +334,14 @@
     display: flex;
     height: 100%;
     align-items: center;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    color: hsl(200, 33.33%, 97.06%);
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #f5f6fa;
     font-size: 18px !important;
+}
+
+.side-bar a.site-title {
+    color: hsl(200, 63.33%, 99%);
 }
 
 @media (min-width: 50rem) {
@@ -350,18 +370,26 @@
  **************************** 
  MIDDLE SECTION PADDING*/
 
-@media (min-width: 50rem) {
-    .page {
-        padding-right: 2rem;
-        padding-left: calc(2rem + 39px);
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        -webkit-transition: width 0.3s ease-in-out;
-        transition: width 0.3s ease-in-out;
-        transition: 0.3s;
-    }
+
+.page {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: 0.3s !important;
 }
 
+@media (min-width: 50rem) {
+    .page {
+        padding-right: 3rem;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+    }
+}
 
 
 /**
@@ -804,7 +832,7 @@ body {
     font-size: inherit;
     line-height: 1.4;
     color: hsl(242.86, 10.21%, 85.61%);
-    background-color: hsl(240, 4.03%, 14%);
+    background-color: hsl(240, 4.53%, 14%);
 }
 
 p,
@@ -847,7 +875,7 @@ p {
 }
 
 a {
-    color: hsl(214.37, 105.37%, 57.65%);
+    color: hsl(214.37, 105.37%, 59.65%);
     text-decoration: none !important;
 }
 
@@ -923,7 +951,7 @@ body {
 .pagecontent a {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .pagecontent ul,
@@ -1497,7 +1525,7 @@ li .highlight {
         padding-right: 0;
         padding-bottom: 0;
         padding-left: 0;
-        background-color: hsl(240, 4.03%, 14%);
+        background-color: hsl(240, 4.53%, 14%);
         border-radius: 0;
         box-shadow: none;
     }
@@ -1534,7 +1562,7 @@ li .highlight {
 
 @media (min-width: 50rem) {
     .search-input {
-        background-color: hsl(240, 4.03%, 14%);
+        background-color: hsl(240, 4.53%, 14%);
         font-size: 12px !important;
     }
 }
@@ -1613,7 +1641,7 @@ li .highlight {
 
 .search-result:hover,
 .search-result.active {
-    background-color: hsl(240, 4.03%, 14%);
+    background-color: hsl(240, 4.53%, 14%);
 }
 
 @media (min-width: 50rem) {
@@ -2081,7 +2109,8 @@ figure.highlight code {
 }
 
 .text-grey-dk-300 {
-    color: hsl(240, 4.03%, 14%); !important;
+    color: hsl(240, 4.53%, 14%);
+     !important;
 }
 
 .text-grey-lt-000 {
@@ -2197,7 +2226,8 @@ figure.highlight code {
 }
 
 .bg-grey-dk-300 {
-    background-color: hsl(240, 4.03%, 14%); !important;
+    background-color: hsl(240, 4.53%, 14%);
+     !important;
 }
 
 .bg-grey-lt-000 {
@@ -8117,4 +8147,28 @@ figure.highlight code {
         padding-top: 4rem !important;
         padding-bottom: 4rem !important;
     }
+}
+
+/**NAVGOCO */
+
+.nav a:hover,
+.nav li.active > a,
+.nav li.nav-active > a {
+    background-color: hsla(240, 4%, 36.47%, 0.5);
+    color: #f5f5f5;
+    transition: .2s;
+}
+
+.nav > li.active > a,
+.nav > li.nav-active > a {
+    background-color: hsl(217.29, 98.88%, 57.9%, 0.79);
+}
+.side-bar.left-open + .main-content-wrap .main-content.left-open,  .side-bar.left-open-on-load + .main-content-wrap .main-content.left-open,  .side-bar.left-open + .main-content-wrap .main-content.left-open-on-load,  .side-bar.left-open-on-load + .main-content-wrap .main-content.left-open-on-load{
+    margin: 0 auto !important;
+    transition: 1s;
+}
+
+.main-content.left-open-on-load {
+    margin: 0 auto !important;
+    transition:1s !important;
 }

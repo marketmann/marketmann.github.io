@@ -39,7 +39,7 @@
     .side-bar {
         flex-wrap: nowrap;
         position: absolute;
-        width: 248px;
+        width: 228px;
         height: 100%;
         flex-direction: column;
         border-right: 1px solid #eeebee;
@@ -49,8 +49,8 @@
 
 @media (min-width: 66.5rem) {
     .side-bar {
-        width: calc((100% - 1350px) / 2 + 264px);
-        min-width: 264px;
+        width: calc((100% - 1064px) / 2 + 228px);
+        min-width: 228px;
     }
 }
 
@@ -131,10 +131,14 @@
 
 .navigation-list-child-list .navigation-list-item::before {
     position: absolute;
-    margin-top: 0.3em;
-    margin-left: -0.8em;
-    color: rgba(92, 89, 98, 0.3);
-    content: "- ";
+    margin-top: 10px;
+    margin-left: -0.3em;
+    background-color: hsla(260, 4.81%, 36.67%, 0.35);
+    content: "";
+    width: 6px;
+    display: block;
+    height: 2px;
+    border-radius: 1px;
 }
 
 .navigation-list-child-list .navigation-list-item.active::before {
@@ -195,6 +199,7 @@
     text-transform: uppercase;
     background: transparent;
     border: 0;
+    margin-right:50px;
 }
 
 @media (min-width: 50rem) {
@@ -267,15 +272,16 @@
 @media (min-width: 50rem) {
     .main-content {
         position: relative;
-        margin-left: 248px;
-        max-width: 800px;
+        margin-left: 228px;
+        max-width: 700px;
         
     }
 }
 
 @media (min-width: 66.5rem) {
     .main-content {
-        margin-left: calc((100% - 1370px) / 5 + 294px)
+        margin-left: calc( (100% - 1064px) / 2 + 228px );
+    
     }
 }
 
@@ -291,13 +297,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #f5f6fa;
-}
-
-@media (min-width: 50rem) {
-    .page-header {
-        padding-right: 2rem;
-        padding-left: calc(2rem + 29px);
-    }
+    transition: 0.3s !important;
 }
 
 @media (min-width: 50rem) {
@@ -307,16 +307,21 @@
         height: 60px;
         background-color: #fff;
         border-bottom: 1px solid #eeebee;
+        padding-right: 3rem;
+        padding-left: 3rem;
     }
 }
 
 .page-header.nav-open {
     display: block;
+    border-bottom: 1px solid hsl(300, 8.11%, 86.85%);
+
 }
 
 @media (min-width: 50rem) {
     .page-header.nav-open {
         display: flex;
+        border-bottom: 1px solid #eeebee;
     }
 }
 
@@ -332,6 +337,10 @@
     color: #27262b;
     font-size: 18px !important;
 }
+.side-bar a.site-title {
+    color: #27262b;
+}
+
 
 @media (min-width: 50rem) {
     .site-title {
@@ -359,10 +368,18 @@
  **************************** 
  MIDDLE SECTION PADDING*/
 
+
+.page {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: 0.3s !important;
+}
 @media (min-width: 50rem) {
     .page {
-        padding-right: 2rem;
-        padding-left: calc(2rem + 39px);
+        padding-right: 3rem;
+        padding-left: 3rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
         -webkit-transition: width 0.3s ease-in-out;
@@ -370,7 +387,6 @@
         transition: 0.3s;
     }
 }
-
 
 
 /**
@@ -895,7 +911,7 @@ body {
 .pagecontent a {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .pagecontent ul,
@@ -1050,7 +1066,7 @@ body {
     align-self: center;
 }
 
-@media (min-width: 50rem) {
+media (min-width: 50rem) {
     .breadcrumb-nav {
         margin-top: -1rem;
     }
@@ -7022,4 +7038,31 @@ pre {
         padding-top: 4rem !important;
         padding-bottom: 4rem !important;
     }
+}
+/**NAVGOCO*/
+
+.nav a:hover {
+   background-color: hsla(210, 4%, 36.47%, 0.2);
+   transition: .2s;
+}
+
+
+
+.nav > li.active > a,
+.nav > li.nav-active > a {
+   background-color: hsl(217.29, 98.88%, 64.9%);
+}
+.nav li.active:hover > a, 
+.nav li.active > a{
+    color:hsla(210, 4%, 100%,1);
+}
+
+.side-bar.left-open + .main-content-wrap .main-content.left-open,  .side-bar.left-open-on-load + .main-content-wrap .main-content.left-open,  .side-bar.left-open + .main-content-wrap .main-content.left-open-on-load,  .side-bar.left-open-on-load + .main-content-wrap .main-content.left-open-on-load{
+    margin: 0 auto !important;
+    transition: 1s;
+}
+
+.main-content.left-open-on-load {
+    margin: 0 auto !important;
+    transition:1s !important;
 }
