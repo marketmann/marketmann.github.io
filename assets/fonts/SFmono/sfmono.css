@@ -1,14 +1,14 @@
 
 /* LIGHT - 300 */
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoLight.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoLightItalic.otf') format('opentype'),
   font-weight: 300;
   font-style: italic;
@@ -19,14 +19,14 @@
 /* REGULAR - 400 */
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoRegular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoRegularItalic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
@@ -38,14 +38,14 @@
 /* REGULAR - 500 */
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoMedium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoMediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
@@ -58,14 +58,14 @@
 /* SEMI-BOLD - 600 */
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoSemiboldItalic.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoSemibold.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
@@ -78,14 +78,14 @@
 /* BOLD - 700 */
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoBold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoBoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
@@ -97,7 +97,7 @@
 /* BLACK - 900 */
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoHeavy.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
@@ -105,7 +105,7 @@
 
 
 @font-face {
-  font-family: 'SF MONO';
+  font-family: 'SFmono';
   src: url('https://marketmann.github.io/assets/fonts/SFmono/SFMonoHeavyItalic.otf') format('opentype');
   font-weight: 900;
   font-style: italic;
