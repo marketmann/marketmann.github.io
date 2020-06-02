@@ -285,7 +285,7 @@
 }
 
 
-.js-main-content:focus {
+.js-main-content {
     outline: none;
 }
 
@@ -1321,12 +1321,12 @@ li .highlight {
 .btn:focus {
     text-decoration: none;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.25);
+    box-shadow: none;
 }
 
 .btn:focus:hover,
 .btn.selected:focus {
-    box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.25);
+    box-shadow:none;
 }
 
 .btn:hover,
@@ -1384,12 +1384,15 @@ li .highlight {
 .btn-outline:focus {
     text-decoration: none;
     outline: none;
-    box-shadow: inset 0 0 0 2px #5c5962, 0 0 0 3px rgba(0, 0, 255, 0.25);
+    box-shadow: none;
 }
-
+:focus, :active {
+    box-shadow: none !important;
+    outline:none !important;
+}
 .btn-outline:focus:hover,
 .btn-outline.selected:focus {
-    box-shadow: inset 0 0 0 2px #5c5962;
+    box-shadow:none;
 }
 
 .btn-primary {

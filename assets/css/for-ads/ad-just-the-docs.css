@@ -217,3 +217,7 @@ a:not([class]):hover {
     }
 }
 
+:focus, :active {
+    box-shadow: none !important;
+    outline:none !important;
+}
