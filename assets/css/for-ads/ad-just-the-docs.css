@@ -86,7 +86,7 @@
     .side-bar {
         display: none !important;
         flex-wrap: nowrap;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 248px;
         height: 100%;
@@ -117,7 +117,7 @@
 
 .top-guy {
     position: absolute;
-    display: block;
+    display: none;
     top: 0;
     right: 40%;
     left: 40%;
