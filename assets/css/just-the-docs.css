@@ -30,7 +30,7 @@
 @media (min-width: 50rem) {
     .side-bar {
         flex-wrap: nowrap;
-        position: absolute;
+        position: fixed;
         width: 228px;
         height: 100%;
         flex-direction: column;
