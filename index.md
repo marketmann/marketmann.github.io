@@ -6,10 +6,18 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# I Am Marketmann
+# Well hello
 {: .fs-9 }
 
-Marketmann.github.io is my personal, online, copywriting repo.  On this site contains reference material, sales pages, and old ads that I like.  Yes, some of the content on this site is currently being sold by parties that are not myself. For this reason, I've inserted the proper "no-index" meta tags to prevent search engine crawlers from indexing this page. In short, no page, or any part of any page is indexed by google, bing, or any other search engine, and, as such, does not appear in any search engine.  This page, and this site are built using Jekyll and, the Jekyll theme "Just the Docs."  There are some residual pages left over from that theme that I haven't yet removed, or edited. What's below this line of text is an example of that.  :-)
+Hi. This site is part of my online swipe file.  If you have a look around (and you're not me), you'll find advertising reference material, sales pages, and old ads.  
+
+I just told you that, because some of the content on this site is currently being sold. Not by me, but by those who created it. 
+
+For this reason, every page has multiple "no-index" meta tags to prevent google, bing, yahoo, and any other search engine crawlers from indexing the content on this site. In short, no page, or any part of any page should show up in search engines/
+
+That being said, if you find something of yours on this site, and you'd like it taken down, send an email to robertsmith88275@gmail.com.  (I'm Robert).
+
+Lastly, this whole site, was/is built using Jekyll and, the Jekyll theme "Just the Docs."  There are some residual pages left over from that theme that I haven't yet removed, or edited. What's below this line of text is an example of that.  :-)
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
