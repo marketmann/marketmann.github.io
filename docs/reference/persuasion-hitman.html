@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-custom-css
 title: Persuasion Hitman
 parent: Reference
 nav_order: 1
@@ -16,382 +16,12 @@ nav_order: 1
 </head>
 
 <body>
-    <style>
-      body {
-	padding: 10px;
-	display: block;
-}
-.book-styles {
-	max-width: 510px !important;
-	margin: 0 auto;
-	box-sizing: border-box !important;
-	font-family: Arno Pro;
-	color: black;
-	font-size: 23px;
-	word-wrap: break-word !important;
-	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: subpixel-antialiased;
-	font-smoothing: subpixel-antialiased;
-	text-align: justify;
-	text-indent: 27px
-}
-.top-title {
-	text-indent: 0px;
-}
-
-.book-styles .top-title h1 {
-	font-size: 2.2em !important;
-}
-.book-styles .top-title h3 {
-	font-size: 1.4em !important;
-}
-@media (max-width:530px) {
-	.book-styles .top-title h3 {
-		font-size: 27px !important;
-	}
-}
-@media (max-width:530px) {
-	.book-styles .top-title h1{
-		font-size: 33px !important;
-	}
-}
-
-
-
-.book-styles h1 {
-	font-size: 1.5em !important;
-	text-align: center;
-	margin-bottom: 7px;
-	padding-bottom: 0px;
-	line-height: 1 !important;
-	text-indent: 0px;
-}
-@media (max-width:530px) {
-	.book-styles h1 {
-		font-size: 29px !important;
-	}
-}
-
-.book-styles h3 {
-	font-size: 26px !important;
-	font-weight: 400;
-	margin-top: 0px;
-	margin-bottom: 10px;
-	text-indent: 0px;
-}
-@media (max-width:530px) {
-	.book-styles h3 {
-		font-size: 24px !important;
-	}
-}
-.book-styles h5 {
-	font-size: 1.1em !important;
-	margin-bottom: 0px;
-	margin-
-	color: black;
-	font-weight: 600;
-	text-indent: 0px;
-}
-.example-excerpt h5 {
-	margin-top:0px;
-}
-
-
-.book-styles ul, .book-styles ul {}
-.book-styles ul li, .book-styles ol li {
-	text-indent: 0px;
-	margin-left: 20.4px;
-	line-height: 1.1em;
-	margin-bottom: 8.8px;
-}
-
-.book-styles ul li:before{
-position: absolute;
-margin-left: -.9em;
-color: #99979a;
-content: "•";
-font-size: 30px;
-}
-.book-styles ol li:before {
-position: absolute;
-margin-left: -0.4em;
-top: 0;
-color: #a8a6a9;
-font-size: 18px !important;
-line-height: 1.2;
-font-family: -apple-system;
-font-weight: 500;
-}
-
-.br {
-	font-size: 11.2px;
-}
-
-.ornament {
-	display: block;
-	max-width: 50px;
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-	text-align: center;
-	filter: invert(100%)
-}
-.book-cover {
-	max-width: 300px;
-	width: 100%;
-	margin: 0 auto;
-	display: block;
-	border: 1px solid hsl(220, 2%, 29%);
-	border-radius: 4px
-}
-.drop-cap-book {
-	text-indent: 0px;
-}
-.drop-cap-book:first-letter {
-	font-size: 3.4em;
-	float: left;
-	line-height: 20px;
-	margin-top:30px;
-	padding-right:10px;
-	padding-bottom:10px;
-}
-
-/*EXCERPTS */
-.story-excerpt {
-	word-break: normal;
-	padding: 50px 30px 15px 30px;
-	position: relative;
-	text-indent:0px;
-	border-radius: 4px;
-	background: hsla(220, 2%, 30%, .1);
-	font-smoothing:antialiased;
-	-webkit-font-smoothing:antialiased;
-}
-.story-excerpt:before {
-	content:"STORY";
-	font-family:Messinasansweb;
-	border-radius:2px;
-	background-color:hsla(100,0%,100%,1);
-	padding: 0px 1px 0px 5px;
-	font-size:11px;
-	display:block;
-	text-align: center;
-	text-indent: 0px;
-	position:absolute;
-	letter-spacing: 3px;
-	line-height:1.4;
-	top:20px;
-	left:31px;
-	color:hsla(220, 2%, 20%, 0.6);
-}
-
-.example-excerpt {
-		word-break: normal;
-	padding: 30px 30px 24px 50px;
-	position: relative;
-	text-indent:0px;
-	border-radius: 4px;
-	font-family:"Adobe Caslon";
-	line-height: 1.2;
-	font-size:0.9em
-}
-.example-excerpt:before {
-	content:"EXAMPLE";
-	font-family:Messinasansweb;
-	font-size:10px;
-	display:block;
-	position:absolute;
-	letter-spacing: 4px;
-	top:0;
-	left:54px;
-	color:hsla(220, 2%, 20%, 0.9);
-}
-
-.mini-lesson {
-		word-break: normal;
-	padding: 20px;
-	position: relative;
-	text-indent:0px;
-	border-radius:8px;
-	background: hsla(200,9%, 88.25%,0.6);
-		font-smoothing:antialiased;
-	-webkit-font-smoothing:antialiased;
-	box-shadow: inset 0 0 0 1px hsl(200,9%, 68.25%), inset 0 0 0 5px hsl(200,9%,100%), inset 0 0 0 6px hsla(200,10%, 68.25%,0.6)
-}
-
-.important-point-excerpt {
-		word-break: normal;
-	padding: 35px 30px 20px 30px;
-	line-height:1.3;
-	position: relative;
-	text-indent:0px;
-	border-radius: 4px;
-	background: hsla(150, 8.54%, 87.25%,.5);
-	font-smoothing:antialiased;
-	-webkit-font-smoothing:antialiased;
-}
-.important-point-excerpt:before {
-	content:"IMPORTANT";
-	font-family:Messinasansweb;
-	border-radius:3px;
-	background-color:hsla(200,20%,100%,1);
-	padding: 0px 4px 1.5px 8px;
-	font-size:11px;
-	display:block;
-	text-align: center;
-	text-indent: 0px;
-	position:absolute;
-	letter-spacing: 3px;
-	line-height:1.4;
-	top:-6px;
-	left:31px;
-	color:hsla(150, 7%, 20%, 0.9);
-}
-
-.ultra-important-excerpt {
-	padding: 40px 30px 20px 30px;
-	line-height:1.3;
-	position: relative;
-	text-indent:0px;
-	border-radius: 5px;
-	background: hsla(70, 18.54%, 88.25%,0.5);
-	font-smoothing:antialiased;
-	-webkit-font-smoothing:antialiased;
-	border:1px solid hsla(70, 28.64%, 65.25%,0);
-	word-break: keep-all;
-	margin-top:8px;
-
-}
-.ultra-important-excerpt:before {
-	content:"ULTRA IMPORTANT";
-	font-family:Messinasansweb;
-	border-radius:4px;
-	background-color:hsla(60,20%,100%,1);
-	border:1px solid hsla(70, 18.54%, 87.25%,0);
-	padding: 0px 4px 1px 8px;
-	font-size:11px;
-	display:block;
-	text-align: center;
-	text-indent: 0px;
-	position:absolute;
-	letter-spacing: 3px;
-	line-height:1.4;
-	top:-6.7px;
-	left:31px;
-	color:hsla(50, 27%, 10%, 0.6);
-	border-top:0px;
-	border-top-left-radius:0px;
-	border-top-right-radius:0px;
-}
-.ultra-important-excerpt .mango-highlight {
-	background: hsla(65, 34.54%, 88.25%,0.9);
-	border: 1px solid hsla(65, 38.54%, 78.25%,0.8);
-	margin-top: 10px;
-	margin-bottom:10px;
-	border-top-left-radius: 10px;
-}
-
-.ultra-important-excerpt .mango-highlight:before {
-	content:url("data:image/svg+xml,%3Csvg viewBox='0 0 123 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M62.2154 75.0963C64.0943 75.1513 65.8781 75.9543 67.1878 77.3346C68.4975 78.715 69.2298 80.5639 69.229 82.4883V84.6003C69.229 86.5608 68.4684 88.441 67.1144 89.8272C65.7604 91.2135 63.9239 91.9923 62.0091 91.9923C60.0943 91.9923 58.2578 91.2135 56.9038 89.8272C55.5498 88.441 54.7892 86.5608 54.7892 84.6003C54.4521 83.4538 54.392 82.2406 54.6143 81.065C54.8365 79.8895 55.3343 78.7869 56.0648 77.8519C56.7954 76.9169 57.7369 76.1776 58.8082 75.6976C59.8796 75.2176 61.0489 75.0113 62.2154 75.0963V75.0963Z' fill='%23959B63'/%3E%3Cpath d='M62.2165 26.9424C64.1136 27.0504 65.8982 27.899 67.2029 29.3133C68.5075 30.7276 69.2331 32.6002 69.2301 34.5456V63.48C69.2301 65.4405 68.4694 67.3206 67.1154 68.7069C65.7614 70.0932 63.925 70.872 62.0102 70.872C60.0953 70.872 58.2589 70.0932 56.9049 68.7069C55.5509 67.3206 54.7902 65.4405 54.7902 63.48V34.5456C54.7902 32.5291 55.5726 30.5952 56.9653 29.1693C58.358 27.7434 60.2469 26.9424 62.2165 26.9424V26.9424Z' fill='%23959B63'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M61.8559 0.967514C28.1948 0.967514 0.907104 28.2552 0.907104 61.9163C0.907104 95.5774 28.1948 122.865 61.8559 122.865C95.517 122.865 122.805 95.5774 122.805 61.9163C122.805 28.2552 95.517 0.967514 61.8559 0.967514ZM61.8559 11.5489C34.0387 11.5489 11.4885 34.0992 11.4885 61.9163C11.4885 89.7335 34.0387 112.284 61.8559 112.284C89.6731 112.284 112.223 89.7335 112.223 61.9163C112.223 34.0992 89.6731 11.5489 61.8559 11.5489Z' fill='%23959B63'/%3E%3C/svg%3E%0A");
-	width:12px;
-	height:12px;	
-	background:transparent !important;
-	border:none;
-	padding: 0px;
-	text-indent: 0px;
-	position:absolute;
-	letter-spacing: 0px;
-	top:-4px;
-	left:4px;
-	color:hsla(150, 7%, 0%, 0.7);	
-
-}
-
-/*HIGHLIGHTS */
-
-/*Yellow*/
-.macaroni-and-cheese-highlight{
-	background:hsla(50.33, 80.56%, 78.9%,0.7) !important;
-	padding-left:4px;
-	padding-top:3px;
-	padding-bottom:0px;
-		padding-right:2px;
-	display: inline;
-	line-height:1;
-	border-radius:3px;
-}
-.mango-highlight {
-	background:inherit;
-		border-radius:4px;
-	text-indent:0px;
-	padding:10px 20px;
-	position: relative;
-}
-
-
-.line-break {
-	font-size:9px;
-	color:transparent;
-}
-/* ARNO PRO - 400 - Regular*/
-@font-face {
-	font-family: "ARNO PRO";
-	src: url('https://dl.dropboxusercontent.com/s/5d4obl4pk6bdb6a/Arno%20Pro.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/2g5ocyt8f0dtigz/Arno%20Pro.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/yx9xkykrpocx51q/Arno%20Pro.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/mgzw7werd4qmmx8/Arno%20Pro.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/qtfa1j8j4qi4y0m/Arno%20Pro.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/2xnxzij8rmmkvjs/Arno%20Pro.eot?raw=1') format('embedded-opentype');
-	font-weight: 400;
-	font-style: normal;
-}
-/* ARNO PRO - 400 - Regular*/
-@font-face {
-	font-family: "ARNO PRO";
-	src: url('https://dl.dropboxusercontent.com/s/mdz3ie02w7ky4jx/Arno%20Pro%20Italic.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/wkaw6t45ex1nwy8/Arno%20Pro%20Italic.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/av1ptqz33ha6l62/Arno%20Pro%20Italic.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/9javha8bi7kfsns/Arno%20Pro%20Italic.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/2nncg9mgzoys6gc/Arno%20Pro%20Italic.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/eisr2egbudcsaeo/Arno%20Pro%20Italic.eot?raw=1') format('embedded-opentype');
-	font-weight: 400;
-	font-style: italic;
-}
-/* ARNO PRO - 400 - BOLD*/
-@font-face {
-	font-family: "ARNO PRO";
-	src: url('https://dl.dropboxusercontent.com/s/tiacxlja5mdwxxj/Arno%20Pro%20Bold.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/s7a68zeq0ov4gtm/Arno%20Pro%20Bold.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/9wv30zw75sb6j5r/Arno%20Pro%20Bold.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/76zi1ecskevyy8y/Arno%20Pro%20Bold.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/3cj8baiznjs33pj/Arno%20Pro%20Bold.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/fhy7vsdbo1teazg/Arno%20Pro%20Bold.eot?raw=1') format('embedded-opentype');
-	font-weight: 600;
-	font-style: normal;
-}
-/* ARNO PRO - 400 - BOLD ITALIC*/
-@font-face {
-	font-family: "ARNO PRO";
-	src: url('https://dl.dropboxusercontent.com/s/he05my2f981stox/ArnoPro-BoldItalic.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/brljub14yppr3n2/ArnoPro-BoldItalic.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/3bobyh9s6pm2zof/ArnoPro-BoldItalic.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/s22s725b1t96lp7/ArnoPro-BoldItalic.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/c0568olnqvaywfy/ArnoPro-BoldItalic.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/4vs9sd55lvoxq4p/ArnoPro-BoldItalic.eot?raw=1') format('embedded-opentype');
-	font-weight: 600;
-	font-style: italic;
-}
-/* ARNO PRO - 200 - LITE DISPLAY*/
-@font-face {
-	font-family: "ARNO PRO DISPLAY";
-	src: url('https://dl.dropboxusercontent.com/s/zlgtcsqfsdzu326/Arno%20Pro%20Light%20Display.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/8sts3h9ukn1vp2t/Arno%20Pro%20Light%20Display.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/dvo515bxebx5u6k/Arno%20Pro%20Light%20Display.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/69kifk30cyb3x8i/Arno%20Pro%20Light%20Display.svg?raw=1') format('svg'), url('https://dl.dropboxusercontent.com/s/degclmb7zxfweuh/Arno%20Pro%20Light%20Display.otf?raw=1') format('opentype'), url('https://dl.dropboxusercontent.com/s/3msx2kmqp0fxv9k/Arno%20Pro%20Light%20Display.eot?raw=1') format('embedded-opentype');
-	font-weight: 200;
-	font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Messinasansweb';
-  src: url('https://dl.dropboxusercontent.com/s/ltevjhg7lelaul6/MessinaSansWeb-Book.woff2?raw=1') format('woff2'), 
-url('https://dl.dropboxusercontent.com/s/t3hznnbbng519ah/MessinaSansWeb-Book.eot?raw=1') format('embedded-opentype'), 
-url('https://dl.dropboxusercontent.com/s/na18opuvh97hc8z/MessinaSansWeb-Book.woff?raw=1') format('woff');
-  font-weight: 400;
-  font-style: normal;
-font-stretch: normal;
-unicode-range: U+000D-FB04;
-}
-
-
-.super-important-excerpt {
-}
-
-    </style>
-    <div class="book-styles">
-        <div class="top-title">
-            <h1><strong>CONFESSIONS OF A PERSUASION HITMAN </strong></h1>
+   <div class="book-styles">
+        <div class="top-title-book">
+            <h1><strong>CONNFESSIONS OF A PERSUASION HITMAN </strong></h1>
             <h3 style="text-align: center;"><em>The Unusual Rules I Learned From Selling Over
                     $100 Million of Products &amp; Services</em></h3>
-            <img class="book-cover" src="assets/cover.jpeg">
+            <img class="book-cover" src="../../../assets/images/persuasion-hitman/cover.jpeg">
             <div style="text-align: center; font-size:1.2em; margin-top:10px;">IAN STANLEY</div>
             <div style="text-align: center; font-size:16px;">Copyright © 2019 by Ian Stanley</div>
         </div>
@@ -406,9 +36,44 @@ unicode-range: U+000D-FB04;
         <div style="text-align: center; max-width:100px"> </div>
         <div data-placeholder-text="Add caption" style="text-align: center; width: 286px;"><br>
         </div>
-        <div class="br"><br style="">
-        </div>
-        <div class="br"><br style="">
+
+
+        <h1 style="text-align: center;"><strong>Table of Contents</strong></h1>
+        <div class="toc-links" style="text-indent:0px;">
+            <div class="br"><br style="">
+            </div>
+            <a class="toc-link" href="#How the Persuasion Hitman was Born">
+                <div> <strong>Introduction: </strong>How the Persuasion Hitman was Born </div>
+            </a>
+            <a class="toc-link" href="#Set Clear Boundaries">
+                <div><strong>Rule #1: </strong>Set Clear Boundaries</div>
+            </a>
+            <a class="toc-link" href="#Get the Highest Average Order Value on Every Purchase">
+                <div><strong>Rule #2: </strong>Get the Highest Average Order Value on Every Purchase </div>
+            </a>
+            <a class="toc-link" href="#Time and Money">
+                <div><strong>Rule #3: </strong>Time and Money are Not Related </div>
+            </a>
+            <a class="toc-link" href="#You’re Not Charging">
+                <div><strong>Rule #4: </strong>You’re Not Charging Enough </div>
+            </a>
+            <a class="toc-link" href="#Selling a Feeling">
+                <div><strong>Rule #5: </strong>You’re Always Selling a Feeling</div>
+            </a>
+            <a class="toc-link" href="#THE MATH">
+                <div><strong>Rule #6: </strong>Do the Math </div>
+            </a>
+            <a class="toc-link" href="#Cash Flow with">
+                <div><strong>Rule #7: </strong>Combine Short Term Cash Flow with Long Term Recurring Revenue</div>
+            </a>
+            <a class="toc-link" href="#THE FIRST LINE"><div><strong>Rule #8: </strong>The First Line is Most Important</div></a>
+            <a class="toc-link" href="#LANGUAGE AS"><div><strong>Rule #9: </strong>Use the Same Language Your Prospects Use</div></a>
+            <a class="toc-link" href="#CLICK MOMENT"><div><strong>Rule #10: </strong>Identify Your “Click Moment” </div></a>
+            <a class="toc-link" href="#SELL THEM WHAT THEY WANT"><div><strong>Rule #11: </strong>Sell Them What They Want. Give Them What They Need</div></a>
+            <a class="toc-link" href="#TELL STORIES"><div><strong>Rule #12: </strong>Tell the Stories that Scare You the Most</div></a>
+            <a class="toc-link" href="#DEFINE YOU"><div><strong>Rule #13: </strong>Don’t Let the Stories You Tell Yourself Define You</div></a>
+            <div><strong>Conclusion: </strong>Recap of the Rules and One Final Mission</div>
+            <div><strong>Epilogue: </strong>What’s Next? </div>
         </div>
         <h5 style="text-align: center;"><strong>Praise for <em>Confessions of a Persuasion Hitman</em></strong></h5>
         <div class="br"><br style="">
@@ -444,7 +109,7 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <img class="ornament" src="assets/text-ornament.png">
+        <img class="ornament" src="../../../assets/images/persuasion-hitman/text-ornament.png">
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
@@ -463,7 +128,7 @@ unicode-range: U+000D-FB04;
             www.davidldeutsch.com</div>
         <div class="br"><br style="">
         </div>
-        <img class="ornament" src="assets/text-ornament.png">
+        <img class="ornament" src="../../../assets/images/persuasion-hitman/text-ornament.png">
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
@@ -480,7 +145,7 @@ unicode-range: U+000D-FB04;
         <div style="text-align: right;">– <strong>Joey </strong></div>
         <div class="br"><br style="">
         </div>
-        <div><img class="ornament" src="assets/text-ornament.png"></div>
+        <div><img class="ornament" src="../../../assets/images/persuasion-hitman/text-ornament.png"></div>
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
@@ -497,7 +162,7 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <div><img class="ornament" src="assets/text-ornament.png"></div>
+        <div><img class="ornament" src="../../../assets/images/persuasion-hitman/text-ornament.png"></div>
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
@@ -514,7 +179,7 @@ unicode-range: U+000D-FB04;
         <div style="text-align: right;">– <strong>Stefan Georgi</strong></div>
         <div class="br"><br style="">
         </div>
-        <div><img class="ornament" src="assets/text-ornament.png"></div>
+        <div><img class="ornament" src="../../../assets/images/persuasion-hitman/text-ornament.png"></div>
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
@@ -535,7 +200,7 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <div><img class="ornament" src="assets/text-ornament.png"></div>
+        <div><img class="ornament" src="../../../assets/images/persuasion-hitman/text-ornament.png"></div>
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
@@ -548,7 +213,7 @@ unicode-range: U+000D-FB04;
             www.JustinGoff.com</div>
         <div class="br"><br style="">
         </div>
-        <div><img class="ornament" src="assets/text-ornament.png"></div>
+        <div><img class="ornament" src="../../../assets/images/persuasion-hitman/text-ornament.png"></div>
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
@@ -580,27 +245,7 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;"><strong>Table of Contents</strong></h1>
-        <div style="text-indent:0px;">
-            <div class="br"><br style="">
-            </div>
-            <div> <strong>Introduction: </strong>How the Persuasion Hitman was Born </div>
-            <div><strong>Rule #1: </strong>Set Clear Boundaries</div>
-            <div><strong>Rule #2: </strong>Get the Highest Average Order Value on Every Purchase </div>
-            <div><strong>Rule #3: </strong>Time and Money are Not Related </div>
-            <div><strong>Rule #4: </strong>You’re Not Charging Enough </div>
-            <div><strong>Rule #5: </strong>You’re Always Selling a Feeling</div>
-            <div><strong>Rule #6: </strong>Do the Math </div>
-            <div><strong>Rule #7: </strong>Combine Short Term Cash Flow with Long Term Recurring Revenue</div>
-            <div><strong>Rule #8: </strong>The First Line is Most Important</div>
-            <div><strong>Rule #9: </strong>Use the Same Language Your Prospects Use</div>
-            <div><strong>Rule #10: </strong>Identify Your “Click Moment” </div>
-            <div><strong>Rule #11: </strong>Sell Them What They Want. Give Them What They Need</div>
-            <div><strong>Rule #12: </strong>Tell the Stories that Scare You the Most</div>
-            <div><strong>Rule #13: </strong>Don’t Let the Stories You Tell Yourself Define You</div>
-            <div><strong>Conclusion: </strong>Recap of the Rules and One Final Mission</div>
-            <div><strong>Epilogue: </strong>What’s Next? </div>
-        </div>
+
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
@@ -661,8 +306,10 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;"><strong>INTRODUCTION</strong></h1>
-        <h3 style="text-align: center;"><em>How the Persuasion Hitman was Born-</em></h3>
+        <div id="How the Persuasion Hitman was Born">
+            <h1 style="text-align: center;"><strong>INTRODUCTION</strong></h1>
+            <h3 style="text-align: center;"><em>How the Persuasion Hitman was Born-</em></h3>
+        </div>
         <div class="br"><br style="">
         </div>
         <div class="drop-cap-book"><span>I</span> thought I was going to kill people for a living.</div>
@@ -866,7 +513,6 @@ unicode-range: U+000D-FB04;
         <div class="br"><br style="">
         </div>
         <div>Each chapter title is one of the 13 rules. Clever, I know. I also came up with a little sub-title that describes the story or lesson the teaches the rule. At the point in the story or lesson where the rule appears, I highlight that rule in bold.</div>
-        <div>f A Persuasion Hitman</div>
         <div class="br"><br style="">
         </div>
         <div>Interspersed throughout the chapters are little sections I call “mini-lessons.” They are directly related to the section you’ll be reading, but instead of allowing them to interrupt the flow of the book, I’ve put them in their own fancy little gray boxes so you can read them whenever it makes the most sense to you.</div>
@@ -877,7 +523,7 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #1:<br>
+        <h1 id="Set Clear Boundaries" style="text-align: center;">RULE #1:<br>
             <strong>SET CLEAR BOUNDARIES</strong></h1>
         <h3 style="text-align: center;"><em>-The First Sale I Ever Made-</em></h3>
         <div class="br"><br style="">
@@ -925,10 +571,12 @@ unicode-range: U+000D-FB04;
         <div>Violate your boundaries at your own risk.</div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #2:<br>
-            <strong>GET THE HIGHEST AVERAGE ORDER VALUE ON EVERY PURCHASE</strong></h1>
-        <h3 style="text-align: center;"><em>-My Second Sale:</em><br>
-            <em>The World’s Most Profitable Lemonade Stand-</em></h3>
+        <div id="Get the Highest Average Order Value on Every Purchase">
+            <h1 style="text-align: center;">RULE #2:<br>
+                <strong>GET THE HIGHEST AVERAGE ORDER VALUE ON EVERY PURCHASE</strong></h1>
+            <h3 style="text-align: center;"><em>-My Second Sale:</em><br>
+                <em>The World’s Most Profitable Lemonade Stand-</em></h3>
+        </div>
         <div style="text-align: center;"><br>
         </div>
         <div>When I was about 10 years old, I learned something about sales that most grown adults have never learned.</div>
@@ -1300,10 +948,12 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #3:<br>
-            <strong>TIME AND MONEY</strong><br>
-            <strong>ARE NOT RELATED</strong></h1>
-        <h3 style="text-align: center;"><em>-My Third Sale: How I Got Paid $50 an Hour to Watch TV When I Was 12-</em></h3>
+        <div id="Time and Money">
+            <h1 style="text-align: center;">RULE #3:<br>
+                <strong>TIME AND MONEY</strong><br>
+                <strong>ARE NOT RELATED</strong></h1>
+            <h3 style="text-align: center;"><em>-My Third Sale: How I Got Paid $50 an Hour to Watch TV When I Was 12-</em></h3>
+        </div>
         <div style="text-align: center;"><br>
         </div>
         <div>When I was 12 years old, my mum helped me make my first business card.</div>
@@ -1487,9 +1137,11 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #4:<br>
-            <strong>YOU’RE NOT CHARGING ENOUGH</strong></h1>
-        <h3 style="text-align: center;"><em>-A Short Story To Prove Time and Money Aren’t Related, $5k in 30 Seconds-</em></h3>
+        <div id="You’re Not Charging">
+            <h1 style="text-align: center;">RULE #4:<br>
+                <strong>YOU’RE NOT CHARGING ENOUGH</strong></h1>
+            <h3 style="text-align: center;"><em>-A Short Story To Prove Time and Money Aren’t Related, $5k in 30 Seconds-</em></h3>
+        </div>
         <div class="br"><br style="">
         </div>
         <div>I sat on the couch with my buddy as I was sending off a proposal and asked if I should charge $20k or $25k upfront to write some copy.</div>
@@ -1561,10 +1213,18 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #5:<br>
-            <strong>YOU’RE ALWAYS SELLING</strong><br>
-            <strong>A FEELING</strong></h1>
-        <h3 style="text-align: center;"><em>-How to Use the 8 Core Emotions to Make People Cry and Buy-</em></h3>
+        <div class="br"><br style="">
+        </div>
+        <div class="br"><br style="">
+        </div>
+        <div class="br"><br style="">
+        </div>
+        <div id="Selling a Feeling">
+            <h1 style="text-align: center;">RULE #5:<br>
+                <strong>YOU’RE ALWAYS SELLING</strong><br>
+                <strong>A FEELING</strong></h1>
+            <h3 style="text-align: center;"><em>-How to Use the 8 Core Emotions to Make People Cry and Buy-</em></h3>
+        </div>
         <div class="br"><br style="">
         </div>
         <div>I want to teach you one of the most effective ways you can build desire in someone.</div>
@@ -1600,7 +1260,8 @@ unicode-range: U+000D-FB04;
         <div>I’m not talking about some foof-y woo-woo description of “feelings.”</div>
         <div class="br"><br style="">
         </div>
-        <div class="ultra-important-excerpt">I’m talking about feelings like joy, fear, passion, love, anger, pain, shame, and guilt. (These are the 8 core emotions.)<br>
+        <div class="ultra-important-excerpt">
+            <div class="ultra-callout">ULTRA IMPORTANT</div>I’m talking about feelings like joy, fear, passion, love, anger, pain, shame, and guilt. (These are the 8 core emotions.)<br>
             <div class="line-break">&nbsp</div>
             <div class="mango-highlight">If you can create these Feelings in Advance then you allow your prospect to experience the feeling your product will create <strong>BEFORE</strong> they buy it. That feeling will get them to take action to buy.</div>
         </div>
@@ -1618,11 +1279,14 @@ unicode-range: U+000D-FB04;
         <div>It’s desire. You need to create an insatiable desire in your prospect.</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">You can use fear, love, pain, joy, guilt or other emotions to create DESIRE.</div>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>You can use fear, love, pain, joy, guilt or other emotions to create DESIRE.
+        </div>
         <div class="br"><br style=""></div>
         <div class="br"><br style="">
         </div>
         <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>
             <div>During any sales message, presentation, call, or whatever else, you are doing one of two things:</div>
             <ol>
                 <li>Amplifying a feeling (or feelings).
@@ -1641,7 +1305,8 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">Now here’s a (slightly inappropriate) way to build desire<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>Now here’s a (slightly inappropriate) way to build desire<br>
             <div class="line-break">&nbsp</div>
             <span class="macaroni-and-cheese-highlight">You tell them <u>what you’re going to do <strong><em>TO</em></strong> them.</u></span> (Or in the case of selling something it can also be FOR them.<br>
             <div class="line-break">&nbsp</div>
@@ -1673,7 +1338,8 @@ unicode-range: U+000D-FB04;
         <div>Pay attention to the language and the frame. </div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">It’s “<u><strong>I’m going to</strong></u><strong> </strong>make you feel so good.” <br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>It’s “<u><strong>I’m going to</strong></u><strong> </strong>make you feel so good.” <br>
             NOT... <br>
             <div class="line-break">&nbsp</div>
             “<u><strong>I want you to</strong></u> make me feel so good.” It’s about HER. It’s not about you.<br>
@@ -1797,7 +1463,8 @@ unicode-range: U+000D-FB04;
         <div>Then more and more people opened up. It was one of the most profound visualizations I’ve ever led.</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">I think a LARGE part of that has to do with the <span class="macaroni-and-cheese-highlight"><strong>emotional</strong> <strong>RANGE</strong></span> they experienced.<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>I think a LARGE part of that has to do with the <span class="macaroni-and-cheese-highlight"><strong>emotional</strong> <strong>RANGE</strong></span> they experienced.<br>
             <div class="line-break">&nbsp</div>
             See, most sales people focus on creating one core emotion in their potential buyers. (Consciously or unconsciously.)<br>
             <div class="line-break">&nbsp</div>
@@ -1828,7 +1495,9 @@ unicode-range: U+000D-FB04;
         <div class="line-break">&nbsp</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">Your goal as a salesperson should be first and foremost to CONNECT. You can do that in one sentence or one hour. But that’s the starting point of all great sales.</div>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>Your goal as a salesperson should be first and foremost to CONNECT. You can do that in one sentence or one hour. But that’s the starting point of all great sales.
+        </div>
         <div class="br"><br style="">
         </div>
         <div>You can connect in all sorts of different ways. The most powerful way I’ve found is through emotional storytelling.<br>
@@ -1839,6 +1508,7 @@ unicode-range: U+000D-FB04;
         </div>
 
         <div class="ultra-important-excerpt">
+            <div class="ultra-callout">ULTRA IMPORTANT</div>
             <div>So once you’ve gotten them into a deeply emotional state, you take them one step further.</div>
             <div class="line-break">&nbsp</div>
             You hit them with a simple two-step process: <ol>
@@ -1979,9 +1649,11 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #6: <strong><br>
-                DO THE MATH</strong></h1>
-        <h3 style="text-align: center;"><em>-How I Became the Top Salesman in the Office in Just 2 Weeks.-</em></h3>
+        <div id="THE MATH">
+            <h1 style="text-align: center;">RULE #6: <strong><br>
+                    DO THE MATH</strong></h1>
+            <h3 style="text-align: center;"><em>-How I Became the Top Salesman in the Office in Just 2 Weeks.-</em></h3>
+        </div>
         <div class="br"><br style="">
         </div>
         <div>When I was 22 years old I took a job selling DirecTV.</div>
@@ -2180,7 +1852,8 @@ unicode-range: U+000D-FB04;
         <div>The reason I start with the $7.5 million is because it sets a price anchor in their mind. It doesn’t matter if the company you’re speaking to is nowhere near that amount in sales. What matters is the number you said. It’s involuntary for humans to compare prices in their mind. They can’t help it. So start as high as you can WHILE making sense. It has to be REAL and BELIEVABLE. Not just some outlandish number you came up with out of nowhere.</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">Quick recap of what we’ve learned so far:<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>Quick recap of what we’ve learned so far:<br>
             <div class="line-break">&nbsp</div>
             <strong>Step 1:</strong> Get your prospect’s attention.<br>
             <div class="line-break">&nbsp</div>
@@ -2206,11 +1879,11 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #7:<br>
-            <strong>COMBINE SHORT TERM CASH</strong><br>
-            <strong>FLOW WITH LONG TERM</strong><br>
+        <div id="Cash Flow with"><h1 style="text-align: center;">RULE #7:<br>
+            <strong>COMBINE SHORT TERM CASH</strong>
+            <strong>FLOW WITH LONG TERM</strong>
             <strong>RECURRING REVENUE</strong></h1>
-        <h3 style="text-align: center;"><em>-The Secret to Turning One Sale into Countless Sales-</em></h3>
+        <h3 style="text-align: center;"><em>-The Secret to Turning One Sale into Countless Sales-</em></h3></div>
         <div class="br"><br style="">
         </div>
         <div>Over the past few years I’ve made more money per subscriber on my email list than anyone I know. (There could be people doing more than me, I just don’t know them.)</div>
@@ -2367,7 +2040,9 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">Second, you have to meet your prospect where they are emotionally and mentally. Where are they in the sales cycle? Are they aware of their problem? Aware of a solution? Aware of your solution? Do they already know you or what you’re selling?</div>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>Second, you have to meet your prospect where they are emotionally and mentally. Where are they in the sales cycle? Are they aware of their problem? Aware of a solution? Aware of your solution? Do they already know you or what you’re selling?
+        </div>
         <div class="br"><br style="">
         </div>
         <div>The single most important question you can ask before writing any copy, making any pitch, or selling ANYTHING is this:</div>
@@ -2388,7 +2063,8 @@ unicode-range: U+000D-FB04;
         <div>I had no idea how that would translate to stand up comedy, but it turns out the principles are pretty similar in certain aspects.</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">See, the first few lines of your copy or sales pitch are the most important. (Which is something you’ll see in the next chapter.)<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>See, the first few lines of your copy or sales pitch are the most important. (Which is something you’ll see in the next chapter.)<br>
             <div class="line-break">&nbsp</div>
             If you say the wrong thing in the beginning you can lose them forever. If you say the right thing you can gain a customer for life.
         </div>
@@ -2403,7 +2079,8 @@ unicode-range: U+000D-FB04;
         <div>This does NOT make them bad people. It makes them humans. We’re constantly scanning our environment and making judgments so that we can SURVIVE.</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">That’s why people tend to trust people who look like them more than people who don’t. For example, a 28 year old white dude with a beard is probably more likely to buy from me than a 71 year old Latina woman.<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>That’s why people tend to trust people who look like them more than people who don’t. For example, a 28 year old white dude with a beard is probably more likely to buy from me than a 71 year old Latina woman.<br>
             <div class="line-break">&nbsp</div>
             Not because she’s racist or he’s racist, but because it’s SAFE and FAMILIAR.
         </div>
@@ -2411,7 +2088,8 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <div class="ultra-important-excerpt">When it comes to stand up it follows the same rules. People are gonna judge you right away.<br>
+        <div class="ultra-important-excerpt">
+            <div class="ultra-callout">ULTRA IMPORTANT</div>When it comes to stand up it follows the same rules. People are gonna judge you right away.<br>
             <div class="line-break">&nbsp</div>
             <div class="mango-highlight"><strong>It’s your job to figure what conversation they’re having in their head and then</strong><u><strong> MEET THEM THERE.</strong></u></div>
             <div class="line-break">&nbsp</div>
@@ -2489,7 +2167,8 @@ unicode-range: U+000D-FB04;
         <div>It’s a subtle difference, but it’s the difference between a sales letter that doesn’t work...and one that makes a million bucks a month.</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">Most sales people meet every objection with a logical counterpoint designed to further sell their product, <strong>and make their product perfect</strong>. Not me.<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>Most sales people meet every objection with a logical counterpoint designed to further sell their product, <strong>and make their product perfect</strong>. Not me.<br>
             <div class="line-break">&nbsp</div>
             I would do that when it made sense. But I would also highlight the weaknesses of DirecTV.<br>
             <div class="line-break">&nbsp</div>
@@ -2668,10 +2347,10 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #8:<br>
-            <strong>THE FIRST LINE IS</strong><br>
+        <div id="THE FIRST LINE"><h1 style="text-align: center;">RULE #8:<br>
+            <strong>THE FIRST LINE IS </strong>
             <strong>MOST IMPORTANT</strong></h1>
-        <h3 style="text-align: center;"><em>-The One Sentence That Can Make or Break Any Sales Message-</em></h3>
+        <h3 style="text-align: center;"><em>-The One Sentence That Can Make or Break Any Sales Message-</em></h3></div>
         <div class="br"><br style="">
         </div>
         <div class="story-excerpt">I have a client who’s been making it rain online since I was in high school.<br>
@@ -2749,7 +2428,8 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <div class="ultra-important-excerpt">Here’s where people make the mistake.<br>
+        <div class="ultra-important-excerpt">
+            <div class="ultra-callout">ULTRA IMPORTANT</div>Here’s where people make the mistake.<br>
             <div class="line-break">&nbsp</div>
             <u>The first iteration is what I call <strong>“we” copy.</strong><br>
             </u><br>
@@ -2787,7 +2467,8 @@ unicode-range: U+000D-FB04;
         <div>“The purpose of the first line is to get them to read the second line. The purpose of the second line is to get them to read the third line. The purpose of the third line...you get it.” (I didn’t come up with this. I think I first heard it from Joe Sugarman.)</div>
         <div class="br"><br style="">
         </div>
-        <div class="ultra-important-excerpt">So if you’re ever wondering what to write for the first line, just ask yourself a simple question:<br>
+        <div class="ultra-important-excerpt">
+            <div class="ultra-callout">ULTRA IMPORTANT</div>So if you’re ever wondering what to write for the first line, just ask yourself a simple question:<br>
             <div class="line-break">&nbsp</div>
             <strong>“Does this first line make it almost impossible for someone to leave the page?”</strong><br>
             <div class="line-break">&nbsp</div>
@@ -2832,30 +2513,33 @@ unicode-range: U+000D-FB04;
         <div>Ok, so here’s a little homework for you...</div>
         <div class="br"><br style="">
         </div>
-        <div class="story-excerpt">Look at one of your funnels, ads, landers, sales calls etc.... and look at the first line or first thing you say. <br>
+        <div class="ultra-important-excerpt">
+            <div class="ultra-callout">ULTRA IMPORTANT</div>Look at one of your funnels, ads, landers, sales calls etc.... and look at the first line or first thing you say. <br>
             <div class="line-break">&nbsp</div>
             Does it feel like you <u><strong>CAN’T NOT</strong></u> keep reading? <br>
             <div class="line-break"></div>
             If not, then test something new. (Or do this for a client.)<br>
             <div class="line-break">&nbsp</div>
-            <span class="macaroni-and-cheese-highlight"><strong>Don’t make the mistake of opening with a sentence about your credentials or who you are.</strong></span><br>
+            <div class="mango-highlight"><strong>Don’t make the mistake of opening with a sentence about your credentials or who you are.</strong></div>
             <div class="line-break">&nbsp</div>
-            NO ONE CARES YET.<br>
+            <div>NO ONE CARES YET.</div>
             <div class="line-break">&nbsp</div>
-            I used to open every video with “I’m Ian from FIXT Water.”<br>
+
+            <div>I used to open every video with “I’m Ian from FIXT Water.”</div>
             <div class="line-break">&nbsp</div>
-            What. A. Waste.<br>
+            <div>What. A. Waste.</div>
             <div class="line-break">&nbsp</div>
-            Nobody cared. I should’ve waited to introduce myself until AFTER I had made it about THEM.<br>
+            <div class="mango-highlight">Nobody cared. I should’ve waited to introduce myself until AFTER I had made it about THEM.</div>
             <div class="line-break">&nbsp</div>
-            The only time I open with “my name” now is if I’m doing a parody video.
+            <div>The only time I open with “my name” now is if I’m doing a parody video.</div>
         </div>
         <div class="br"><br style="">
         </div>
         <div>If I’m Can’t Gardone or Lie Topez or Very Grinderchuck then I want to make that crystal clear when I start the video. It sets the tone and stage for everything I say afterwards.</div>
         <div class="br"><br style="">
         </div>
-        <div class="ultra-important-excerpt">So unless you’re doing parodies...don’t open with your name or credentials.<br>
+        <div class="ultra-important-excerpt">
+            <div class="ultra-callout">ULTRA IMPORTANT</div>So unless you’re doing parodies...don’t open with your name or credentials.<br>
             <div class="line-break">&nbsp</div>
             Open with something that’s dripping with curiosity.
         </div>
@@ -2874,9 +2558,9 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #9: <br>
+        <div id="LANGUAGE AS"><h1 style="text-align: center;">RULE #9: <br>
             <strong>USE THE SAME LANGUAGE YOUR PROSPECTS USE</strong></h1>
-        <h3 style="text-align: center;"><em>-My Not-So-Secret Sales Weapon-</em></h3>
+        <h3 style="text-align: center;"><em>-My Not-So-Secret Sales Weapon-</em></h3></div>
         <div class="br"><br style="">
         </div>
         <div>If there’s only one lever that can legitimately double your sales or conversions it’s this...</div>
@@ -2970,7 +2654,8 @@ unicode-range: U+000D-FB04;
         <div>When you’re talking to buyers it’s a little different.</div>
         <div class="br"><br style="">
         </div>
-        <div style="background-color: rgb(179, 157, 219);"><strong>You’re not trying to get them off the fence. You’re finding out what got them off the fence. </strong><br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div><strong>You’re not trying to get them off the fence. You’re finding out what got them off the fence. </strong><br>
             <div class="line-break">&nbsp</div>
             Here are some of the questions I like to ask buyers:
         </div>
@@ -2995,10 +2680,6 @@ unicode-range: U+000D-FB04;
         <div>I personally used simple “reply emails” to get data AND make sales at the same time. In fact, reply emails are how I took the LionHeart Workshop from literally nothing...to doing $90k in its third month from a tiny email list of 3,000 people. (You can learn in-depth about “reply emails” in the Double Your Sales Challenge.)</div>
         <div class="br"><br style="">
         </div>
-        <div style="text-align: center; background-color: rgb(217, 200, 254);">119</div>
-        <div style="text-align: center; background-color: rgb(217, 200, 254);"><br>
-        </div>
-        <div style="text-align: center; background-color: rgb(217, 200, 254);">IAN STANLEY</div>
         <div class="br"><br style="">
         </div>
         <div>Here’s a quick email you can use for your buyers to get great insights and data:</div>
@@ -3093,9 +2774,9 @@ unicode-range: U+000D-FB04;
         </div>
         <h3 style="text-align: center;"><br>
         </h3>
-        <h1 style="text-align: center;">RULE #10:<strong><br>
+        <div id="CLICK MOMENT"><h1 style="text-align: center;">RULE #10:<strong><br>
                 IDENTIFY YOUR “CLICK MOMENT”</strong></h1>
-        <h3 style="text-align: center;"><em>-How To Use Unpredictability to Create Predictable Sales-</em></h3>
+        <h3 style="text-align: center;"><em>-How To Use Unpredictability to Create Predictable Sales-</em></h3></div>
         <div class="br"><br style="">
         </div>
         <div>There’s a great book I read a few years ago called “The Click Moment.”</div>
@@ -3159,7 +2840,7 @@ unicode-range: U+000D-FB04;
         <div class="br"><br style="">
         </div>
         <ul>
-            <li style="background-color: rgb(253, 166, 57);">On my webinars or trainings I write an email live on camera. They get to watch over my shoulder as I do it. I typically write these emails in 10-15 minutes.</li>
+            <li class="important-point-excerpt">On my webinars or trainings I write an email live on camera. They get to watch over my shoulder as I do it. I typically write these emails in 10-15 minutes.</li>
         </ul>
         <div class="br"><br style="">
         </div>
@@ -3176,7 +2857,7 @@ unicode-range: U+000D-FB04;
         <div class="br"><br style="">
         </div>
         <ul>
-            <li style="background-color: rgb(253, 166, 57);">The second click moment is an email I send out every few months. I call it “The Poseidon Story.” It’s a story about my dog and what he and I went through right after I got him.</li>
+            <li class="important-point-excerpt">The second click moment is an email I send out every few months. I call it “The Poseidon Story.” It’s a story about my dog and what he and I went through right after I got him.</li>
         </ul>
         <div class="br"><br style="">
         </div>
@@ -3249,16 +2930,17 @@ unicode-range: U+000D-FB04;
         </div>
         <h3 style="text-align: center;"><br>
         </h3>
-        <h1 style="text-align: center;">RULE #11:<br>
+        <div id="SELL THEM WHAT THEY WANT"><h1 style="text-align: center;">RULE #11:<br>
             <strong>SELL THEM WHAT THEY WANT </strong><br>
             <strong>GIVE THEM WHAT THEY NEED</strong></h1>
-        <h3 style="text-align: center;"><em>-Two Sentences To Live Or Die By As a Salesperson.-</em></h3>
+        <h3 style="text-align: center;"><em>-Two Sentences To Live Or Die By As a Salesperson.-</em></h3></div>
         <div style="text-align: center;"><br>
         </div>
         <div>This book simply wouldn’t complete without a section on this topic.</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">The point of sales is NOT to solve a problem. That’s the purpose of the product or service you’re selling.<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>The point of sales is NOT to solve a problem. That’s the purpose of the product or service you’re selling.<br>
             <div class="line-break">&nbsp</div>
             You are not selling someone what they<strong> </strong><u><strong>NEED.</strong></u> You’re selling them what they <u><strong>WANT</strong></u>.
         </div>
@@ -3331,11 +3013,10 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #12:<br>
-            <div class="line-break">&nbsp</div>
-            <strong>TELL THE STORIES </strong><br>
+        <div id="TELL STORIES"><h1 style="text-align: center;">RULE #12:<br>
+            <strong>TELL THE STORIES </strong>
             <strong>THAT SCARE YOU THE MOST</strong>
-        </h1>
+        </h1></div>
         <h3 style="text-align: center;"><em>-The Most Profitable Story You’ll Ever Tell-</em></h3>
         <div class="br"><br style="">
         </div>
@@ -3360,9 +3041,11 @@ unicode-range: U+000D-FB04;
         <div><strong>Rule #12: Tell the stories that scare you the most.</strong></div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">See, connection happens around the rough edges.
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>See, connection happens around the rough edges.
             <div class="mango-highlight">People don’t bond with perfection. They don’t feel connected to people or stories they can’t relate to. </div>
-            At the core what’s really going on when you tell a story from an emotional place, is a transference of feelings. Your energy can be felt by the consumer of the story.</div>
+            At the core what’s really going on when you tell a story from an emotional place, is a transference of feelings. Your energy can be felt by the consumer of the story.
+        </div>
         <div class="br"><br style="">
         </div>
         <div>I promise you this is not some sort of hippie-dippie explanation of energy. It’s a tangible feeling.</div>
@@ -3412,11 +3095,11 @@ unicode-range: U+000D-FB04;
         </div>
         <div class="br"><br style="">
         </div>
-        <h1 style="text-align: center;">RULE #13:<br>
-            <strong>DON’T LET THE STORIES</strong><br>
-            <strong>YOU TELL YOURSELF</strong><br>
+        <div id="DEFINE YOU"><h1 style="text-align: center;">RULE #13:<br>
+            <strong>DON’T LET THE STORIES </strong>
+            <strong>YOU TELL YOURSELF </strong>
             <strong>DEFINE YOU</strong></h1>
-        <h3 style="text-align: center;"><em>-How to Rewrite the Stories We Tell Ourselves-</em></h3>
+        <h3 style="text-align: center;"><em>-How to Rewrite the Stories We Tell Ourselves-</em></h3></div>
         <div class="br"><br style="">
         </div>
         <div>We’ve talked a lot about stories. Now I want to finish this book by talking about the stories we tell ourselves.</div>
@@ -3898,7 +3581,8 @@ unicode-range: U+000D-FB04;
         <div>Society conditions us in so many different ways that we can never be aware of all of them. But this is one that you have to let go of. You have to rewire your brain to sever this connection that so many people are attached to.</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">The most common way to get paid is to trade time for money. It’s easy. It’s clean. It’s measurable. It’s convenient. But it’s complete and utter bollocks. (That means bullshit in American English.)<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>The most common way to get paid is to trade time for money. It’s easy. It’s clean. It’s measurable. It’s convenient. But it’s complete and utter bollocks. (That means bullshit in American English.)<br>
             <div class="line-break">&nbsp</div>
             There are people who’ve made millions over the course of lifetimes. And people who’ve made billions in minutes. Time has no connection to money. Any connection it has is a construct we’ve created as humans to make sense (and cents) of things. It helps us understand money, but it doesn’t actually help us make more if it.<br>
             <div class="line-break">&nbsp</div>
@@ -3969,7 +3653,8 @@ unicode-range: U+000D-FB04;
         <h5>Rule #5: You’re Always Selling a Feeling.</h5>
         <div class="br"><br style=""><br style="">
         </div>
-        <div class="ultra-important-excerpt">Most sales people think they are selling a thing, product, widget, service, opportunity, etc.<br>
+        <div class="ultra-important-excerpt">
+            <div class="ultra-callout">ULTRA IMPORTANT</div>Most sales people think they are selling a thing, product, widget, service, opportunity, etc.<br>
             <div class="line-break">&nbsp</div>
             Despite popular belief, that’s not the case. You are selling the feeling that the thing creates.<br>
             <div class="line-break">&nbsp</div>
@@ -3995,7 +3680,7 @@ unicode-range: U+000D-FB04;
                 <li>Make them feel as many of the different emotions as you can throughout your sales message.</li>
                 <li>Build tension and desire, then allow them to release that tension by buying what you’re selling.</li>
             </ul>
-            <div>The more you can tap into your own feelings, the more you will sell.</div>
+            <div class="mango-highlight">The more you can tap into your own feelings, the more you will sell.</div>
         </div>
         <div class="br"><br style="">
         </div>
@@ -4162,7 +3847,8 @@ unicode-range: U+000D-FB04;
         <div>Here’s an exercise you can do:</div>
         <div class="br"><br style="">
         </div>
-        <div class="important-point-excerpt">Make two columns on a piece of paper. Label one Wants. Label the other Needs.<br>
+        <div class="important-point-excerpt">
+            <div class="important-callout">IMPORTANT</div>Make two columns on a piece of paper. Label one Wants. Label the other Needs.<br>
             <div class="line-break">&nbsp</div>
             Write out everything they want in the wants column and everything they need in the needs column. Then focus on selling them what they want.<br>
             <div class="line-break">&nbsp</div>
@@ -4364,7 +4050,6 @@ unicode-range: U+000D-FB04;
         <div class="br"><br style="">
         </div>
         <div class="br"><br style="">
-        <h2>Hello</h2>
         </div>
     </div>
 </body>
