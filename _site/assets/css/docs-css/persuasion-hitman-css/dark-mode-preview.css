@@ -8371,7 +8371,7 @@ figure.highlight code {
 
 .example-excerpt {
     word-break: normal;
-    padding: 30px 20px 24px 20px;
+    padding: 30px 20px 24px 30px;
     position: relative;
     text-indent: 0px;
     border-radius: 4px;
@@ -8389,7 +8389,7 @@ figure.highlight code {
     position: absolute;
     letter-spacing: 4px;
     top: 0;
-    left: 24px;
+    left: 34px;
     color: hsla(220, 2%, 40%, 0.9);
 }
 
@@ -8432,7 +8432,7 @@ li.important-point-excerpt {
 .important-point-excerpt .important-callout {
     font-family: Messinasansweb;
     border-radius: 3px;
-    background-color: #19191A;
+    background-color: #1C1C20;
     padding: 0px 4px 1px 8px;
     font-size: 11px;
     display: block;
@@ -8506,7 +8506,7 @@ li.important-point-excerpt {
 
 /*Yellow*/
 .macaroni-and-cheese-highlight {
-    background: hsla(50.33, 111.56%, 48.9%, 0.4) !important;
+    background: hsla(210.33, 71.56%, 68.9%, 0.3) !important;
     padding-left: 4px;
     padding-top: 3px;
     padding-bottom: 0px;
