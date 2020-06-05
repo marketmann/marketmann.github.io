@@ -7362,15 +7362,15 @@ li.important-point-excerpt {
 }
 
 .ultra-tag {
-    box-shadow: 0 0 0px 1px hsla(160, 24%, 30%, 0.1);
-    background: hsla(160, 34%, 30%, 0.1);
+    box-shadow: 0 0 0px 1px hsla(160, 24%, 30%, 0);
+    background: hsla(160, 34%, 30%, 0);
     border-radius: 2px;
-    padding: 0px 0px 0px 3px;
+    padding: 0px 0px 0px 0px;
     color: hsla(160, 24%, 30%, 0.7);
 }
 
 .ultra-important-excerpt .mango-highlight {
-    background: hsla(160, 12.54%, 85.25%, 1);
+    background: hsla(160, 8.54, 85.25%, 1);
     border: 1px solid hsla(160, 24%, 30%, 0.1);
     margin-top: 10px;
     margin-bottom: 10px;
