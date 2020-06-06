@@ -38,6 +38,7 @@
     <!--NAV - CSS - FOR JUST-THE-DOCS AND NAVGOCO -->
     <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/navgoco.css">
     <!--END-->
+    
 </head>
 
 <!-- END RIGHT SIDEBAR -->
@@ -68,9 +69,17 @@
 
 </script>
 <body>
-      <!--MAIN CSS STYLE SHEETS -->
-    <link id="style-light" rel="stylesheet" href="http://localhost:4000/assets/css/for-ads/ad-just-the-docs.css">
-    <link id="style-dark" rel="stylesheet" href="http://localhost:4000/assets/css/for-ads/ad-dark-mode-preview.css">
+    
+    <!--FOR CLASSIC ADS - CSS STYLE SHEETS -->
+    <!--FOR CLASSIC ADS - CSS STYLE SHEETS -->
+    <!--FOR CLASSIC ADS - CSS STYLE SHEETS -->
+    <link id="style-light" rel="stylesheet" href="http://localhost:4000/assets/css/classic-ads/ad-light-mode.css">
+    <link id="style-dark" rel="stylesheet" href="http://localhost:4000/assets/css/classic-ads/ad-dark-mode.css">
+    
+    <!--MAIN CSS STYLE SHEETS -->
+    <!--MAIN CSS STYLE SHEETS -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/for-ads/ad-dark-mode-preview.css">
+    
     <!--MAIN CSS STYLE SHEETS -->
    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="link" viewBox="0 0 16 16">
@@ -148,55 +157,7 @@
     <meta name="googlebot" content="noindex">
     <meta name="robots" content="noindex">
     <title>Halbert - Desperate Ohio Nerd</title>
-    <!--BASE AD STYLES -->
-    <style>
-        .ad {
-            background-color: hsl(0, 0%, 4%);
-            padding: 10px;
-            margin: 10px;
-        }
 
-        .ad-border {
-            background-color: hsla(0, 0%, 10%, 0);
-            display: block;
-            position: relative;
-            padding: 29px;
-        }
-
-        body {
-            color: hsla(0, 0%, 84%, 1.00);
-            hyphens: auto !important;
-            margin: 0 auto;
-            background-color: rgb(11, 11, 11);
-            hyphens: auto;
-            -webkit-hyphens: auto;
-            -webkit-font-smoothing: antialiased !important;
-            font-smoothing: antialiased !important;
-        }
-
-        @media (max-width:1000px) {
-            .ad-border {
-                padding: 10px !important;
-            }
-        }
-
-
-            @media (max-width:575px) {
-
-                .ad-border,
-                .ad {
-                    padding: 0px !important;
-                }
-            }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-
-    </style>
     <!--SPECIFIC AD STYLES -->
     <style type="text/css">
         html {}
@@ -205,7 +166,6 @@
             color: rgb(210, 210, 210);
             margin: 0 auto;
             font-family: "Elena";
-            background-color: rgb(11, 11, 11);
             font-weight: 100;
             margin-bottom: 25px;
         }
@@ -231,7 +191,6 @@
             line-height: 1.2em;
             font-weight: 100;
             margin: 0 auto;
-            color: rgb(255, 255, 255);
             letter-spacing: -.8px;
             word-spacing: 0px;
             padding-top: 20px;
@@ -280,7 +239,6 @@
         strong {
             font-weight: 900;
             letter-spacing: 0;
-            color: rgb(239, 239, 239);
         }
 
         /***image***/
@@ -288,30 +246,6 @@
             max-width: 100%;
         }
 
-        /****************************
-      ****************************
-      TOP GUY
-      ****************************
-      ****************************/
-        .top-guy {
-            margin: 0 auto;
-            max-width: 90px;
-            color: hsl(0, 0%, 80%) !important;
-            background-color: hsl(0, 0%, 15%) !important;
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-        }
-
-        .top-guy>p {
-            text-align: center;
-            padding-bottom: 2px;
-            padding-top: 2px;
-            text-indent: 0px;
-            margin: 0 auto;
-            font-size: 8px;
-            font-family: "Arial";
-            font-weight: 900;
-        }
 
         /****************************
       ****************************
@@ -330,14 +264,11 @@
             word-break: keep-all !important;
             margin-top: 7.5px;
             padding-left: 17px;
-            font-family: "Elena";
         }
 
         ul li strong {
             text-indent: 0px;
-            font-family: "iowanoldst_btroman";
             letter-spacing: .4px !important;
-            color: rgb(240, 240, 240) !important;
         }
 
         ul {
@@ -348,26 +279,10 @@
             content: "" !important;
             width: 6px;
             height: 6px;
-            background: hsl(0, 0%, 80%);
             border-radius: 100px;
             margin-left: -13px;
             margin-top: 6px;
             position: absolute;
-        }
-
-        /****************************
-      ****************************
-      minor ADJUSTMENTS
-      ****************************
-      ****************************/
-
-        .sdsdsd {
-            margin-bottom: 15px;
-        }
-
-        .alfa2 {
-            margin-top: 16px;
-            margin-bottom: 30px
         }
 
         /***************************
@@ -382,28 +297,22 @@
             padding-right: 5px;
             padding-bottom: 5px;
             padding-top: 5px;
-            background: rgb(11, 11, 11);
-            border: 2px solid white;
-            border-radius: 4px;
             margin-top: -15px;
             font-weight: 900 !important;
-            color: white;
             font-style: normal !important;
         }
 
-        .text-box-for-mr-gary {
+        .author-text-box {
 
             padding-left: 12px;
             padding-right: 13px;
             padding-bottom: 10px;
-            border: 2px solid white;
-            border-radius: 3px;
         }
 
-        .text-box-for-mr-gary p {
+        .author-text-box p {
             font-family: 'Caveat', cursive;
-            font-size: 18px;
-            line-height: 15px !important;
+            font-size: 19px;
+            line-height: 19px !important;
             font-weight: 100 !important;
             text-indent: 9px;
             letter-spacing: -.2px;
@@ -502,7 +411,7 @@
                 line-height: 24px;
             }
 
-            .text-box-for-mr-gary p {
+            .author-text-box p {
                 font-size: 17px;
                 line-height: 11px;
             }
@@ -512,25 +421,19 @@
             }
 
             h1 {
-                text-align: center;
-                font-family: "Elena";
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 40px !important;
+                line-height: 50px !important;
             }
 
             h2 {
-                font-family: "Elena";
-                font-style: italic;
                 font-size: 35px;
             }
         }
 
 
         @media (max-width:650px) {
-
-            .alfa2 {
-                margin-top: 16px;
-                margin-bottom: 10px;
+            body {
+                margin-top:60px;
             }
 
             .col {
@@ -539,17 +442,13 @@
             }
 
             h1 {
-                text-align: center;
-                font-family: "Elena";
-                font-size: 35px;
-                line-height: 50px;
-                font-weight: 900;
+                font-size: 40px !important;
+                line-height: 50px !important;
                 padding-left: 5px;
                 padding-right: 5px;
                 padding-bottom: 12px;
                 margin: 0 auto;
                 hyphens: manual !important;
-                color: rgb(255, 255, 255);
                 padding-top: 10px;
             }
 
@@ -559,7 +458,6 @@
                 line-height: 27px;
                 text-align: center;
                 max-width: 550px;
-                color: #ffffff !important;
                 font-weight: 900 !important;
                 padding-bottom: 10px;
                 padding-top: 20px;
@@ -584,16 +482,13 @@
                 hyphens: auto;
                 word-break: keep-all !important;
                 margin-top: 7.5px;
-                padding-left: 40px;
-                font-family: "Elena";
+                padding-left: 44px;
             }
 
             ul li strong {
                 font-size: 14.05px;
                 text-indent: 0px;
-                font-family: "iowanoldst_btroman";
                 letter-spacing: .4px !important;
-                color: rgb(240, 240, 240) !important;
             }
 
             .cent-nug {
@@ -605,27 +500,22 @@
                 padding-right: 5px;
                 padding-bottom: 5px;
                 padding-top: 5px;
-                background: rgb(11, 11, 11);
-                border: 2px solid white;
-                border-radius: 4px;
                 margin-top: -20px;
                 font-weight: 900 !important;
-                color: white;
                 font-style: normal !important;
             }
 
-            .text-box-for-mr-gary {
+            .author-text-box {
                 padding-left: 15px;
                 padding-right: 15px;
                 max-width: 70%;
                 margin: 0 auto;
                 padding-bottom: 10px;
-                border: 2px solid white;
                 border-radius: 3px;
                 margin-bottom: 20px;
             }
 
-            .text-box-for-mr-gary p {
+            .author-text-box p {
                 font-family: 'Caveat', cursive;
                 font-size: 22.5px;
                 line-height: 25px !important;
@@ -696,60 +586,12 @@
             }
         }
 
-        /* CAVEAT - REGULAR*/
-
-        @font-face {
-            font-family: "Caveat";
-            src: url('https://dl.dropboxusercontent.com/s/cukii34lmqlkrxx/Caveat%20Regular.woff2?raw=1') format('woff2'),
-                url('https://dl.dropboxusercontent.com/s/v1vczonimiecqji/Caveat%20Regular.woff?raw=1') format('woff'),
-                url('https://dl.dropboxusercontent.com/s/s9rdo1efyzz0oa8/Caveat%20Regular.ttf?raw=1') format('truetype'),
-                url('https://dl.dropboxusercontent.com/s/vf8s4z1hujxuv25/Caveat%20Regular.svg?raw=1') format('svg'),
-                url('https://dl.dropboxusercontent.com/s/fzk9k0qkwurfblg/Caveat%20Regular.otf?raw=1') format('opentype'),
-                url('https://dl.dropboxusercontent.com/s/3trw6qvel8vxkul/Caveat%20Regular.eot?raw=1') format('embedded-opentype');
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Elena';
-            src: url('https://dl.dropboxusercontent.com/s/48784loylleluiw/elenawebregular.woff2?raw=1') format('woff2'),
-                url('https://dl.dropboxusercontent.com/s/7fqgaprze7bjnbx/elenawebregular.woff?raw=1') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Elena';
-            src: url('https://dl.dropboxusercontent.com/s/s1ovniwpa8tke46/elenawebbold.woff2?raw=1') format('woff2'),
-                url('https://dl.dropboxusercontent.com/s/br2h8uf9x28j6ee/elenawebbold.woff?raw=1') format('woff');
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Elena';
-            src: url('https://dl.dropboxusercontent.com/s/079du5wi81q4chk/elenawebregularitalic.woff2?raw=1') format('woff2'),
-                url('https://dl.dropboxusercontent.com/s/xagfsk260zt3u72/elenawebregularitalic.woff?raw=1') format('woff');
-            font-style: italic;
-        }
-
-        @font-face {
-            font-family: 'Elena';
-            src: url('https://dl.dropboxusercontent.com/s/91c4b78o9mrb365/elenawebbolditalic.woff2?raw=1') format('woff2'),
-                url('https://dl.dropboxusercontent.com/s/s7upl4k6iupfsgf/elenawebbolditalic.woff?raw=1') format('woff');
-            font-style: italic;
-            font-weight: 700;
-        }
-
     </style>
 </head>
 
-<body>
-    <div class="top-guy">
-        <p>ADVERTISMENT</p>
-    </div>
-    <div class="ad-border halbert coat-of-arms" style="margin-top:30px">
-        <div class="ad halbert coat-of-arms">
+<body class="bg-base body-font">
+    <div class="ad-border margin-top-30">
+        <div class="ad padding-10">
             <div class="headline-section">
       <h2>
         
@@ -761,7 +603,7 @@
         
       </h2>
     
-      <h1>
+      <h1 class="fsize80">
         
         
           
@@ -809,13 +651,12 @@
                             <li>Are you a housewife about toget adivorce who needs a simple way 10 make a lot of money?</li>
                             <li>Do you have a furniture store, restaurant, car dealership, hot dog stand or some other kind of establishment you'd like to see swamped with customers?</li>
                             <li>Are you a manufacturer who would like to sell so many of your widgets you'll have to run extra shifts to meet the demand?</li>
+                            <li>Are you a marketing consultant who likes to keep up with new ideas and techniques so you can better serve your clients?</li>
                         </ul>
                     </div>
 
                     <div class="column2 col">
                         <ul>
-
-                            <li>Are you a marketing consultant who likes to keep up with new ideas and techniques so you can better serve your clients?</li>
                             <li>Are you an M.D., a dentist, a chiropractor, an optometrist, a therapist, or any other kind of health care professional who would like to see your waiting room <em>bursting</em> with new patients?</li>
                             <li>Do you have a house you'd like to sell? A<em> thousand houses</em>? A car? A boat?</li>
                             <li>Do you have <em>anything</em> you'd like to sell? Consulting services? Products? <em>Yourself?</em></li>
@@ -847,15 +688,20 @@
         
         
       </h4>
-                        <p>By the way, getting that many checks every day means you have to hire at least 30 full-time employees just to make your bank deposit. But anyway, my "crazy letter idea" isn't the only thing you'll learn when you read my book. No. *That's
-                            just Chapter One!</p>
+                        <p>By the way, getting that many checks every day means you have to hire at least 30 full-time employees just to make your bank deposit. But anyway, my "crazy letter idea" isn't the only thing you'll learn when you read my book. No. *That's just Chapter One!</p>
+                        <p class="">Here is a sample of what you will learn when your read the rest of the book:</p>
+                        <ul>
+                            <li>How to get movie and TV stars to help you sell your products and services! (see page 21)</li>
+                            <li>An amazing secret that can turn your newspaper into your own personal goldmine. (see page 29)</li>
+
+                        </ul>
                     </div>
 
                     <div class="column3-a IMAGE col">
                         <div class="mugshot"><img src="../../../assets/images/halbert-desperate-ohio-nerd/Gary-Halbert-Mugshot.png"></div>
-                        <div class="text-box-for-mr-gary">
+                        <div class="author-text-box border-color-1 border-2px rad-3px">
                             <div>
-                                <p class="cent-nug"><strong></strong>About Gary Halbert</p>
+                                <p class="cent-nug border-color-1 bg-base border-2px rad-4px"><strong></strong>About Gary Halbert</p>
                             </div>
 
                             <p>
@@ -871,10 +717,8 @@
                         </div>
                     </div>
                     <div class="column3-b col">
-                        <p class="sdsdsd">Here is a sample of what you will learn when your read the rest of the book:</p>
+
                         <ul>
-                            <li>How to get movie and TV stars to help you sell your products and services! (see page 21)</li>
-                            <li>An amazing secret that can turn your newspaper into your own personal goldmine. (see page 29)</li>
                             <li>How to get the exact name and address thousands of people who would love to send you money! (set page 37)</li>
                             <li>What to write on a cheap little postcard that will make people <em>flood</em> you with cash! (see page 41)</li>
                             <li>How to mail up to I00,000 letters per week at no cost whatsoever... <em> not even postage.</em> (see page53)</li>

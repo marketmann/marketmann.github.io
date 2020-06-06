@@ -1,0 +1,178 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   .ad {
+       padding: 10px;
+   }
+
+   .ad-border {
+       display: block;
+       position: relative;
+       padding: 29px;
+   }
+
+   body {
+       hyphens: auto !important;
+       margin: 0 auto;
+       hyphens: auto;
+       -webkit-hyphens: auto;
+       -webkit-font-smoothing: subpixel-antialiased !important;
+       font-smoothing: subpixel-antialiased !important;
+   }
+
+   @media (max-width:1000px) {
+       .ad-border {
+           padding: 10px !important;
+       }
+   }
+
+   @media (max-width:575px) {
+
+       .ad-border,
+       .ad {
+           padding: 0px !important;
+       }
+       
+   }
+
+
+
+   /************************************************
+    MARGINS 
+    ************************************************/
+   .margin-top-30 {
+       margin-top: 30px;
+   }
+
+   /************************************************
+    PADDING 
+    ************************************************/
+   .padding-10 {
+       padding: 10px;
+   }
+
+   /************************************************
+    FONT SIZING
+    ************************************************/
+   .fsize80 {
+       font-size: 80px;
+       line-height: 80px;
+   }
+
+   .center {
+       text-align: center;
+   }
+
+   /************************************************
+    FONT COLORS
+    ************************************************/
+   .body-font {
+       color: hsl(0, 0%, 0%);
+   }
+
+   li::before {
+       background: hsl(0, 0%, 0%);
+       transition: 2s;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+       color: hsl(0, 0, 0%);
+   }
+
+   strong {
+       color: hsl(0, 0%, 0%);
+
+   }
+
+
+
+   /************************************************
+    BACKGROUND COLORS
+    ************************************************/
+   .border-color-1 {
+       border-color: black;
+   }
+
+   .border-2px {
+       border: 2px solid;
+   }
+
+   .bg-base {
+       background-color: hsl(0, 0%, 100%);
+   }
+
+   .rad-3px {
+       border-radius: 3px;
+   }
+
+   .rad-4px {
+       border-radius: 4px;
+   }
+
+
+
+
+   /************************************************
+    ************************************************
+    FONTS
+    ************************************************
+    ************************************************/
+
+   /****************
+    CAVEAT 
+    ****************/
+
+   @font-face {
+       font-family: "Caveat";
+       src: url('https://dl.dropboxusercontent.com/s/cukii34lmqlkrxx/Caveat%20Regular.woff2?raw=1') format('woff2'),
+           url('https://dl.dropboxusercontent.com/s/v1vczonimiecqji/Caveat%20Regular.woff?raw=1') format('woff'),
+           url('https://dl.dropboxusercontent.com/s/s9rdo1efyzz0oa8/Caveat%20Regular.ttf?raw=1') format('truetype'),
+           url('https://dl.dropboxusercontent.com/s/vf8s4z1hujxuv25/Caveat%20Regular.svg?raw=1') format('svg'),
+           url('https://dl.dropboxusercontent.com/s/fzk9k0qkwurfblg/Caveat%20Regular.otf?raw=1') format('opentype'),
+           url('https://dl.dropboxusercontent.com/s/3trw6qvel8vxkul/Caveat%20Regular.eot?raw=1') format('embedded-opentype');
+       font-weight: 400;
+       font-style: normal;
+   }
+
+   /****************
+    ELENA 
+    ****************/
+
+   @font-face {
+       font-family: 'Elena';
+       src: url('https://dl.dropboxusercontent.com/s/48784loylleluiw/elenawebregular.woff2?raw=1') format('woff2'),
+           url('https://dl.dropboxusercontent.com/s/7fqgaprze7bjnbx/elenawebregular.woff?raw=1') format('woff');
+       font-weight: normal;
+       font-style: normal;
+   }
+
+   @font-face {
+       font-family: 'Elena';
+       src: url('https://dl.dropboxusercontent.com/s/s1ovniwpa8tke46/elenawebbold.woff2?raw=1') format('woff2'),
+           url('https://dl.dropboxusercontent.com/s/br2h8uf9x28j6ee/elenawebbold.woff?raw=1') format('woff');
+       font-weight: 700;
+       font-style: normal;
+   }
+
+   @font-face {
+       font-family: 'Elena';
+       src: url('https://dl.dropboxusercontent.com/s/079du5wi81q4chk/elenawebregularitalic.woff2?raw=1') format('woff2'),
+           url('https://dl.dropboxusercontent.com/s/xagfsk260zt3u72/elenawebregularitalic.woff?raw=1') format('woff');
+       font-style: italic;
+   }
+
+   @font-face {
+       font-family: 'Elena';
+       src: url('https://dl.dropboxusercontent.com/s/91c4b78o9mrb365/elenawebbolditalic.woff2?raw=1') format('woff2'),
+           url('https://dl.dropboxusercontent.com/s/s7upl4k6iupfsgf/elenawebbolditalic.woff?raw=1') format('woff');
+       font-style: italic;
+       font-weight: 700;
+   }
