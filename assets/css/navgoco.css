@@ -5,87 +5,211 @@
 .nav,
 .nav ul,
 .nav li {
-   list-style: none;
+    list-style: none;
 }
 
 .nav ul {
-   padding: 0;
-   margin: 0 0 0 18px;
+    padding: 0;
+    margin: 0 0 0 18px;
 }
 
 .nav {
-   padding: 4px;
-   margin: 0px;
+    padding: 4px;
+    margin: 0px;
 }
 
 .nav > li {
-   margin: 4px 0;
+    margin: 4px 0;
 }
 
 .nav > li li {
-   margin: 2px 0;
+    margin: 2px 0;
 }
 
 .nav a {
-   display: block;
-   outline: none;
-   -webkit-border-radius: 4px;
-   -moz-border-radius: 4px;
-   border-radius: 4px;
-   text-decoration: none;
-   transition: .2s;
+    display: block;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: .2s;
 }
 
 .nav li > a > span {
-   float: right;
-   font-size: 19px;
-   font-weight: bolder;
+    float: right;
+    font-size: 19px;
+    font-weight: bolder;
 }
 
 .nav li > a:hover > span {
-   color: #fff;
-}
-
-.nav li > a > span:after {
-   content: '\25be';
-}
-
-.nav li.open > a > span:after {
-   content: '\25b4';
+    color: #fff;
 }
 
 .nav li a {
-   font-size: 12px;
-   line-height: 18px;
-   padding: 2px 8px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 2px 8px;
     font-weight: 300;
 }
 
 .nav > li > a {
-   font-size: 14px;
-   line-height: 20px;
-   padding: 4px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 1px 2px 1px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 28px;
 }
 
-/*******
+a.navigation-list-link > span {
+    width: 40px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    position: relative;
+    padding: 6px;
+}
+
+.nav li > a > span svg.navgoco-arrow {
+    width: 15px;
+    height: 15px;
+    transform: rotate(0deg);
+    transition: .2s;
+}
+
+.nav li.open > a > span svg.navgoco-arrow {
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+}
+
+
+.darkMode .navigation-list-item path {
+    fill: rgb(136, 136, 136);
+}
+.navigation-list-item path {
+    fill: rgba(20, 20, 20, .5);
+}
+.navigation-list-item.active path {
+fill: white;
+}
+
+/*
+.nav li > a > span i.navgoco-arrow {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 54 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31.4426 29.4261L52.1798 8.68891C53.8536 7.01503 53.8536 4.30114 52.1798 2.62727C50.5059 0.953391 47.792 0.953388 46.1181 2.62726L29.1931 19.5522C28.091 20.6543 26.3041 20.6543 25.202 19.5522L7.96234 2.31274C6.15871 0.509137 3.23717 0.500476 1.42288 2.29335C-0.4067 4.10134 -0.415455 7.05293 1.40337 8.87175L21.9577 29.4261C24.5769 32.0453 28.8234 32.0453 31.4426 29.4261Z' fill='%23888888'/%3E%3C/svg%3E%0A");
+    opacity: .7;
+    width: 15px;
+    height: 15px;
+    transform: rotate(0deg);
+    transition: .2s;
+}
+
+.nav li.open > a > span i.navgoco-arrow {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 54 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31.4426 29.4261L52.1798 8.68891C53.8536 7.01503 53.8536 4.30114 52.1798 2.62727C50.5059 0.953391 47.792 0.953388 46.1181 2.62726L29.1931 19.5522C28.091 20.6543 26.3041 20.6543 25.202 19.5522L7.96234 2.31274C6.15871 0.509137 3.23717 0.500476 1.42288 2.29335C-0.4067 4.10134 -0.415455 7.05293 1.40337 8.87175L21.9577 29.4261C24.5769 32.0453 28.8234 32.0453 31.4426 29.4261Z' fill='%23888888'/%3E%3C/svg%3E%0A");
+    opacity: .7;
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+}
+*/
+/*
+.nav li > a > span:after {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 54 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31.4426 29.4261L52.1798 8.68891C53.8536 7.01503 53.8536 4.30114 52.1798 2.62727C50.5059 0.953391 47.792 0.953388 46.1181 2.62726L29.1931 19.5522C28.091 20.6543 26.3041 20.6543 25.202 19.5522L7.96234 2.31274C6.15871 0.509137 3.23717 0.500476 1.42288 2.29335C-0.4067 4.10134 -0.415455 7.05293 1.40337 8.87175L21.9577 29.4261C24.5769 32.0453 28.8234 32.0453 31.4426 29.4261Z' fill='%23888888'/%3E%3C/svg%3E%0A");
+    width:15px;
+    height:15px;
+    position: absolute;
+    transition:1s;
+}
+
+.nav li.open > a > span:after {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 54 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31.4426 29.4261L52.1798 8.68891C53.8536 7.01503 53.8536 4.30114 52.1798 2.62727C50.5059 0.953391 47.792 0.953388 46.1181 2.62726L29.1931 19.5522C28.091 20.6543 26.3041 20.6543 25.202 19.5522L7.96234 2.31274C6.15871 0.509137 3.23717 0.500476 1.42288 2.29335C-0.4067 4.10134 -0.415455 7.05293 1.40337 8.87175L21.9577 29.4261C24.5769 32.0453 28.8234 32.0453 31.4426 29.4261Z' fill='%23888888'/%3E%3C/svg%3E%0A");
+    width:15px;
+    height:15px;
+    position: absolute;
+    transform:rotate(190deg);
+    transition:1s;
+
+}
+
+*/
+/***********************************
+ ***********************************
+ ORIGINAL NAVGOCO
+ ***********************************
+ *********************************
+
+.nav,
+.nav ul,
+.nav li {
+    list-style: none;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0 0 0 18px;
+}
+
+.nav {
+    padding: 4px;
+    margin: 0px;
+}
+
+.nav > li {
+    margin: 4px 0;
+}
+
+.nav > li li {
+    margin: 2px 0;
+}
+
+.nav a {
+    display: block;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.nav li > a > span {
+    float: right;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.nav li > a:hover > span {
+    color: #fff;
+}
+
+.nav li > a > span:after {
+    content: '\25be';
+}
+
+.nav li.open > a > span:after {
+    content: '\25b4';
+}
+
+.nav li a {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 2px 8px;
+    font-weight: 300;
+}
+
+.nav > li > a {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 2px 4px 10px;
+}
+**/
+/***********************************
+ ***********************************
  END NAVGOCO CSS 
- *******/
-
-
-/*******
- JUST THE DOCS STOCK CSS 
-*/
-
-
-
-
-/**
- UNKNOWN WHAT IT DOES
-.main-nav {
-  display: none; }
-  .main-nav.nav-open {
-    display: block; }
-  @media (min-width: 50rem) {
-    .main-nav {
-      display: block; } }
-*/
+ ***********************************
+ ***********************************/
