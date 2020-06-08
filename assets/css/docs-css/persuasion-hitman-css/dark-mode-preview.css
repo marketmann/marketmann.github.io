@@ -8165,7 +8165,7 @@ figure.highlight code {
 
 /**OVERRIDES*/
 .side-bar {
-    background: hsl(240, 6.03%, 15%) !important;
+    background: hsl(240, 6.03%, 12%) !important;
 }
 
 @media (min-width: 50rem) {
