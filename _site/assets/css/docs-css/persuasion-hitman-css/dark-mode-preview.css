@@ -89,7 +89,7 @@
 @media (min-width: 50rem) {
     .navigation {
         padding-right: 2rem;
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
 }
 
@@ -329,7 +329,7 @@
 @media (min-width: 50rem) {
     .site-title {
         padding-right: 2rem;
-        padding-left: 2rem;
+        padding-left: 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
