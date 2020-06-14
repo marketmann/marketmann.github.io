@@ -7040,10 +7040,12 @@ pre {
 .nav > li.active > a,
 .nav > li.nav-active > a {
    background-color: hsl(217.29, 98.88%, 64.9%);
+    color:white !important;
 }
 .nav li.active:hover > a, 
 .nav li.active > a{
-    color:hsla(210, 4%, 100%,1);
+    color:hsla(210, 4%, 00%,1);
+    font-weight:600;
 }
 
 .side-bar.left-open + .main-content-wrap .main-content.left-open,  .side-bar.left-open-on-load + .main-content-wrap .main-content.left-open,  .side-bar.left-open + .main-content-wrap .main-content.left-open-on-load,  .side-bar.left-open-on-load + .main-content-wrap .main-content.left-open-on-load{
