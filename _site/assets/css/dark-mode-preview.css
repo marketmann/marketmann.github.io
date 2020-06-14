@@ -62,7 +62,11 @@
     }
 }
 
-
+.site-header {
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+}
 
 
 
