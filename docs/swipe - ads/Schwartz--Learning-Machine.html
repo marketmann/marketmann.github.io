@@ -143,6 +143,18 @@ nav_order: 1
             word-spacing: -1px
         }
 
+        .top-spacer {
+            width: 100%;
+            height: 50px;
+            display: none;
+        }
+
+        @media (max-width:1400px) {
+            .top-spacer {
+                display: block;
+            }
+        }
+
         /******************************
 *******************************
 *******************************
@@ -246,8 +258,7 @@ TEXT BOXES
             font-family: FrankGothMed;
         }
 
-        .author-box strong {
-        }
+        .author-box strong {}
 
         /******************************
 *******************************
@@ -643,6 +654,7 @@ ORDER FORM
 <body class="learning-machine bg-base body-font-color">
     <div class="ad-border margin-top-30">
         <div class="ad padding-10">
+            <div class="top-spacer"></div>
             <h3 class="schwartz-1 Franklin">These Simple Tricks Will Show You How To</h3>
             <h1 class="schwartz-1 Franklin">TURN YOURSELF INTO A LEARNING MACHINE</h1>
             <div class="column-grid-container">
