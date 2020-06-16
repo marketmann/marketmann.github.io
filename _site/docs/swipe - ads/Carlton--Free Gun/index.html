@@ -151,7 +151,9 @@
 
         body {
             /* border: 1px solid rgb(233, 233, 233);*/
-            margin: 100px auto;
+            margin: 0 100px auto;
+            display: block;
+            position: relative;
             font-family: 'Warnok Pro';
             font-style: normal;
             font-size: 17px;
@@ -161,6 +163,14 @@
             -webkit-font-smoothing: subpixel-antialiased;
             -webkit-hyphens: auto;
         }
+
+        @media (max-width:1400px) {
+            body {
+                margin: 0 auto;
+
+            }
+        }
+
 
         h1 {
             font-family: "Franklin Gothic ITC Demi";
@@ -176,15 +186,22 @@
 
         @media (max-width:4000px) {
             h1.line-1 {
-                font-size: 57px;
+                font-size: 50px;
                 margin-bottom: 10px
             }
         }
 
         @media (max-width:1400px) {
             h1.line-1 {
-                font-size: 3.84vw;
-                margin-bottom: 0px;
+                font-size: 3.94vw;
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width:700px) {
+            h1.line-1 {
+                font-size: 30px;
+                margin-bottom: 10px;
             }
         }
 
@@ -203,9 +220,16 @@
             }
         }
 
+        @media (max-width:700px) {
+            h1.line-2 {
+                font-size: 35px;
+                margin-bottom: 10px;
+            }
+        }
+
         @media (max-width:4000px) {
             h1.line-3 {
-                font-size: 50px;
+                font-size: 47px;
                 margin-bottom: 50px;
                 margin-top: 0px;
             }
@@ -216,6 +240,13 @@
                 font-size: 3.34vw;
             }
         }
+
+        @media (max-width:700px) {
+            h1.line-3 {
+                font-size: 27px;
+            }
+        }
+
 
         h3 {
             font-size: 20px;
@@ -233,6 +264,16 @@
             -webkit-font-smoothing: subpixel-antialiased;
         }
 
+        @media (max-width:700px) {
+            h3 {
+                font-size: 25px;
+                line-height: 27px;
+                margin-top:6px;
+                margin-bottom:26px;
+            }
+        }
+
+
         h3.condensed {
             font-family: "Franklin Gothic Condensed";
             -webkit-text-stroke: 0.0px;
@@ -245,6 +286,12 @@
             hyphens: auto;
             -webkit-hyphens: auto;
             margin-bottom: 5.8px;
+        }
+
+        @media (max-width:700px) {
+            p {
+                margin-bottom: 9.8px;
+            }
         }
 
         em,
@@ -286,6 +333,10 @@
             counter-increment: my-awesome-counter;
         }
 
+        .darkMode ol li::before {
+            color: white;
+        }
+
         ol li::before {
             content: counter(my-awesome-counter) ") ";
             color: black;
@@ -325,6 +376,18 @@
  AD SPECiFiC
  ***********************
  ***********************/
+        .top-spacer {
+            width: 100%;
+            height: 100px;
+            display: none;
+        }
+
+        @media (max-width:1400px) {
+            .top-spacer {
+                display: block;
+            }
+        }
+
         hr {
             margin-top: 0px;
             margin-bottom: 10px;
@@ -395,12 +458,24 @@
         h2.final-header {
             font-family: "Franklin Gothic ITC Demi", "Arial", sans-serif;
             line-height: 1em;
-            font-size: 45.2px;
+            font-size: 40.2px;
             text-align: center;
             padding: 13px 0px;
             -webkit-hyphens: none;
             hyphens: none;
             font-weight: 400;
+        }
+
+        @media (max-width:1400px) {
+            h2.final-header {
+                font-size: 3.5vw;
+            }
+        }
+
+        @media (max-width:700px) {
+            h2.final-header {
+                font-size: 26px;
+            }
         }
 
         .franklinfont {
@@ -496,7 +571,7 @@
         }
 
         .order-header-1 {
-            font-size: 1.68vw;
+            font-size: 1.48vw;
         }
 
         .order-header-demi {
@@ -628,6 +703,50 @@
         .footer-small {
             font-size: calc(1em - 5px);
             margin-bottom: 0px;
+        }
+
+        @media (max-width:1400px) {
+            .order-header-1 {
+                font-size: 3.0vw;
+            }
+
+            .order-list-row {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width:700px) {
+            .order-header-1 {
+                font-size: 2.8vw;
+            }
+
+            h4 {
+                font-size: 4vw;
+            }
+
+            .order-form-body {
+                padding-top: 10px;
+                font-size: calc(1em - 6px);
+                line-height: calc(1em + 2px);
+            }
+
+            .order-list-container,
+            .order-fill-in-container {
+                font-size: calc(0.8em);
+                line-height: calc(1em + 4px);
+            }
+
+            .order-footer p.footer-small {
+                font-size: calc(0.6em - 0px);
+                line-height: 1em
+            }
+
+            .order-footer p {
+                font-size: 3.3vw;
+                line-height: 1em
+            }
+
+
         }
 
         /*********************
@@ -889,6 +1008,10 @@ LAST PAGE
         }
 
         @media (max-width:700px) {
+            body {
+                font-size: 20.5px;
+                line-height: 24px;
+            }
 
             /******
 	FLEX
@@ -1060,6 +1183,7 @@ LAST PAGE
 <body class="bg-base body-font-color">
     <div class="ad-border">
         <div class="ad">
+            <div class="top-spacer"></div>
       <h1 class="line-1">
         
         
@@ -1201,9 +1325,9 @@ LAST PAGE
       <h3>
         
         
-          Their Incredible Skill In Quickly<br />
-                            Teaching Their Unique "Bare-<br />
-                            Handed" Disarming and Disabling <br />
+          Their Incredible Skill In Quickly
+                            Teaching Their Unique "Bare-
+                            Handed" Disarming and Disabling 
                             Techniques For Armed Attackers!
         
         
@@ -1214,7 +1338,7 @@ LAST PAGE
       <h3>
         
         
-          They Used This Live Ammunition On Each Other To Develop <br />
+          They Used This Live Ammunition On Each Other To Develop
                             Their New Disarming System!
         
         
@@ -1308,7 +1432,7 @@ LAST PAGE
         
         
           Tactical Response Solutions<br />
-                            2945 South Mooney Blvd., Dept. 24-G <br />
+                            2945 South Mooney Blvd., <br />Dept. 24-G <br />
                             Visalia, CA 93277
         
         

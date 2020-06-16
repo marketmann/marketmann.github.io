@@ -30,7 +30,9 @@ nav_order: 12
 
         body {
             /* border: 1px solid rgb(233, 233, 233);*/
-            margin: 100px auto;
+            margin: 0 100px auto;
+            display: block;
+            position: relative;
             font-family: 'Warnok Pro';
             font-style: normal;
             font-size: 17px;
@@ -40,6 +42,14 @@ nav_order: 12
             -webkit-font-smoothing: subpixel-antialiased;
             -webkit-hyphens: auto;
         }
+
+        @media (max-width:1400px) {
+            body {
+                margin: 0 auto;
+
+            }
+        }
+
 
         h1 {
             font-family: "Franklin Gothic ITC Demi";
@@ -55,15 +65,15 @@ nav_order: 12
 
         @media (max-width:4000px) {
             h1.line-1 {
-                font-size: 57px;
+                font-size: 50px;
                 margin-bottom: 10px
             }
         }
 
         @media (max-width:1400px) {
             h1.line-1 {
-                font-size: 3.84vw;
-                margin-bottom: 0px;
+                font-size: 3.94vw;
+                margin-bottom: 5px;
             }
         }
 
@@ -88,16 +98,17 @@ nav_order: 12
                 font-size: 5.54vw;
             }
         }
+
         @media (max-width:700px) {
             h1.line-2 {
                 font-size: 35px;
-margin-bottom: 10px;
+                margin-bottom: 10px;
             }
         }
 
         @media (max-width:4000px) {
             h1.line-3 {
-                font-size: 50px;
+                font-size: 47px;
                 margin-bottom: 50px;
                 margin-top: 0px;
             }
@@ -115,12 +126,6 @@ margin-bottom: 10px;
             }
         }
 
-        @media (max-width:700px) {
-            h3{
-                font-size: 24px;
-line-height:27px;
-            }
-        }
 
         h3 {
             font-size: 20px;
@@ -138,6 +143,16 @@ line-height:27px;
             -webkit-font-smoothing: subpixel-antialiased;
         }
 
+        @media (max-width:700px) {
+            h3 {
+                font-size: 25px;
+                line-height: 27px;
+                margin-top:6px;
+                margin-bottom:26px;
+            }
+        }
+
+
         h3.condensed {
             font-family: "Franklin Gothic Condensed";
             -webkit-text-stroke: 0.0px;
@@ -150,6 +165,12 @@ line-height:27px;
             hyphens: auto;
             -webkit-hyphens: auto;
             margin-bottom: 5.8px;
+        }
+
+        @media (max-width:700px) {
+            p {
+                margin-bottom: 9.8px;
+            }
         }
 
         em,
@@ -191,6 +212,10 @@ line-height:27px;
             counter-increment: my-awesome-counter;
         }
 
+        .darkMode ol li::before {
+            color: white;
+        }
+
         ol li::before {
             content: counter(my-awesome-counter) ") ";
             color: black;
@@ -230,6 +255,18 @@ line-height:27px;
  AD SPECiFiC
  ***********************
  ***********************/
+        .top-spacer {
+            width: 100%;
+            height: 100px;
+            display: none;
+        }
+
+        @media (max-width:1400px) {
+            .top-spacer {
+                display: block;
+            }
+        }
+
         hr {
             margin-top: 0px;
             margin-bottom: 10px;
@@ -300,12 +337,24 @@ line-height:27px;
         h2.final-header {
             font-family: "Franklin Gothic ITC Demi", "Arial", sans-serif;
             line-height: 1em;
-            font-size: 45.2px;
+            font-size: 40.2px;
             text-align: center;
             padding: 13px 0px;
             -webkit-hyphens: none;
             hyphens: none;
             font-weight: 400;
+        }
+
+        @media (max-width:1400px) {
+            h2.final-header {
+                font-size: 3.5vw;
+            }
+        }
+
+        @media (max-width:700px) {
+            h2.final-header {
+                font-size: 26px;
+            }
         }
 
         .franklinfont {
@@ -401,7 +450,7 @@ line-height:27px;
         }
 
         .order-header-1 {
-            font-size: 1.68vw;
+            font-size: 1.48vw;
         }
 
         .order-header-demi {
@@ -533,6 +582,50 @@ line-height:27px;
         .footer-small {
             font-size: calc(1em - 5px);
             margin-bottom: 0px;
+        }
+
+        @media (max-width:1400px) {
+            .order-header-1 {
+                font-size: 3.0vw;
+            }
+
+            .order-list-row {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width:700px) {
+            .order-header-1 {
+                font-size: 2.8vw;
+            }
+
+            h4 {
+                font-size: 4vw;
+            }
+
+            .order-form-body {
+                padding-top: 10px;
+                font-size: calc(1em - 6px);
+                line-height: calc(1em + 2px);
+            }
+
+            .order-list-container,
+            .order-fill-in-container {
+                font-size: calc(0.8em);
+                line-height: calc(1em + 4px);
+            }
+
+            .order-footer p.footer-small {
+                font-size: calc(0.6em - 0px);
+                line-height: 1em
+            }
+
+            .order-footer p {
+                font-size: 3.3vw;
+                line-height: 1em
+            }
+
+
         }
 
         /*********************
@@ -674,6 +767,7 @@ LAST PAGE
         }
 
         @media (max-width:1050px) {
+
             /******
 	FLEX
 	*****/
@@ -793,10 +887,11 @@ LAST PAGE
         }
 
         @media (max-width:700px) {
-body {
-font-size:20.5px;
-line-height:24px;
-}
+            body {
+                font-size: 20.5px;
+                line-height: 24px;
+            }
+
             /******
 	FLEX
 	*****/
@@ -967,6 +1062,7 @@ line-height:24px;
 <body class="bg-base body-font-color">
     <div class="ad-border">
         <div class="ad">
+            <div class="top-spacer"></div>
             <h1 class="line-1">World Famous Street-Fighter Will Give You A</h1>
             <h1 class="line-2">FREE GUN...</h1>
             <h1 class="line-3">Just to Prove He Can Take It Away From You <em>Bare-Handed</em> As Easy As Candy From A Baby!</h1>
@@ -1063,13 +1159,13 @@ line-height:24px;
                         <p>Anyway, through certain inside "contacts" (which I am<strong> not </strong>going to tell you about) I was approached by two of the most respected professional combat trainers in the world: <strong>Randy Wanner </strong>is a feared martial arts expert who for years has been training federal and state law enforcement agencies in "street survival fighting tactics". (He was also the former Martial Arts editor for Soldier of Fortune magazine.) His name is well-known among the elite "warriors" of modern-day combat, and he has gone toe-to-&shy;toe with street fighters from all over the world to prove his techniques are superior to anything else out there.</p>
                         <p><strong>Bob Taylor </strong>(who spent 2 tours in Viet Nam with the 101'st Airborne, MACV-SERT and the famous 75th Rangers) is considered one of the country's most experienced experts in counter insurgency operations; state, local and federal law enforcement agencies use him frequently for training. He is also a specialist in counter&shy;terrorism for African, South American and Cen&shy;tral American governments.</p>
                         <p>These two guys are in demand all over the world. Their clients include the <strong>U.S. military, </strong>big-city <strong>SWAT </strong>teams, international anti-terrorist squads and top security firms in 15 foreign countries. These clients hire Bob and Randy for just one thing:</p>
-                        <h3>Their Incredible Skill In Quickly<br />
-                            Teaching Their Unique "Bare-<br />
-                            Handed" Disarming and Disabling <br />
+                        <h3>Their Incredible Skill In Quickly
+                            Teaching Their Unique "Bare-
+                            Handed" Disarming and Disabling 
                             Techniques For Armed Attackers!</h3>
                         <p>This new fighting system took over 20 years to develop. It was necessary because the techniques the police and the military used to use &mdash; based on centuries-old karate moves &mdash;simply were <strong>not effective </strong>in real combat conditions. Soldiers and officers who were supposed to be disarming their attackers were, instead, <em>getting shot and disabled themselves!</em></p>
                         <p>Randy and Bob decided to find out what was wrong. There was only one sane way to do this. They used their connections within the military establishment to get "training" bullets for their weapons. These bullets (called "Red Jets") are almost impossible for civilians to get. They are made of wax and polymer, yet are calibrated to fire from real weapons and can blow a hole in quarter-inch plywood from 15 feet. These training bullets were necessary for Bob and Randy's research, because..</p>
-                        <h3>They Used This Live Ammunition On Each Other To Develop <br />
+                        <h3>They Used This Live Ammunition On Each Other To Develop
                             Their New Disarming System!</h3>
                         <p>Let me tell you &mdash; it takes some kind of guts to face a gun loaded with live ammo. Those wax bullets travel at <em>over 400 feet per second... even if they don't tear up your body like real bullets, these guys have the scars to prove getting hit with them isn't pretty.</em></p>
                     </div>
@@ -1128,7 +1224,7 @@ line-height:24px;
                         <p>That's why I want you to see these tapes for yourself. Right now.</p>
                         <p><strong>Here's the deal: </strong>All you need to do is call my office at <span class="franklinfont"><strong>1-800-899-8153 </strong></span>and ask for Department 24-0 (that's a toll-FREE call and won't cost you a cent) and tell the person who answers that you want the <strong><em><span style="font-weight:800 !important">"Fighting Chance"</span></em></strong> video package... along with your free replica gun. Have your credit card ready. Or, if you prefer to pay by check or money order, simply fill out the "Priority Order Form" below and mail it with your payment to:</p>
                         <h3 class="condensed">Tactical Response Solutions<br />
-                            2945 South Mooney Blvd., Dept. 24-G <br />
+                            2945 South Mooney Blvd., <br />Dept. 24-G <br />
                             Visalia, CA 93277</h3>
                         <p>The cost of this incredible package is just $97 &mdash; that includes everything (including shipping and handling charges within the continental United States)... <em>and </em>you have a...</p>
                         <h3>Full 3 Month Risk-Free<br />
