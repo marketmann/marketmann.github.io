@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /sitemaps/
+Allow: /sitemaps.xml
+Allow: /medias/
+Allow: /assets/
+Allow: /static/
+Allow: /embed/iframe/
+Allow: /embed/medias/
+Allow: /embed/channel/
+Allow: /embed/captions/
+Allow: /embed/stats/
+Allow: /fonts/
+Allow: /embed/iframe_shim
+Allow: /labs/
+Disallow: /
+
+User-agent: TwitterBot
+Allow: /medias/
+Allow: /embed/iframe/
