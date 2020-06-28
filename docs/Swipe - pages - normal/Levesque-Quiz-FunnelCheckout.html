@@ -1,0 +1,2128 @@
+---
+layout: page-layout-1
+title: (ASK) Quiz Funnel - Checkout
+nav_exclude: true
+---
+<html>
+
+<head>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#3c587a">
+    <title>ASK Method&reg; Company | Checkout</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('body').find('#shipping_as_billing').on('change', function() {
+                if ($(this).is(':checked')) {
+                    $('body').find('.shipping_as_billing_holder').stop().slideUp(200);
+                } else {
+                    $('body').find('.shipping_as_billing_holder').stop().slideDown(200);
+                }
+            });
+
+            Parsley.on('field:validated', function(fieldInstance) {
+                if (fieldInstance.$element.is(":hidden")) {
+                    fieldInstance._ui.$errorsWrapper.css('display', 'none');
+                    fieldInstance.validationResult = true;
+                    return true;
+                }
+            });
+
+            $('body').find('form').on('submit', function(e) {
+                if (!$(this).parsley().validate()) {
+                    e.stopImmediatePropagation();
+                    return false;
+                }
+
+                if (!$('body').find('#agree_tm').is(':checked')) {
+                    $('body').find('.js-tc').shake();
+                    $('body').find('.js-error-tc').show();
+                    e.stopImmediatePropagation();
+                    return false;
+                }
+
+                $('body').find('.js-error-tc').hide();
+            });
+        });
+
+    </script>
+    <style>
+        .ca-timer-text:before,
+        .ca-timer-text:after {
+            width: 20%;
+        }
+
+        .ca-heading {
+            font-size: 18px;
+        }
+
+        .hiddenBlock {
+            display: none;
+            visibility: hidden;
+        }
+
+        .showBlock {
+            -webkit-animation: expand 1s;
+        }
+
+        @-webkit-keyframes expand {
+            0% {
+                height: 0px
+            }
+
+            100% {
+                height: 364px
+            }
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i');
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        *,
+        *:after,
+        *:before {
+            outline: 0;
+            border: 0;
+
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        body {
+            background: #f6f6f6;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        img.right {
+            float: right;
+        }
+
+        img.left {
+            float: left;
+        }
+
+        #wrap,
+        .wrap {
+            width: 100%;
+            max-width: 950px;
+            margin: auto;
+            position: relative;
+            background: #fff;
+            overflow: hidden;
+            padding: 25px 40px;
+
+            margin-bottom: 20px;
+        }
+
+        .wrap.mb--0 {
+            margin-bottom: 0;
+        }
+
+        .ca-padding-hero {
+            padding-top: 65px;
+            padding-bottom: 35px;
+        }
+
+        .ca-hero__bg {
+            background: url('../images/hero-bg.png') no-repeat top center;
+            background-size: cover;
+        }
+
+        .ca-video {
+            display: block;
+            width: 100%;
+            position: relative;
+        }
+
+        .ca-video.hidden {
+            display: none;
+        }
+
+        .ca-video__play {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .ca-video__img {
+            max-width: 100%;
+            -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.39);
+            -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.39);
+            box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.39);
+        }
+
+        .ca-timer-text {
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            line-height: 1;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .ca-timer-text:after,
+        .ca-timer-text:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            height: 1px;
+            background-color: #fff;
+        }
+
+        .ca-timer-text:before {
+            left: 0;
+            width: 30%;
+        }
+
+        .ca-timer-text:after {
+            right: 0;
+            width: 30%;
+        }
+
+        .ca-timer {
+            width: auto;
+            margin: 0 auto;
+        }
+
+        .ca-heading {
+            font-size: 25px;
+            line-height: 1.2;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .ca-subheading {
+            font-size: 14px;
+            line-height: 1.3;
+            color: #fff;
+            text-align: center;
+        }
+
+        .countdown-row {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .countdown-section {
+            display: inline-block;
+            width: 90px;
+            height: 80px;
+            padding: 11px 3px;
+            margin: 0 10px;
+            text-align: center;
+            background-color: #d9dbde;
+        }
+
+        .countdown-amount {
+            display: block;
+            font-size: 38px;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .countdown-period {
+            font-size: 14px;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        footer .wrap {
+            background: transparent;
+            overflow: visible;
+        }
+
+        #top-line {
+            background: #fff;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 40px;
+        }
+
+        #top-line .wrap {
+            padding: 8px 0 0;
+        }
+
+        .column {
+            float: left;
+            width: 48.5%;
+            margin-left: 3%;
+        }
+
+        .column:first-child {
+            margin-left: 0;
+        }
+
+        .title {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            margin: 0 0 10px;
+        }
+
+        .title--margin-top {
+            margin-top: 25px;
+        }
+
+        .title--payments {
+            overflow: hidden;
+        }
+
+        .title--payments img {
+            float: right;
+        }
+
+        img.center {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .note {
+            display: block;
+
+            color: #928780;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 600;
+        }
+
+        .note--marginbottom {
+            margin-bottom: 20px;
+        }
+
+        .note--margintop {
+            margin-top: -5px;
+        }
+
+        .note--space {
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        select {
+            display: block;
+            width: 100%;
+            height: 45px;
+
+            color: #1f1f1f;
+            font-size: 14px;
+            line-height: 45px;
+            padding: 0 15px;
+
+            border: 1px solid #dcd9d6;
+            margin-bottom: 10px;
+        }
+
+        .parsley-error {
+            border: 1px solid #db3333 !important;
+        }
+
+        .parsley-errors-list {
+            display: none !important;
+        }
+
+        .checkbox {
+            position: relative;
+            display: block;
+        }
+
+        .checkbox-center {
+            text-align: center;
+        }
+
+        .checkbox--inline {
+            display: inline-block;
+        }
+
+        .checkbox span {
+            color: #928780;
+            font-size: 14px;
+            line-height: 16px;
+            cursor: pointer;
+            padding-left: 25px;
+        }
+
+        .checkbox span:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            border: 1px solid #928780;
+        }
+
+        .checkbox span:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 5px;
+            height: 9px;
+            top: 5px;
+            left: 7px;
+            border: solid #f79b00;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            opacity: 0;
+        }
+
+        .checkbox input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkbox input[type="checkbox"]:checked+span:after {
+            opacity: 1;
+        }
+
+        .checkbox--separate {
+            margin: 25px 0;
+        }
+
+        .checkbox--nomargin {
+            margin-bottom: 5px;
+        }
+
+        .brown-box {
+            background: #f6f6f6;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .brown-box--lesspadding {
+            padding: 15px;
+        }
+
+        .brown-box h4 {
+            color: #1b2130;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: bold;
+
+            margin: 0 0 15px;
+        }
+
+        .brown-box p {
+            color: #928780;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        p.testimonial {
+            color: #928780;
+            font-size: 14px;
+            line-height: 20px;
+            font-style: italic;
+
+            margin-bottom: 10px;
+        }
+
+        p.testimonial-author {
+            color: #000;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        p.testimonial-author span {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        p.phone {
+            background: url('checkout-images/phone.png') no-repeat 0 0;
+            padding-left: 35px;
+
+            color: #928780;
+            font-size: 12px;
+            line-height: 16px;
+            min-height: 28px;
+            padding-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        p.phone span {
+            color: #000;
+        }
+
+        p.phone.email-icon {
+            background: url('checkout-images/email-icon.png') no-repeat 0 0;
+        }
+
+        p.phone.chat-icon {
+            background: url('checkout-images/chat-icon.png') no-repeat 0 0;
+        }
+
+        p.desc {
+            color: #928780;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .cc-fields {
+            overflow: hidden;
+            margin-bottom: 0px;
+        }
+
+        .cc-fields .cc-cvc {
+            width: 33%;
+            float: left;
+            margin-left: 2%;
+        }
+
+        .cc-fields select {
+            width: 31.5%;
+            float: left;
+            margin-left: 2%;
+        }
+
+        .cc-fields select:first-of-type {
+            margin-left: 0;
+        }
+
+        .order-summary {
+            padding: 15px;
+            border: 1px solid #dcd9d6;
+            margin-bottom: 15px;
+        }
+
+        .order-summary h4 {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 600;
+            margin: 0 0 25px;
+        }
+
+        .order-summary .cart {
+            padding-bottom: 15px;
+        }
+
+        .order-summary .subtotal {
+            padding: 15px 0;
+            border-top: 1px solid #dcd9d6;
+        }
+
+        .order-summary .subtotal,
+        .order-summary .due-today {
+            padding: 15px;
+            margin: 0 -15px;
+            border-top: 1px solid #dcd9d6;
+        }
+
+        .order-summary .due-today {
+            background: #f6f6f6;
+            margin-bottom: -15px;
+            padding: 20px 15px;
+        }
+
+        .order-summary p {
+            color: #928780;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .order-summary p span {
+            float: right;
+            font-weight: 600;
+        }
+
+        .order-summary .due-today p span {
+            font-size: 18px;
+        }
+
+        input[type="submit"],
+        .pricing-box a.apply-coupon {
+            display: block;
+            width: 100%;
+            height: 90px;
+            background: #f79b00;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+
+        .pricing-box a.apply-coupon {
+            display: inline-block;
+            line-height: 18px;
+            padding: 15.5px 27px;
+            transition: all 0.2s;
+            vertical-align: middle;
+            padding: 11px 15px;
+            height: auto;
+            text-align: center;
+            text-decoration: none;
+            text-transform: none;
+            font-size: 16px;
+            width: 38%;
+        }
+
+        input[type="submit"]:hover,
+        .pricing-box a.apply-coupon:hover {
+            background: #e2920b;
+        }
+
+        .security-note {
+            color: #928780;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .security-note i {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+            width: 9px;
+            height: 12px;
+
+            background: url('checkout-images/lock.png') no-repeat 0 0;
+        }
+
+        .day30 {
+            border: 2px solid #dcd9d6;
+            padding: 20px 30px;
+        }
+
+        .day30 h3 {
+            color: #000;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #dcd9d6;
+            margin-bottom: 20px;
+        }
+
+        .day30 .content {
+            position: relative;
+            padding-left: 120px;
+        }
+
+        .day30 img {
+            width: 110px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .day30 p {
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0;
+            text-align: justify;
+            color: #928780;
+        }
+
+        .errors {
+            background: #de4747;
+            padding: 15px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .errors ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        body.normal-page h1 {
+            font-size: 28px;
+            line-height: 32px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        body.normal-page h3 {
+            font-size: 22px;
+            line-height: 28px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        body.normal-page p {
+            font-size: 16px;
+            line-height: 21px;
+            margin: 15px 0;
+        }
+
+        body.normal-page footer p {
+            font-size: 13px;
+            margin-top: 0;
+        }
+
+        /**
+ * Coupon
+ */
+        span.coupon-errors,
+        span.coupon-success {
+            display: block;
+            display: none;
+            clear: both;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            padding: 10px;
+            background: #CC3333;
+            margin: 0;
+        }
+
+        span.coupon-success {
+            background: #8DB38B !important;
+        }
+
+        .stroked {
+            text-decoration: line-through;
+        }
+
+        .pricing-box {
+            display: block;
+            clear: both;
+            background: #f6f6f6;
+            padding: 20px;
+            margin-top: 120px;
+        }
+
+        .pricing-box h4 {
+            color: #5b5b5b;
+            font-size: 30px;
+            line-height: 34px;
+            margin: 0;
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        .pricing-box h4 .text-up {
+            vertical-align: super;
+            font-size: 26px;
+            line-height: 30px;
+            position: relative;
+            top: 4px;
+        }
+
+        .pricing-box h4 .text-down {
+            vertical-align: bottom;
+            font-size: 26px;
+            line-height: 30px;
+            color: #fa6900;
+        }
+
+        .pricing-box .coupon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .pricing-box input {
+            color: #000000;
+            font-weight: bold;
+            padding: 0 10px;
+            height: 40px;
+            border: 1px dashed #d9e0e9;
+            vertical-align: middle;
+            margin-right: 0px;
+            display: inline-block;
+            width: 60%;
+            margin: 0 0px 0 0;
+        }
+
+        .pricing-box input.readonly {
+            background: #DADADA;
+        }
+
+        .pricing-box .coupon.green input {
+            border-color: #20de27;
+        }
+
+        /**
+ * Shake
+ */
+        .shake {
+            -webkit-animation: kf_shake .4s 1 linear;
+            -moz-animation: kf_shake .4s 1 linear;
+            -o-animation: kf_shake .4s 1 linear;
+        }
+
+        @-webkit-keyframes kf_shake {
+            0% {
+                -webkit-transform: translate(10px)
+            }
+
+            20% {
+                -webkit-transform: translate(-10px)
+            }
+
+            40% {
+                -webkit-transform: translate(5px)
+            }
+
+            60% {
+                -webkit-transform: translate(-5px)
+            }
+
+            80% {
+                -webkit-transform: translate(2px)
+            }
+
+            100% {
+                -webkit-transform: translate(0)
+            }
+        }
+
+        @-moz-keyframes kf_shake {
+            0% {
+                -moz-transform: translate(10px)
+            }
+
+            20% {
+                -moz-transform: translate(-10px)
+            }
+
+            40% {
+                -moz-transform: translate(5px)
+            }
+
+            60% {
+                -moz-transform: translate(-5px)
+            }
+
+            80% {
+                -moz-transform: translate(2px)
+            }
+
+            100% {
+                -moz-transform: translate(0)
+            }
+        }
+
+        @-o-keyframes kf_shake {
+            0% {
+                -o-transform: translate(10px)
+            }
+
+            20% {
+                -o-transform: translate(-10px)
+            }
+
+            40% {
+                -o-transform: translate(5px)
+            }
+
+            60% {
+                -o-transform: translate(-5px)
+            }
+
+            80% {
+                -o-transform: translate(2px)
+            }
+
+            100% {
+                -o-origin-transform: translate(0)
+            }
+        }
+
+        /**
+ * Loading
+ */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 62, 80, 0.8);
+            z-index: 998;
+        }
+
+        .spinner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 40px;
+            height: 40px;
+            z-index: 999;
+        }
+
+        .double-bounce1,
+        .double-bounce2 {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #FFF;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+            animation: sk-bounce 2.0s infinite ease-in-out;
+        }
+
+        .double-bounce2 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+
+        @-webkit-keyframes sk-bounce {
+
+            0%,
+            100% {
+                -webkit-transform: scale(0.0)
+            }
+
+            50% {
+                -webkit-transform: scale(1.0)
+            }
+        }
+
+        @keyframes sk-bounce {
+
+            0%,
+            100% {
+                transform: scale(0.0);
+                -webkit-transform: scale(0.0);
+            }
+
+            50% {
+                transform: scale(1.0);
+                -webkit-transform: scale(1.0);
+            }
+        }
+
+        /**
+ * Footer
+ */
+        .mastfoot {
+            padding: 20px 0 60px;
+        }
+
+        .mastfoot .wrap {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .mastfoot hr {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #cfcfcf;
+            border: 0;
+            position: relative;
+            top: -20px;
+            margin: 0;
+        }
+
+        .mastfoot h5 {
+            color: #928780;
+            margin: 0 0 5px;
+            text-transform: uppercase;
+        }
+
+        .mastfoot p {
+            color: #4a494a;
+            font-size: 12px;
+            margin: 0 0 5px;
+        }
+
+        .mastfoot a {
+            color: #928780;
+            font-size: 12px;
+        }
+
+        .mastfoot .list__item {
+            position: relative;
+            border-left: 1px solid #d7d7d7;
+            margin-left: -4px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .mastfoot .list__item:first-of-type {
+            border-left: none;
+        }
+
+        .mastfoot .list__item.last {
+            padding-right: 0;
+        }
+
+        .mastfoot .list__item a {
+            display: block;
+        }
+
+        .grid--flex {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .grid {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .grid--full {
+            width: 100%;
+        }
+
+        .flex--space-between {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .list--unstyled,
+        .list--inline {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list--inline .list__item {
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 1000px) {
+
+            #top-line .wrap,
+            .mastfoot .wrap {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 960px) {
+            #top-line {
+                margin-bottom: 0;
+            }
+
+            .column-hidden {
+                display: none;
+            }
+
+            .ca-video.hidden {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .hero .column {
+                width: 70%;
+                margin: 0 auto;
+                float: none;
+            }
+
+            .ca-heading {
+                font-size: 38px;
+            }
+
+            .ca-subheading {
+                font-size: 18px;
+            }
+
+            .ca-padding-hero {
+                padding-top: 20px;
+                padding-bottom: 25px;
+            }
+        }
+
+        @media only screen and (max-width: 860px) and (min-width: 650px),
+        (max-width: 415px) {
+            .cc-fields .cc-cvc {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .cc-fields select {
+                width: 49%;
+            }
+
+            .cc-fields select:first-of-type {
+                margin-left: 0;
+            }
+        }
+
+        @media only screen and (max-width: 750px) {
+            #top-line img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            #wrap,
+            .wrap {
+                padding: 15px 20px;
+            }
+        }
+
+        @media only screen and (max-width: 650px) {
+            .column {
+                float: none;
+                width: 100%;
+                margin: 0 auto 20px;
+            }
+
+            .hero .column {
+                width: 100%;
+            }
+
+            .ca-heading {
+                font-size: 25px;
+            }
+
+            .ca-subheading {
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            #wrap {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .pricing-box input {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .pricing-box a.apply-coupon {
+                width: 100%;
+            }
+
+            .countdown-section {
+                width: 80px;
+                height: 70px;
+                padding: 10px 3px;
+                margin: 0 5px;
+            }
+
+            .countdown-amount {
+                font-size: 30px;
+            }
+
+            .countdown-period {
+                font-size: 12px;
+            }
+
+            .wrap.hero {
+                padding: 15px 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="top-line">
+        <div class="wrap">
+            <img style="width: auto; height: 35px;" src="https://theaskstore.com/templates/images/2020/logo-qfmc.svg" />
+        </div>
+    </div>
+
+    <div id="countdown-block" class="hiddenBlock">
+        <div class="wrap mb--0 ca-hero__bg ca-padding-hero hero">
+            <div class="column">
+                <div class="wistia_embed wistia_async_ seo=false videoFoam=true autoPlay=true playbar=false fullscreenButton=false" style="width:100%;height:240px;"></div>
+            </div>
+            <div class="column">
+                <span class="ca-timer-text">Special Offer EXPIRES in</span>
+                <div class="ca-timer"></div>
+                <h1 class="ca-heading">WAIT! Get 2 NEW FREE Bonuses ADDED (Valued at OVER $499) ONLY When You Enroll NOW!</h1>
+                <p class="ca-subheading">IMPORTANT: This is a ONE-TIME opportunity that EXPIRES when that countdown hits ZERO (Really). Complete your order NOW :-)</p>
+            </div>
+        </div>
+    </div>
+
+    <form id="wrap" class="isForm" action="https://theaskstore.com/secure/quizfunnelmasterclass-upgrade-coaching/" method="post" data-parsley-validate>
+        <div class="column">
+
+            <div class="errors" style="display: none"></div>
+
+            <h2 class="title">Billing Information</h2>
+
+            <span class="note note--space">Your information is secure and will not be shared with a 3rd party.</span>
+            <input type="text" name="customer[first_name]" placeholder="First name" value="" data-parsley-required />
+            <input type="text" name="customer[last_name]" placeholder="Last name" value="" data-parsley-required />
+            <input type="text" name="customer[email]" placeholder="Email" value="" data-parsley-required data-parsley-type="email" />
+            <span class="note note--margintop">*Important: this email is where your login info will be sent</span>
+
+            <h2 class="title title--margin-top">Billing Address</h2>
+            <input type="text" name="customer[billing][street_address]" placeholder="Street Address" data-parsley-required />
+            <input type="text" name="customer[billing][city]" placeholder="City" data-parsley-required />
+            <input type="text" name="customer[billing][state]" placeholder="State" data-parsley-required />
+            <input type="text" name="customer[billing][zip]" placeholder="Zip/Postal Code" data-parsley-required />
+            <select name="customer[billing][country]" data-parsley-required>
+                <option value="">Country</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Canada</option>
+                <option>Australia</option>
+
+                <option>Afghanistan</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option>Albania</option>
+                <option>Algeria</option>
+                <option>American Samoa</option>
+                <option>Andorra</option>
+                <option>Angola</option>
+                <option>Anguilla</option>
+                <option>Antarctica</option>
+                <option>Antigua and Barbuda</option>
+                <option>Argentina</option>
+                <option>Armenia</option>
+                <option>Aruba</option>
+                <option>Austria</option>
+                <option>Azerbaijan</option>
+                <option>Bahamas (the)</option>
+                <option>Bahrain</option>
+                <option>Bangladesh</option>
+                <option>Barbados</option>
+                <option>Belarus</option>
+                <option>Belgium</option>
+                <option>Belize</option>
+                <option>Benin</option>
+                <option>Bermuda</option>
+                <option>Bhutan</option>
+                <option>Bolivia (Plurinational State of)</option>
+                <option>Bonaire, Sint Eustatius and Saba</option>
+                <option>Bosnia and Herzegovina</option>
+                <option>Botswana</option>
+                <option>Bouvet Island</option>
+                <option>Brazil</option>
+                <option>British Indian Ocean Territory (the)</option>
+                <option>Brunei Darussalam</option>
+                <option>Bulgaria</option>
+                <option>Burkina Faso</option>
+                <option>Burundi</option>
+                <option>Cabo Verde</option>
+                <option>Cambodia</option>
+                <option>Cameroon</option>
+                <option>Cayman Islands (the)</option>
+                <option>Central African Republic (the)</option>
+                <option>Chad</option>
+                <option>Chile</option>
+                <option>China</option>
+                <option>Christmas Island</option>
+                <option>Cocos (Keeling) Islands (the)</option>
+                <option>Colombia</option>
+                <option>Comoros (the)</option>
+                <option>Congo (the Democratic Republic of the)</option>
+                <option>Congo (the)</option>
+                <option>Cook Islands (the)</option>
+                <option>Costa Rica</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option>Croatia</option>
+                <option>Cuba</option>
+                <option value="Curaçao">Curaçao</option>
+                <option>Cyprus</option>
+                <option>Czech Republic (the)</option>
+                <option>Denmark</option>
+                <option>Djibouti</option>
+                <option>Dominica</option>
+                <option>Dominican Republic (the)</option>
+                <option>Ecuador</option>
+                <option>Egypt</option>
+                <option>El Salvador</option>
+                <option>Equatorial Guinea</option>
+                <option>Eritrea</option>
+                <option>Estonia</option>
+                <option>Ethiopia</option>
+                <option>Falkland Islands (the) [Malvinas]</option>
+                <option>Faroe Islands (the)</option>
+                <option>Fiji</option>
+                <option>Finland</option>
+                <option>France</option>
+                <option>French Guiana</option>
+                <option>French Polynesia</option>
+                <option>French Southern Territories (the)</option>
+                <option>Gabon</option>
+                <option>Gambia (the)</option>
+                <option>Georgia</option>
+                <option>Germany</option>
+                <option>Ghana</option>
+                <option>Gibraltar</option>
+                <option>Greece</option>
+                <option>Greenland</option>
+                <option>Grenada</option>
+                <option>Guadeloupe</option>
+                <option>Guam</option>
+                <option>Guatemala</option>
+                <option>Guernsey</option>
+                <option>Guinea</option>
+                <option>Guinea-Bissau</option>
+                <option>Guyana</option>
+                <option>Haiti</option>
+                <option>Heard Island and McDonald Islands</option>
+                <option>Holy See (the)</option>
+                <option>Honduras</option>
+                <option>Hong Kong</option>
+                <option>Hungary</option>
+                <option>Iceland</option>
+                <option>India</option>
+                <option>Indonesia</option>
+                <option>Iran (Islamic Republic of)</option>
+                <option>Iraq</option>
+                <option>Ireland</option>
+                <option>Isle of Man</option>
+                <option>Israel</option>
+                <option>Italy</option>
+                <option>Jamaica</option>
+                <option>Japan</option>
+                <option>Jersey</option>
+                <option>Johnston Island</option>
+                <option>Jordan</option>
+                <option>Kazakhstan</option>
+                <option>Kenya</option>
+                <option>Kiribati</option>
+                <option>Korea (the Democratic People's Republic of)</option>
+                <option>Korea (the Republic of)</option>
+                <option>Kuwait</option>
+                <option>Kyrgyzstan</option>
+                <option>Lao People's Democratic Republic (the)</option>
+                <option>Latvia</option>
+                <option>Lebanon</option>
+                <option>Lesotho</option>
+                <option>Liberia</option>
+                <option>Libya</option>
+                <option>Liechtenstein</option>
+                <option>Lithuania</option>
+                <option>Luxembourg</option>
+                <option>Macao</option>
+                <option>Macedonia (the former Yugoslav Republic of)</option>
+                <option>Madagascar</option>
+                <option>Malawi</option>
+                <option>Malaysia</option>
+                <option>Maldives</option>
+                <option>Mali</option>
+                <option>Malta</option>
+                <option>Marshall Islands (the)</option>
+                <option>Martinique</option>
+                <option>Mauritania</option>
+                <option>Mauritius</option>
+                <option>Mayotte</option>
+                <option>Mexico</option>
+                <option>Micronesia (Federated States of)</option>
+                <option>Midway Islands</option>
+                <option>Moldova (the Republic of)</option>
+                <option>Monaco</option>
+                <option>Mongolia</option>
+                <option>Montenegro</option>
+                <option>Montserrat</option>
+                <option>Morocco</option>
+                <option>Mozambique</option>
+                <option>Myanmar</option>
+                <option>Namibia</option>
+                <option>Nauru</option>
+                <option>Nepal</option>
+                <option>Netherlands (the)</option>
+                <option>New Caledonia</option>
+                <option>New Zealand</option>
+                <option>Nicaragua</option>
+                <option>Niger (the)</option>
+                <option>Nigeria</option>
+                <option>Niue</option>
+                <option>Norfolk Island</option>
+                <option>Northern Mariana Islands (the)</option>
+                <option>Norway</option>
+                <option>Oman</option>
+                <option>Pakistan</option>
+                <option>Palau</option>
+                <option>Palestine, State of</option>
+                <option>Panama</option>
+                <option>Papua New Guinea</option>
+                <option>Paraguay</option>
+                <option>Peru</option>
+                <option>Philippines (the)</option>
+                <option>Pitcairn</option>
+                <option>Poland</option>
+                <option>Portugal</option>
+                <option>Puerto Rico</option>
+                <option>Qatar</option>
+                <option value="Réunion">Réunion</option>
+                <option>Romania</option>
+                <option>Russian Federation (the)</option>
+                <option>Rwanda</option>
+                <option value="Saint Barthélemy">Saint Barthélemy</option>
+                <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                <option>Saint Kitts and Nevis</option>
+                <option>Saint Lucia</option>
+                <option>Saint Martin (French part)</option>
+                <option>Saint Pierre and Miquelon</option>
+                <option>Saint Vincent and the Grenadines</option>
+                <option>Samoa</option>
+                <option>San Marino</option>
+                <option>Sao Tome and Principe</option>
+                <option>Saudi Arabia</option>
+                <option>Senegal</option>
+                <option>Serbia</option>
+                <option>Seychelles</option>
+                <option>Sierra Leone</option>
+                <option>Singapore</option>
+                <option>Sint Maarten (Dutch part)</option>
+                <option>Slovakia</option>
+                <option>Slovenia</option>
+                <option>Solomon Islands</option>
+                <option>Somalia</option>
+                <option>South Africa</option>
+                <option>South Georgia and the South Sandwich Islands</option>
+                <option>South Sudan</option>
+                <option>Southern Rhodesia</option>
+                <option>Spain</option>
+                <option>Sri Lanka</option>
+                <option>Sudan (the)</option>
+                <option>Suriname</option>
+                <option>Svalbard and Jan Mayen</option>
+                <option>Swaziland</option>
+                <option>Sweden</option>
+                <option>Switzerland</option>
+                <option>Syrian Arab Republic</option>
+                <option>Taiwan (Province of China)</option>
+                <option>Tajikistan</option>
+                <option>Tanzania, United Republic of</option>
+                <option>Thailand</option>
+                <option>Timor-Leste</option>
+                <option>Togo</option>
+                <option>Tokelau</option>
+                <option>Tonga</option>
+                <option>Trinidad and Tobago</option>
+                <option>Tunisia</option>
+                <option>Turkey</option>
+                <option>Turkmenistan</option>
+                <option>Turks and Caicos Islands (the)</option>
+                <option>Tuvalu</option>
+                <option>Uganda</option>
+                <option>Ukraine</option>
+                <option>United Arab Emirates (the)</option>
+                <option>United States Minor Outlying Islands (the)</option>
+                <option>Upper Volta</option>
+                <option>Uruguay</option>
+                <option>Uzbekistan</option>
+                <option>Vanuatu</option>
+                <option>Venezuela (Bolivarian Republic of)</option>
+                <option>Viet Nam</option>
+                <option>Virgin Islands (British)</option>
+                <option>Virgin Islands (U.S.)</option>
+                <option>Wallis and Futuna</option>
+                <option>Western Sahara</option>
+                <option>Yemen</option>
+                <option>Zambia</option>
+                <option>Zimbabwe</option>
+            </select>
+            <input type="text" name="customer[billing][phone]" placeholder="Mobile Phone" data-parsley-required />
+            <!-- <span class="note note--marginbottom">*IMPORTANT: For shipment tracking alerts and so courier/we can reach you about scheduling delivery of your course materials and t-shirt.</span>
+
+			<label for="shipping_as_billing" class="checkbox checkbox--separate checkbox--nomargin">
+				<input id="shipping_as_billing" type="checkbox" name="customer[shipping_same_as_billing]" checked />
+				<span>Shipping same as Billing</span>
+			</label>
+			<span class="note note--marginbottom">*IMPORTANT: This address is where your Course Workbook &amp; Materials will be sent.</span> -->
+
+            <div class="shipping_as_billing_holder" style="display: none">
+                <h2 class="title">Shipping Address</h2>
+                <input type="text" name="customer[shipping][street_address]" placeholder="Street Address" data-parsley-required />
+                <input type="text" name="customer[shipping][city]" placeholder="City" data-parsley-required />
+                <input type="text" name="customer[shipping][state]" placeholder="State" data-parsley-required />
+                <input type="text" name="customer[shipping][zip]" placeholder="Zip/Postal Code" data-parsley-required />
+                <select name="customer[shipping][country]" data-parsley-required>
+                    <option>Country</option>
+                    <option>Afghanistan</option>
+                    <option value="Åland Islands">Åland Islands</option>
+                    <option>Albania</option>
+                    <option>Algeria</option>
+                    <option>American Samoa</option>
+                    <option>Andorra</option>
+                    <option>Angola</option>
+                    <option>Anguilla</option>
+                    <option>Antarctica</option>
+                    <option>Antigua and Barbuda</option>
+                    <option>Argentina</option>
+                    <option>Armenia</option>
+                    <option>Aruba</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Azerbaijan</option>
+                    <option>Bahamas (the)</option>
+                    <option>Bahrain</option>
+                    <option>Bangladesh</option>
+                    <option>Barbados</option>
+                    <option>Belarus</option>
+                    <option>Belgium</option>
+                    <option>Belize</option>
+                    <option>Benin</option>
+                    <option>Bermuda</option>
+                    <option>Bhutan</option>
+                    <option>Bolivia (Plurinational State of)</option>
+                    <option>Bonaire, Sint Eustatius and Saba</option>
+                    <option>Bosnia and Herzegovina</option>
+                    <option>Botswana</option>
+                    <option>Bouvet Island</option>
+                    <option>Brazil</option>
+                    <option>British Indian Ocean Territory (the)</option>
+                    <option>Brunei Darussalam</option>
+                    <option>Bulgaria</option>
+                    <option>Burkina Faso</option>
+                    <option>Burundi</option>
+                    <option>Cabo Verde</option>
+                    <option>Cambodia</option>
+                    <option>Cameroon</option>
+                    <option>Canada</option>
+                    <option>Cayman Islands (the)</option>
+                    <option>Central African Republic (the)</option>
+                    <option>Chad</option>
+                    <option>Chile</option>
+                    <option>China</option>
+                    <option>Christmas Island</option>
+                    <option>Cocos (Keeling) Islands (the)</option>
+                    <option>Colombia</option>
+                    <option>Comoros (the)</option>
+                    <option>Congo (the Democratic Republic of the)</option>
+                    <option>Congo (the)</option>
+                    <option>Cook Islands (the)</option>
+                    <option>Costa Rica</option>
+                    <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                    <option>Croatia</option>
+                    <option>Cuba</option>
+                    <option value="Curaçao">Curaçao</option>
+                    <option>Cyprus</option>
+                    <option>Czech Republic (the)</option>
+                    <option>Denmark</option>
+                    <option>Djibouti</option>
+                    <option>Dominica</option>
+                    <option>Dominican Republic (the)</option>
+                    <option>Ecuador</option>
+                    <option>Egypt</option>
+                    <option>El Salvador</option>
+                    <option>Equatorial Guinea</option>
+                    <option>Eritrea</option>
+                    <option>Estonia</option>
+                    <option>Ethiopia</option>
+                    <option>Falkland Islands (the) [Malvinas]</option>
+                    <option>Faroe Islands (the)</option>
+                    <option>Fiji</option>
+                    <option>Finland</option>
+                    <option>France</option>
+                    <option>French Guiana</option>
+                    <option>French Polynesia</option>
+                    <option>French Southern Territories (the)</option>
+                    <option>Gabon</option>
+                    <option>Gambia (the)</option>
+                    <option>Georgia</option>
+                    <option>Germany</option>
+                    <option>Ghana</option>
+                    <option>Gibraltar</option>
+                    <option>Greece</option>
+                    <option>Greenland</option>
+                    <option>Grenada</option>
+                    <option>Guadeloupe</option>
+                    <option>Guam</option>
+                    <option>Guatemala</option>
+                    <option>Guernsey</option>
+                    <option>Guinea</option>
+                    <option>Guinea-Bissau</option>
+                    <option>Guyana</option>
+                    <option>Haiti</option>
+                    <option>Heard Island and McDonald Islands</option>
+                    <option>Holy See (the)</option>
+                    <option>Honduras</option>
+                    <option>Hong Kong</option>
+                    <option>Hungary</option>
+                    <option>Iceland</option>
+                    <option>India</option>
+                    <option>Indonesia</option>
+                    <option>Iran (Islamic Republic of)</option>
+                    <option>Iraq</option>
+                    <option>Ireland</option>
+                    <option>Isle of Man</option>
+                    <option>Israel</option>
+                    <option>Italy</option>
+                    <option>Jamaica</option>
+                    <option>Japan</option>
+                    <option>Jersey</option>
+                    <option>Johnston Island</option>
+                    <option>Jordan</option>
+                    <option>Kazakhstan</option>
+                    <option>Kenya</option>
+                    <option>Kiribati</option>
+                    <option>Korea (the Democratic People's Republic of)</option>
+                    <option>Korea (the Republic of)</option>
+                    <option>Kuwait</option>
+                    <option>Kyrgyzstan</option>
+                    <option>Lao People's Democratic Republic (the)</option>
+                    <option>Latvia</option>
+                    <option>Lebanon</option>
+                    <option>Lesotho</option>
+                    <option>Liberia</option>
+                    <option>Libya</option>
+                    <option>Liechtenstein</option>
+                    <option>Lithuania</option>
+                    <option>Luxembourg</option>
+                    <option>Macao</option>
+                    <option>Macedonia (the former Yugoslav Republic of)</option>
+                    <option>Madagascar</option>
+                    <option>Malawi</option>
+                    <option>Malaysia</option>
+                    <option>Maldives</option>
+                    <option>Mali</option>
+                    <option>Malta</option>
+                    <option>Marshall Islands (the)</option>
+                    <option>Martinique</option>
+                    <option>Mauritania</option>
+                    <option>Mauritius</option>
+                    <option>Mayotte</option>
+                    <option>Mexico</option>
+                    <option>Micronesia (Federated States of)</option>
+                    <option>Midway Islands</option>
+                    <option>Moldova (the Republic of)</option>
+                    <option>Monaco</option>
+                    <option>Mongolia</option>
+                    <option>Montenegro</option>
+                    <option>Montserrat</option>
+                    <option>Morocco</option>
+                    <option>Mozambique</option>
+                    <option>Myanmar</option>
+                    <option>Namibia</option>
+                    <option>Nauru</option>
+                    <option>Nepal</option>
+                    <option>Netherlands (the)</option>
+                    <option>New Caledonia</option>
+                    <option>New Zealand</option>
+                    <option>Nicaragua</option>
+                    <option>Niger (the)</option>
+                    <option>Nigeria</option>
+                    <option>Niue</option>
+                    <option>Norfolk Island</option>
+                    <option>Northern Mariana Islands (the)</option>
+                    <option>Norway</option>
+                    <option>Oman</option>
+                    <option>Pakistan</option>
+                    <option>Palau</option>
+                    <option>Palestine, State of</option>
+                    <option>Panama</option>
+                    <option>Papua New Guinea</option>
+                    <option>Paraguay</option>
+                    <option>Peru</option>
+                    <option>Philippines (the)</option>
+                    <option>Pitcairn</option>
+                    <option>Poland</option>
+                    <option>Portugal</option>
+                    <option>Puerto Rico</option>
+                    <option>Qatar</option>
+                    <option value="Réunion">Réunion</option>
+                    <option>Romania</option>
+                    <option>Russian Federation (the)</option>
+                    <option>Rwanda</option>
+                    <option value="Saint Barthélemy">Saint Barthélemy</option>
+                    <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option>Saint Kitts and Nevis</option>
+                    <option>Saint Lucia</option>
+                    <option>Saint Martin (French part)</option>
+                    <option>Saint Pierre and Miquelon</option>
+                    <option>Saint Vincent and the Grenadines</option>
+                    <option>Samoa</option>
+                    <option>San Marino</option>
+                    <option>Sao Tome and Principe</option>
+                    <option>Saudi Arabia</option>
+                    <option>Senegal</option>
+                    <option>Serbia</option>
+                    <option>Seychelles</option>
+                    <option>Sierra Leone</option>
+                    <option>Singapore</option>
+                    <option>Sint Maarten (Dutch part)</option>
+                    <option>Slovakia</option>
+                    <option>Slovenia</option>
+                    <option>Solomon Islands</option>
+                    <option>Somalia</option>
+                    <option>South Africa</option>
+                    <option>South Georgia and the South Sandwich Islands</option>
+                    <option>South Sudan</option>
+                    <option>Southern Rhodesia</option>
+                    <option>Spain</option>
+                    <option>Sri Lanka</option>
+                    <option>Sudan (the)</option>
+                    <option>Suriname</option>
+                    <option>Svalbard and Jan Mayen</option>
+                    <option>Swaziland</option>
+                    <option>Sweden</option>
+                    <option>Switzerland</option>
+                    <option>Syrian Arab Republic</option>
+                    <option>Taiwan (Province of China)</option>
+                    <option>Tajikistan</option>
+                    <option>Tanzania, United Republic of</option>
+                    <option>Thailand</option>
+                    <option>Timor-Leste</option>
+                    <option>Togo</option>
+                    <option>Tokelau</option>
+                    <option>Tonga</option>
+                    <option>Trinidad and Tobago</option>
+                    <option>Tunisia</option>
+                    <option>Turkey</option>
+                    <option>Turkmenistan</option>
+                    <option>Turks and Caicos Islands (the)</option>
+                    <option>Tuvalu</option>
+                    <option>Uganda</option>
+                    <option>Ukraine</option>
+                    <option>United Arab Emirates (the)</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>United States Minor Outlying Islands (the)</option>
+                    <option>Upper Volta</option>
+                    <option>Uruguay</option>
+                    <option>Uzbekistan</option>
+                    <option>Vanuatu</option>
+                    <option>Venezuela (Bolivarian Republic of)</option>
+                    <option>Viet Nam</option>
+                    <option>Virgin Islands (British)</option>
+                    <option>Virgin Islands (U.S.)</option>
+                    <option>Wallis and Futuna</option>
+                    <option>Western Sahara</option>
+                    <option>Yemen</option>
+                    <option>Zambia</option>
+                    <option>Zimbabwe</option>
+                </select>
+                <input type="text" name="customer[shipping][phone]" placeholder="Phone" data-parsley-required />
+            </div>
+
+            <div class="brown-box">
+                <h4>Security is our top priority</h4>
+
+                <p>Your information and personal data are protected by the most advanced technology safeguards available. Our checkout process is fully encrypted to ensure that your personal and financial information is kept secure.</p>
+            </div>
+
+            <h2 class="title title--margin-top title--payments">Payment Info <img src="https://theaskstore.com/secure/quizfunnelmasterclass-fp/checkout-images/cc.png" /></h2>
+
+            <div class="cc-fields">
+                <input type="text" class="cc-num" name="cc_number" placeholder="Credit Card Number" data-parsley-required data-parsley-type="digits" />
+                <select class="cc-expiry-m" name="cc_expiry_month" data-parsley-required data-parsley-min="1">
+                    <option>Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+
+                <select class="cc-expiry-y" name="cc_expiry_year" data-parsley-required data-parsley-min="1">
+                    <option>Year</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+                <input type="text" class="cc-cvc" name="cc_cvv" placeholder="CVC" data-parsley-required />
+                <img src="https://ssl.comodo.com/images/comodo_secure_seal_113x59_transp.png" alt="Free SSL Certificate" width="113" height="59" style="border: 0px;" class="right">
+                <!-- <img src="./checkout-images/security.png" class="right" /> -->
+            </div>
+
+            <div class="checkbox-center">
+                <label for="agree_tm" class="checkbox checkbox--separate checkbox--inline js-tc">
+                    <input id="agree_tm" type="checkbox" />
+                    <span>I agree to the <a style="text-decoration:underline;" href="https://theaskstore.com/terms-conditions/" target="_blank">terms and conditions</a></span>
+                </label>
+
+                <div class="errors js-error-tc" style="display: none">You must accept the terms and conditions</div>
+            </div>
+
+
+            <input type="hidden" name="customer[cohort_id]" value="14" />
+
+            <input type="hidden" name="successMailId" value="35767" />
+            <input type="hidden" name="successPaymentTags" value="23209" />
+            <input type="hidden" name="failedPaymentTags" value="23217" />
+
+            <input type="hidden" name="amount" value="1999" />
+            <input type="hidden" name="product_id" value="1041" />
+
+            <input type="hidden" name="userip" value="173.244.44.87">
+            <input type="hidden" name="time" value="2020-06-28-02:16">
+
+            <input type="hidden" name="referrer" value="" />
+            <input type="submit" value="Join the Masterclass" />
+
+
+            <p class="security-note"><i></i>Payment secured by 256-bit encryption</p>
+        </div>
+
+        <div class="column">
+
+            <h2 class="title">What People Are Saying</h2>
+
+            <div class="brown-box brown-box--lesspadding">
+                <p class="testimonial">"Ryan is a great business mentor and he’ll save you a tremendous amount of time and money."</p>
+                <p class="testimonial-author">
+                    Brendon Burchard, <br />
+                    <span>#1 New York Times Bestselling Author</span>
+                </p>
+            </div>
+
+            <div class="brown-box brown-box--lesspadding">
+                <p class="testimonial">"Whether you're starting a brand new business or expanding your existing business Ryan Levesque's training is an absolute must for every digital marketer."</p>
+
+                <p class="testimonial-author">
+                    Ryan Deiss <br />
+                    <span>CEO Digital Marketer</span>
+                </p>
+            </div>
+
+            <div class="brown-box brown-box--lesspadding">
+                <p class="testimonial">"If I were starting out again, I’d be using Ryan’s strategy to help me figure out and test ideas. His approach is adopted to today’s amazing digital-based tools."</p>
+
+                <p class="testimonial-author">
+                    Michael Masterson <br />
+                    <span>Best-Selling Author of Ready, Fire, Aim.</span>
+                </p>
+            </div>
+
+            <div class="brown-box brown-box--lesspadding">
+                <p class="testimonial">"Millions of failed entrepreneurs would probably be successful ones today had they had Ryan as their guide."</p>
+
+                <p class="testimonial-author">
+                    Jay Abraham <br />
+                    <span>America's #1 Marketing Expert</span>
+                </p>
+            </div>
+            <div class="order-summary">
+                <h4>Order summary</h4>
+
+                <div class="cart">
+                    <p>
+                        <span>$1999.00</span>
+                        Ryan Levesque’s QUIZ Funnel Masterclass<br />
+                        plus $99/month Access to Bucket.io 2.0
+                    </p>
+                </div>
+
+                <div class="subtotal">
+                    <p>Subtotal <span>$1999.00</span></p>
+                </div>
+
+                <div class="due-today">
+                    <p>Due Today <span>$1999.00</span></p>
+                </div>
+            </div>
+
+            <div class="day30">
+                <h3>14-Day 100% Money-Back Guarantee</h3>
+
+                <div class="content">
+                    <img src="https://theaskstore.com/templates/images/2020/new-badge.png" />
+                    <p>All we ask is that you complete the course work from Module 1, Lesson 1, to show us that you at least gave it a try. If after completing this lesson you decide that the program isn’t for you, simply let us know and you’ll receive a swift and full refund. It’s really as simple as that!</p>
+                </div>
+            </div>
+
+            <h2 class="title title--margin-top">Need Help? Contact Support</h2>
+            <p class="phone"><span>Phone:</span> 1-844-542-5275</p>
+            <p class="phone email-icon"><span>Email:</span> contact [at] askmethod [dot] com</p>
+            <p class="phone chat-icon"><span>Chat:</span> Click below to ask your questions</p>
+        </div>
+    </form>
+    <style>
+        .disclaimer-footer {
+            text-align: center;
+            margin: 30px 15px 0;
+        }
+
+        .disclaimer-footer p {
+            font-size: 13px;
+            color: #928780;
+            margin: 0;
+        }
+
+        .disclaimer-footer a {
+            text-decoration: underline;
+            color: inherit;
+        }
+
+        .logos-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            flex-direction: column;
+        }
+
+        .logos-footer img {
+            margin: 10px 0;
+            width: 100%;
+            max-width: 170px;
+        }
+
+        @media (min-width: 370px) {
+            .logos-footer {
+                flex-direction: row;
+            }
+
+            .logos-footer img {
+                margin: 0 10px;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .disclaimer-footer {
+                max-width: 950px;
+                margin: 30px auto 0;
+            }
+        }
+
+    </style>
+
+    <div class="logos-footer">
+        <img src="https://theaskstore.com/templates/images/2020/ask-logo-grey.svg" />
+        <img src="https://theaskstore.com/templates/images/2020/bucket-logo-grey.svg" />
+    </div>
+    <div class="disclaimer-footer">
+        <p>
+            As we all know and have previously read in fine print, unique experiences and past performances do not guarantee future results. All referenced testimonials are not intended to be representative of typical results, nor are they a guarantee or promise of any results. Rather, individual successes vary and are due to myriad factors such as effort, knowledge, techniques, timing, and experience. <a target="_blank" href="https://theaskstore.com/earnings-disclaimer/">Please click here for our full Earnings Disclaimer.</a>
+        </p>
+    </div>
+
+    <footer class="mastfoot">
+        <div class="grid wrap" id="footer" style="text-align: center;">
+
+
+            <ul class="list--inline">
+                <li class="list__item"><a href="https://theaskstore.com/terms-conditions/" target="_blank">Terms of Service</a></li>
+                <li class="list__item"><a href="https://theaskstore.com/earnings-disclaimer/" target="_blank">Earnings Disclaimer</a></li>
+                <li class="list__item"><a href="https://theaskstore.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+                <li class="list__item last"><a href="https://theaskstore.com/contact/" target="_blank">Contact</a></li>
+            </ul>
+            <br />
+            <div class="grid--flex flex--space-between" style="text-align: center;">
+                <div class="footer-component" style="margin-top: 25px; margin: 0 auto;">
+                    <h5>The ASK Method<sup style="font-size: 0.5em;vertical-align: super;">&reg;</sup> Company</h5>
+                    <p>&copy; 2020 All Rights Reserved</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- <div id="footer">
+	<div class="wrap">
+		<ul class="list--inline">
+			<li class="list__item"><a href="https://theaskstore.com/terms-conditions/" target="_blank">Terms of Service</a></li>
+			<li class="list__item"><a href="https://theaskstore.com/earnings-disclaimer/" target="_blank">Earnings Disclaimer</a></li>
+			<li class="list__item"><a href="https://theaskstore.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+			<li class="list__item last"><a href="https://theaskstore.com/contact/" target="_blank">Contact</a></li>
+		</ul>
+		<h3>The ASK Method<sup>&reg;</sup> Company</h3>
+		<p>&copy; 2020 All Rights Reserved</p>
+	</div>
+</div> -->
+
+    <script type="text/javascript" src="https://cu262.infusionsoft.com/app/webTracking/getTrackingCode"></script>
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script type="text/javascript">
+        window.__lc = window.__lc || {};
+        window.__lc.license = 9525160;
+        (function() {
+            var lc = document.createElement('script');
+            lc.type = 'text/javascript';
+            lc.async = true;
+            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(lc, s);
+        })();
+
+    </script>
+    <!-- End of LiveChat code -->
+    <!-- SCRIPTS -->
+    <script src="https://theaskstore.com/secure/quizfunnelmasterclass-fp/js.cookie.js"></script>
+    <script src="https://theaskstore.com/secure/quizfunnelmasterclass-fp/parsley.min.js"></script>
+    <script src="https://theaskstore.com/secure/quizfunnelmasterclass-fp/briteVerify.js?v=0.1"></script>
+    <script src="https://theaskstore.com/secure/quizfunnelmasterclass-fp/ajaxPaymentNew-dupfixed.js?v=0.5.1"></script>
+</body>
+
+</html>
