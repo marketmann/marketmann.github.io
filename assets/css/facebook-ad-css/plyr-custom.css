@@ -2,11 +2,11 @@
     opacity: 0 !important;
 }
 
-/*
+/**/
 .plyr__controls {
 opacity: 0 ;
 }
-*/
+
 
 ._8o0a._8o05:hover .plyr__controls {
     opacity: 1 !important;
