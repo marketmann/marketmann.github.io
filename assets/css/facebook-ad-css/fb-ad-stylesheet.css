@@ -48,8 +48,8 @@ body {
     overflow: auto;
     position: relative;
     background-color: #fff;
-    margin:0 auto;
-    max-width:500px;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 /*BOX SHADOW THING */
@@ -417,7 +417,7 @@ a {
 
 ._8jh1 {
     flex-grow: 1;
-    margin-right: 4px;
+    margin-right:8px;
     overflow: hidden;
 }
 
@@ -560,4 +560,26 @@ button._271k._271m._1qjd._3-9a._7tvm._7tv2._7tv4 {
     content: "";
     display: block;
     height: 7px;
+}
+
+@media (max-width: 525px) {
+    ._8jg- ._8jh5 {
+        font-size: 9.5px;
+        line-height: 17px;
+    }
+
+    ._8jg- {
+        padding: 6px 12px;
+    }
+    
+/*MIDDLE LINE **/
+    ._8jh2 > div > div._4ik4._4ik5 {
+        line-height:18px;
+        font-size:13px;
+}
+    ._8jg- ._8jh3 {
+font-size: 10px;
+line-height: 12px;
+margin-top: 4px;
+}
 }
