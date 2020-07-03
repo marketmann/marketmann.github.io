@@ -8,7 +8,14 @@
 <!-- END RIGHT SIDEBAR -->
 
 <body>
+    <!-- STYLES FOR AD -->
     <link rel="stylesheet" href="{{ '/assets/css/facebook-ad-css/fb-ad-stylesheet.css' | absolute_url }}">
+    <!-- STYLES FOR VIDEO PLAYER -->
+    <link rel="stylesheet" href="{{ '/assets/css/facebook-ad-css/plyr.css' | absolute_url }}">
+    <!-- SCRIPT FOR VIDEO PLAYER -->
+    <script type="text/javascript" src="{{ '/assets/css/facebook-ad-css/plyr.js' | absolute_url }}"> </script>
+    <!-- CUSTOM STYLES FOR VIDEO PLAYER / PLYR -->
+    <link rel="stylesheet" href="{{ '/assets/css/facebook-ad-css/plyr-custom.css' | absolute_url }}">
     <div class="page-wrap">
 
         <div class="main-content-wrap js-main-content" tabindex="0">
@@ -50,12 +57,23 @@
                         {% endif %}
 
                     </div>
+
                 </div>
                 <!-- END MIDDLE SECTION -->
             </div>
         </div>
     </div>
+    <!-- FOR PLYR VIDEO PLAYER -->
+    <script>
+        // Change the second argument to your options:
+        // https://github.com/sampotts/plyr/#options
+        const player = new Plyr('#player', {
+            captions: {
+                active: true
+            }
+        });
 
+    </script>
 </body>
 
 </html>

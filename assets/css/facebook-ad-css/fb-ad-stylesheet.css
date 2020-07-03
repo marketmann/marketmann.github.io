@@ -176,11 +176,13 @@ i.img {
 }
 
 ._7jyg._7jyi:before {
-    content: "...";
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 299 299' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M72.876 115.372C72.876 134.135 57.6654 149.346 38.9022 149.346C20.139 149.346 4.92839 134.135 4.92839 115.372C4.92839 96.6087 20.139 81.3981 38.9022 81.3981C57.6654 81.3981 72.876 96.6087 72.876 115.372Z' fill='black'/%3E%3Cpath d='M183.603 115.372C183.603 134.135 168.392 149.346 149.629 149.346C130.866 149.346 115.655 134.135 115.655 115.372C115.655 96.6087 130.866 81.3981 149.629 81.3981C168.392 81.3981 183.603 96.6087 183.603 115.372Z' fill='black'/%3E%3Cpath d='M294.329 115.372C294.329 134.135 279.119 149.346 260.356 149.346C241.592 149.346 226.382 134.135 226.382 115.372C226.382 96.6087 241.592 81.3981 260.356 81.3981C279.119 81.3981 294.329 96.6087 294.329 115.372Z' fill='black'/%3E%3C/svg%3E%0A");
+    width: 15px;
+    height: 15px;
     display: block;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 7px;
+    right: 13px;
     font-weight: 900;
 }
 
@@ -417,14 +419,18 @@ a {
 
 ._8jh1 {
     flex-grow: 1;
-    margin-right:8px;
+    margin-right: 8px;
     overflow: hidden;
 }
 
 ._8jg- ._8jh5 {
-    font-size: 12px;
-    line-height: 16px;
-    padding-top: 8px;
+    font-size: 11.2px;
+    line-height: 18px !important;
+    padding-top: 2px;
+    color: hsl(213.75, 7.69%, 50.78%)
+}
+._8jg- ._8jh5 ._4ik4._4ik5{
+    line-height: 18px !important;
 }
 
 ._8jh5,
@@ -458,10 +464,14 @@ _8jh3 > div > div._4ik4._4ik5 {
 }
 
 ._8jg- ._8jh3 {
-    font-size: 14px;
+    font-size: 13.4px;
     line-height: 20px;
+    margin-top: 2px;
+    margin-bottom:10px;
 }
-
+._8jg- ._8jh4 {
+    display:  none;
+}
 ._8jg- ._8jh4 {
     font-size: 12px;
     line-height: 16px;
@@ -518,7 +528,7 @@ button._271k._271m._1qjd._3-9a._7tvm._7tv2._7tv4 {
 }
 
 ._8jh0 {
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 ._8jh0:before {
@@ -531,7 +541,7 @@ button._271k._271m._1qjd._3-9a._7tvm._7tv2._7tv4 {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Arial, sans-serif !important;
     line-height: 26px !important;
     text-align: center !important;
-    background-color: rgb(245, 246, 247) !important;
+    background-color: hsl(210, 11.11%, 95.5%) !important;
     border-color: rgb(218, 221, 225) !important;
     height: 25px !important;
     padding-left: 11px !important;
@@ -556,30 +566,81 @@ button._271k._271m._1qjd._3-9a._7tvm._7tv2._7tv4 {
 
 /*** 
  BREAK LINE / STYLED **/
-._4ik4._4ik5 > div br {
+._4ik4._4ik5 > div br,
+._7jyr > div br {
     content: "";
     display: block;
     height: 7px;
 }
 
-@media (max-width: 525px) {
+._8jh2 > div > div._4ik4._4ik5 {
+    font-weight: 500;
+}
+
+@media (max-width: 450px) {
     ._8jg- ._8jh5 {
-        font-size: 9.5px;
-        line-height: 17px;
+        font-size: 8.8px;
+        line-height: 17px !important;
     }
 
     ._8jg- {
         padding: 6px 12px;
     }
-    
-/*MIDDLE LINE **/
+
+    /*MIDDLE LINE **/
     ._8jh2 > div > div._4ik4._4ik5 {
-        line-height:18px;
-        font-size:13px;
-}
+        line-height: 18px !important;
+        font-size: 13.5px;
+        font-weight: 400;
+    }
+
     ._8jg- ._8jh3 {
-font-size: 10px;
-line-height: 12px;
-margin-top: 4px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 4px;
+    }
+
+    ._8jh0:before {
+        font-size: 11px !important;
+    }
+
+    ._8jg- ._8jh5 {
+        padding-top: 0px;
+    }
+
+    ._8jh0 {
+        margin-top: 20px;
+    }
+
+    ._8jh3 ._4ik5._4ik4 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        line-height: 12px !important;
+        font-weight: 300;
+        
+    }
+
+    ._7jyi ._7jyr,
+    ._7jyi ._7jyl {
+        font-size: 12.5px;
+    }
+
+    ._7jyr > div > div._4ik4._4ik5,
+    ._7jyr > div {
+        line-height: 18.5px;
+    }
+
+    ._4ik4._4ik5 > div br,
+    ._7jyr > div br {
+        content: "";
+        display: block;
+        height: 6px !important;
+    }
+
 }
+
+/****OLD THREE DOT BUTTON*/
+button._271k._271l._1o4e._271m._1qjd._7tvm._7tv2._7tv4 {
+    display: none;
 }
