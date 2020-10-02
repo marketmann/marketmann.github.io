@@ -13,7 +13,10 @@
        position: relative;
        padding: 29px;
    }
+.breadcrumb-nav-list-item {
+    color:black !important;
 
+}
    body {
        hyphens: auto !important;
        margin: 0 auto;

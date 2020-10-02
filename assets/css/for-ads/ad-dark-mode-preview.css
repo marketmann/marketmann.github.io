@@ -136,7 +136,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     left: 28px;
     top: 8px;
     z-index: 999;
@@ -156,6 +156,7 @@
 .breadcrumb-nav-list-item {
     display: table-cell;
     font-size: 11px !important;
+    color:white;
 }
 
 @media (min-width: 31.25rem) {
