@@ -1,0 +1,60 @@
+{
+  "name": "MARKETMANN GIT",
+  "short_name": "MARKETMANN",
+  "description": "My personal swipe",
+  "icons": [
+    {
+      "src": "assets/astro-192-maskable.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/astro-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/astro-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/astro-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#182026",
+  "background_color": "#black",
+  "shortcuts": [
+    {
+      "name": "All Graphs",
+      "short_name": "All",
+      "description": "View all graphs and account settings.",
+      "url": "/#/app"
+    },
+    {
+      "name": "Quick Capture",
+      "short_name": "QuickCapture",
+      "description": "Quickly put down thoughts.",
+      "url": "/#/quick-capture"
+    }
+  ],
+  "share_target": {
+    "action": "/#/quick-capture",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
