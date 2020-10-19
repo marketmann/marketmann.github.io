@@ -2,7 +2,7 @@
 layout: ad-layout
 title: Sackheim - Mistakes In English? - PDF
 parent: Swipe - Ads
-nav_order: 13
+nav_order: 55
 ---
 <html lang="en" dir="ltr">
 
@@ -13,441 +13,55 @@ nav_order: 13
     <title>Mistakes In English</title>
 
     <!--SPECIFIC AD STYLES -->
-    <style type="text/css">
-        body {
-            color: rgb(210, 210, 210);
+    <style>
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .breadcrumb-nav {
+            display: none;
+        }
+
+        .pdf-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 40px;
+            width: 200px;
             margin: 0 auto;
-            font-family: "Elena";
-            font-weight: 100;
-            margin-bottom: 25px;
+            background: #2C84FA;
+            color: white;
+            font-family: -apple-system, sans-serif;
+            border-radius: 4px;
         }
 
-        h1 {
-            text-align: center;
-            font-family: "Verdana";
-            font-size: 90px;
-            line-height: 80px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            padding-left: 25px;
-            padding-bottom: 12px;
-            margin: 0 auto;
-            hyphens: manual !important;
-            color: rgb(255, 255, 255);
-            padding-top: 10px;
+        .pdf-link:first-of-type {
+            margin-top: 30%;
         }
 
-        h2 {
-            font-family: "Elena";
-            font-style: italic;
-            font-size: 35px;
-            line-height: 1.2em;
-            font-weight: 100;
-            margin: 0 auto;
-            letter-spacing: -.8px;
-            word-spacing: 0px;
-            padding-top: 20px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-        }
-
-        h4 {
-            font-family: "Pt Sans";
-            font-size: 26px;
-            line-height: 33px;
-            text-align: center;
-            max-width: 550px;
-            color: #ffffff !important;
-            font-weight: 900 !important;
-            padding-bottom: 10px;
-            padding-top: 20px;
-            margin: 0 auto;
-            letter-spacing: 12px !important;
-        }
-
-        p {
-            margin-top: 7.5px;
-            margin-bottom: 0px;
-            text-align: justify;
-            font-size: 16.45px;
-            line-height: 19px !important;
-            text-indent: 20.5px;
-            hyphens: auto;
-            word-break: break-word;
-            font-family: "Elena";
-        }
-
-
-        .heliop {
-            font-size: 16px;
-            margin-bottom: 0px;
-            text-align: center;
-
-            line-height: 16px !important;
-            hyphens: auto;
-            word-break: break-word;
-            font-family: "Times";
-        }
-
-        strong {
-            font-weight: 900;
-            letter-spacing: 0;
-        }
-
-        /***image***/
-        img {
-            max-width: 100%;
-        }
-        .headline-section img {
-            max-width: 930px;
-            margin:0 auto;
-            display: block
-        }
-
-
-        /****************************
-      ****************************
-      LISTS
-      ****************************
-      ****************************/
-        ul {
-            padding: 0px;
-            margin-top: 8px;
-        }
-
-        ul li {
-            text-indent: 0px;
-            text-align: justify;
-            hyphens: auto;
-            word-break: keep-all !important;
-            margin-top: 7.5px;
-            padding-left: 17px;
-        }
-
-        ul li strong {
-            text-indent: 0px;
-            letter-spacing: .4px !important;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        ul li::before {
-            content: "" !important;
-            width: 6px;
-            height: 6px;
-            border-radius: 100px;
-            margin-left: -13px;
-            margin-top: 6px;
-            position: absolute;
-        }
-
-        /***************************
-      TEXT BOX
-      ****************************/
-        .cent-nug {
-            font-size: 23px !important;
-            text-align: center;
-            max-width: 80%;
-            margin: 0 auto;
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-bottom: 5px;
-            padding-top: 5px;
-            margin-top: -15px;
-            font-weight: 900 !important;
-            font-style: normal !important;
-        }
-
-        .author-text-box {
-
-            padding-left: 12px;
-            padding-right: 13px;
-            padding-bottom: 10px;
-        }
-
-        .author-text-box p {
-            font-family: 'Caveat', cursive;
-            font-size: 19px;
-            line-height: 19px !important;
-            font-weight: 100 !important;
-            text-indent: 9px;
-            letter-spacing: -.2px;
-            word-spacing: -1px;
-            font-style: italic
-        }
-
-        .mugshot {
-            margin-bottom: 20px !important;
-            max-width: 95%;
-            margin: 0 auto;
-        }
-
-        /****************************
-      ****************************
-      ****************************
-      ****************************
-      ****************************
-      GRID
-      ****************************
-      ****************************
-      ****************************
-      ****************************
-      ****************************/
-        .wrapper-outer {
+        .pdf-link:last-of-type {
             margin-top: 30px;
-            padding: 1px;
         }
 
-        .wrapper {
-            display: grid;
-            max-width: 100%;
-            margin: 0 auto;
-            grid-template-columns: 33% 33% 33%;
-
-        }
-
-        .col {
-            /*
-        background-color: rgba(111,111,111,.23);
-        */
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        .column1 {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 5;
-        }
-
-
-
-        /***END IMAGE***/
-        .column2 {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
-        }
-
-
-
-        .column3-a {
-            margin-top: 9px;
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 2;
-        }
-
-        .column3-b {
-            float: right;
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 2;
-            grid-row-end: 5;
-        }
-
-        .column4 {
-            grid-column-start: 4;
-            grid-column-end: -1;
-            grid-row-start: 1;
-            grid-row-end: 5;
-        }
-
-        @media (max-width:1000px) {
-            .col {
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-
-            h4 {
-                font-size: 18px;
-                line-height: 24px;
-            }
-
-            .author-text-box p {
-                font-size: 17px;
-                line-height: 11px;
-            }
-
-            .cent-nug {
-                font-size: 17px !important;
-            }
-
-            h1 {
-                font-size: 40px !important;
-                line-height: 50px !important;
-            }
-
-            h2 {
-                font-size: 35px;
-            }
-        }
-
-
-        @media (max-width:650px) {
-            body {
-                margin-top:60px;
-            }
-
-            .col {
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-
-            h1 {
-                font-size: 40px !important;
-                line-height: 50px !important;
-                padding-left: 5px;
-                padding-right: 5px;
-                padding-bottom: 12px;
-                margin: 0 auto;
-                hyphens: manual !important;
-                padding-top: 10px;
-            }
-
-            h4 {
-                font-family: "Pt Sans";
-                font-size: 25px;
-                line-height: 27px;
-                text-align: center;
-                max-width: 550px;
-                font-weight: 900 !important;
-                padding-bottom: 10px;
-                padding-top: 20px;
-                margin: 0 auto;
-                letter-spacing: 12px !important;
-            }
-
-            p {
-                margin-top: 8.5px;
-                margin-bottom: 0px;
-                text-align: justify;
-                font-size: 17.45px;
-                line-height: 21.5px !important;
-
-            }
-
-            ul li {
-                font-size: 17.45px;
-                line-height: 21.5px !important;
-                text-indent: 0px;
-                text-align: justify;
-                hyphens: auto;
-                word-break: keep-all !important;
-                margin-top: 7.5px;
-                padding-left: 44px;
-            }
-
-            ul li strong {
-                font-size: 14.05px;
-                text-indent: 0px;
-                letter-spacing: .4px !important;
-            }
-
-            .cent-nug {
-                font-size: 25px !important;
-                text-align: center;
-                max-width: 80%;
-                margin: 0 auto;
-                padding-left: 5px;
-                padding-right: 5px;
-                padding-bottom: 5px;
-                padding-top: 5px;
-                margin-top: -20px;
-                font-weight: 900 !important;
-                font-style: normal !important;
-            }
-
-            .author-text-box {
-                padding-left: 15px;
-                padding-right: 15px;
-                max-width: 70%;
-                margin: 0 auto;
-                padding-bottom: 10px;
-                border-radius: 3px;
-                margin-bottom: 20px;
-            }
-
-            .author-text-box p {
-                font-family: 'Caveat', cursive;
-                font-size: 22.5px;
-                line-height: 25px !important;
-                font-weight: 100 !important;
-                text-indent: 9px;
-                letter-spacing: -.2px;
-                word-spacing: -1px;
-                font-style: italic
-            }
-
-            .mugshot {
-                margin-bottom: 25px !important;
-                max-width: 70%;
-                margin: 0 auto;
-            }
-
-
-            .wrapper {
-                display: grid;
-                max-width: 100%;
-                padding-left: 15px;
-                padding-right: 15px;
-                margin: 0 auto;
-                grid-template-columns: 100%;
-
-            }
-
-            .column1 {
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 2;
-            }
-
-
-
-            /***END IMAGE***/
-            .column2 {
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 3;
-            }
-
-
-
-            .column3-a {
-                margin-top: 29px;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 3;
-                grid-row-end: 4;
-            }
-
-            .column3-b {
-                float: right;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 4;
-                grid-row-end: 5;
-            }
-
-            .column4 {
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 5;
-                grid-row-end: 6;
-            }
+        .ad-layout {
+            background: white !important;
         }
 
     </style>
+
 </head>
 
-<body>
-    <iframe width="100%" height="100%" src="../../../assets/PDFS/ads/Sackheim-Do-You-Make-These-Mistakes-In-English.pdf" style="display: block; height: 100vw"></iframe>
+<body style="margin:0px;padding:0px;overflow:hidden; position: relative">
+    <a class="pdf-link" href="https://via.hypothes.is/https://marketmann.github.io/assets/PDFS/ads/Sackheim-Do-You-Make-These-Mistakes-In-English.pdf">
+        <div>Go to pdf</div>
+    </a>
+        <a class="pdf-link" href="https://via.hypothes.is/https://marketmann.github.io/assets/PDFS/ads/Sackheim-Do-You-Make-These-Mistakes-In-English-DARK.pdf">
+        <div>Go to pdf</div>
+    </a>
+    <!--<iframe frameborder="0" style="overflow:hidden;height:80vw;width:100%" height="100%" width="100%" src="https://via.hypothes.is/https://marketmann.github.io/assets/PDFS/HOW-TOs/EugeneSchwartzHeadlineSwipeFile.pdf"></iframe>
+        -->
 </body>
 </html>
