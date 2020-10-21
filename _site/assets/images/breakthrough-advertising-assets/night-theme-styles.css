@@ -1,0 +1,101 @@
+/*
+:root[*="Night"] b {
+  -webkit-text-fill-color: hsl(0, 0%, 90%) !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+:root[*="Night"] strong {
+  -webkit-text-fill-color: hsl(0, 0%, 90%) !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+:root[*="Night"] * {
+  -webkit-font-smoothing: antialiased !important;
+}
+:root[*="Night"] h1, :root[*="Night"] h2, :root[*="Night"] h3, :root[*="Night"] h4, :root[*="Night"] h5, :root[*="Night"] .block_26 {
+  -webkit-text-fill-color: white !important;
+}
+:root[*="Night"] .ordered-list-spoof-left, :root[*="Night"] ul li:before, :root[*="Night"] ol li:before {
+  -webkit-text-fill-color: hsl(0, 0%, 90%) !important;
+  color: hsl(0, 0%, 90%) !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+/********
+IMPORTANT QUOTES
+:root[*="Night"] .note-1, :root[*="Night"] .important-quote {
+  background-image: url(note-bg.png);
+  box-shadow: inset 0 0 0 1px #333;
+}
+@media (max-width: 550px) {
+  :root[*="Night"] .note-1, :root[*="Night"] .important-quote {
+    background-image: url(note-bg-Nighter.png);
+    box-shadow: inset 0 0 0 1px #111;
+  }
+}
+:root[*="Night"] .important-quote-callout, :root[*="Night"] .note-1-callout {
+  -webkit-text-fill-color: hsl(0, 0%, 40%) !important;
+}
+/********
+ HEADER STYLES
+:root[*="Night"] .numbered-title-number, :root[*="Night"] .numbered-title-number-small {
+  -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
+}
+:root[*="Night"] .numbered-title-number-container-outer, :root[*="Night"] .numbered-title-number-container-outer-small {
+  background-image: url(VERSACE-WHITE.png) !important;
+}
+:root[*="Night"] .numbered-title-number-container, :root[*="Night"] .numbered-title-number-container-small {
+  background-color: hsla(0, 0%, 0%, 1) !important;
+  background-image: url(Night-bg.png) !important;
+}
+@media (max-width: 550px) {
+  :root[*="Night"] .numbered-title-number-container {
+    background-image: url(black-bg.png) !important;
+  }
+}
+@media (max-width: 550px) {
+  :root[*="Night"] .numbered-title-number-container-small {
+    background-image: url(black-bg.png) !important;
+  }
+}
+:root[*="Night"] .numbered-title-number-container:after, :root[*="Night"] .numbered-title-number-container-small:after, :root[*="Night"] .numbered-title-number-container:before, :root[*="Night"] .numbered-title-number-container-small:before {
+  border-color: #fff;
+}
+:root[*="Night"] .numbered-title-number, :root[*="Night"] .numbered-title-number-small {
+  color: #fff;
+}
+:root[*="Night"] .numbered-title-text-main-small-paragraph {
+  -webkit-text-fill-color: hsl(0, 0%, 90%);
+}
+/********
+COPY SWIPE EXAMPLE BLOCKS
+:root[*="Night"] .text-stroke-04 {
+  color: hsl(0, 0%, 90%);
+  -webkit-text-stroke-color: hsl(0, 0%, 90%);
+  -webkit-text-fill-color: hsl(0, 0%, 90%);
+}
+:root[*="Night"] .copy-swipe-example-block, :root[*="Night"] .copy-swipe-example {
+  -webkit-text-fill-color: hsl(0, 0%, 90%);
+}
+:root[*="Night"] .centered {
+  -webkit-text-fill-color: hsl(0, 0%, 98%);
+}
+:root[*="Night"] .centered.text-stroke-08, :root[*="Night"] .centered.text-stroke-04, :root[*="Night"] .text-stroke-08, :root[*="Night"] .copy-swipe-example-caslon-centered.ultra-weight {
+  -webkit-font-smoothing: antialiased !important;
+  color: hsl(0, 0%, 95%) !important;
+  -webkit-text-stroke-color: hsl(0, 0%, 95%) !important;
+  -webkit-text-fill-color: hsl(0, 0%, 95%) !important;
+}
+:root[*="Night"] .irvin-heading, :root[*="Night"] .drop-number {
+  color: white !important;
+}
+:root[*="Night"] .drop-number {
+  -webkit-text-fill-color: hsl(0, 0%, 94%) !important;
+  border-color: hsl(0, 0%, 94%) !important;
+}
+:root[*="Night"] .font-weight-600 {
+  -webkit-text-fill-color: hsl(0, 0%, 94%) !important;
+  border-color: hsl(0, 0%, 94%) !important;
+}
+*/
+
+
+
+

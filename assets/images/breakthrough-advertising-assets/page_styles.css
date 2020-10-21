@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@page {
+	margin-bottom: 5pt;
+	margin-top: 5pt
+}
+
+
+
+/*IOWAN REGULAR*/
+@font-face {
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/8e732eoue2y29rn/Iowan%20Old%20Style%20W01%20Roman.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/qidrfvzki29bttv/Iowan%20Old%20Style%20W01%20Roman.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/539swlaas0l35o2/Iowan%20Old%20Style%20W01%20Roman.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/wiv7spkypzrvoe6/Iowan%20Old%20Style%20W01%20Roman.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/y2wgd6yn3du3ri8/Iowan%20Old%20Style%20W01%20Roman.svg?raw=1') format('svg');
+ font-weight: 400;
+ font-style: normal;
+}
+
+/*IOWAN REGULAR - ITALIC*/
+@font-face {
+    font-family:"Iowan Old Style W01 Roman"; 
+    src: url('https://dl.dropboxusercontent.com/s/fa9i7iv5czrfcnd/Iowan%20Old%20Style%20W01%20Italic.ttf?raw=1') format('truetype'), 
+    url('https://dl.dropboxusercontent.com/s/g5ess0bkbkiesjv/Iowan%20Old%20Style%20W01%20Italic.woff2?raw=1') format('woff2'), 
+    url('https://dl.dropboxusercontent.com/s/0w8icfdyf6s5lak/Iowan%20Old%20Style%20W01%20Italic.woff?raw=1') format('woff'), 
+    url('https://dl.dropboxusercontent.com/s/wuqdkssbw1eo7fw/Iowan%20Old%20Style%20W01%20Italic.eot?raw=1') format('embedded-opentype'), 
+    url('https://dl.dropboxusercontent.com/s/n4f9k21vwg08rtw/Iowan%20Old%20Style%20W01%20Italic.svg?raw=1') format('svg');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+
+
+/*IOWAN BOLD*/
+@font-face {
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/ujpen1r9q1n5ge6/Iowan%20Old%20Style%20W01%20Bold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/as7fyanh2cjg0xi/Iowan%20Old%20Style%20W01%20Bold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/ppvk6z9grb0alrr/Iowan%20Old%20Style%20W01%20Bold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/auwlqp64ep7buy0/Iowan%20Old%20Style%20W01%20Bold.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/infhvvt67i1zixu/Iowan%20Old%20Style%20W01%20Bold.svg?raw=1') format('svg');
+ font-weight: 600;
+ font-style: normal;
+}
+/* IOWAN BOLD ITALIC*/
+@font-face {
+	font-family: "Iowan Old Style W01 Roman";
+	src: url('https://dl.dropboxusercontent.com/s/wmmx5h09fenklvr/Iowan%20Old%20Style%20W01%20Bold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/oatgvb7chznrvlo/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/gy410d7evlcv9l3/Iowan%20Old%20Style%20W01%20Bold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/wqrk467lki7gx6o/Iowan%20Old%20Style%20W01%20Bold%20Italic.eot?raw=1') format('embedded-opentype'), 
+	url('https://dl.dropboxusercontent.com/s/qke40q4ng4xhmva/Iowan%20Old%20Style%20W01%20Bold%20Italic.svg?raw=1') format('svg');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+/***IOWAN BLACK*/
+@font-face {
+ font-family: "Iowan Old Style W01 Roman";
+ src: url('https://dl.dropboxusercontent.com/s/pbv9y0h1cmr8ij0/Iowan%20Old%20Style%20W01%20Black.ttf?raw=1') format('truetype'),
+   url('https://dl.dropboxusercontent.com/s/t39mo5pnl8tdtoo/Iowan%20Old%20Style%20W01%20Black.woff2?raw=1') format('woff2'),
+   url('https://dl.dropboxusercontent.com/s/10t92wy2ra6rs8f/Iowan%20Old%20Style%20W01%20Black.woff?raw=1') format('woff'),
+   url('https://dl.dropboxusercontent.com/s/f02lrh3luq88epg/Iowan%20Old%20Style%20W01%20Black.eot?raw=1') format('embedded-opentype'),
+   url('https://dl.dropboxusercontent.com/s/5rtpuv9f61zymca/Iowan%20Old%20Style%20W01%20Black.svg?raw=1') format('svg');
+ font-weight: 900;
+ font-style: normal;
+}
+
+/*IOWAN BLACK ITALIC */
+@font-face {
+ font-family: "Iowan Old Style W01 Roman";
+ src: url('https://dl.dropboxusercontent.com/s/oz0ej02ql8kbnkg/Iowan%20Old%20Style%20W01%20Black%20It.ttf?raw=1') format('truetype'),
+   url('https://dl.dropboxusercontent.com/s/2fe34wstfaetqhj/Iowan%20Old%20Style%20W01%20Black%20It.woff2?raw=1') format('woff2'),
+   url('https://dl.dropboxusercontent.com/s/v64mnc89k71hkfo/Iowan%20Old%20Style%20W01%20Black%20It.woff?raw=1') format('woff'),
+   url('https://dl.dropboxusercontent.com/s/wxusznu0kggr4ln/Iowan%20Old%20Style%20W01%20Black%20It.eot?raw=1') format('embedded-opentype'),
+   url('https://dl.dropboxusercontent.com/s/38tjwo6avuhhfnm/Iowan%20Old%20Style%20W01%20Black%20It.otf?raw=1') format('opentype'),
+   url('https://dl.dropboxusercontent.com/s/zac82pd803qu1bk/Iowan%20Old%20Style%20W01%20Black%20It.svg?raw=1') format('svg');
+ font-weight: 900;
+ font-style: italic;
+}
+
+
+
+
+
+/*ADOBE CASLON - REGULAR*/
+@font-face {
+	font-family: "Adobe Caslon";
+	src: url(https://dl.dropboxusercontent.com/s/w0wjr289iqgfsq3/AdobeCaslonPro-Regular.woff2?raw=1) format("woff2"), url(https://dl.dropboxusercontent.com/s/0bzuhuw5m832r53/AdobeCaslonPro-Regular.woff?raw=1) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+/*ADOBE CASLON - REGULAR ITALIC*/
+@font-face {
+	font-family: "Adobe Caslon";
+	src: url(https://dl.dropboxusercontent.com/s/pkblhfpp5huw2it/AdobeCaslonPro-Italic.woff2?raw=1) format("woff2"), url(https://dl.dropboxusercontent.com/s/z93dlqsq9bwlsxj/AdobeCaslonPro-Italic.woff?raw=1) format("woff");
+	font-weight: 400;
+	font-style: italic;
+}
+/*ADOBE CASLON - SEMIBOLD */
+@font-face {
+	font-family: "Adobe Caslon";
+	src: url(https://dl.dropboxusercontent.com/s/gizm1b6xl3jb9oc/AdobeCaslonPro-SemiBold.woff2?raw=1) format("woff2"), url(https://dl.dropboxusercontent.com/s/7suxfgambd8ahko/AdobeCaslonPro-SemiBold.woff?raw=1) format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+/*ADOBE CASLON - SEMIBOLD ITALIC*/
+@font-face {
+	font-family: "Adobe Caslon";
+	src: url(https://dl.dropboxusercontent.com/s/f41hahprwkweop0/AdobeCaslonPro-SemiBoldItalic.woff2?raw=1) format("woff2"), url(https://dl.dropboxusercontent.com/s/354nr923d0uxmjr/AdobeCaslonPro-SemiBoldItalic.woff?raw=1) format("woff");
+	font-weight: 600;
+	font-style: italic;
+}
+/*ADOBE CASLON - BOLD*/
+@font-face {
+	font-family: "Adobe Caslon";
+	src: url(https://dl.dropboxusercontent.com/s/d7dtyfi8av6p5eb/Adobe%20Caslon%20W01%20Bd.woff2?raw=1) format("woff2"), url(https://dl.dropboxusercontent.com/s/3eaa0hzw0yvbfqs/Adobe%20Caslon%20W01%20Bd.woff?raw=1) format("woff");
+	font-weight: 800;
+}
+/*ADOBE CASLON - BOLD ITALIC*/
+@font-face {
+	font-family: "Adobe Caslon";
+	src: url(https://dl.dropboxusercontent.com/s/ggohmiureouwf18/Adobe%20Caslon%20W01%20Bd%20It.woff2?raw=1) format("woff2"), url(https://dl.dropboxusercontent.com/s/hsb4n66i39g9ixj/Adobe%20Caslon%20W01%20Bd%20It.woff?raw=1) format("woff");
+	font-weight: 800;
+	font-style: italic;
+}
+
+/** PUBLICO HEADLINE - 400 - REGULAR **/
+
+@font-face {
+	font-family: "Publico";
+	src: url('https://dl.dropboxusercontent.com/s/649t1fzv78x1rnf/Publico-Headline--Regular.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/ynpj4sybza6wsi5/Publico-Headline--Regular.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/tpli52b63sy87go/Publico-Headline--Regular.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/omce9jyjqgx24xj/Publico-Headline--Regular.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/vump8socbe3fsq6/Publico-Headline--Regular.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/42jsqk0nkucjvb7/Publico-Headline--Regular.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+ font-style: normal;
+}
+
+
+
+
+
+
+
+/** PUBLICO HEADLINE - 500 - BOLD **/
+
+@font-face {
+	font-family: "Publico";
+	src: url('https://dl.dropboxusercontent.com/s/n9s7bm1n7wxg9ci/Publico-Headline--BOLD.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/l1z28hqb9t7yk4e/Publico-Headline--BOLD.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/1hurndyr9t7yet4/Publico-Headline--BOLD.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/qvqywu79ushznwz/Publico-Headline--BOLD.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/vjoqrlhwd5ezcyk/Publico-Headline--BOLD.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/mhge9ro74hhouxo/Publico-Headline--BOLD.eot?raw=1') format('embedded-opentype');
+ font-weight: 600;
+ font-style: normal;
+}
+
+
+/** IRVIN HEADING (as on newyorker.com) **/
+
+@font-face {
+	font-family: "Irvin Heading";
+	src: url('https://dl.dropboxusercontent.com/s/a8mwijee9r2ad7e/Irvin-Heading.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/9fhbavo3posuvt2/Irvin-Heading.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/y1wekfc3bjizia6/Irvin-Heading.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/g5wt1xsrkmblhd5/Irvin-Heading.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/1ase1n61jhrh52j/Irvin-Heading.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/5lo5xkfwchd5qij/Irvin-Heading.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+ font-style: normal;
+}
+
+
+
+/*ELENA REGULAR*/
+@font-face {
+	font-family: "Elena";
+	src: url('https://dl.dropboxusercontent.com/s/48784loylleluiw/elenawebregular.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/7fqgaprze7bjnbx/elenawebregular.woff?raw=1') format('woff');
+ font-weight: 400;
+ font-style: normal;
+}
+
+
+
+
+/*ELENA REGULAR ITALIC*/
+@font-face {
+	font-family: "Elena";
+	src: url('https://dl.dropboxusercontent.com/s/079du5wi81q4chk/elenawebregularitalic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/xagfsk260zt3u72/elenawebregularitalic.woff?raw=1') format('woff');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+/*ELENA BOLD*/
+@font-face {
+	font-family: "Elena";
+	src: url('https://dl.dropboxusercontent.com/s/s1ovniwpa8tke46/elenawebbold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/br2h8uf9x28j6ee/elenawebbold.woff?raw=1') format('woff');
+ font-weight: 600;
+ font-style: normal;
+}
+
+
+
+
+
+/*ELENA BOLD ITALIC*/
+@font-face {
+	font-family: "Elena";
+	src: url('https://dl.dropboxusercontent.com/s/91c4b78o9mrb365/elenawebbolditalic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/s7upl4k6iupfsgf/elenawebbolditalic.woff?raw=1') format('woff');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+
+/* WARNOCK PRO - LITE*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/ow3fr1ujk0ki53j/Warnock%20Pro%20Light.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/n3y95xinrgkqnf3/Warnock%20Pro%20Light.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/9oqgyetkfapy6xj/Warnock%20Pro%20Light.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/1s8x8ou3cn1a3n0/Warnock%20Pro%20Light.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/5ptg2mzr565ohxz/Warnock%20Pro%20Light.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/vn1hiolycx5d6a5/Warnock%20Pro%20Light.eot?raw=1') format('embedded-opentype');
+ font-weight: 300;
+ font-style: normal;
+}
+/* WARNOCK PRO - LITE ITALIC*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/o95i90z1wc9atoj/Warnock%20Pro%20Light%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/1qfr9i090cj0eqn/Warnock%20Pro%20Light%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/errfj18b6kt3frz/Warnock%20Pro%20Light%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/fzlms9si1bk8ft1/Warnock%20Pro%20Light%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/cxestw3pwxp4rtf/Warnock%20Pro%20Light%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/5xbwhjc7folgl1b/Warnock%20Pro%20Light%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 300;
+ font-style: italic;
+}
+
+
+/* WARNOCK PRO - REGULAR*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/kndmwymoslio7a5/Warnock%20Pro.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com:/s/mgfhr6y0h9gxg7l/Warnock%20Pro.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/lbxl8kdecl4eujt/Warnock%20Pro.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/2iahfn9ipgzw09b/Warnock%20Pro.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/x8pq8g782t514zg/Warnock%20Pro.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/1hc8un6h810hf1y/Warnock%20Pro.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+}
+/* WARNOCK PRO - REGULAR Italic*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/24hptll4lvj8poc/Warnock%20Pro%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/n47bttkifv49aau/Warnock%20Pro%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/gs3d7eypge0nxja/Warnock%20Pro%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/nhibein0jl5178s/Warnock%20Pro%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/xz0d1ujgrzbxpdq/Warnock%20Pro%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/fuz4q7lamfqsz3o/Warnock%20Pro%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+/* WARNOCK PRO - SEMI BOLD*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/plngw2apesf9uue/Warnock%20Pro%20Semibold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/jf8gkom0mkq5bf7/Warnock%20Pro%20Semibold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/phw13kjptqvww5k/Warnock%20Pro%20Semibold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/fbwi843yurju36f/Warnock%20Pro%20Semibold.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/x0u87b2m8pxzdqb/Warnock%20Pro%20Semibold.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/txchyy7ricn9z4c/Warnock%20Pro%20Semibold.eot?raw=1') format('embedded-opentype');
+ font-weight: 500;
+}
+/* WARNOCK PRO - SEMI BOLD ITALIC*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/44u6id26u73xd6k/Warnock%20Pro%20Semibold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/5y939ubsrsureih/Warnock%20Pro%20Semibold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/n51pa0i5jxtd7ae/Warnock%20Pro%20Semibold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/ikg1g4xdghuq546/Warnock%20Pro%20Semibold%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/pt03dygh0hqp0b2/Warnock%20Pro%20Semibold%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/s5pav7czmh00bjx/Warnock%20Pro%20Semibold%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 500;
+ font-style: italic;
+
+}
+
+
+/* WARNOCK PRO - BOLD*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/ic5g3vzd86lyu9v/Warnock%20Pro%20Bold.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/7g5ohiinlw0zp3h/Warnock%20Pro%20Bold.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/1nait6u2nv87o57/Warnock%20Pro%20Bold.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/wgbdgkplq8eu1o6/Warnock%20Pro%20Bold.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/0atxp82hq4lfvd5/Warnock%20Pro%20Bold.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/1fz5xicnngobg80/Warnock%20Pro%20Bold.eot?raw=1') format('embedded-opentype');
+ font-weight: 600;
+}
+/* WARNOCK PRO - BOLD ITalic*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/wcitn4g4vr8ftak/Warnock%20Pro%20Bold%20Italic.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/t59aezv2slszzy3/Warnock%20Pro%20Bold%20Italic.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/7mi9vzyvawb43gq/Warnock%20Pro%20Bold%20Italic.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/9h348l68bgrdv2l/Warnock%20Pro%20Bold%20Italic.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/2euxku52aug04oe/Warnock%20Pro%20Bold%20Italic.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/jniv6vyphtzti7c/Warnock%20Pro%20Bold%20Italic.eot?raw=1') format('embedded-opentype');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+
+
+
+/* WARNOCK PRO - SUBHEAD - REGULAR*/
+
+@font-face {
+	font-family: "Warnok Pro";
+	src: url('https://dl.dropboxusercontent.com/s/iure3bo61suvbrn/Warnock%20Pro%20Subhead.woff2?raw=1') format('woff2'), 
+	url('https://dl.dropboxusercontent.com/s/7zyvanq0at868uh/Warnock%20Pro%20Subhead.woff?raw=1') format('woff'), 
+	url('https://dl.dropboxusercontent.com/s/1xtutzf60olws0l/Warnock%20Pro%20Subhead.ttf?raw=1') format('truetype'), 
+	url('https://dl.dropboxusercontent.com/s/pappdwwfqxcdo3q/Warnock%20Pro%20Subhead.svg?raw=1') format('svg'), 
+	url('https://dl.dropboxusercontent.com/s/x9riy4g0iadb7a4/Warnock%20Pro%20Subhead.otf?raw=1') format('opentype'),
+	url('https://dl.dropboxusercontent.com/s/y6lsu7d69wob1yp/Warnock%20Pro%20Subhead.eot?raw=1') format('embedded-opentype');
+ font-weight: 800;
+}
+
+
+
+
+
+
+/* LIGHT - 300 */
+
+@font-face {
+  font-family: 'Messinasansweb';
+  src: url('https://dl.dropboxusercontent.com/s/zjjqimv1dv4xeis/MessinaSansWeb-Light.woff2?raw=1') format('woff2'), 
+url('https://dl.dropboxusercontent.com/s/rw7cm8l0c78xdjx/MessinaSansWeb-Light.eot?raw=1') format('embedded-opentype'), 
+url('https://dl.dropboxusercontent.com/s/jcege9v1vu962q7/MessinaSansWeb-Light.woff?raw=1') format('woff');
+  font-weight: 300;
+  font-style: normal;
+font-stretch: normal;
+unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-family: 'Messinasansweb';
+  src: url('https://dl.dropboxusercontent.com/s/7q3f1koostalkos/MessinaSansWeb-LightItalic.woff2?raw=1') format('woff2'), 
+url('https://dl.dropboxusercontent.com/s/q9fscred6q0v9iy/MessinaSansWeb-LightItalic.eot?raw=1') format('embedded-opentype'), 
+url('https://dl.dropboxusercontent.com/s/p4cejhic3tqmtg6/MessinaSansWeb-LightItalic.woff?raw=1') format('woff');
+  font-weight: 300;
+  font-style: italic;
+font-stretch: normal;
+unicode-range: U+000D-FB04;
+}
+
+
+
+/* BOOK - 400 */
+
+@font-face {
+  font-family: 'Messinasansweb';
+  src: url('https://dl.dropboxusercontent.com/s/ltevjhg7lelaul6/MessinaSansWeb-Book.woff2?raw=1') format('woff2'), 
+url('https://dl.dropboxusercontent.com/s/t3hznnbbng519ah/MessinaSansWeb-Book.eot?raw=1') format('embedded-opentype'), 
+url('https://dl.dropboxusercontent.com/s/na18opuvh97hc8z/MessinaSansWeb-Book.woff?raw=1') format('woff');
+  font-weight: 400;
+  font-style: normal;
+font-stretch: normal;
+unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-family: 'Messinasansweb';
+  src: url('https://dl.dropboxusercontent.com/s/v38ivyc5lrp9vqx/MessinaSansWeb-BookItalic.woff2?raw=1') format('woff2'), 
+url('https://dl.dropboxusercontent.com/s/7sk2c6mlh5vsbdq/MessinaSansWeb-BookItalic.eot?raw=1') format('embedded-opentype'), 
+url('https://dl.dropboxusercontent.com/s/ngl5y6z6vvb7y92/MessinaSansWeb-BookItalic.woff?raw=1') format('woff');
+  font-weight: 400;
+  font-style: italic;
+font-stretch: normal;
+unicode-range: U+000D-FB04;
+}
+
+
+
+
+
+/*NEW YORK LARGE - REGULAR */
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/wc8zcwx1nfkw46p/NewYorkLarge%20-%201%20-%20Regular.otf?raw=1') format('opentype');
+ font-weight: 300;
+ font-style: normal;
+}
+ 
+/*NEW YORK LARGE - REGULAR ITALIC */
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/rgktyyvoq9vv1eh/NewYorkLarge%20-%201%20-%20RegularItalic.otf?raw=1') format('opentype');
+ font-weight: 300;
+ font-style: italic;
+}
+
+
+/*NEW YORK LARGE - MEDIUM*/
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/3mv7p2iqtcc8ye1/NewYorkLarge%20-%202%20-%20Medium.otf?raw=1') format('opentype');
+ font-weight: 400;
+ font-style: normal;
+}
+
+/*NEW YORK LARGE - MEDIUM ITALIC */
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/hvb6x7bo85ymbk1/NewYorkLarge%20-%202%20-%20MediumItalic.otf?raw=1') format('opentype');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+/*NEW YORK LARGE - SEMI BOLD*/
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/bgfrgnvfy81vdnf/NewYorkLarge%20-%203%20-%20Semibold.otf?raw=1') format('opentype');
+ font-weight: 500;
+ font-style: normal;
+}
+
+/*NEW YORK LARGE - SEMIBOLD ITALIC */
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/bapyyt3yjj040wk/NewYorkLarge%20-%203%20-%20SemiboldItalic.otf?raw=1') format('opentype');
+ font-weight: 500;
+ font-style: italic;
+}
+
+/*NEW YORK LARGE - BOLD*/
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/6ietu1hyb6q6exf/NewYorkLarge%20-%204%20-%20Bold.otf?raw=1') format('opentype');
+ font-weight: 600;
+ font-style: normal;
+}
+
+/*NEW YORK LARGE - BOLD ITALIC */
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/m0uyb9k48xehau5/NewYorkLarge%20-%204%20-%20BoldItalic.otf?raw=1') format('opentype');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+/*NEW YORK LARGE - HEAVY*/
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/xihce64q3b0eqs4/NewYorkLarge%20-%205%20-%20Heavy.otf?raw=1') format('opentype');
+ font-weight: 700;
+ font-style: normal;
+}
+
+/*NEW YORK LARGE - HEAVY ITALIC */
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/sqsbf65b8mftb9i/NewYorkLarge%20-%205%20-%20HeavyItalic.otf?raw=1') format('opentype');
+ font-weight: 700;
+ font-style: italic;
+}
+
+
+
+/*NEW YORK LARGE - BLACK*/
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/73wsk1smjo59mpt/NewYorkLarge%20-%206%20-%20Black.otf?raw=1') format('opentype');
+ font-weight: 800;
+ font-style: normal;
+}
+
+/*NEW YORK LARGE - BLACK ITALIC */
+@font-face {
+	font-family: "New York Large";
+	src: url('https://dl.dropboxusercontent.com/s/2tp6i8ajbmku60l/NewYorkLarge%20-%206%20-%20BlackItalic.otf?raw=1') format('opentype');
+ font-weight: 800;
+ font-style: italic;
+}
+
+
+/*NEW YORK SMALL - REGULAR */
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/m00pkxt19t0sn9g/NewYorkSmall%20-%201%20-%20Regular.otf?raw=1') format('opentype');
+ font-weight: 300;
+ font-style: normal;
+}
+ 
+/*NEW YORK SMALL - REGULAR ITALIC */
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/in7g53upypnj8zb/NewYorkSmall%20-%201%20-%20RegularItalic.otf?raw=1') format('opentype');
+ font-weight: 300;
+ font-style: italic;
+}
+
+
+
+
+/*NEW YORK SMALL - MEDIUM*/
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/9zwvaat3jcawuyy/NewYorkSmall%20-%202%20-%20Medium.otf?raw=1') format('opentype');
+ font-weight: 400;
+ font-style: normal;
+}
+
+/*NEW YORK SMALL - MEDIUM ITALIC */
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/x3oyfki0atac81r/NewYorkSmall%20-%202%20-%20MediumItalic.otf?raw=1') format('opentype');
+ font-weight: 400;
+ font-style: italic;
+}
+
+
+
+
+/*NEW YORK SMALL - SEMI BOLD*/
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/l90o9fexvie4d4h/NewYorkSmall%20-%203%20-%20Semibold.otf?raw=1') format('opentype');
+ font-weight: 500;
+ font-style: normal;
+}
+
+/*NEW YORK SMALL - SEMIBOLD ITALIC */
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/k273lacmm1b2r3b/NewYorkSmall%20-%203%20-%20SemiboldItalic.otf?raw=1') format('opentype');
+ font-weight: 500;
+ font-style: italic;
+}
+
+
+
+
+
+/*NEW YORK SMALL - BOLD*/
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/4unuje0t9rrgxx9/NewYorkSmall%20-%204%20-%20Bold.otf?raw=1') format('opentype');
+ font-weight: 600;
+ font-style: normal;
+}
+
+/*NEW YORK SMALL - BOLD ITALIC */
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/9z8xv3q1859owen/NewYorkSmall%20-%204%20-%20BoldItalic.otf?raw=1') format('opentype');
+ font-weight: 600;
+ font-style: italic;
+}
+
+
+
+
+
+/*NEW YORK SMALL - HEAVY*/
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/p5oved4g3fz4yyn/NewYorkSmall%20-%205%20-%20Heavy.otf?raw=1') format('opentype');
+ font-weight: 700;
+ font-style: normal;
+}
+
+/*NEW YORK SMALL - HEAVY ITALIC */
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/p5oved4g3fz4yyn/NewYorkSmall%20-%205%20-%20Heavy.otf?raw=1') format('opentype');
+ font-weight: 700;
+ font-style: italic;
+}
+
+
+
+/*NEW YORK SMALL - BLACK*/
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/69ygkg6ygik34g8/NewYorkSmall%20-%206%20-%20Black.otf?raw=1') format('opentype');
+ font-weight: 800;
+ font-style: normal;
+}
+
+/*NEW YORK SMALL - BLACK ITALIC */
+@font-face {
+	font-family: "New York Small";
+	src: url('https://dl.dropboxusercontent.com/s/q99utd7226mqa3y/NewYorkSmall%20-%206%20-%20BlackItalic.otf?raw=1') format('opentype');
+ font-weight: 800;
+ font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SENTINEL - SERIF*/
+
+/* LIGHT - 300 */
+
+@font-face {
+  font-family: 'Sentinel';
+src: url("//db.onlinewebfonts.com/t/aef12a0096d2afb4785ce1675271bd67.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/aef12a0096d2afb4785ce1675271bd67.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/aef12a0096d2afb4785ce1675271bd67.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/aef12a0096d2afb4785ce1675271bd67.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/aef12a0096d2afb4785ce1675271bd67.svg#Sentinel Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* LIGHT - ITALIC 300 */
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("//db.onlinewebfonts.com/t/444bf0c79164f7f6c1187e80715ea8b4.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/444bf0c79164f7f6c1187e80715ea8b4.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/444bf0c79164f7f6c1187e80715ea8b4.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/444bf0c79164f7f6c1187e80715ea8b4.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/444bf0c79164f7f6c1187e80715ea8b4.svg#Sentinel Light") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+
+
+/* BOOK - 400 */
+
+@font-face {
+  font-family: 'Sentinel';
+src: url("//db.onlinewebfonts.com/t/eeb2719d248b27841be5f4899986eedc.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/eeb2719d248b27841be5f4899986eedc.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/eeb2719d248b27841be5f4899986eedc.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/eeb2719d248b27841be5f4899986eedc.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/eeb2719d248b27841be5f4899986eedc.svg#Sentinel Book") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* BOOK - ITALIC 400 */
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("//db.onlinewebfonts.com/t/7fd057d3756afb9347941ab36a843fdb.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/7fd057d3756afb9347941ab36a843fdb.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/7fd057d3756afb9347941ab36a843fdb.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/7fd057d3756afb9347941ab36a843fdb.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/7fd057d3756afb9347941ab36a843fdb.svg#Sentinel Book") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* MEDIUM - 500 */
+
+@font-face {
+  font-family: 'Sentinel';
+src: url("//db.onlinewebfonts.com/t/9d6de58d886ba70d324b9af0ee96d232.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/9d6de58d886ba70d324b9af0ee96d232.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/9d6de58d886ba70d324b9af0ee96d232.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/9d6de58d886ba70d324b9af0ee96d232.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/9d6de58d886ba70d324b9af0ee96d232.svg#Sentinel Medium") format("svg"); 
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* MEDIUM - ITALIC 500 */
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("//db.onlinewebfonts.com/t/65b91445dc36d10df9dd20777e01f38d.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/65b91445dc36d10df9dd20777e01f38d.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/65b91445dc36d10df9dd20777e01f38d.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/65b91445dc36d10df9dd20777e01f38d.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/65b91445dc36d10df9dd20777e01f38d.svg#Sentinel Medium") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+/* SEMIBOLD - 600 */
+
+@font-face {
+  font-family: 'Sentinel';
+src: url("//db.onlinewebfonts.com/t/27169bf8399d2c8e67d55e0c623bd8e4.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/27169bf8399d2c8e67d55e0c623bd8e4.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/27169bf8399d2c8e67d55e0c623bd8e4.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/27169bf8399d2c8e67d55e0c623bd8e4.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/27169bf8399d2c8e67d55e0c623bd8e4.svg#Sentinel Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* SEMIBOLD - ITALIC 600 */
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("//db.onlinewebfonts.com/t/12da4fca37d6ea32bf44a5b2eedcf93c.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/12da4fca37d6ea32bf44a5b2eedcf93c.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/12da4fca37d6ea32bf44a5b2eedcf93c.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/12da4fca37d6ea32bf44a5b2eedcf93c.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/12da4fca37d6ea32bf44a5b2eedcf93c.svg#Sentinel Semibold") format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+
+
+/* BOLD - 700 */
+
+@font-face {
+  font-family: 'Sentinel';
+src: url("//db.onlinewebfonts.com/t/538ce341d9a1b3aaa2860e7014ac93c0.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/538ce341d9a1b3aaa2860e7014ac93c0.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/538ce341d9a1b3aaa2860e7014ac93c0.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/538ce341d9a1b3aaa2860e7014ac93c0.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/538ce341d9a1b3aaa2860e7014ac93c0.svg#Sentinel Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* BOLD - ITALIC 700 */
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("//db.onlinewebfonts.com/t/3211ebfcdd040079dea9ce0e76854ac0.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/3211ebfcdd040079dea9ce0e76854ac0.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/3211ebfcdd040079dea9ce0e76854ac0.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/3211ebfcdd040079dea9ce0e76854ac0.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/3211ebfcdd040079dea9ce0e76854ac0.svg#Sentinel Bold") format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+/* BLACK - 800 */
+
+@font-face {
+  font-family: 'Sentinel';
+src: url("//db.onlinewebfonts.com/t/2827e0a2157cfeb20c8b7284418e9fc4.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/2827e0a2157cfeb20c8b7284418e9fc4.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/2827e0a2157cfeb20c8b7284418e9fc4.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/2827e0a2157cfeb20c8b7284418e9fc4.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/2827e0a2157cfeb20c8b7284418e9fc4.svg#Sentinel Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* BLOACK - ITALIC 800 */
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("//db.onlinewebfonts.com/t/9a5e0eaeea9158da99a6610630252ec5.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/9a5e0eaeea9158da99a6610630252ec5.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/9a5e0eaeea9158da99a6610630252ec5.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/9a5e0eaeea9158da99a6610630252ec5.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/9a5e0eaeea9158da99a6610630252ec5.svg#Sentinel Black") format("svg");
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+

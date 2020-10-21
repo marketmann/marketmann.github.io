@@ -1,0 +1,865 @@
+html {
+    max-width: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+}
+body {
+    font-family: "Iowan Old Style W01 Roman";
+    font-size:1.085em !important;
+}
+p {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    line-height: 1.475em !important;
+}
+a {
+    color: black;
+}
+.darkMode a {
+    color: #3089FF;
+}
+/*****************
+ LISTS
+ *****************/
+ul li, ol li {
+    line-height: 1.375em !important;
+    padding: 0;
+    margin: 0 !important;
+    margin-left: 4px !important;
+    margin-bottom: 0.4em !important;
+    position: relative;
+    text-align: justify;
+}
+ul, ol {
+    margin-top: 0.4em !important;
+    margin-bottom: 0.6em !important;
+}
+@media (max-width: 550px) {
+    ul, ol {
+        padding-left: 25px;
+    }
+}
+ul {
+    list-style: none;
+}
+ul li:before {
+    position: absolute;
+    margin-left: -1em;
+    content: "•";
+    margin-top: 2px;
+}
+ol {
+    list-style-type: none;
+    counter-reset: step-counter;
+}
+ol li:before {
+    position: absolute;
+    top: 0 !important;
+    left: -1.15em;
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    font-size: 1em !important;
+    font-weight: 600;
+    font-family: inherit;
+}
+h1 {
+    font-size: 1.9em;
+}
+h1.part-heading {
+    font-size: 1.7em;
+    text-align: left;
+}
+@media (max-width: 550px) {
+    h1.part-heading {
+        font-size: 1.6em !important;
+    }
+}
+h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: left !important;
+}
+h2.part-heading {
+    font-size: 1.4em !important;
+}
+@media (max-width: 550px) {
+    h2.part-heading {
+        font-size: 1.2em !important;
+    }
+}
+@media (max-width: 550px) {
+    h1 {
+        font-size: 1.6em !important;
+    }
+}
+h3 {
+    font-size: 1.4em !important;
+    letter-spacing: -0.5px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-indent: 0 !important;
+    text-align: left !important;
+}
+@media (max-width: 550px) {
+    h3 {
+        font-size: 1.3em !important;
+        line-height: 1.15em;
+    }
+}
+h4 {
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-indent: 0 !important;
+    text-align: left !important;
+}
+@media (max-width: 550px) {
+    h4 {
+        font-size: 1em !important;
+        line-height: 1.15em;
+    }
+}
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+.list-none {
+    list-style-type: none !important;
+}
+.header-aligned-right {
+    text-align: right;
+}
+.font-weight-normal {
+    font-weight: normal;
+}
+.text-align-left {
+    text-align: left;
+}
+.text-align-right {
+    text-align: right !important;
+}
+.centered {
+    text-align: center !important;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+/***PRimARY FONT FAMily**/
+p {
+    line-height: 1.5em;
+    margin-top: 0 !important;
+    margin-bottom: 10px;
+    text-indent: 20px;
+    text-align: justify;
+}
+em, i {
+    font-size: 1.06em !important;
+}
+hr {
+    background: black;
+    display: block;
+    height: 4px;
+    border: none;
+    text-align: left;
+    margin-right: 40%;
+}
+h3.breaker {
+    margin-top: 50px;
+}
+h3.breaker:before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 0;
+    background: black;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+/***************
+ ***************
+ NOTE W/BACKGROUND*/
+.note-1 {
+    padding: 10px 18px 5px 18px;
+    background: hsla(210, 40%, 98%, 1);
+    position: relative;
+    text-indent: 0 !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px hsla(210, 10%, 93%, 1);
+    text-indent: 0 !important;
+}
+.note-1 * {
+    text-indent: 0;
+}
+.note-1 p {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+.note-1-callout {
+    display: inline-block;
+    color: hsl(210, 10%, 73%);
+    font-size: 0.5em;
+    font-family: sans-serif;
+    letter-spacing: 1.3px;
+    opacity: 1;
+    margin-bottom: 5px;
+    margin-top: 1px;
+    text-align: justify;
+    line-height: 2em;
+}
+/***************
+ ***************
+ BLOCKQUOTE KiND OF THiNG*/
+.important-quote {
+    text-align: justify;
+    position: relative;
+    padding: 10px 19px 6px 19px;
+    box-shadow: inset 0 0 0 1px hsl(210, 5%, 93%);
+    border-radius: 2px;
+    margin-bottom: 0.7em;
+    margin-top: 1em;
+    background: hsla(220, 35%, 96%, 0.5);
+}
+ul.important-quote, ol.important-quote {
+    padding: 10px 49px 6px 40px !important;
+}
+ul.important-quote .important-quote-callout, ol.important-quote .important-quote-callout {
+    padding-left: 0 !important;
+    margin-left: -18px;
+    margin-bottom: 10px;
+}
+.important-quote * {
+    text-indent: 0;
+}
+.important-quote-callout {
+    display: inline-block;
+    color: hsl(210, 5%, 75%);
+    font-size: 0.5em;
+    line-height: 1em;
+    font-family: sans-serif;
+    letter-spacing: 1.3px;
+    padding: 2.5px 4px 2.5px 4px;
+    border: 0 solid hsl(250, 5%, 91%);
+    border-radius: 2px;
+    z-index: 1000 !important;
+    text-indent: 0;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: -5px;
+}
+/***************
+ ***************
+ HiGHLiGHT*/
+.copy-swipe-highlight {
+    background-color: hsla(50, 100%, 60%, 0.4);
+    border-radius: 3px;
+}
+/*****************************
+ *****************************
+ COPY EXAMPLE NUMBER 1
+ *****************************
+ *****************************/
+p.example-header-centered {
+    text-align: center !important;
+    font-size: 0.8em;
+    margin-bottom: 0;
+    margin-top: 20px !important;
+}
+.copy-swipe-example-block {
+    padding: 8px 65px 8px 65px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+}
+@media (max-width: 550px) {
+    .copy-swipe-example-block {
+        padding: 6px 35px !important;
+    }
+}
+@media (max-width: 450px) {
+    .copy-swipe-example-block {
+        padding: 6px 25px !important;
+    }
+}
+.copy-swipe-example-centered, .copy-swipe-example {
+    background-color: hsla(33, 96%, 91%, 0);
+    font-family: "Merriweather";
+    text-indent: 0 !important;
+    -webkit-font-smoothing: antialiased;
+    font-size: 0.9em;
+    line-height: 1.7em !important;
+}
+@media (max-width: 550px) {
+    h3.copy-swipe-example-centered.ultra-weight, .copy-swipe-example-caslon-centered {
+        font-size: 1.05em !important;
+    }
+}
+.copy-swipe-example-centered, p.copy-swipe-example-centered {
+    text-align: center;
+    font-weight: 900 !important;
+    padding: 5px 10px;
+    line-height: 1.6em !important;
+    margin-top: 5px !important;
+    margin-bottom: 12px !important;
+}
+.copy-swipe-example-centered.lesser-weight, p.copy-swipe-example-centered.lesser-weight, .block_26 {
+    font-weight: 500 !important;
+}
+.copy-swipe-example.greater-weight, p.copy-swipe-example.greater-weight {
+    font-weight: 600 !important;
+}
+.copy-swipe-example-centered.ultra-weight, p.copy-swipe-example-centered.ultra-weight {
+    font-weight: 900 !important;
+    font-size: 1.2em !important;
+}
+/******************************
+ ******************************
+ COPY EXAMPLE NUMBER 2 ********/
+.copy-swipe-example-caslon-centered, .copy-swipe-example-caslon, .block_26 {
+    font-family: "Adobe Caslon" !important;
+    font-weight: inherit;
+    background-color: hsla(198, 100%, 90%, 0);
+    font-size: 1.13em;
+    text-indent: 0 !important;
+    font-weight: 500;
+    line-height: 1.4em !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.copy-swipe-example-caslon-centered, p.copy-swipe-example-caslon-centered {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 4px 10px;
+    margin-top: 15px !important;
+    font-weight: 100;
+}
+.copy-swipe-example-caslon-centered.lesser-weight {
+    font-weight: 600;
+}
+.copy-swipe-example-caslon-centered.ultra-weight {
+    font-weight: 400 !important;
+    -webkit-text-stroke: 0.8px;
+    letter-spacing: 0.4px;
+}
+.drop-number {
+    font-weight: 600;
+    float: left;
+    font-size: 35px;
+    margin-top: 7px;
+    margin-right: 10px;
+    padding: 5px 5px 5px 5px;
+    width: 20px;
+    height: 24px;
+    border-right: 2px solid black;
+    font-family: "New York Large";
+}
+/***/
+.header-aligned-right {
+    text-align: right;
+}
+.padding-up {
+    padding-left: 20px;
+    padding-top: 4px;
+}
+.iowan-red-color {
+    color: rgb(237, 84, 84);
+}
+.ordered-list-spoof-container {
+    display: block;
+    padding-left: 40px;
+    position: relative;
+    margin-top: 0.4em !important;
+    margin-bottom: 0.6em !important;
+}
+@media (max-width: 550px) {
+    .ordered-list-spoof-container {
+        padding-left: 25px !important;
+    }
+}
+.ordered-list-spoof-left {
+    line-height: 1.375em !important;
+    position: absolute;
+    top: 0 !important;
+    font-size: 1em !important;
+    font-weight: 600;
+    margin-left: -1em;
+}
+.ordered-list-spoof-left.color-bul {
+    color: red !important;
+}
+.ordered-list-spoof-right {
+    margin-left: 4px;
+    line-height: 1.375em !important;
+    text-align: justify;
+    margin-bottom: 0.4em;
+    position: relative;
+}
+.ordered-list-spoof-right .ordered-list-spoof-left {
+    margin-left: -1.15em;
+    text-align: right;
+}
+.ordered-list-spoof-right .ordered-list-spoof-left.final {
+    margin-left: -2.05em;
+    text-align: right;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    max-width: 100%;
+}
+.sample-original-small {
+    max-width: 200px;
+    width: 100%;
+}
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+.flex-row-inner {
+    margin-right: 10px;
+    max-width: 170px;
+}
+.flex-row-inner.smaller {
+    max-width: 60px;
+}
+sample-original-text /*********************
+ BORDER RADiUS
+ *********************/ .border-radius-4p {
+    border-radius: 4px;
+}
+.border-radius-3p {
+    border-radius: 3px;
+}
+.border-radius-2p {
+    border-radius: 2px;
+}
+.btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+@media (max-width: 550px) {
+    .btn.max-width-70-percent {
+        max-width: 100% !important;
+    }
+}
+/*********************
+ MAX WIDTH
+ *********************/
+.max-width-70-percent {
+    max-width: 60%;
+}
+.max-width-250px {
+    max-width: 250px;
+}
+/*********************
+ DiSPLAY
+ *********************/
+.display-inline {
+    display: inline !important;
+}
+/*********************
+ HEIGHT
+ *********************/
+.height-10p {
+    height: 10px !important;
+}
+/*********************
+ BACKGROUND
+ *********************/
+.bg-btn-base {
+    background-color: hsl(0, 0%, 90%);
+}
+/*********************
+ BORDER
+ *********************/
+.border-1p {
+    border: 1px solid;
+}
+/*********************
+ FONT SIZE
+ *********************/
+.size-1-45 {
+    font-size: 1.45em !important;
+}
+.size-1-4 {
+    font-size: 1.4em !important;
+}
+.size-1-35 {
+    font-size: 1.35em !important;
+}
+.size-1-3 {
+    font-size: 1.3em !important;
+}
+.size-1-25 {
+    font-size: 1.25em !important;
+}
+.size-1-2 {
+    font-size: 1.2em !important;
+}
+.size-1-15 {
+    font-size: 1.15em !important;
+}
+.size-1-1 {
+    font-size: 1.1em !important;
+}
+.size-1-05 {
+    font-size: 1.05em !important;
+}
+.size-1 {
+    font-size: 1em !important;
+}
+.size-095 {
+    font-size: 0.95em !important;
+}
+.size-0925 {
+    font-size: 0.925em !important;
+}
+.size-09 {
+    font-size: 0.9em !important;
+}
+.size-085 {
+    font-size: 0.85em !important;
+}
+.size-08 {
+    font-size: 0.8em !important;
+}
+.size-075 {
+    font-size: 0.75em !important;
+}
+.size-07 {
+    font-size: 0.7em !important;
+}
+/*********************
+ LINE HEIGHT
+ *********************/
+.line-height-1-85 {
+    line-height: 1.85em !important;
+}
+.line-height-1-8 {
+    line-height: 1.8em !important;
+}
+.line-height-1-75 {
+    line-height: 1.75em !important;
+}
+.line-height-1-7 {
+    line-height: 1.7em !important;
+}
+.line-height-1-65 {
+    line-height: 1.65em !important;
+}
+.line-height-1-6 {
+    line-height: 1.6em !important;
+}
+.line-height-1-55 {
+    line-height: 1.55em !important;
+}
+.line-height-1-5 {
+    line-height: 1.5em !important;
+}
+.line-height-1-45 {
+    line-height: 1.45em !important;
+}
+.line-height-1-4 {
+    line-height: 1.4em !important;
+}
+.line-height-1-35 {
+    line-height: 1.35em !important;
+}
+.line-height-1-3 {
+    line-height: 1.3em !important;
+}
+.line-height-1-25 {
+    line-height: 1.25em !important;
+}
+.line-height-1-2 {
+    line-height: 1.2em !important;
+}
+.line-height-1-15 {
+    line-height: 1.15em !important;
+}
+.line-height-1-1 {
+    line-height: 1.1em !important;
+}
+.line-height-1-15 {
+    line-height: 1.5em !important;
+}
+.line-height-1 {
+    line-height: 1em !important;
+}
+/*********************
+ TEXT STROKE
+ *********************/
+.middle-weight, .medium-weight {
+    -webkit-text-stroke-width: 0.3px;
+    text-stroke-width: 0.3px;
+}
+.text-stroke-08 {
+    -webkit-text-stroke-width: 0.8px;
+    text-stroke-width: 0.8px;
+}
+.text-stroke-06 {
+    -webkit-text-stroke-width: 0.6px;
+    text-stroke-width: 0.6px;
+}
+.text-stroke-04 {
+    -webkit-text-stroke-width: 0.4px;
+    text-stroke-width: 0.4px;
+}
+/*********************
+ PADDING
+ *********************/
+.padding-vert-horiz--2px-4px {
+    padding: 2px 4px !important;
+}
+.padding-20, .padding-horiz-20 {
+    padding: 0 20px !important;
+}
+.padding-horiz-30 {
+    padding: 0 30px !important;
+}
+.padding-horiz-40 {
+    padding: 0 40px !important;
+}
+.padding-horiz-50 {
+    padding: 0 50px !important;
+}
+.padding-horiz-60 {
+    padding: 0 60px !important;
+}
+/*********************
+ PADDING PERCENTAGE
+ *********************/
+.padding-horiz-percent-5 {
+    padding: 0% 5% !important;
+}
+.padding-horiz-percent-7-05 {
+    padding: 0% 7.5% !important;
+}
+.padding-horiz-percent-10 {
+    padding: 0% 10% !important;
+}
+.padding-horiz-percent-12-05 {
+    padding: 0% 12.5% !important;
+}
+.padding-horiz-percent-15 {
+    padding: 0% 15% !important;
+}
+.padding-horiz-percent-17-05 {
+    padding: 0% 17.5% !important;
+}
+.padding-horiz-percent-20 {
+    padding: 0% 20% !important;
+}
+.padding-horiz-percent-12-05 {
+    padding: 0% 22.5% !important;
+}
+.padding-horiz-percent-25 {
+    padding: 0% 25% !important;
+}
+.padding-horiz-percent-27-05 {
+    padding: 0% 27.5% !important;
+}
+.padding-horiz-percent-30 {
+    padding: 0% 30% !important;
+}
+.padding-up {
+    padding-left: 20px;
+    padding-top: 4px;
+}
+/*********************
+ MAX WIDTH
+ *********************/
+/*********************
+ INDENTATION
+ *********************/
+.text-indent-27 {
+    text-indent: 27px !important;
+}
+.text-indent-20 {
+    text-indent: 20px !important;
+}
+.no-indent {
+    text-indent: 0 !important;
+}
+/*********************
+ FONT WEIGHTS
+ *********************/
+.font-weight-900 {
+    font-weight: 900 !important;
+}
+.font-weight-800 {
+    font-weight: 800 !important;
+}
+.font-weight-700 {
+    font-weight: 700 !important;
+}
+.font-weight-600 {
+    font-weight: 600 !important;
+}
+.font-weight-500 {
+    font-weight: 500 !important;
+}
+.font-weight-400 {
+    font-weight: 400 !important;
+}
+.font-weight-300 {
+    font-weight: 300 !important;
+}
+/*********************
+ MARGINS
+ *********************/
+.margin-top-65p {
+    margin-top: 65px !important;
+}
+.margin-top-60p {
+    margin-top: 60px !important;
+}
+.margin-top-55p {
+    margin-top: 55px !important;
+}
+.margin-top-50p {
+    margin-top: 50px !important;
+}
+.margin-top-45p {
+    margin-top: 45px !important;
+}
+.margin-top-40p {
+    margin-top: 40px !important;
+}
+.margin-top-35p {
+    margin-top: 35px !important;
+}
+.margin-top-30p {
+    margin-top: 30px !important;
+}
+.margin-top-25p {
+    margin-top: 25px !important;
+}
+.margin-top-20p {
+    margin-top: 20px !important;
+}
+.margin-top-15p {
+    margin-top: 15px !important;
+}
+.margin-top-10p {
+    margin-top: 10px !important;
+}
+.margin-top-5p {
+    margin-top: 5px !important;
+}
+.margin-top-0p {
+    margin-top: 0 !important;
+}
+.margin-bottom-65p {
+    margin-bottom: 65px !important;
+}
+.margin-bottom-60p {
+    margin-bottom: 60px !important;
+}
+.margin-bottom-55p {
+    margin-bottom: 55px !important;
+}
+.margin-bottom-50p {
+    margin-bottom: 50px !important;
+}
+.margin-bottom-45p {
+    margin-bottom: 45px !important;
+}
+.margin-bottom-40p {
+    margin-bottom: 40px !important;
+}
+.margin-bottom-35p {
+    margin-bottom: 35px !important;
+}
+.margin-bottom-30p {
+    margin-bottom: 30px !important;
+}
+.margin-bottom-25p {
+    margin-bottom: 25px !important;
+}
+.margin-bottom-20p {
+    margin-bottom: 20px !important;
+}
+.margin-bottom-15p {
+    margin-bottom: 15px !important;
+}
+.margin-bottom-10p {
+    margin-bottom: 10px !important;
+}
+.margin-bottom-5p {
+    margin-bottom: 5px !important;
+}
+.margin-bottom-2-05p {
+    margin-bottom: 2.5px !important;
+}
+.margin-bottom-0p {
+    margin-bottom: 0 !important;
+}
+/*********************
+ LETTERSPACING
+ *********************/
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+.letter-spacing-05 {
+    letter-spacing: 0.5px;
+}
+.letter-spacing-minus-05 {
+    letter-spacing: 0;
+}
+/*********************
+ FONTS
+ *********************/
+.font-publico, .publico {
+    font-family: "Publico", "Adobe Caslon", "Georgia", serif !important;
+}
+.font-adobe-caslon, .adobe-caslon {
+    font-family: "Adobe Caslon", "Georgia", serif !important;
+}
+.font-irvin-heading, .irvin-heading {
+    font-family: "Irvin Heading", "Adobe Caslon", "Georgia", serif !important;
+}
+.font-elena, .elena {
+    font-family: "Elena", "Georgia", serif !important;
+}
+.font-warnok, .warnok {
+    font-family: "Warnok Pro", "Georgia", serif !important;
+}
+.merriweather, .font-merriweather {
+    font-family: "Merriweather" !important;
+}
+.merriweather em, .merriweather i {
+    font-size: 1em !important;
+}
+.iowan, .font-iowan {
+    font-family: "Iowan Old Style W01 Roman", "Georgia", serif !important;
+}
+.messina {
+    font-family: "Messinasansweb", "Helvetica Neue", sans-serif !important;
+}
+.new-york-large {
+    font-family: "New York Large", "Georgia", serif !important;
+}
+.new-york-small {
+    font-family: "New York Small", "Georgia", serif !important;
+}
+.sentinel {
+    font-family: "Sentinel", "Georgia", serif !important;
+}
+.hyphens-none {
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+.hyphens-auto {
+    -webkit-hyphens: auto;
+    hyphens: none;
+}

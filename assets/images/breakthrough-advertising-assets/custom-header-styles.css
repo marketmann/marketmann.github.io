@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* CSS Document */
+/******************
+******************
+ BIG PAGE HEADERS
+******************
+ ******************/
+.numbered-title-container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin-bottom: 30px !important;
+	margin-top: 40px !important;
+}
+.numbered-title-number-container-outer {
+	background: rgba(0, 0, 0, 0);
+	background-image: url("VERSACE-BLACK.svg");
+	background-repeat: repeat;
+	background-size: contain;
+	margin-right: 10px;
+	display: flex;
+	border: 0px solid black;
+	position: relative;
+}
+/****
+ BIG HEADER NUMBER CONTAINER
+ ****/
+.numbered-title-number-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 5px;
+	width: 40px;
+	height: 40px;
+	color: black;
+	background-color: hsla(0, 0%, 100%, 1);
+	border-bottom: 0px;
+	position: relative;
+	overflow: hidden;
+}
+@media (max-width: 550px) {
+	.numbered-title-number-container {
+		width: 23px;
+		height: 23px;
+	}
+}
+.numbered-title-number-container:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0px !important;
+	border: 5px solid black;
+	border-left: 0px;
+	border-bottom: 0px;
+	border-top-left-radius: 0px;
+}
+.numbered-title-number-container:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 70%;
+	left: 0;
+	right: 0px !important;
+	border-left: 5px solid black;
+}
+@media (max-width: 550px) {
+	.numbered-title-number-container:after {
+		border: 3.5px solid black;
+		border-left: 0px;
+		border-bottom: 0px;
+	}
+}
+/****
+ BIG HEADER NUMBER
+ ****/
+.numbered-title-number {
+	font-size: 1.9em;
+	font-weight: 900;
+	display: block;
+	padding-top: 4px;
+	padding-right: 3px;
+}
+@media (max-width: 550px) {
+	.numbered-title-number {
+		font-size: 1.4em;
+		display: block;
+	}
+}
+/****
+ BIG HEADER TEXT
+ ****/
+.numbered-title-text-main {
+	width: 100%;
+	font-size: 1.2em;
+	font-weight: 900;
+	margin-top: -2px;
+	letter-spacing: -1px;
+	line-height: 1.1
+}
+@media (max-width: 550px) {
+	.numbered-title-text-main {
+		font-size: 0.95em;
+		display: block;
+	}
+}
+/******************
+******************
+******************
+******************
+******************
+ SMALL PAGE HEADERS
+******************
+******************
+******************
+******************
+ ******************/
+.numbered-title-container-small {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin-top: 40px !important;
+	margin-bottom: 20px;
+}
+.numbered-title-number-container-outer-small {
+	background: rgba(0, 0, 0, 0);
+	background-image: url("VERSACE-BLACK.svg");
+	background-repeat: repeat;
+	background-size: contain;
+	margin-right: 10px;
+	display: flex;
+	border: 0px solid black;
+	position: relative;
+}
+.numbered-title-number-container-small {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3px 3px;
+	width: 30px;
+	height: 30px;
+	color: black;
+	border: 0px solid black;
+	background-color: hsla(0, 0%, 100%, 1);
+	border-bottom: 0px;
+	position: relative;
+	overflow: hidden;
+}
+@media (max-width: 550px) {
+	.numbered-title-number-container-small {
+		width: 20px;
+		height: 20px;
+		padding: 2px 2px;
+	}
+}
+.numbered-title-number-container-small:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0px !important;
+	border: 4px solid black;
+	border-left: 0px;
+	border-bottom: 0px;
+	border-top-left-radius: 0px;
+}
+@media (max-width: 550px) {
+	.numbered-title-number-container-small:after {
+		border: 2.5px solid black;
+		border-left: 0px;
+		border-bottom: 0px;
+	}
+}
+.numbered-title-number-container-small:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 70%;
+	left: 0;
+	right: 0px !important;
+	border-left: 4px solid black;
+}
+@media (max-width: 550px) {
+	.numbered-title-number-container-small:before {
+		border-left: 2.5px solid black;
+	}
+}
+.numbered-title-number-small {
+	font-size: 2em;
+	font-weight: 900;
+	padding-top: 3px;
+	position: relative;
+	display: block;
+}
+@media (max-width: 550px) {
+	.numbered-title-number-small {
+		font-size: 1.3em;
+		display: block;
+	}
+}
+.numbered-title-text-main-small-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/****
+ SMALL HEADER TEXT - HEADER
+ ****/
+.numbered-title-text-main-small-header {
+	width: 100%;
+	font-size: 1.3em;
+	font-weight: 900;
+	margin-top: -0px !important;
+	margin-bottom: 0px !important;
+	letter-spacing: -1px;
+	line-height: 1.3em;
+}
+@media (max-width: 550px) {
+	.numbered-title-text-main-small-header {
+		font-size: 1.15em !important;
+		line-height: 1.2em !important;
+		display: block;
+	}
+}
+/****
+ SMALL HEADER TEXT - PARAGRAPH
+ ****/
+.numbered-title-text-main-small-paragraph {
+	width: calc(100%);
+	font-size: 1.05em;
+	font-weight: 600;
+	margin-top: 4px !important;
+	margin-bottom: 0px !important;
+	letter-spacing: -0.3px;
+	line-height: 1.3em !important;
+	text-indent: 0px !important;
+}
+@media (max-width: 550px) {
+	.numbered-title-text-main-small-paragraph {
+		display: block;
+		font-size: 0.95em !important;
+	}
+}
+.numbered-title-right-container {
+	width: 10px;
+	border: 1px solid black;
+}

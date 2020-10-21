@@ -40,8 +40,8 @@
 
 @media (min-width: 66.5rem) {
     .side-bar {
-        width: calc((100% - 1064px) / 2 + 228px);
-        min-width: 228px;
+        width: calc((100% - 1064px) / 2 + 180px);
+        min-width: 180px;
     }
 }
 
@@ -74,7 +74,7 @@
     .navigation,
     .site-header,
     .site-footer {
-        width: 264px;
+        width: 320px;
     }
 }
 
@@ -263,8 +263,7 @@
 
 @media (min-width: 66.5rem) {
     .main-content {
-        margin-left: calc((100% - 1064px) / 2 + 228px);
-
+        margin-left: calc((100% - 1064px) / 2 + 180px);
     }
 }
 
