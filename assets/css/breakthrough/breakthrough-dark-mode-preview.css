@@ -8170,15 +8170,15 @@ body p, body div {
 
 
 .darkMode {
- color: hsl(0, 0%, 81.45%) !important;
+ color: hsl(0, 0%, 78.45%) !important;
 }
 
 .darkMode b {
-  color: hsl(0, 0%, 90%) !important;
+  color: hsl(0, 0%, 91%) !important;
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
 .darkMode strong {
-  color: hsl(0, 0%, 90%) !important;
+  color: hsl(0, 0%, 91%) !important;
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
