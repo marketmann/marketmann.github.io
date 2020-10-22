@@ -970,13 +970,13 @@ body {
 
 @media (min-width: 31.25rem) {
     .pagecontent ol > li::before {
-        font-size: 14px !important;
+        font-size: 1em !important;
     }
 }
 
 @media (min-width: 31.25rem) {
     .pagecontent ol > li::before {
-        top: 0.11em;
+        top: 0em;
     }
 }
 
