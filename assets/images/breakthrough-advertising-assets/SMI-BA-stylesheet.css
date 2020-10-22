@@ -323,7 +323,7 @@ p.example-header-centered {
     text-indent: 0 !important;
     font-weight: 500;
     line-height: 1.4em !important;
-    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 .copy-swipe-example-caslon-centered, p.copy-swipe-example-caslon-centered {
     text-align: center;
