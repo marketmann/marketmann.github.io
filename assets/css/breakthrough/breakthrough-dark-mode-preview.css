@@ -8180,7 +8180,7 @@ body p, body div {
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
-.darkMode h1, .darkMode h2, .darkMode h3, .darkMode h4, .darkMode h5, .darkMode .block_26 {
+.darkMode h1, .darkMode h2, .darkMode h3, .darkMode h4, .darkMode h5, .darkMode {
   color: white !important;
 }
 .darkMode .ordered-list-spoof-left, .darkMode ul li:before, .darkMode ol li:before {
@@ -8255,6 +8255,10 @@ COPY SWIPE EXAMPLE BLOCKS
   color: hsl(0, 0%, 95%) !important;
   -webkit-text-stroke-color: hsl(0, 0%, 95%) !important;
 }
+.darkMode .copy-swipe-example-caslon-centered, .darkMode .copy-swipe-example-caslon, .darkMode .block_26 {
+    color: hsl(0, 0%, 94%) !important;
+}
+
 .darkMode .irvin-heading, .darkMode .drop-number {
     color: hsl(0, 0%, 100%) !important;
 }
