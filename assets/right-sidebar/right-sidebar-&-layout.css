@@ -436,7 +436,9 @@ button.left-sidebar-toggle {
     top: 0;
     width: 100%;
 }
-
+#js-pushed-sidebar {
+    background:black !important;
+}
 
 /*.left-open .page.open, .left-open-on-load .page.oooopen-on-load, .left-open .page.oooopen-on-load, .left-open-on-load .page.oooopen {
     margin-left: -80px !important;
