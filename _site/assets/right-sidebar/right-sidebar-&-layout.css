@@ -72,11 +72,7 @@
 
 
 
-.page {
-    width:45.5vw;
-    margin-left:0px;
-    transition:.4s;
-}
+
 @media (min-width: 88rem) {
 
     .page.oooopen,
@@ -91,6 +87,14 @@
         width: 45.5vw;
     }
 }
+@media (min-width: 50rem) {
+    .page {
+    width:45.5vw;
+    margin-left:0px;
+    transition:.4s;
+}
+}
+
 /*Left sidebar - open
  *Right sidebar - closed*/
 .left-open .js-page-header.oooopen + .page, .left-open-on-load .js-page-header.oooopen-on-load + .page {
@@ -406,8 +410,8 @@ button.left-sidebar-toggle {
     z-index: 1;
     top: 0px;
     right: -400px;
-    background-color: hsl(252, 6.17%, 17.1%);
-    border-left: 1px solid hsl(252, 0.17%, 0%);
+    background-color: transparent !important;
+    border-left: 1px solid hsl(252, 0.17%, 11%);
     overflow-x: hidden;
     transition: 0.35s;
     padding-top: 0px;
@@ -436,7 +440,9 @@ button.left-sidebar-toggle {
     top: 0;
     width: 100%;
 }
-
+#js-pushed-sidebar {
+    background:black !important;
+}
 
 /*.left-open .page.open, .left-open-on-load .page.oooopen-on-load, .left-open .page.oooopen-on-load, .left-open-on-load .page.oooopen {
     margin-left: -80px !important;

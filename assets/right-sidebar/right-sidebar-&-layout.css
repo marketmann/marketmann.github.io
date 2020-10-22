@@ -72,11 +72,7 @@
 
 
 
-.page {
-    width:45.5vw;
-    margin-left:0px;
-    transition:.4s;
-}
+
 @media (min-width: 88rem) {
 
     .page.oooopen,
@@ -91,6 +87,14 @@
         width: 45.5vw;
     }
 }
+@media (min-width: 50rem) {
+    .page {
+    width:45.5vw;
+    margin-left:0px;
+    transition:.4s;
+}
+}
+
 /*Left sidebar - open
  *Right sidebar - closed*/
 .left-open .js-page-header.oooopen + .page, .left-open-on-load .js-page-header.oooopen-on-load + .page {

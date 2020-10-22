@@ -76,10 +76,10 @@
  BIG HEADER NUMBER
  ****/
 .numbered-title-number {
-	font-size: 1.9em;
+	font-size: 1.7em;
 	font-weight: 900;
 	display: block;
-	padding-top: 4px;
+	padding-top: 5px;
 	padding-right: 3px;
 }
 @media (max-width: 550px) {
@@ -188,7 +188,7 @@
 	}
 }
 .numbered-title-number-small {
-	font-size: 2em;
+	font-size: 1.7em;
 	font-weight: 900;
 	padding-top: 3px;
 	position: relative;

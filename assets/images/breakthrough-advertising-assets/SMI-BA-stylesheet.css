@@ -10,6 +10,12 @@ p {
     hyphens: auto;
     line-height: 1.475em !important;
 }
+
+@media (max-width: 550px) {
+    body {
+        font-size:1.4em !important;
+    }
+}
 a {
     color: black;
 }
