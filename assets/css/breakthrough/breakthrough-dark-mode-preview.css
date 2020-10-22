@@ -35,7 +35,7 @@
         width: 228px;
         height: 100%;
         flex-direction: column;
-        border-right: 1px solid hsl(240, 0.17%, 00%);
+        border-right: 1px solid hsl(240, 0.17%, 11%);
         align-items: flex-end;
     }
 }
@@ -299,7 +299,7 @@
         justify-content: flex-end;
         height: 60px;
         background-color: hsl(240, 0%, 5.5%);
-        border-bottom: 1px solid hsl(240, 6.17%, 0%);
+        border-bottom: 1px solid hsl(240, 6.17%, 11%);
         padding-right: 3rem;
         padding-left: 3rem;
     }
