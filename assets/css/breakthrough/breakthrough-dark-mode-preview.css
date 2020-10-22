@@ -8192,7 +8192,7 @@ body p, body div {
 IMPORTANT QUOTES
  ********/
 .darkMode .note-1, .darkMode .important-quote {
-  background-color: hsl(0,0%,11.5%);
+  background-color: hsl(0,0%,10.5%);
   box-shadow: inset 0 0 0 1px #222222 !important;
 }
 @media (max-width: 550px) {
