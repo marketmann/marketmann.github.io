@@ -1,12 +1,7 @@
-html {
-    max-width: 550px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: block;
-}
+
 body {
     font-family: "Iowan Old Style W01 Roman";
-    font-size:1.085em !important;
+    font-size:1.1em !important;
 }
 p {
     margin-top: 0.5em !important;
@@ -24,7 +19,7 @@ a {
 /*****************
  LISTS
  *****************/
-ul li, ol li {
+ul li:not(.navigation ul li), ol li:not(.navigation ol li) {
     line-height: 1.375em !important;
     padding: 0;
     margin: 0 !important;
@@ -33,29 +28,29 @@ ul li, ol li {
     position: relative;
     text-align: justify;
 }
-ul, ol {
+ul:not(.navigation ul), ol:not(.navigation ol) {
     margin-top: 0.4em !important;
     margin-bottom: 0.6em !important;
 }
 @media (max-width: 550px) {
-    ul, ol {
+    ul:not(.navigation ul), ol:not(.navigation ol) {
         padding-left: 25px;
     }
 }
-ul {
+ul:not(.navigation ul) {
     list-style: none;
 }
-ul li:before {
+ul li:before:not(.navigation ul li:before){
     position: absolute;
     margin-left: -1em;
     content: "•";
     margin-top: 2px;
 }
-ol {
+ol:not(.navigation ol) {
     list-style-type: none;
     counter-reset: step-counter;
 }
-ol li:before {
+ol li:before:not(.navigation ol li:before) {
     position: absolute;
     top: 0 !important;
     left: -1.15em;

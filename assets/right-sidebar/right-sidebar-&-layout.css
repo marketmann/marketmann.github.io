@@ -41,7 +41,7 @@
 .main-content.left-open .page-header.oooopen-on-load,
 .main-content.left-open-on-load .page-header.oooopen-on-load,
 .main-content.left-open-on-load .page-header.oooopen {
-    padding-left: 0px;
+    padding-left: 3rem;
     transition: .5s
 }
 
@@ -66,20 +66,35 @@
     transition: none;
 }
 
-@media (min-width: 50rem) {
-
-    .page.oooopen,
-    .page.oooopen-on-load {
-        width: 44.5vw;
-    }
+.left.oooopen .page.oooopen {
+    width: 100%;
 }
 
+
+
+.page {
+    width:45.5vw;
+    margin-left:0px;
+    transition:.4s;
+}
 @media (min-width: 88rem) {
 
     .page.oooopen,
     .page.oooopen-on-load {
-        width: 43.1vw;
+        width: 45.5vw;
     }
+}
+@media (min-width: 50rem) {
+
+    .page.oooopen,
+    .page.oooopen-on-load {
+        width: 45.5vw;
+    }
+}
+/*Left sidebar - open
+ *Right sidebar - closed*/
+.left-open .js-page-header.oooopen + .page, .left-open-on-load .js-page-header.oooopen-on-load + .page {
+    margin-left:-50px;
 }
 
 
@@ -392,7 +407,7 @@ button.left-sidebar-toggle {
     top: 0px;
     right: -400px;
     background-color: hsl(252, 6.17%, 17.1%);
-    border-left: 1px solid hsl(252, 6.17%, 22.1%);
+    border-left: 1px solid hsl(252, 0.17%, 0%);
     overflow-x: hidden;
     transition: 0.35s;
     padding-top: 0px;
@@ -423,6 +438,6 @@ button.left-sidebar-toggle {
 }
 
 
-.left-open .page.open, .left-open-on-load .page.oooopen-on-load, .left-open .page.oooopen-on-load, .left-open-on-load .page.oooopen {
+/*.left-open .page.open, .left-open-on-load .page.oooopen-on-load, .left-open .page.oooopen-on-load, .left-open-on-load .page.oooopen {
     margin-left: -80px !important;
-}
+}*/
