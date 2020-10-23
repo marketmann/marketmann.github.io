@@ -7065,3 +7065,7 @@ body{
 .hypothesis-highlight, .hypothesis-highlights-always-on .hypothesis-highlight {
     border-bottom: 2.5px solid #9E0316 !important;
 }
+
+.greater-weight{
+    font-size: 1em;
+}
