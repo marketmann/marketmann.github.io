@@ -292,35 +292,40 @@
        font-style: italic;
    }
 
-   /****************
+    /****************
     ****************
-    FRANKLIN GOTHIC CONDENSED 
+    FRANKLIN GOTHIC 
     ****************
     ****************/
-   /*** FRANKLIN GOTHIC CONDENSED*/
-   @font-face {
+ 
+   
+ @font-face {
        font-family: 'FrankGoth';
-       src: url('https://dl.dropboxusercontent.com/s/45czocg0pptpkd4/Franklin%20Gothic%20Condensed%20BT.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/grgflfpxih05562/Franklin%20Gothic%20Condensed%20BT.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/a5ut0anyq2fl5u5/Franklin%20Gothic%20Condensed%20BT.eot?raw=1') format('embedded-opentype'), url('https://dl.dropboxusercontent.com/s/atgco406beh3vdl/Franklin%20Gothic%20Condensed%20BT.otf?raw=1') format('opentype');
+       src: url('../../../assets/fonts/Franklin Gothic/Franklin-Gothic-4-Condensed/Franklin-Gothic-Condensed.otf') format('opentype');
        font-weight: 400;
        font-style: normal;
-   }
-
+}
    @font-face {
        font-family: 'FrankGothreg';
-       src: url('https://dl.dropboxusercontent.com/s/ieuxwspibc6iq0m/Franklin%20Gothic.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/goszassoxtd737r/Franklin%20Gothic.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/eyr52tx223rmnx1/Franklin%20Gothic.eot?raw=1') format('embedded-opentype'), url('https://dl.dropboxusercontent.com/s/czwktk2qgo6wr3t/Franklin%20Gothic.otf?raw=1') format('opentype');
+       src: url('../../../assets/fonts/Franklin Gothic/Franklin-Gothic-3-BOLD/Franklin-Gothic-Bold.otf') format('opentype');
        font-weight: 400;
        font-style: normal;
    }
 
    @font-face {
        font-family: 'FrankGothMed';
-       src: url('https://dl.dropboxusercontent.com/s/8f2rmpvfw49q3p1/Franklin%20Gothic%20Medium.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/rfk4uodjs5ft3e4/Franklin%20Gothic%20Medium.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/pt0p7hl4w5jg9f8/Franklin%20Gothic%20Medium.eot?raw=1') format('embedded-opentype'), url('https://dl.dropboxusercontent.com/s/1238uybken8qs6b/Franklin%20Gothic%20Medium.otf?raw=1') format('opentype');
+       src: url('../../../assets/fonts/Franklin Gothic/Franklin-Gothic-2-Medium/Franklin-Gothic-Medium.otf') format('opentype');
        font-weight: 400;
        font-style: normal;
    }
-      /***Aldine***/
+   /****************
+    ****************
+    ALDINE 
+    ****************
+    ****************/
+
       @font-face {
          font-family: 'Aldine 721';
-         src: url('https://dl.dropboxusercontent.com/s/v18p6s2p5qusbge/Aldine_721_Bold_Condensed.ttf?raw=1') format('truetype'), url('https://dl.dropboxusercontent.com/s/5h1folaliq6puhc/aldine_721_bold_condensed-webfont.woff2?raw=1') format('woff2'), url('https://dl.dropboxusercontent.com/s/pasuxe52v5n5l7x/aldine_721_bold_condensed-webfont.woff?raw=1') format('woff'), url('https://dl.dropboxusercontent.com/s/48hhrrqx293qgye/aldine_721_bold_condensed-webfont.eot?raw=1') format('embedded-opentype'), url('https://dl.dropboxusercontent.com/s/ngjdd2b047sc5l7/aldine_721_bold_condensed-webfont.svg?raw=1') format('svg');
+         src: url('../../../assets/fonts/Aldine-721/Aldine_721_Bold_Condensed.otf') format('opentype');
          font-weight: normal
       }
